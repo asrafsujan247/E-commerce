@@ -1,16 +1,11 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import Cookies from "js-cookie";
 
-import SearchScreen from "@components/search/SearchScreen";
 import SearchScreenNew from "@components/search/SearchScreenNew";
-import SearchScreenClothing from "@components/search/SearchScreenClothing";
-import SearchScreenElectronic from "@components/search/SearchScreenElectronic";
 
 import { getShowingStoreProducts } from "@services/ProductServices";
 import { getShowingAttributes } from "@services/AttributeServices";
 import { getShowingCategory } from "@services/CategoryService";
-import { getGlobalSetting } from "@services/SettingServices";
 
 import type { Product, Attribute, Category } from "@appTypes/index";
 
@@ -23,7 +18,6 @@ const Search = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [attributes, setAttributes] = useState<Attribute[]>([]);
   const [categories, setCategories] = useState<Category[]>([]);
-  const [storeLayout, setStoreLayout] = useState<string>("default");
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -31,32 +25,23 @@ const Search = () => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const [productsResult, attributesResult, categoriesResult, globalResult] =
+        const [productsResult, attributesResult, categoriesResult] =
           await Promise.all([
             getShowingStoreProducts({ category, title: query }),
             getShowingAttributes(),
             getShowingCategory(),
-            getGlobalSetting(),
           ]);
 
         const firstError =
           productsResult.error ??
           attributesResult.error ??
           categoriesResult.error ??
-          globalResult.error ??
           null;
 
         setError(firstError);
         setProducts(productsResult.products ?? []);
         setAttributes(attributesResult.attributes ?? []);
         setCategories(categoriesResult.categories ?? []);
-
-        const cookieLayout = Cookies.get("_store_layout");
-        setStoreLayout(
-          cookieLayout ??
-            globalResult.globalSetting?.store_layout ??
-            "default",
-        );
       } catch (err) {
         setError(
           err instanceof Error ? err.message : "Failed to load search results",
@@ -103,23 +88,15 @@ const Search = () => {
     );
   }
 
-  const commonProps = {
-    products,
-    attributes,
-    categories,
-    searchQuery: query,
-    selectedCategory: category,
-  };
-
-  if (storeLayout === "clothing") {
-    return <SearchScreenClothing {...commonProps} />;
-  }
-
-  if (storeLayout === "electronic") {
-    return <SearchScreenElectronic {...commonProps} />;
-  }
-
-  return <SearchScreenNew {...commonProps} />;
+  return (
+    <SearchScreenNew
+      products={products}
+      attributes={attributes}
+      categories={categories}
+      searchQuery={query}
+      selectedCategory={category}
+    />
+  );
 };
 
 export default Search;

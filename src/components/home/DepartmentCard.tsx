@@ -44,7 +44,11 @@ function getCellBorders(idx: number, count: number, cols: number): string {
     Math.floor(idx / cols) === Math.floor((count - 1) / cols);
 
   return [
-    !mobileLastCol && !mobileAlone ? "border-r" : !desktopLastCol ? "md:border-r" : "",
+    !mobileLastCol && !mobileAlone
+      ? "border-r"
+      : !desktopLastCol
+        ? "md:border-r"
+        : "",
     !mobileLastCol && !mobileAlone && desktopLastCol ? "md:border-r-0" : "",
     !mobileLastRow ? "border-b" : !desktopLastRow ? "md:border-b" : "",
     !mobileLastRow && desktopLastRow ? "md:border-b-0" : "",
@@ -87,7 +91,9 @@ const DepartmentCard = (_props: DepartmentCardProps) => {
               </div>
 
               {/* Right: Categories grid */}
-              <div className={`md:flex-1 grid grid-cols-2 ${mdColsClass[cols]}`}>
+              <div
+                className={`md:flex-1 grid grid-cols-2 ${mdColsClass[cols]}`}
+              >
                 {subCategories.map((cat, idx) => (
                   <Link
                     key={cat._id}
