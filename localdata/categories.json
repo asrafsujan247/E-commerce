@@ -1,0 +1,2865 @@
+[
+  {
+    "_id": "dept001",
+    "name": "Food & Daily Essentials",
+    "slug": "food-daily-essentials",
+    "description": "Fresh produce, grocery staples, beverages, dairy, and everyday food items for home and family.",
+    "image": "https://res.cloudinary.com/ahossain/image/upload/v1738768427/product/60c88fa9379ac-square-removebg-preview.png",
+    "status": "show",
+    "categories": [
+      {
+        "_id": "632aae414d87ff2494210945",
+        "name": "Breakfast",
+        "slug": "breakfast",
+        "icon": "https://res.cloudinary.com/ahossain/image/upload/v1658340705/category%20icon/bagel_mt3fod.png",
+        "description": "Breakfast",
+        "status": "show",
+        "departmentId": "dept001",
+        "departmentName": "Food & Daily Essentials",
+        "children": [
+          {
+            "_id": "632aae624d87ff2494210951",
+            "name": "Cereal",
+            "slug": "cereal",
+            "icon": "",
+            "description": "Cereal",
+            "status": "show",
+            "parentId": "632aae414d87ff2494210945",
+            "parentName": "Breakfast"
+          },
+          {
+            "_id": "632aae7b4d87ff2494210967",
+            "name": "Bread",
+            "slug": "bread",
+            "icon": "",
+            "description": "Bread",
+            "status": "show",
+            "parentId": "632aae414d87ff2494210945",
+            "parentName": "Breakfast"
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738768685/product/Himalaya-Baby-Powder-100g-removebg-preview.png"
+      },
+      {
+        "_id": "632ab0334d87ff24942109c1",
+        "name": "Drinks",
+        "slug": "drinks",
+        "icon": "https://res.cloudinary.com/ahossain/image/upload/v1658340705/category%20icon/juice_p5gv5k.png",
+        "description": "Drinks",
+        "status": "show",
+        "departmentId": "dept001",
+        "departmentName": "Food & Daily Essentials",
+        "children": [
+          {
+            "_id": "632ab0454d87ff24942109cc",
+            "name": "Energy Drinks",
+            "slug": "energy-drinks",
+            "icon": "",
+            "description": "Energy Drinks",
+            "status": "show",
+            "parentId": "632ab0334d87ff24942109c1",
+            "parentName": "Drinks"
+          },
+          {
+            "_id": "632ab04c4d87ff24942109d1",
+            "name": "Sparkling Water",
+            "slug": "sparkling-water",
+            "icon": "",
+            "description": "Sparkling Water",
+            "status": "show",
+            "parentId": "632ab0334d87ff24942109c1",
+            "parentName": "Drinks"
+          },
+          {
+            "_id": "632ab0504d87ff24942109d7",
+            "name": "Coffee",
+            "slug": "coffee",
+            "icon": "",
+            "description": "Coffee",
+            "status": "show",
+            "parentId": "632ab0334d87ff24942109c1",
+            "parentName": "Drinks"
+          },
+          {
+            "_id": "632ab0564d87ff24942109df",
+            "name": "Juice",
+            "slug": "juice",
+            "icon": "",
+            "description": "Juice",
+            "status": "show",
+            "parentId": "632ab0334d87ff24942109c1",
+            "parentName": "Drinks"
+          },
+          {
+            "_id": "632ab0604d87ff24942109e7",
+            "name": "Water",
+            "slug": "water",
+            "icon": "",
+            "description": "Water",
+            "status": "show",
+            "parentId": "632ab0334d87ff24942109c1",
+            "parentName": "Drinks"
+          },
+          {
+            "_id": "632ab0664d87ff24942109ef",
+            "name": "Tea",
+            "slug": "tea",
+            "icon": "",
+            "description": "Tea",
+            "status": "show",
+            "parentId": "632ab0334d87ff24942109c1",
+            "parentName": "Drinks"
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738768876/product/Green-Leaf-Lettuce-each__1_-removebg-preview%281%29.png"
+      },
+      {
+        "_id": "632ab14a4d87ff2494210a29",
+        "name": "Milk & Dairy",
+        "slug": "milk-dairy",
+        "icon": "https://res.cloudinary.com/ahossain/image/upload/v1658340706/category%20icon/milk_dcl0dr.png",
+        "description": "Milk & Dairy",
+        "status": "show",
+        "departmentId": "dept001",
+        "departmentName": "Food & Daily Essentials",
+        "children": [
+          {
+            "_id": "632ab1584d87ff2494210a31",
+            "name": "Dairy",
+            "slug": "dairy",
+            "icon": "",
+            "description": "Dairy",
+            "status": "show",
+            "parentId": "632ab14a4d87ff2494210a29",
+            "parentName": "Milk & Dairy"
+          },
+          {
+            "_id": "632ab1644d87ff2494210a3c",
+            "name": "Ice Cream",
+            "slug": "ice-cream",
+            "icon": "",
+            "description": "Ice Cream",
+            "status": "show",
+            "parentId": "632ab14a4d87ff2494210a29",
+            "parentName": "Milk & Dairy"
+          },
+          {
+            "_id": "632ab16c4d87ff2494210a44",
+            "name": "Butter & Ghee",
+            "slug": "butter-ghee",
+            "icon": "",
+            "description": "Butter & Ghee",
+            "status": "show",
+            "parentId": "632ab14a4d87ff2494210a29",
+            "parentName": "Milk & Dairy"
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738768919/product/Rainbow-Chard-Package-per-lb-removebg-preview.png"
+      },
+      {
+        "_id": "632ab1e04d87ff2494210a6a",
+        "name": "Jam & Jelly",
+        "slug": "jam-jelly",
+        "icon": "https://i.postimg.cc/rmLvfsMC/strawberry-jam-1.png",
+        "description": "Jam & Jelly",
+        "status": "show",
+        "departmentId": "dept001",
+        "departmentName": "Food & Daily Essentials",
+        "children": [],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738768992/product/Clementine-5ct-removebg-preview.png"
+      },
+      {
+        "_id": "632ac9e94d87ff2494210ba0",
+        "name": "Biscuits & Cakes",
+        "slug": "biscuits-cakes",
+        "icon": "https://res.cloudinary.com/ahossain/image/upload/v1658340705/category%20icon/cookie_1_ugipqa.png",
+        "description": "Biscuits & Cakes",
+        "status": "show",
+        "departmentId": "dept001",
+        "departmentName": "Food & Daily Essentials",
+        "children": [
+          {
+            "_id": "632ac9ef4d87ff2494210ba8",
+            "name": "Cakes",
+            "slug": "cakes",
+            "icon": "",
+            "description": "Cakes",
+            "status": "show",
+            "parentId": "632ac9e94d87ff2494210ba0",
+            "parentName": "Biscuits & Cakes"
+          },
+          {
+            "_id": "632ac9f64d87ff2494210bb0",
+            "name": "Biscuits",
+            "slug": "biscuits",
+            "icon": "",
+            "description": "Biscuits",
+            "status": "show",
+            "parentId": "632ac9e94d87ff2494210ba0",
+            "parentName": "Biscuits & Cakes"
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738769047/product/Kale-Sprouts-3oz-removebg-preview.png"
+      },
+      {
+        "_id": "632aca0b4d87ff2494210bc4",
+        "name": "Cooking Essentials",
+        "slug": "cooking-essentials",
+        "icon": "https://res.cloudinary.com/ahossain/image/upload/v1658340704/category%20icon/frying-pan_vglm5c.png",
+        "description": "Cooking Essentials",
+        "status": "show",
+        "departmentId": "dept001",
+        "departmentName": "Food & Daily Essentials",
+        "children": [
+          {
+            "_id": "632aca144d87ff2494210bcc",
+            "name": "Oil",
+            "slug": "oil",
+            "icon": "",
+            "description": "Oil",
+            "status": "show",
+            "parentId": "632aca0b4d87ff2494210bc4",
+            "parentName": "Cooking Essentials"
+          },
+          {
+            "_id": "632aca184d87ff2494210bd4",
+            "name": "Flour",
+            "slug": "flour",
+            "icon": "",
+            "description": "Flour",
+            "status": "show",
+            "parentId": "632aca0b4d87ff2494210bc4",
+            "parentName": "Cooking Essentials"
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738769097/product/Rainbow-Peppers-4ct-removebg-preview.png"
+      },
+      {
+        "_id": "632aca2b4d87ff2494210be8",
+        "name": "Fruits & Vegetable",
+        "slug": "fruits-vegetable",
+        "icon": "https://res.cloudinary.com/ahossain/image/upload/v1658340704/category%20icon/cabbage_n59uv3.png",
+        "description": "Fruits & Vegetable",
+        "status": "show",
+        "departmentId": "dept001",
+        "departmentName": "Food & Daily Essentials",
+        "children": [
+          {
+            "_id": "632aca374d87ff2494210bf0",
+            "name": "Fresh Vegetable",
+            "slug": "fresh-vegetable",
+            "icon": "",
+            "description": "Fresh Vegetable",
+            "status": "show",
+            "parentId": "632aca2b4d87ff2494210be8",
+            "parentName": "Fruits & Vegetable"
+          },
+          {
+            "_id": "632aca3d4d87ff2494210bf8",
+            "name": "Dry Fruits",
+            "slug": "dry-fruits",
+            "icon": "",
+            "description": "Dry Fruits",
+            "status": "show",
+            "parentId": "632aca2b4d87ff2494210be8",
+            "parentName": "Fruits & Vegetable"
+          },
+          {
+            "_id": "632aca454d87ff2494210c00",
+            "name": "Fresh Fruits",
+            "slug": "fresh-fruits",
+            "icon": "",
+            "description": "Fresh Fruits",
+            "status": "show",
+            "parentId": "632aca2b4d87ff2494210be8",
+            "parentName": "Fruits & Vegetable"
+          },
+          {
+            "_id": "63f12afdcc480f0454f475dd",
+            "name": "Baby Food",
+            "slug": "baby-food",
+            "icon": "",
+            "description": "Baby Food",
+            "status": "show",
+            "parentId": "632aca2b4d87ff2494210be8",
+            "parentName": "Fruits & Vegetable"
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738769161/product/Blackberries-1-25-qt-removebg-preview.png"
+      },
+      {
+        "_id": "632aca6d4d87ff2494210c24",
+        "name": "Fish & Meat",
+        "slug": "fish-meat",
+        "icon": "https://res.cloudinary.com/ahossain/image/upload/v1658340705/category%20icon/carp-fish_paxzrt.png",
+        "description": "Fish & Meat",
+        "status": "show",
+        "departmentId": "dept001",
+        "departmentName": "Food & Daily Essentials",
+        "children": [
+          {
+            "_id": "632aca754d87ff2494210c2c",
+            "name": "Meat",
+            "slug": "meat",
+            "icon": "",
+            "description": "Meat",
+            "status": "show",
+            "parentId": "632aca6d4d87ff2494210c24",
+            "parentName": "Fish & Meat"
+          },
+          {
+            "_id": "632aca7e4d87ff2494210c34",
+            "name": "Fish",
+            "slug": "fish",
+            "icon": "",
+            "description": "Fish",
+            "status": "show",
+            "parentId": "632aca6d4d87ff2494210c24",
+            "parentName": "Fish & Meat"
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738769215/product/Calabaza-Squash-Package-each-removebg-preview%281%29.png"
+      }
+    ]
+  },
+  {
+    "_id": "dept002",
+    "name": "Electronics & Technology",
+    "slug": "electronics-technology",
+    "description": "Consumer electronics, computers, networking gear, and electrical components for personal and professional use.",
+    "image": "https://res.cloudinary.com/ahossain/image/upload/v1738769251/product/Lettuce-1lb-removebg-preview.png",
+    "status": "show",
+    "categories": [
+      {
+        "_id": "b2b002",
+        "name": "Consumer Electronics",
+        "slug": "consumer-electronics",
+        "icon": "📱",
+        "description": "Consumer Electronics",
+        "status": "show",
+        "departmentId": "dept002",
+        "departmentName": "Electronics & Technology",
+        "hotKeywords": [
+          "Smartphone",
+          "Earphones",
+          "Smart Watch",
+          "Tablet",
+          "Bluetooth Speaker"
+        ],
+        "children": [
+          {
+            "_id": "b2b002-g1",
+            "name": "Mobile Phones & Accessories",
+            "slug": "mobile-phones-accessories",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b002-g1-1",
+                "name": "Smartphones",
+                "slug": "smartphones"
+              },
+              {
+                "_id": "b2b002-g1-2",
+                "name": "Mobile Phone Cases",
+                "slug": "mobile-phone-cases"
+              },
+              {
+                "_id": "b2b002-g1-3",
+                "name": "Chargers & Cables",
+                "slug": "chargers-cables"
+              },
+              {
+                "_id": "b2b002-g1-4",
+                "name": "Power Banks",
+                "slug": "power-banks"
+              },
+              {
+                "_id": "b2b002-g1-5",
+                "name": "Screen Protectors",
+                "slug": "screen-protectors"
+              }
+            ]
+          },
+          {
+            "_id": "b2b002-g2",
+            "name": "Audio & Video Equipment",
+            "slug": "audio-video-equipment",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b002-g2-1",
+                "name": "Earphones & Headphones",
+                "slug": "earphones-headphones"
+              },
+              {
+                "_id": "b2b002-g2-2",
+                "name": "Bluetooth Speakers",
+                "slug": "bluetooth-speakers"
+              },
+              {
+                "_id": "b2b002-g2-3",
+                "name": "Televisions",
+                "slug": "televisions"
+              },
+              {
+                "_id": "b2b002-g2-4",
+                "name": "Projectors",
+                "slug": "projectors"
+              },
+              {
+                "_id": "b2b002-g2-5",
+                "name": "Sound Systems",
+                "slug": "sound-systems"
+              }
+            ]
+          },
+          {
+            "_id": "b2b002-g3",
+            "name": "Smart Home Devices",
+            "slug": "smart-home-devices",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b002-g3-1",
+                "name": "Smart Watches",
+                "slug": "smart-watches"
+              },
+              {
+                "_id": "b2b002-g3-2",
+                "name": "Smart Speakers",
+                "slug": "smart-speakers"
+              },
+              {
+                "_id": "b2b002-g3-3",
+                "name": "Security Cameras",
+                "slug": "security-cameras"
+              },
+              {
+                "_id": "b2b002-g3-4",
+                "name": "Smart Lighting",
+                "slug": "smart-lighting"
+              },
+              {
+                "_id": "b2b002-g3-5",
+                "name": "Robot Vacuum",
+                "slug": "robot-vacuum"
+              }
+            ]
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738769310/product/Radicchio-12ct-removebg-preview.png"
+      },
+      {
+        "_id": "b2b015",
+        "name": "Computer Products",
+        "slug": "computer-products",
+        "icon": "💻",
+        "description": "Computer Products",
+        "status": "show",
+        "departmentId": "dept002",
+        "departmentName": "Electronics & Technology",
+        "hotKeywords": [
+          "Laptop",
+          "Mechanical Keyboard",
+          "SSD Drive",
+          "Gaming Mouse",
+          "Network Switch"
+        ],
+        "children": [
+          {
+            "_id": "b2b015-g1",
+            "name": "Laptops & Desktops",
+            "slug": "laptops-desktops",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b015-g1-1",
+                "name": "Laptops",
+                "slug": "laptops"
+              },
+              {
+                "_id": "b2b015-g1-2",
+                "name": "Desktop Computers",
+                "slug": "desktop-computers"
+              },
+              {
+                "_id": "b2b015-g1-3",
+                "name": "All-in-One PCs",
+                "slug": "all-in-one-pcs"
+              },
+              {
+                "_id": "b2b015-g1-4",
+                "name": "Mini PCs",
+                "slug": "mini-pcs"
+              },
+              {
+                "_id": "b2b015-g1-5",
+                "name": "Computer Components",
+                "slug": "computer-components"
+              }
+            ]
+          },
+          {
+            "_id": "b2b015-g2",
+            "name": "Peripherals & Accessories",
+            "slug": "peripherals-accessories",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b015-g2-1",
+                "name": "Keyboards & Mice",
+                "slug": "keyboards-mice"
+              },
+              {
+                "_id": "b2b015-g2-2",
+                "name": "Monitors",
+                "slug": "monitors"
+              },
+              {
+                "_id": "b2b015-g2-3",
+                "name": "Storage Devices",
+                "slug": "storage-devices"
+              },
+              {
+                "_id": "b2b015-g2-4",
+                "name": "Printers & Scanners",
+                "slug": "printers-scanners"
+              },
+              {
+                "_id": "b2b015-g2-5",
+                "name": "Webcams & Microphones",
+                "slug": "webcams-microphones"
+              }
+            ]
+          },
+          {
+            "_id": "b2b015-g3",
+            "name": "Networking Equipment",
+            "slug": "networking-equipment",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b015-g3-1",
+                "name": "Routers",
+                "slug": "routers"
+              },
+              {
+                "_id": "b2b015-g3-2",
+                "name": "Network Switches",
+                "slug": "network-switches"
+              },
+              {
+                "_id": "b2b015-g3-3",
+                "name": "Network Cables",
+                "slug": "network-cables"
+              },
+              {
+                "_id": "b2b015-g3-4",
+                "name": "Wi-Fi Access Points",
+                "slug": "wifi-access-points"
+              }
+            ]
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738769346/product/Parsley-each-removebg-preview%281%29.png"
+      },
+      {
+        "_id": "b2b004",
+        "name": "Electrical & Electronics",
+        "slug": "electrical-electronics",
+        "icon": "⚡",
+        "description": "Electrical & Electronics",
+        "status": "show",
+        "departmentId": "dept002",
+        "departmentName": "Electronics & Technology",
+        "hotKeywords": [
+          "PCB Board",
+          "LED Strip",
+          "Power Cable",
+          "Circuit Breaker",
+          "Capacitor"
+        ],
+        "children": [
+          {
+            "_id": "b2b004-g1",
+            "name": "Electronic Components",
+            "slug": "electronic-components",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b004-g1-1",
+                "name": "Capacitors",
+                "slug": "capacitors"
+              },
+              {
+                "_id": "b2b004-g1-2",
+                "name": "Resistors",
+                "slug": "resistors"
+              },
+              {
+                "_id": "b2b004-g1-3",
+                "name": "PCB Boards",
+                "slug": "pcb-boards"
+              },
+              {
+                "_id": "b2b004-g1-4",
+                "name": "LED Modules",
+                "slug": "led-modules"
+              },
+              {
+                "_id": "b2b004-g1-5",
+                "name": "Transformers",
+                "slug": "transformers"
+              }
+            ]
+          },
+          {
+            "_id": "b2b004-g2",
+            "name": "Wiring & Cables",
+            "slug": "wiring-cables",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b004-g2-1",
+                "name": "Power Cables",
+                "slug": "power-cables"
+              },
+              {
+                "_id": "b2b004-g2-2",
+                "name": "Ethernet Cables",
+                "slug": "ethernet-cables"
+              },
+              {
+                "_id": "b2b004-g2-3",
+                "name": "Coaxial Cables",
+                "slug": "coaxial-cables"
+              },
+              {
+                "_id": "b2b004-g2-4",
+                "name": "Fiber Optic Cables",
+                "slug": "fiber-optic-cables"
+              }
+            ]
+          },
+          {
+            "_id": "b2b004-g3",
+            "name": "Switches & Sockets",
+            "slug": "switches-sockets",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b004-g3-1",
+                "name": "Circuit Breakers",
+                "slug": "circuit-breakers"
+              },
+              {
+                "_id": "b2b004-g3-2",
+                "name": "Wall Switches",
+                "slug": "wall-switches"
+              },
+              {
+                "_id": "b2b004-g3-3",
+                "name": "Power Sockets",
+                "slug": "power-sockets"
+              },
+              {
+                "_id": "b2b004-g3-4",
+                "name": "Relays",
+                "slug": "relays"
+              },
+              {
+                "_id": "b2b004-g3-5",
+                "name": "Distribution Boards",
+                "slug": "distribution-boards"
+              }
+            ]
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738769375/product/Strawberries-9-25oz-removebg-preview.png"
+      }
+    ]
+  },
+  {
+    "_id": "dept003",
+    "name": "Home, Lifestyle & Office",
+    "slug": "home-lifestyle-office",
+    "description": "Home construction, interior decoration, lighting, household care, personal care, and office supplies.",
+    "image": "https://res.cloudinary.com/ahossain/image/upload/v1738769405/product/Cauliflower-1-35lb-removebg-preview.png",
+    "status": "show",
+    "categories": [
+      {
+        "_id": "b2b005",
+        "name": "Construction & Decoration",
+        "slug": "construction-decoration",
+        "icon": "🏗️",
+        "description": "Construction & Decoration",
+        "status": "show",
+        "departmentId": "dept003",
+        "departmentName": "Home, Lifestyle & Office",
+        "hotKeywords": [
+          "Ceramic Tile",
+          "Steel Bar",
+          "Wallpaper",
+          "Glass Panel",
+          "Aluminum Profile"
+        ],
+        "children": [
+          {
+            "_id": "b2b005-g1",
+            "name": "Building Materials",
+            "slug": "building-materials",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b005-g1-1",
+                "name": "Cement & Concrete",
+                "slug": "cement-concrete"
+              },
+              {
+                "_id": "b2b005-g1-2",
+                "name": "Steel Bars & Rods",
+                "slug": "steel-bars-rods"
+              },
+              {
+                "_id": "b2b005-g1-3",
+                "name": "Bricks & Blocks",
+                "slug": "bricks-blocks"
+              },
+              {
+                "_id": "b2b005-g1-4",
+                "name": "Ceramic Tiles",
+                "slug": "ceramic-tiles"
+              },
+              {
+                "_id": "b2b005-g1-5",
+                "name": "Aluminum Profiles",
+                "slug": "aluminum-profiles"
+              }
+            ]
+          },
+          {
+            "_id": "b2b005-g2",
+            "name": "Interior Decoration",
+            "slug": "interior-decoration",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b005-g2-1",
+                "name": "Wallpaper & Wall Coverings",
+                "slug": "wallpaper-wall-coverings"
+              },
+              {
+                "_id": "b2b005-g2-2",
+                "name": "Flooring",
+                "slug": "flooring"
+              },
+              {
+                "_id": "b2b005-g2-3",
+                "name": "Ceiling Materials",
+                "slug": "ceiling-materials"
+              },
+              {
+                "_id": "b2b005-g2-4",
+                "name": "Paint & Coatings",
+                "slug": "paint-coatings"
+              },
+              {
+                "_id": "b2b005-g2-5",
+                "name": "Decorative Glass",
+                "slug": "decorative-glass"
+              }
+            ]
+          },
+          {
+            "_id": "b2b005-g3",
+            "name": "Doors, Windows & Stairs",
+            "slug": "doors-windows-stairs",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b005-g3-1",
+                "name": "Doors",
+                "slug": "doors"
+              },
+              {
+                "_id": "b2b005-g3-2",
+                "name": "Windows",
+                "slug": "windows"
+              },
+              {
+                "_id": "b2b005-g3-3",
+                "name": "Staircases",
+                "slug": "staircases"
+              },
+              {
+                "_id": "b2b005-g3-4",
+                "name": "Railings & Balustrades",
+                "slug": "railings-balustrades"
+              }
+            ]
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738769442/product/Organic-Purple-Cauliflower-1lb-removebg-preview.png"
+      },
+      {
+        "_id": "b2b009",
+        "name": "Lights & Lighting",
+        "slug": "lights-lighting",
+        "icon": "💡",
+        "description": "Lights & Lighting",
+        "status": "show",
+        "departmentId": "dept003",
+        "departmentName": "Home, Lifestyle & Office",
+        "hotKeywords": [
+          "LED Bulb",
+          "Street Light",
+          "Panel Light",
+          "Flood Light",
+          "Strip Light"
+        ],
+        "children": [
+          {
+            "_id": "b2b009-g1",
+            "name": "LED Lighting",
+            "slug": "led-lighting",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b009-g1-1",
+                "name": "LED Bulbs",
+                "slug": "led-bulbs"
+              },
+              {
+                "_id": "b2b009-g1-2",
+                "name": "LED Strip Lights",
+                "slug": "led-strip-lights"
+              },
+              {
+                "_id": "b2b009-g1-3",
+                "name": "LED Panel Lights",
+                "slug": "led-panel-lights"
+              },
+              {
+                "_id": "b2b009-g1-4",
+                "name": "LED Flood Lights",
+                "slug": "led-flood-lights"
+              },
+              {
+                "_id": "b2b009-g1-5",
+                "name": "LED Tube Lights",
+                "slug": "led-tube-lights"
+              }
+            ]
+          },
+          {
+            "_id": "b2b009-g2",
+            "name": "Commercial Lighting",
+            "slug": "commercial-lighting",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b009-g2-1",
+                "name": "Street Lights",
+                "slug": "street-lights"
+              },
+              {
+                "_id": "b2b009-g2-2",
+                "name": "High Bay Lights",
+                "slug": "high-bay-lights"
+              },
+              {
+                "_id": "b2b009-g2-3",
+                "name": "Downlights",
+                "slug": "downlights"
+              },
+              {
+                "_id": "b2b009-g2-4",
+                "name": "Track Lights",
+                "slug": "track-lights"
+              }
+            ]
+          },
+          {
+            "_id": "b2b009-g3",
+            "name": "Home Lighting",
+            "slug": "home-lighting",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b009-g3-1",
+                "name": "Chandeliers",
+                "slug": "chandeliers"
+              },
+              {
+                "_id": "b2b009-g3-2",
+                "name": "Pendant Lights",
+                "slug": "pendant-lights"
+              },
+              {
+                "_id": "b2b009-g3-3",
+                "name": "Wall Sconces",
+                "slug": "wall-sconces"
+              },
+              {
+                "_id": "b2b009-g3-4",
+                "name": "Table Lamps",
+                "slug": "table-lamps"
+              },
+              {
+                "_id": "b2b009-g3-5",
+                "name": "Floor Lamps",
+                "slug": "floor-lamps"
+              }
+            ]
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738769470/product/Ahold-Acorn-Squash-1ct-removebg-preview.png"
+      },
+      {
+        "_id": "b2b006",
+        "name": "Light Industry & Daily Use",
+        "slug": "light-industry-daily-use",
+        "icon": "🏠",
+        "description": "Light Industry & Daily Use",
+        "status": "show",
+        "departmentId": "dept003",
+        "departmentName": "Home, Lifestyle & Office",
+        "hotKeywords": [
+          "Water Bottle",
+          "Storage Box",
+          "Umbrella",
+          "Toothbrush",
+          "Thermos Flask"
+        ],
+        "children": [
+          {
+            "_id": "b2b006-g1",
+            "name": "Household Products",
+            "slug": "household-products",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b006-g1-1",
+                "name": "Storage Baskets & Boxes",
+                "slug": "storage-baskets-boxes"
+              },
+              {
+                "_id": "b2b006-g1-2",
+                "name": "Umbrellas & Rain Gear",
+                "slug": "umbrellas-rain-gear"
+              },
+              {
+                "_id": "b2b006-g1-3",
+                "name": "Candles & Holders",
+                "slug": "candles-holders"
+              },
+              {
+                "_id": "b2b006-g1-4",
+                "name": "Clocks & Watches",
+                "slug": "clocks-watches"
+              },
+              {
+                "_id": "b2b006-g1-5",
+                "name": "Home Textiles",
+                "slug": "home-textiles"
+              }
+            ]
+          },
+          {
+            "_id": "b2b006-g2",
+            "name": "Personal Care & Beauty",
+            "slug": "personal-care-beauty",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b006-g2-1",
+                "name": "Toothbrushes & Oral Care",
+                "slug": "toothbrushes-oral-care"
+              },
+              {
+                "_id": "b2b006-g2-2",
+                "name": "Hair Care Tools",
+                "slug": "hair-care-tools"
+              },
+              {
+                "_id": "b2b006-g2-3",
+                "name": "Skincare Products",
+                "slug": "skincare-products"
+              },
+              {
+                "_id": "b2b006-g2-4",
+                "name": "Cosmetics Packaging",
+                "slug": "cosmetics-packaging"
+              }
+            ]
+          },
+          {
+            "_id": "b2b006-g3",
+            "name": "Kitchen & Dining",
+            "slug": "kitchen-dining",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b006-g3-1",
+                "name": "Thermos Flasks",
+                "slug": "thermos-flasks"
+              },
+              {
+                "_id": "b2b006-g3-2",
+                "name": "Cookware",
+                "slug": "cookware"
+              },
+              {
+                "_id": "b2b006-g3-3",
+                "name": "Tableware",
+                "slug": "tableware"
+              },
+              {
+                "_id": "b2b006-g3-4",
+                "name": "Water Bottles",
+                "slug": "water-bottles"
+              },
+              {
+                "_id": "b2b006-g3-5",
+                "name": "Kitchen Utensils",
+                "slug": "kitchen-utensils"
+              }
+            ]
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738769498/product/Bok-Choy-Cabbage-per-lb-removebg-preview.png"
+      },
+      {
+        "_id": "632ac9864d87ff2494210b49",
+        "name": "Household Tools",
+        "slug": "household-tools",
+        "icon": "https://res.cloudinary.com/ahossain/image/upload/v1658340706/category%20icon/spray_pebsjt.png",
+        "description": "Household Tools",
+        "status": "show",
+        "departmentId": "dept003",
+        "departmentName": "Home, Lifestyle & Office",
+        "children": [
+          {
+            "_id": "632ac9934d87ff2494210b54",
+            "name": "Cleaner",
+            "slug": "cleaner",
+            "icon": "",
+            "description": "Cleaner",
+            "status": "show",
+            "parentId": "632ac9864d87ff2494210b49",
+            "parentName": "Household Tools"
+          },
+          {
+            "_id": "632ac9984d87ff2494210b5c",
+            "name": "Laundry",
+            "slug": "laundry",
+            "icon": "",
+            "description": "Laundry",
+            "status": "show",
+            "parentId": "632ac9864d87ff2494210b49",
+            "parentName": "Household Tools"
+          },
+          {
+            "_id": "632ac99d4d87ff2494210b64",
+            "name": "Air Freshener",
+            "slug": "air-freshener",
+            "icon": "",
+            "description": "Air Freshener",
+            "status": "show",
+            "parentId": "632ac9864d87ff2494210b49",
+            "parentName": "Household Tools"
+          },
+          {
+            "_id": "632ac9b24d87ff2494210b74",
+            "name": "Pest Control",
+            "slug": "pest-control",
+            "icon": "",
+            "description": "Pest Control",
+            "status": "show",
+            "parentId": "632ac9864d87ff2494210b49",
+            "parentName": "Household Tools"
+          },
+          {
+            "_id": "632ac9ba4d87ff2494210b7c",
+            "name": "Cleaning Tools",
+            "slug": "cleaning-tools",
+            "icon": "",
+            "description": "Cleaning Tools",
+            "status": "show",
+            "parentId": "632ac9864d87ff2494210b49",
+            "parentName": "Household Tools"
+          },
+          {
+            "_id": "632ac9c24d87ff2494210b84",
+            "name": "Water Filter",
+            "slug": "water-filter",
+            "icon": "",
+            "description": "Water Filter",
+            "status": "show",
+            "parentId": "632ac9864d87ff2494210b49",
+            "parentName": "Household Tools"
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738769587/product/Strawberries-Package-2-25-oz-removebg-preview.png"
+      },
+      {
+        "_id": "b2b020",
+        "name": "Office & School Supplies",
+        "slug": "office-school-supplies",
+        "icon": "📚",
+        "description": "Office & School Supplies",
+        "status": "show",
+        "departmentId": "dept003",
+        "departmentName": "Home, Lifestyle & Office",
+        "hotKeywords": [
+          "Office Chair",
+          "Whiteboard",
+          "Ballpoint Pen",
+          "Notebook",
+          "Stapler"
+        ],
+        "children": [
+          {
+            "_id": "b2b020-g1",
+            "name": "Office Furniture & Equipment",
+            "slug": "office-furniture-equipment",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b020-g1-1",
+                "name": "Office Chairs",
+                "slug": "office-chairs"
+              },
+              {
+                "_id": "b2b020-g1-2",
+                "name": "Office Desks & Tables",
+                "slug": "office-desks-tables"
+              },
+              {
+                "_id": "b2b020-g1-3",
+                "name": "Whiteboards & Displays",
+                "slug": "whiteboards-displays"
+              },
+              {
+                "_id": "b2b020-g1-4",
+                "name": "Filing Cabinets",
+                "slug": "filing-cabinets"
+              },
+              {
+                "_id": "b2b020-g1-5",
+                "name": "Office Partitions",
+                "slug": "office-partitions"
+              }
+            ]
+          },
+          {
+            "_id": "b2b020-g2",
+            "name": "Stationery & Paper",
+            "slug": "stationery-paper",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b020-g2-1",
+                "name": "Pens & Pencils",
+                "slug": "pens-pencils"
+              },
+              {
+                "_id": "b2b020-g2-2",
+                "name": "Notebooks & Notepads",
+                "slug": "notebooks-notepads"
+              },
+              {
+                "_id": "b2b020-g2-3",
+                "name": "Staplers & Punchers",
+                "slug": "staplers-punchers"
+              },
+              {
+                "_id": "b2b020-g2-4",
+                "name": "Paper & Envelopes",
+                "slug": "paper-envelopes"
+              },
+              {
+                "_id": "b2b020-g2-5",
+                "name": "Scissors & Cutters",
+                "slug": "scissors-cutters"
+              }
+            ]
+          },
+          {
+            "_id": "b2b020-g3",
+            "name": "Electronic Office Equipment",
+            "slug": "electronic-office-equipment",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b020-g3-1",
+                "name": "Projectors & Screens",
+                "slug": "projectors-screens"
+              },
+              {
+                "_id": "b2b020-g3-2",
+                "name": "Laminators & Shredders",
+                "slug": "laminators-shredders"
+              },
+              {
+                "_id": "b2b020-g3-3",
+                "name": "Label Makers",
+                "slug": "label-makers"
+              },
+              {
+                "_id": "b2b020-g3-4",
+                "name": "Binding Machines",
+                "slug": "binding-machines"
+              }
+            ]
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738769612/product/Aloe-Vera-Leaf-each-removebg-preview.png"
+      },
+      {
+        "_id": "b2b012",
+        "name": "Arts & Crafts",
+        "slug": "arts-crafts",
+        "icon": "🎨",
+        "description": "Arts & Crafts",
+        "status": "show",
+        "departmentId": "dept003",
+        "departmentName": "Home, Lifestyle & Office",
+        "hotKeywords": [
+          "Acrylic Paint",
+          "Resin Craft",
+          "Wood Carving",
+          "Canvas Print",
+          "Scrapbook"
+        ],
+        "children": [
+          {
+            "_id": "b2b012-g1",
+            "name": "Fine Arts Supplies",
+            "slug": "fine-arts-supplies",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b012-g1-1",
+                "name": "Paints & Brushes",
+                "slug": "paints-brushes"
+              },
+              {
+                "_id": "b2b012-g1-2",
+                "name": "Canvas & Frames",
+                "slug": "canvas-frames"
+              },
+              {
+                "_id": "b2b012-g1-3",
+                "name": "Sketching & Drawing",
+                "slug": "sketching-drawing"
+              },
+              {
+                "_id": "b2b012-g1-4",
+                "name": "Sculpture & Modeling",
+                "slug": "sculpture-modeling"
+              },
+              {
+                "_id": "b2b012-g1-5",
+                "name": "Printmaking",
+                "slug": "printmaking"
+              }
+            ]
+          },
+          {
+            "_id": "b2b012-g2",
+            "name": "Handicrafts & Souvenirs",
+            "slug": "handicrafts-souvenirs",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b012-g2-1",
+                "name": "Resin Crafts",
+                "slug": "resin-crafts"
+              },
+              {
+                "_id": "b2b012-g2-2",
+                "name": "Wood Carvings",
+                "slug": "wood-carvings"
+              },
+              {
+                "_id": "b2b012-g2-3",
+                "name": "Ceramic & Pottery",
+                "slug": "ceramic-pottery"
+              },
+              {
+                "_id": "b2b012-g2-4",
+                "name": "Beads & Jewelry Making",
+                "slug": "beads-jewelry-making"
+              }
+            ]
+          },
+          {
+            "_id": "b2b012-g3",
+            "name": "Craft Tools & Materials",
+            "slug": "craft-tools-materials",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b012-g3-1",
+                "name": "Cutting & Stamping Tools",
+                "slug": "cutting-stamping-tools"
+              },
+              {
+                "_id": "b2b012-g3-2",
+                "name": "Glue & Adhesives",
+                "slug": "glue-adhesives"
+              },
+              {
+                "_id": "b2b012-g3-3",
+                "name": "Scrapbooking",
+                "slug": "scrapbooking"
+              },
+              {
+                "_id": "b2b012-g3-4",
+                "name": "Knitting & Crochet",
+                "slug": "knitting-crochet"
+              }
+            ]
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738769658/product/Pineapple-1-5lb-removebg-preview.png"
+      },
+      {
+        "_id": "632ab2864d87ff2494210a8a",
+        "name": "Beauty & Health",
+        "slug": "beauty-health",
+        "icon": "https://res.cloudinary.com/ahossain/image/upload/v1658340706/category%20icon/beauty_vfbmzc.png",
+        "description": "Beauty & Health",
+        "status": "show",
+        "departmentId": "dept003",
+        "departmentName": "Home, Lifestyle & Office",
+        "children": [
+          {
+            "_id": "632ab2b64d87ff2494210aa7",
+            "name": "Men",
+            "slug": "men",
+            "icon": "",
+            "description": "Men",
+            "status": "show",
+            "parentId": "632ab2864d87ff2494210a8a",
+            "parentName": "Beauty & Health"
+          },
+          {
+            "_id": "632ab2c34d87ff2494210ab2",
+            "name": "Women",
+            "slug": "women",
+            "icon": "",
+            "description": "Women",
+            "status": "show",
+            "parentId": "632ab2864d87ff2494210a8a",
+            "parentName": "Beauty & Health"
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738769889/product/Organic-Broccoli-10oz-removebg-preview.png"
+      },
+      {
+        "_id": "632ab4434d87ff2494210b0e",
+        "name": "Pet Care",
+        "slug": "pet-care",
+        "icon": "https://res.cloudinary.com/ahossain/image/upload/v1658340707/category%20icon/cat_tznwmq.png",
+        "description": "Pet Care",
+        "status": "show",
+        "departmentId": "dept003",
+        "departmentName": "Home, Lifestyle & Office",
+        "children": [
+          {
+            "_id": "632ab4524d87ff2494210b19",
+            "name": "Cat Care",
+            "slug": "cat-care",
+            "icon": "",
+            "description": "Cat Care",
+            "status": "show",
+            "parentId": "632ab4434d87ff2494210b0e",
+            "parentName": "Pet Care"
+          },
+          {
+            "_id": "632ab45b4d87ff2494210b21",
+            "name": "Dog Care",
+            "slug": "dog-care",
+            "icon": "",
+            "description": "Dog Care",
+            "status": "show",
+            "parentId": "632ab4434d87ff2494210b0e",
+            "parentName": "Pet Care"
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738769921/product/Organic-Pinkerton-Avocado-each-removebg-preview.png"
+      }
+    ]
+  },
+  {
+    "_id": "dept004",
+    "name": "Fashion, Health & Sports",
+    "slug": "fashion-health-sports",
+    "description": "Apparel, footwear, health and medical devices, supplements, and sporting goods.",
+    "image": "https://res.cloudinary.com/ahossain/image/upload/v1738769968/product/Organic-Kale-8oz-removebg-preview.png",
+    "status": "show",
+    "categories": [
+      {
+        "_id": "b2b008",
+        "name": "Apparel & Accessories",
+        "slug": "apparel-accessories",
+        "icon": "👗",
+        "description": "Apparel & Accessories",
+        "status": "show",
+        "departmentId": "dept004",
+        "departmentName": "Fashion, Health & Sports",
+        "hotKeywords": [
+          "T-Shirt",
+          "Jeans",
+          "Handbag",
+          "Sports Shoes",
+          "Winter Coat"
+        ],
+        "children": [
+          {
+            "_id": "b2b008-g1",
+            "name": "Men's Clothing",
+            "slug": "mens-clothing",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b008-g1-1",
+                "name": "T-Shirts & Polos",
+                "slug": "t-shirts-polos"
+              },
+              {
+                "_id": "b2b008-g1-2",
+                "name": "Trousers & Jeans",
+                "slug": "trousers-jeans"
+              },
+              {
+                "_id": "b2b008-g1-3",
+                "name": "Suits & Blazers",
+                "slug": "suits-blazers"
+              },
+              {
+                "_id": "b2b008-g1-4",
+                "name": "Jackets & Coats",
+                "slug": "jackets-coats"
+              },
+              {
+                "_id": "b2b008-g1-5",
+                "name": "Sportswear",
+                "slug": "sportswear"
+              }
+            ]
+          },
+          {
+            "_id": "b2b008-g2",
+            "name": "Women's Clothing",
+            "slug": "womens-clothing",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b008-g2-1",
+                "name": "Dresses & Skirts",
+                "slug": "dresses-skirts"
+              },
+              {
+                "_id": "b2b008-g2-2",
+                "name": "Blouses & Tops",
+                "slug": "blouses-tops"
+              },
+              {
+                "_id": "b2b008-g2-3",
+                "name": "Women's Pants",
+                "slug": "womens-pants"
+              },
+              {
+                "_id": "b2b008-g2-4",
+                "name": "Women's Outerwear",
+                "slug": "womens-outerwear"
+              },
+              {
+                "_id": "b2b008-g2-5",
+                "name": "Swimwear",
+                "slug": "swimwear"
+              }
+            ]
+          },
+          {
+            "_id": "b2b008-g3",
+            "name": "Bags, Belts & Accessories",
+            "slug": "bags-belts-accessories",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b008-g3-1",
+                "name": "Handbags & Purses",
+                "slug": "handbags-purses"
+              },
+              {
+                "_id": "b2b008-g3-2",
+                "name": "Backpacks",
+                "slug": "backpacks"
+              },
+              {
+                "_id": "b2b008-g3-3",
+                "name": "Belts",
+                "slug": "belts"
+              },
+              {
+                "_id": "b2b008-g3-4",
+                "name": "Wallets",
+                "slug": "wallets"
+              },
+              {
+                "_id": "b2b008-g3-5",
+                "name": "Hats & Caps",
+                "slug": "hats-caps"
+              }
+            ]
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738769999/product/Yellow-Sw-eet-Corn-Bag-each-removebg-preview.png"
+      },
+      {
+        "_id": "b2b013",
+        "name": "Health & Medicine",
+        "slug": "health-medicine",
+        "icon": "💊",
+        "description": "Health & Medicine",
+        "status": "show",
+        "departmentId": "dept004",
+        "departmentName": "Fashion, Health & Sports",
+        "hotKeywords": [
+          "Blood Pressure Monitor",
+          "Surgical Mask",
+          "Vitamin C",
+          "Wheelchair",
+          "Stethoscope"
+        ],
+        "children": [
+          {
+            "_id": "b2b013-g1",
+            "name": "Medical Devices & Instruments",
+            "slug": "medical-devices-instruments",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b013-g1-1",
+                "name": "Diagnostic Equipment",
+                "slug": "diagnostic-equipment"
+              },
+              {
+                "_id": "b2b013-g1-2",
+                "name": "Surgical Instruments",
+                "slug": "surgical-instruments"
+              },
+              {
+                "_id": "b2b013-g1-3",
+                "name": "Patient Monitoring",
+                "slug": "patient-monitoring"
+              },
+              {
+                "_id": "b2b013-g1-4",
+                "name": "Dental Equipment",
+                "slug": "dental-equipment"
+              },
+              {
+                "_id": "b2b013-g1-5",
+                "name": "Laboratory Equipment",
+                "slug": "laboratory-equipment"
+              }
+            ]
+          },
+          {
+            "_id": "b2b013-g2",
+            "name": "Health Supplements",
+            "slug": "health-supplements",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b013-g2-1",
+                "name": "Vitamins & Minerals",
+                "slug": "vitamins-minerals"
+              },
+              {
+                "_id": "b2b013-g2-2",
+                "name": "Protein Supplements",
+                "slug": "protein-supplements"
+              },
+              {
+                "_id": "b2b013-g2-3",
+                "name": "Herbal Supplements",
+                "slug": "herbal-supplements"
+              },
+              {
+                "_id": "b2b013-g2-4",
+                "name": "Probiotics",
+                "slug": "probiotics"
+              }
+            ]
+          },
+          {
+            "_id": "b2b013-g3",
+            "name": "Rehabilitation & Therapy",
+            "slug": "rehabilitation-therapy",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b013-g3-1",
+                "name": "Wheelchairs & Mobility Aids",
+                "slug": "wheelchairs-mobility-aids"
+              },
+              {
+                "_id": "b2b013-g3-2",
+                "name": "Physical Therapy Equipment",
+                "slug": "physical-therapy-equipment"
+              },
+              {
+                "_id": "b2b013-g3-3",
+                "name": "Orthopedic Supports",
+                "slug": "orthopedic-supports"
+              },
+              {
+                "_id": "b2b013-g3-4",
+                "name": "Massage Equipment",
+                "slug": "massage-equipment"
+              }
+            ]
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738770041/product/Green-Cauliflower-12ct-removebg-preview.png"
+      },
+      {
+        "_id": "b2b010",
+        "name": "Sporting Goods & Recreation",
+        "slug": "sporting-goods-recreation",
+        "icon": "⚽",
+        "description": "Sporting Goods & Recreation",
+        "status": "show",
+        "departmentId": "dept004",
+        "departmentName": "Fashion, Health & Sports",
+        "hotKeywords": [
+          "Yoga Mat",
+          "Treadmill",
+          "Camping Tent",
+          "Bicycle",
+          "Swimming Goggle"
+        ],
+        "children": [
+          {
+            "_id": "b2b010-g1",
+            "name": "Outdoor Sports & Activities",
+            "slug": "outdoor-sports-activities",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b010-g1-1",
+                "name": "Camping & Hiking",
+                "slug": "camping-hiking"
+              },
+              {
+                "_id": "b2b010-g1-2",
+                "name": "Cycling",
+                "slug": "cycling"
+              },
+              {
+                "_id": "b2b010-g1-3",
+                "name": "Water Sports",
+                "slug": "water-sports"
+              },
+              {
+                "_id": "b2b010-g1-4",
+                "name": "Climbing Equipment",
+                "slug": "climbing-equipment"
+              },
+              {
+                "_id": "b2b010-g1-5",
+                "name": "Winter Sports",
+                "slug": "winter-sports"
+              }
+            ]
+          },
+          {
+            "_id": "b2b010-g2",
+            "name": "Fitness Equipment",
+            "slug": "fitness-equipment",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b010-g2-1",
+                "name": "Treadmills",
+                "slug": "treadmills"
+              },
+              {
+                "_id": "b2b010-g2-2",
+                "name": "Yoga & Pilates",
+                "slug": "yoga-pilates"
+              },
+              {
+                "_id": "b2b010-g2-3",
+                "name": "Weight Training",
+                "slug": "weight-training"
+              },
+              {
+                "_id": "b2b010-g2-4",
+                "name": "Exercise Bikes",
+                "slug": "exercise-bikes"
+              }
+            ]
+          },
+          {
+            "_id": "b2b010-g3",
+            "name": "Ball & Team Sports",
+            "slug": "ball-team-sports",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b010-g3-1",
+                "name": "Football & Soccer",
+                "slug": "football-soccer"
+              },
+              {
+                "_id": "b2b010-g3-2",
+                "name": "Basketball",
+                "slug": "basketball"
+              },
+              {
+                "_id": "b2b010-g3-3",
+                "name": "Tennis & Badminton",
+                "slug": "tennis-badminton"
+              },
+              {
+                "_id": "b2b010-g3-4",
+                "name": "Table Tennis",
+                "slug": "table-tennis"
+              }
+            ]
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738770122/product/Organic-Greens-Red-Kale-per-lb-removebg-preview.png"
+      }
+    ]
+  },
+  {
+    "_id": "dept005",
+    "name": "Industrial & Trade",
+    "slug": "industrial-trade",
+    "description": "Manufacturing machinery, industrial components, chemicals, transportation, textiles, and packaging for trade and production.",
+    "image": "https://res.cloudinary.com/ahossain/image/upload/v1738770181/product/Organic-Green-Cauliflower-1lb-removebg-preview.png",
+    "status": "show",
+    "categories": [
+      {
+        "_id": "b2b001",
+        "name": "Manufacturing & Processing Machinery",
+        "slug": "manufacturing-processing-machinery",
+        "icon": "⚙️",
+        "description": "Manufacturing & Processing Machinery",
+        "status": "show",
+        "departmentId": "dept005",
+        "departmentName": "Industrial & Trade",
+        "hotKeywords": [
+          "Drilling Rig",
+          "Stamping Machine",
+          "Crane",
+          "CNC Machine",
+          "Engraving Machine"
+        ],
+        "children": [
+          {
+            "_id": "b2b001-g1",
+            "name": "Agriculture Machinery",
+            "slug": "agriculture-machinery",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b001-g1-1",
+                "name": "Agricultural Machinery",
+                "slug": "agricultural-machinery"
+              },
+              {
+                "_id": "b2b001-g1-2",
+                "name": "Feed Processing Machinery",
+                "slug": "feed-processing-machinery"
+              },
+              {
+                "_id": "b2b001-g1-3",
+                "name": "Livestock Machinery",
+                "slug": "livestock-machinery"
+              },
+              {
+                "_id": "b2b001-g1-4",
+                "name": "Tiller",
+                "slug": "tiller"
+              },
+              {
+                "_id": "b2b001-g1-5",
+                "name": "Harvesting Machine",
+                "slug": "harvesting-machine"
+              }
+            ]
+          },
+          {
+            "_id": "b2b001-g2",
+            "name": "Machine Tools",
+            "slug": "machine-tools",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b001-g2-1",
+                "name": "CNC Machine Tools",
+                "slug": "cnc-machine-tools"
+              },
+              {
+                "_id": "b2b001-g2-2",
+                "name": "Lathe",
+                "slug": "lathe"
+              },
+              {
+                "_id": "b2b001-g2-3",
+                "name": "Grinding Machine",
+                "slug": "grinding-machine"
+              },
+              {
+                "_id": "b2b001-g2-4",
+                "name": "Milling Machine",
+                "slug": "milling-machine"
+              },
+              {
+                "_id": "b2b001-g2-5",
+                "name": "Drilling Machine",
+                "slug": "drilling-machine"
+              }
+            ]
+          },
+          {
+            "_id": "b2b001-g3",
+            "name": "Other Machinery & Parts",
+            "slug": "other-machinery-parts",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b001-g3-1",
+                "name": "Machinery for Food, Beverage & Cereal",
+                "slug": "machinery-food-beverage"
+              },
+              {
+                "_id": "b2b001-g3-2",
+                "name": "Metallic Processing Machinery",
+                "slug": "metallic-processing-machinery"
+              },
+              {
+                "_id": "b2b001-g3-3",
+                "name": "Laser Equipment",
+                "slug": "laser-equipment"
+              },
+              {
+                "_id": "b2b001-g3-4",
+                "name": "Mould",
+                "slug": "mould"
+              },
+              {
+                "_id": "b2b001-g3-5",
+                "name": "Textile Machinery & Parts",
+                "slug": "textile-machinery-parts"
+              },
+              {
+                "_id": "b2b001-g3-6",
+                "name": "Chemical Equipment & Machinery",
+                "slug": "chemical-equipment-machinery"
+              },
+              {
+                "_id": "b2b001-g3-7",
+                "name": "Paper Machinery",
+                "slug": "paper-machinery"
+              },
+              {
+                "_id": "b2b001-g3-8",
+                "name": "Cutting & Fold-bend Machine",
+                "slug": "cutting-fold-bend-machine"
+              },
+              {
+                "_id": "b2b001-g3-9",
+                "name": "Mixing Equipment",
+                "slug": "mixing-equipment"
+              },
+              {
+                "_id": "b2b001-g3-10",
+                "name": "Rubber Machinery",
+                "slug": "rubber-machinery"
+              },
+              {
+                "_id": "b2b001-g3-11",
+                "name": "Machinery for Garment, Shoes & Accessories",
+                "slug": "machinery-garment-shoes"
+              },
+              {
+                "_id": "b2b001-g3-12",
+                "name": "Crushing & Culling Machine",
+                "slug": "crushing-culling-machine"
+              }
+            ]
+          },
+          {
+            "_id": "b2b001-g4",
+            "name": "Plastic & Woodworking Machinery",
+            "slug": "plastic-woodworking-machinery",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b001-g4-1",
+                "name": "Plastic Machinery",
+                "slug": "plastic-machinery"
+              },
+              {
+                "_id": "b2b001-g4-2",
+                "name": "Woodworking Machinery",
+                "slug": "woodworking-machinery"
+              },
+              {
+                "_id": "b2b001-g4-3",
+                "name": "Injection Molding Machine",
+                "slug": "injection-molding-machine"
+              },
+              {
+                "_id": "b2b001-g4-4",
+                "name": "Plastic Recycling Machine",
+                "slug": "plastic-recycling-machine"
+              },
+              {
+                "_id": "b2b001-g4-5",
+                "name": "Blow Molding Machine",
+                "slug": "blow-molding-machine"
+              }
+            ]
+          },
+          {
+            "_id": "b2b001-g5",
+            "name": "Construction Machinery",
+            "slug": "construction-machinery-group",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b001-g5-1",
+                "name": "Building Material Making Machinery",
+                "slug": "building-material-making-machinery"
+              },
+              {
+                "_id": "b2b001-g5-2",
+                "name": "Lifting Equipment",
+                "slug": "lifting-equipment"
+              },
+              {
+                "_id": "b2b001-g5-3",
+                "name": "Excavator",
+                "slug": "excavator"
+              },
+              {
+                "_id": "b2b001-g5-4",
+                "name": "Concrete Machinery",
+                "slug": "concrete-machinery"
+              },
+              {
+                "_id": "b2b001-g5-5",
+                "name": "Stone Processing Machinery",
+                "slug": "stone-processing-machinery"
+              }
+            ]
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738770369/product/Organic-Ginger-Root-per-lb-removebg-preview%281%29.png"
+      },
+      {
+        "_id": "b2b003",
+        "name": "Industrial Equipment & Components",
+        "slug": "industrial-equipment-components",
+        "icon": "🔧",
+        "description": "Industrial Equipment & Components",
+        "status": "show",
+        "departmentId": "dept005",
+        "departmentName": "Industrial & Trade",
+        "hotKeywords": [
+          "Bearing",
+          "Hydraulic Pump",
+          "Conveyor Belt",
+          "Safety Valve",
+          "Pressure Gauge"
+        ],
+        "children": [
+          {
+            "_id": "b2b003-g1",
+            "name": "Power Transmission",
+            "slug": "power-transmission",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b003-g1-1",
+                "name": "Bearings",
+                "slug": "bearings"
+              },
+              {
+                "_id": "b2b003-g1-2",
+                "name": "Gears & Gearboxes",
+                "slug": "gears-gearboxes"
+              },
+              {
+                "_id": "b2b003-g1-3",
+                "name": "Conveyor Belts",
+                "slug": "conveyor-belts"
+              },
+              {
+                "_id": "b2b003-g1-4",
+                "name": "Chains & Sprockets",
+                "slug": "chains-sprockets"
+              },
+              {
+                "_id": "b2b003-g1-5",
+                "name": "Couplings",
+                "slug": "couplings"
+              }
+            ]
+          },
+          {
+            "_id": "b2b003-g2",
+            "name": "Pumps & Valves",
+            "slug": "pumps-valves",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b003-g2-1",
+                "name": "Hydraulic Pumps",
+                "slug": "hydraulic-pumps"
+              },
+              {
+                "_id": "b2b003-g2-2",
+                "name": "Water Pumps",
+                "slug": "water-pumps"
+              },
+              {
+                "_id": "b2b003-g2-3",
+                "name": "Control Valves",
+                "slug": "control-valves"
+              },
+              {
+                "_id": "b2b003-g2-4",
+                "name": "Safety Valves",
+                "slug": "safety-valves"
+              },
+              {
+                "_id": "b2b003-g2-5",
+                "name": "Ball Valves",
+                "slug": "ball-valves"
+              }
+            ]
+          },
+          {
+            "_id": "b2b003-g3",
+            "name": "Industrial Tools & Instruments",
+            "slug": "industrial-tools-instruments",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b003-g3-1",
+                "name": "Pressure Gauges",
+                "slug": "pressure-gauges"
+              },
+              {
+                "_id": "b2b003-g3-2",
+                "name": "Flow Meters",
+                "slug": "flow-meters"
+              },
+              {
+                "_id": "b2b003-g3-3",
+                "name": "Temperature Sensors",
+                "slug": "temperature-sensors"
+              },
+              {
+                "_id": "b2b003-g3-4",
+                "name": "Safety Equipment",
+                "slug": "safety-equipment"
+              },
+              {
+                "_id": "b2b003-g3-5",
+                "name": "Material Handling Equipment",
+                "slug": "material-handling-equipment"
+              }
+            ]
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738770398/product/Organic-Baby-Carrot-1oz-removebg-preview.png"
+      },
+      {
+        "_id": "b2b007",
+        "name": "Auto, Motorcycle Parts & Accessories",
+        "slug": "auto-motorcycle-parts-accessories",
+        "icon": "🚗",
+        "description": "Auto, Motorcycle Parts & Accessories",
+        "status": "show",
+        "departmentId": "dept005",
+        "departmentName": "Industrial & Trade",
+        "hotKeywords": [
+          "Car Filter",
+          "Brake Pad",
+          "LED Headlight",
+          "Shock Absorber",
+          "Car Cover"
+        ],
+        "children": [
+          {
+            "_id": "b2b007-g1",
+            "name": "Car Parts & Accessories",
+            "slug": "car-parts-accessories",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b007-g1-1",
+                "name": "Engine Parts",
+                "slug": "engine-parts"
+              },
+              {
+                "_id": "b2b007-g1-2",
+                "name": "Brake Systems",
+                "slug": "brake-systems"
+              },
+              {
+                "_id": "b2b007-g1-3",
+                "name": "Car Filters",
+                "slug": "car-filters"
+              },
+              {
+                "_id": "b2b007-g1-4",
+                "name": "Suspension & Steering",
+                "slug": "suspension-steering"
+              },
+              {
+                "_id": "b2b007-g1-5",
+                "name": "Exhaust Systems",
+                "slug": "exhaust-systems"
+              }
+            ]
+          },
+          {
+            "_id": "b2b007-g2",
+            "name": "Motorcycle Parts",
+            "slug": "motorcycle-parts",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b007-g2-1",
+                "name": "Motorcycle Engines",
+                "slug": "motorcycle-engines"
+              },
+              {
+                "_id": "b2b007-g2-2",
+                "name": "Motorcycle Tires",
+                "slug": "motorcycle-tires"
+              },
+              {
+                "_id": "b2b007-g2-3",
+                "name": "Motorcycle Helmets",
+                "slug": "motorcycle-helmets"
+              },
+              {
+                "_id": "b2b007-g2-4",
+                "name": "Motorcycle Lights",
+                "slug": "motorcycle-lights"
+              }
+            ]
+          },
+          {
+            "_id": "b2b007-g3",
+            "name": "Vehicle Electronics",
+            "slug": "vehicle-electronics",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b007-g3-1",
+                "name": "LED Headlights",
+                "slug": "led-headlights"
+              },
+              {
+                "_id": "b2b007-g3-2",
+                "name": "Car Cameras & DVR",
+                "slug": "car-cameras-dvr"
+              },
+              {
+                "_id": "b2b007-g3-3",
+                "name": "GPS Navigation",
+                "slug": "gps-navigation"
+              },
+              {
+                "_id": "b2b007-g3-4",
+                "name": "Car Alarms",
+                "slug": "car-alarms"
+              },
+              {
+                "_id": "b2b007-g3-5",
+                "name": "Car Audio Systems",
+                "slug": "car-audio-systems"
+              }
+            ]
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738770456/product/Orange-Cherry-Tomato-5qt-removebg-preview.png"
+      },
+      {
+        "_id": "b2b011",
+        "name": "Transportation",
+        "slug": "transportation",
+        "icon": "🚚",
+        "description": "Transportation",
+        "status": "show",
+        "departmentId": "dept005",
+        "departmentName": "Industrial & Trade",
+        "hotKeywords": [
+          "Electric Scooter",
+          "Forklift",
+          "Cargo Truck",
+          "Electric Bicycle",
+          "Boat Engine"
+        ],
+        "children": [
+          {
+            "_id": "b2b011-g1",
+            "name": "Commercial Vehicles",
+            "slug": "commercial-vehicles",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b011-g1-1",
+                "name": "Trucks & Trailers",
+                "slug": "trucks-trailers"
+              },
+              {
+                "_id": "b2b011-g1-2",
+                "name": "Forklifts",
+                "slug": "forklifts"
+              },
+              {
+                "_id": "b2b011-g1-3",
+                "name": "Buses & Coaches",
+                "slug": "buses-coaches"
+              },
+              {
+                "_id": "b2b011-g1-4",
+                "name": "Vans & Minibuses",
+                "slug": "vans-minibuses"
+              }
+            ]
+          },
+          {
+            "_id": "b2b011-g2",
+            "name": "Electric Vehicles",
+            "slug": "electric-vehicles",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b011-g2-1",
+                "name": "Electric Scooters",
+                "slug": "electric-scooters"
+              },
+              {
+                "_id": "b2b011-g2-2",
+                "name": "Electric Bicycles",
+                "slug": "electric-bicycles"
+              },
+              {
+                "_id": "b2b011-g2-3",
+                "name": "Electric Cars",
+                "slug": "electric-cars"
+              },
+              {
+                "_id": "b2b011-g2-4",
+                "name": "EV Charging Equipment",
+                "slug": "ev-charging-equipment"
+              }
+            ]
+          },
+          {
+            "_id": "b2b011-g3",
+            "name": "Marine Transport",
+            "slug": "marine-transport",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b011-g3-1",
+                "name": "Boats & Yachts",
+                "slug": "boats-yachts"
+              },
+              {
+                "_id": "b2b011-g3-2",
+                "name": "Boat Engines",
+                "slug": "boat-engines"
+              },
+              {
+                "_id": "b2b011-g3-3",
+                "name": "Marine Equipment",
+                "slug": "marine-equipment"
+              },
+              {
+                "_id": "b2b011-g3-4",
+                "name": "Life-saving Equipment",
+                "slug": "life-saving-equipment"
+              }
+            ]
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738770491/product/Orange-Bell-Pepper-22ct-removebg-preview%281%29.png"
+      },
+      {
+        "_id": "b2b016",
+        "name": "Chemicals",
+        "slug": "chemicals",
+        "icon": "🧪",
+        "description": "Chemicals",
+        "status": "show",
+        "departmentId": "dept005",
+        "departmentName": "Industrial & Trade",
+        "hotKeywords": [
+          "Caustic Soda",
+          "Silicone Sealant",
+          "Fertilizer",
+          "Epoxy Resin",
+          "Paint Thinner"
+        ],
+        "children": [
+          {
+            "_id": "b2b016-g1",
+            "name": "Industrial Chemicals",
+            "slug": "industrial-chemicals",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b016-g1-1",
+                "name": "Caustic Soda",
+                "slug": "caustic-soda"
+              },
+              {
+                "_id": "b2b016-g1-2",
+                "name": "Solvents & Thinners",
+                "slug": "solvents-thinners"
+              },
+              {
+                "_id": "b2b016-g1-3",
+                "name": "Acids & Bases",
+                "slug": "acids-bases"
+              },
+              {
+                "_id": "b2b016-g1-4",
+                "name": "Industrial Gases",
+                "slug": "industrial-gases"
+              },
+              {
+                "_id": "b2b016-g1-5",
+                "name": "Lubricants",
+                "slug": "lubricants"
+              }
+            ]
+          },
+          {
+            "_id": "b2b016-g2",
+            "name": "Agricultural Chemicals",
+            "slug": "agricultural-chemicals",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b016-g2-1",
+                "name": "Fertilizers",
+                "slug": "fertilizers"
+              },
+              {
+                "_id": "b2b016-g2-2",
+                "name": "Pesticides",
+                "slug": "pesticides"
+              },
+              {
+                "_id": "b2b016-g2-3",
+                "name": "Herbicides",
+                "slug": "herbicides"
+              },
+              {
+                "_id": "b2b016-g2-4",
+                "name": "Soil Conditioners",
+                "slug": "soil-conditioners"
+              }
+            ]
+          },
+          {
+            "_id": "b2b016-g3",
+            "name": "Specialty Chemicals",
+            "slug": "specialty-chemicals",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b016-g3-1",
+                "name": "Epoxy Resin",
+                "slug": "epoxy-resin"
+              },
+              {
+                "_id": "b2b016-g3-2",
+                "name": "Silicone Products",
+                "slug": "silicone-products"
+              },
+              {
+                "_id": "b2b016-g3-3",
+                "name": "Adhesives & Sealants",
+                "slug": "adhesives-sealants"
+              },
+              {
+                "_id": "b2b016-g3-4",
+                "name": "Coatings & Paints",
+                "slug": "coatings-paints"
+              }
+            ]
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738770547/product/Old-Oak-Farm-Small-Potatoes-each-removebg-preview.png"
+      },
+      {
+        "_id": "b2b017",
+        "name": "Agriculture & Food",
+        "slug": "agriculture-food",
+        "icon": "🌾",
+        "description": "Agriculture & Food",
+        "status": "show",
+        "departmentId": "dept005",
+        "departmentName": "Industrial & Trade",
+        "hotKeywords": [
+          "Organic Fertilizer",
+          "Wheat Flour",
+          "Olive Oil",
+          "Soybean",
+          "Poultry Feed"
+        ],
+        "children": [
+          {
+            "_id": "b2b017-g1",
+            "name": "Crops & Fresh Produce",
+            "slug": "crops-fresh-produce",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b017-g1-1",
+                "name": "Grains & Cereals",
+                "slug": "grains-cereals"
+              },
+              {
+                "_id": "b2b017-g1-2",
+                "name": "Fresh Vegetables",
+                "slug": "fresh-vegetables"
+              },
+              {
+                "_id": "b2b017-g1-3",
+                "name": "Fresh Fruits",
+                "slug": "fresh-fruits-b2b"
+              },
+              {
+                "_id": "b2b017-g1-4",
+                "name": "Nuts & Seeds",
+                "slug": "nuts-seeds"
+              },
+              {
+                "_id": "b2b017-g1-5",
+                "name": "Edible Oils",
+                "slug": "edible-oils"
+              }
+            ]
+          },
+          {
+            "_id": "b2b017-g2",
+            "name": "Food Processing Equipment",
+            "slug": "food-processing-equipment",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b017-g2-1",
+                "name": "Food Mixers",
+                "slug": "food-mixers"
+              },
+              {
+                "_id": "b2b017-g2-2",
+                "name": "Packaging Machines",
+                "slug": "packaging-machines"
+              },
+              {
+                "_id": "b2b017-g2-3",
+                "name": "Refrigeration Equipment",
+                "slug": "refrigeration-equipment"
+              },
+              {
+                "_id": "b2b017-g2-4",
+                "name": "Baking Equipment",
+                "slug": "baking-equipment"
+              }
+            ]
+          },
+          {
+            "_id": "b2b017-g3",
+            "name": "Agricultural Inputs",
+            "slug": "agricultural-inputs",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b017-g3-1",
+                "name": "Seeds & Seedlings",
+                "slug": "seeds-seedlings"
+              },
+              {
+                "_id": "b2b017-g3-2",
+                "name": "Organic Fertilizers",
+                "slug": "organic-fertilizers"
+              },
+              {
+                "_id": "b2b017-g3-3",
+                "name": "Irrigation Systems",
+                "slug": "irrigation-systems"
+              },
+              {
+                "_id": "b2b017-g3-4",
+                "name": "Animal Feed",
+                "slug": "animal-feed"
+              }
+            ]
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738770585/product/Mint-6-5ct-removebg-preview.png"
+      },
+      {
+        "_id": "b2b018",
+        "name": "Textiles & Leather Products",
+        "slug": "textiles-leather-products",
+        "icon": "🧵",
+        "description": "Textiles & Leather Products",
+        "status": "show",
+        "departmentId": "dept005",
+        "departmentName": "Industrial & Trade",
+        "hotKeywords": [
+          "Cotton Fabric",
+          "Polyester Yarn",
+          "Genuine Leather",
+          "Lace",
+          "Knitting Wool"
+        ],
+        "children": [
+          {
+            "_id": "b2b018-g1",
+            "name": "Fabrics & Yarn",
+            "slug": "fabrics-yarn",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b018-g1-1",
+                "name": "Cotton Fabric",
+                "slug": "cotton-fabric"
+              },
+              {
+                "_id": "b2b018-g1-2",
+                "name": "Polyester Fabric",
+                "slug": "polyester-fabric"
+              },
+              {
+                "_id": "b2b018-g1-3",
+                "name": "Lace & Embroidery",
+                "slug": "lace-embroidery"
+              },
+              {
+                "_id": "b2b018-g1-4",
+                "name": "Knitting Wool & Yarn",
+                "slug": "knitting-wool-yarn"
+              },
+              {
+                "_id": "b2b018-g1-5",
+                "name": "Silk & Satin",
+                "slug": "silk-satin"
+              }
+            ]
+          },
+          {
+            "_id": "b2b018-g2",
+            "name": "Leather & Faux Leather Goods",
+            "slug": "leather-faux-leather-goods",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b018-g2-1",
+                "name": "Genuine Leather",
+                "slug": "genuine-leather"
+              },
+              {
+                "_id": "b2b018-g2-2",
+                "name": "PU & Faux Leather",
+                "slug": "pu-faux-leather"
+              },
+              {
+                "_id": "b2b018-g2-3",
+                "name": "Leather Shoes",
+                "slug": "leather-shoes"
+              },
+              {
+                "_id": "b2b018-g2-4",
+                "name": "Leather Bags",
+                "slug": "leather-bags"
+              },
+              {
+                "_id": "b2b018-g2-5",
+                "name": "Leather Belts",
+                "slug": "leather-belts"
+              }
+            ]
+          },
+          {
+            "_id": "b2b018-g3",
+            "name": "Technical Textiles",
+            "slug": "technical-textiles",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b018-g3-1",
+                "name": "Nonwoven Fabric",
+                "slug": "nonwoven-fabric"
+              },
+              {
+                "_id": "b2b018-g3-2",
+                "name": "Industrial Felt",
+                "slug": "industrial-felt"
+              },
+              {
+                "_id": "b2b018-g3-3",
+                "name": "Geotextiles",
+                "slug": "geotextiles"
+              },
+              {
+                "_id": "b2b018-g3-4",
+                "name": "Woven Wire Mesh",
+                "slug": "woven-wire-mesh"
+              }
+            ]
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738770614/product/Mini-Pumpkin-Box-each-removebg-preview.png"
+      },
+      {
+        "_id": "b2b019",
+        "name": "Rubber & Plastics",
+        "slug": "rubber-plastics",
+        "icon": "♻️",
+        "description": "Rubber & Plastics",
+        "status": "show",
+        "departmentId": "dept005",
+        "departmentName": "Industrial & Trade",
+        "hotKeywords": [
+          "Silicone Rubber",
+          "PVC Sheet",
+          "Rubber Gasket",
+          "Plastic Pellets",
+          "HDPE Pipe"
+        ],
+        "children": [
+          {
+            "_id": "b2b019-g1",
+            "name": "Rubber Products",
+            "slug": "rubber-products",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b019-g1-1",
+                "name": "Rubber Gaskets & Seals",
+                "slug": "rubber-gaskets-seals"
+              },
+              {
+                "_id": "b2b019-g1-2",
+                "name": "Silicone Products",
+                "slug": "silicone-products-b2b"
+              },
+              {
+                "_id": "b2b019-g1-3",
+                "name": "Rubber Hoses & Tubes",
+                "slug": "rubber-hoses-tubes"
+              },
+              {
+                "_id": "b2b019-g1-4",
+                "name": "Rubber Flooring",
+                "slug": "rubber-flooring"
+              },
+              {
+                "_id": "b2b019-g1-5",
+                "name": "Natural Rubber",
+                "slug": "natural-rubber"
+              }
+            ]
+          },
+          {
+            "_id": "b2b019-g2",
+            "name": "Plastic Materials & Products",
+            "slug": "plastic-materials-products",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b019-g2-1",
+                "name": "Plastic Pellets",
+                "slug": "plastic-pellets"
+              },
+              {
+                "_id": "b2b019-g2-2",
+                "name": "PVC Sheets & Profiles",
+                "slug": "pvc-sheets-profiles"
+              },
+              {
+                "_id": "b2b019-g2-3",
+                "name": "HDPE Pipes",
+                "slug": "hdpe-pipes"
+              },
+              {
+                "_id": "b2b019-g2-4",
+                "name": "Plastic Films",
+                "slug": "plastic-films"
+              },
+              {
+                "_id": "b2b019-g2-5",
+                "name": "Plastic Containers",
+                "slug": "plastic-containers"
+              }
+            ]
+          },
+          {
+            "_id": "b2b019-g3",
+            "name": "Processing Equipment",
+            "slug": "rubber-plastic-processing-equipment",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b019-g3-1",
+                "name": "Extruders",
+                "slug": "extruders"
+              },
+              {
+                "_id": "b2b019-g3-2",
+                "name": "Vulcanizing Equipment",
+                "slug": "vulcanizing-equipment"
+              },
+              {
+                "_id": "b2b019-g3-3",
+                "name": "Mixers & Kneaders",
+                "slug": "mixers-kneaders"
+              },
+              {
+                "_id": "b2b019-g3-4",
+                "name": "Calendering Machines",
+                "slug": "calendering-machines"
+              }
+            ]
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738770639/product/Organic-White-Radish-each-removebg-preview.png"
+      },
+      {
+        "_id": "b2b014",
+        "name": "Packaging & Printing",
+        "slug": "packaging-printing",
+        "icon": "📦",
+        "description": "Packaging & Printing",
+        "status": "show",
+        "departmentId": "dept005",
+        "departmentName": "Industrial & Trade",
+        "hotKeywords": [
+          "Carton Box",
+          "Shrink Film",
+          "Printing Machine",
+          "Stretch Wrap",
+          "Bubble Wrap"
+        ],
+        "children": [
+          {
+            "_id": "b2b014-g1",
+            "name": "Packaging Materials",
+            "slug": "packaging-materials",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b014-g1-1",
+                "name": "Carton Boxes",
+                "slug": "carton-boxes"
+              },
+              {
+                "_id": "b2b014-g1-2",
+                "name": "Bubble Wrap & Foam",
+                "slug": "bubble-wrap-foam"
+              },
+              {
+                "_id": "b2b014-g1-3",
+                "name": "Stretch Film",
+                "slug": "stretch-film"
+              },
+              {
+                "_id": "b2b014-g1-4",
+                "name": "Bags & Pouches",
+                "slug": "bags-pouches"
+              },
+              {
+                "_id": "b2b014-g1-5",
+                "name": "Shrink Wrap",
+                "slug": "shrink-wrap"
+              }
+            ]
+          },
+          {
+            "_id": "b2b014-g2",
+            "name": "Printing Machinery",
+            "slug": "printing-machinery",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b014-g2-1",
+                "name": "Offset Printing Machines",
+                "slug": "offset-printing-machines"
+              },
+              {
+                "_id": "b2b014-g2-2",
+                "name": "Digital Printers",
+                "slug": "digital-printers"
+              },
+              {
+                "_id": "b2b014-g2-3",
+                "name": "Flexographic Printers",
+                "slug": "flexographic-printers"
+              },
+              {
+                "_id": "b2b014-g2-4",
+                "name": "Inkjet Printers",
+                "slug": "inkjet-printers"
+              }
+            ]
+          },
+          {
+            "_id": "b2b014-g3",
+            "name": "Labels & Tags",
+            "slug": "labels-tags",
+            "isGroup": true,
+            "children": [
+              {
+                "_id": "b2b014-g3-1",
+                "name": "Adhesive Labels",
+                "slug": "adhesive-labels"
+              },
+              {
+                "_id": "b2b014-g3-2",
+                "name": "Hang Tags",
+                "slug": "hang-tags"
+              },
+              {
+                "_id": "b2b014-g3-3",
+                "name": "Barcode Labels",
+                "slug": "barcode-labels"
+              },
+              {
+                "_id": "b2b014-g3-4",
+                "name": "RFID Tags",
+                "slug": "rfid-tags"
+              }
+            ]
+          }
+        ],
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738770683/product/Lacinato-Dinosaur-Kale-Box-per-lb-removebg-preview.png"
+      }
+    ]
+  }
+]
