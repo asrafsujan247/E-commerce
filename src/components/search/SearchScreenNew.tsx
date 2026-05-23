@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback, useRef } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { Home, ChevronRight } from "lucide-react";
 import {
@@ -14,7 +14,6 @@ import {
 import useFilter from "@hooks/useFilter";
 import ProductCard from "@components/product/ProductCard";
 import { Button } from "@components/ui/button";
-import useUtilsFunction from "@hooks/useUtilsFunction";
 import type { Product, Category, ProductAttribute } from "@appTypes/index";
 
 interface SearchScreenNewProps {
@@ -44,35 +43,46 @@ const SearchScreenNew = ({
     price: true,
     rating: false,
   });
-  const [canScrollRight, setCanScrollRight] = useState(false);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const categoryScrollRef = useRef<HTMLDivElement>(null);
+  const [sliderOffset, setSliderOffset] = useState(0);
+  const [maxOffset, setMaxOffset] = useState(0);
+  const outerRef = useRef<HTMLDivElement>(null);
+  const innerRef = useRef<HTMLDivElement>(null);
 
-  const { setSortedField, productData } = useFilter(products as unknown as Product[]);
-
-  const checkScroll = useCallback(() => {
-    const el = categoryScrollRef.current;
-    if (el) {
-      const maxScroll = el.scrollWidth - el.clientWidth;
-      setCanScrollRight(maxScroll > 0 && el.scrollLeft < maxScroll - 2);
-      setCanScrollLeft(el.scrollLeft > 2);
-    }
+  const updateMax = useCallback(() => {
+    const outer = outerRef.current;
+    const inner = innerRef.current;
+    if (!outer || !inner) return;
+    setMaxOffset(Math.max(0, inner.scrollWidth - outer.clientWidth));
   }, []);
 
   useEffect(() => {
-    const t = setTimeout(checkScroll, 100);
-    const el = categoryScrollRef.current;
-    if (el) {
-      el.addEventListener("scroll", checkScroll);
-      window.addEventListener("resize", checkScroll);
-      return () => { clearTimeout(t); el.removeEventListener("scroll", checkScroll); window.removeEventListener("resize", checkScroll); };
-    }
-    return () => clearTimeout(t);
-  }, [checkScroll]);
+    const t = setTimeout(updateMax, 100);
+    window.addEventListener("resize", updateMax);
+    return () => {
+      clearTimeout(t);
+      window.removeEventListener("resize", updateMax);
+    };
+  }, [updateMax]);
 
-  const toggleSection = useCallback((section: keyof typeof expandedSections) => {
-    setExpandedSections((prev) => ({ ...prev, [section]: !prev[section] }));
-  }, []);
+  const slide = (dir: "left" | "right") => {
+    const step = 200;
+    setSliderOffset((prev) =>
+      dir === "right"
+        ? Math.min(prev + step, maxOffset)
+        : Math.max(prev - step, 0),
+    );
+  };
+
+  const { setSortedField, productData } = useFilter(
+    products as unknown as Product[],
+  );
+
+  const toggleSection = useCallback(
+    (section: keyof typeof expandedSections) => {
+      setExpandedSections((prev) => ({ ...prev, [section]: !prev[section] }));
+    },
+    [],
+  );
 
   const handleSortChange = (value: string) => {
     setSortBy(value);
@@ -83,50 +93,73 @@ const SearchScreenNew = ({
     navigate(`/search?category=${slug}`);
   };
 
-  const displayProducts = (productData as unknown as Product[]).slice(0, visibleProduct);
+  const displayProducts = (productData as unknown as Product[]).slice(
+    0,
+    visibleProduct,
+  );
 
   return (
     <div className="min-h-screen bg-background">
       {/* Breadcrumb */}
-      <div className="max-w-screen-2xl mx-auto px-3 sm:px-10 py-4">
+      <div className="max-w-screen-2xl mx-auto px-3 sm:px-10 py-8">
         <nav className="flex items-center gap-2 text-sm text-muted-foreground">
-          <Link to="/" className="hover:text-foreground flex items-center gap-1"><Home className="w-4 h-4" /> Home</Link>
+          <Link
+            to="/"
+            className="hover:text-foreground flex items-center gap-1"
+          >
+            <Home className="w-4 h-4" /> Home
+          </Link>
           <ChevronRight className="w-3 h-3" />
           <span className="text-foreground">Search</span>
           {searchQuery && (
-            <><ChevronRight className="w-3 h-3" /><span>"{searchQuery}"</span></>
+            <>
+              <ChevronRight className="w-3 h-3" />
+              <span>"{searchQuery}"</span>
+            </>
           )}
         </nav>
       </div>
 
-      {/* Category scroll bar */}
-      <div className="relative max-w-screen-2xl mx-auto px-3 sm:px-10 mb-4">
+      {/* Category slider */}
+      <div className="max-w-screen-2xl mx-auto px-3 sm:px-10 mb-4">
         <div className="flex items-center gap-2">
-          {canScrollLeft && (
-            <button onClick={() => categoryScrollRef.current?.scrollBy({ left: -200, behavior: "smooth" })} className="p-1 rounded-full border border-border bg-background shadow-sm">
-              <IoChevronBack />
+          {sliderOffset > 0 && (
+            <button
+              onClick={() => slide("left")}
+              className="shrink-0 flex items-center justify-center w-8 h-8 rounded border border-border bg-background text-foreground shadow-sm hover:bg-primary hover:text-white hover:border-primary transition-colors"
+            >
+              <IoChevronBack className="w-4 h-4" />
             </button>
           )}
-          <div ref={categoryScrollRef} className="flex gap-2 overflow-x-auto scrollbar-hide scroll-smooth flex-1">
-            <button
-              onClick={() => navigate("/search")}
-              className={`shrink-0 px-3 py-1.5 text-sm rounded-full border transition-colors ${!selectedCategory ? "bg-primary text-white border-primary" : "border-border hover:border-primary"}`}
+          <div ref={outerRef} className="overflow-hidden flex-1">
+            <div
+              ref={innerRef}
+              className="flex gap-2 transition-transform duration-300 ease-out"
+              style={{ transform: `translateX(-${sliderOffset}px)` }}
             >
-              All
-            </button>
-            {categories.map((cat) => (
               <button
-                key={cat._id}
-                onClick={() => handleCategoryClick(cat.slug)}
-                className={`shrink-0 px-3 py-1.5 text-sm rounded-full border transition-colors ${selectedCategory === cat.slug ? "bg-primary text-white border-primary" : "border-border hover:border-primary"}`}
+                onClick={() => navigate("/search")}
+                className={`shrink-0 px-3 py-1.5 text-sm rounded-full border transition-colors ${!selectedCategory ? "bg-primary text-white border-primary" : "border-border hover:border-primary"}`}
               >
-                {String(cat.name ?? '') ?? cat.slug}
+                All
               </button>
-            ))}
+              {categories.map((cat) => (
+                <button
+                  key={cat._id}
+                  onClick={() => handleCategoryClick(cat.slug)}
+                  className={`shrink-0 px-3 py-1.5 text-sm rounded-full border transition-colors ${selectedCategory === cat.slug ? "bg-primary text-white border-primary" : "border-border hover:border-primary"}`}
+                >
+                  {String(cat.name ?? "") ?? cat.slug}
+                </button>
+              ))}
+            </div>
           </div>
-          {canScrollRight && (
-            <button onClick={() => categoryScrollRef.current?.scrollBy({ left: 200, behavior: "smooth" })} className="p-1 rounded-full border border-border bg-background shadow-sm">
-              <IoChevronForward />
+          {sliderOffset < maxOffset && (
+            <button
+              onClick={() => slide("right")}
+              className="shrink-0 flex items-center justify-center w-8 h-8 rounded border border-border bg-background text-foreground shadow-sm hover:bg-primary hover:text-white hover:border-primary transition-colors"
+            >
+              <IoChevronForward className="w-4 h-4" />
             </button>
           )}
         </div>
@@ -135,7 +168,10 @@ const SearchScreenNew = ({
       <div className="max-w-screen-2xl mx-auto px-3 sm:px-10 pb-10">
         {/* Controls bar */}
         <div className="flex items-center justify-between mb-6 gap-4 flex-wrap">
-          <p className="text-sm text-muted-foreground">{displayProducts.length} of {(productData as unknown[]).length} products</p>
+          <p className="text-sm text-muted-foreground">
+            {displayProducts.length} of {(productData as unknown[]).length}{" "}
+            products
+          </p>
           <div className="flex items-center gap-3">
             <select
               value={sortBy}
@@ -148,9 +184,22 @@ const SearchScreenNew = ({
               <option value="rating-desc">Top Rated</option>
               <option value="newest">Newest</option>
             </select>
-            <button onClick={() => setViewMode("grid")} className={`p-1.5 rounded ${viewMode === "grid" ? "text-primary" : "text-muted-foreground"}`}><IoGridOutline className="w-5 h-5" /></button>
-            <button onClick={() => setViewMode("list")} className={`p-1.5 rounded ${viewMode === "list" ? "text-primary" : "text-muted-foreground"}`}><IoListOutline className="w-5 h-5" /></button>
-            <button onClick={() => setShowFilters(!showFilters)} className="flex items-center gap-1.5 text-sm border border-border rounded-md px-3 py-1.5 hover:border-primary transition-colors">
+            <button
+              onClick={() => setViewMode("grid")}
+              className={`p-1.5 rounded ${viewMode === "grid" ? "text-primary" : "text-muted-foreground"}`}
+            >
+              <IoGridOutline className="w-5 h-5" />
+            </button>
+            <button
+              onClick={() => setViewMode("list")}
+              className={`p-1.5 rounded ${viewMode === "list" ? "text-primary" : "text-muted-foreground"}`}
+            >
+              <IoListOutline className="w-5 h-5" />
+            </button>
+            <button
+              onClick={() => setShowFilters(!showFilters)}
+              className="flex items-center gap-1.5 text-sm border border-border rounded-md px-3 py-1.5 hover:border-primary transition-colors"
+            >
               {showFilters ? <IoCloseOutline /> : <IoFilterOutline />} Filters
             </button>
           </div>
@@ -159,14 +208,17 @@ const SearchScreenNew = ({
         <div className="flex gap-6">
           {/* Sidebar filters */}
           {showFilters && (
-            <aside className="w-64 shrink-0">
+            <aside className="w-64 shrink-0 bg-white rounded-sm">
               {/* Categories filter */}
-              <div className="border border-border rounded-lg overflow-hidden mb-4">
+              <div className="overflow-hidden mb-4">
                 <button
                   className="w-full flex items-center justify-between p-3 font-medium text-sm"
                   onClick={() => toggleSection("categories")}
                 >
-                  Categories <IoChevronDown className={`transition-transform ${expandedSections.categories ? "rotate-180" : ""}`} />
+                  Categories{" "}
+                  <IoChevronDown
+                    className={`transition-transform ${expandedSections.categories ? "rotate-180" : ""}`}
+                  />
                 </button>
                 {expandedSections.categories && (
                   <div className="border-t border-border p-3 space-y-2">
@@ -176,7 +228,7 @@ const SearchScreenNew = ({
                         onClick={() => handleCategoryClick(cat.slug)}
                         className={`w-full text-left text-sm py-1 px-2 rounded hover:bg-muted transition-colors ${selectedCategory === cat.slug ? "text-primary font-medium" : "text-muted-foreground"}`}
                       >
-                        {String(cat.name ?? '') ?? cat.slug}
+                        {String(cat.name ?? "") ?? cat.slug}
                       </button>
                     ))}
                   </div>
@@ -185,9 +237,9 @@ const SearchScreenNew = ({
 
               {/* Attributes filter */}
               {attributes.map((attr) => (
-                <div key={attr._id} className="border border-border rounded-lg overflow-hidden mb-4">
+                <div key={attr._id} className="overflow-hidden mb-4">
                   <div className="p-3 font-medium text-sm border-b border-border">
-                    {String(attr.name ?? '') ?? attr.name}
+                    {String(attr.name ?? "") ?? attr.name}
                   </div>
                   <div className="p-3 flex flex-wrap gap-2">
                     {attr.values.map((val) => (
@@ -208,19 +260,32 @@ const SearchScreenNew = ({
           <div className="flex-1">
             {displayProducts.length === 0 ? (
               <div className="text-center py-20">
-                <p className="text-muted-foreground text-lg">No products found.</p>
-                <Button variant="outline" className="mt-4" onClick={() => navigate("/search")}>Clear filters</Button>
+                <p className="text-muted-foreground text-lg">
+                  No products found.
+                </p>
+                <Button
+                  variant="outline"
+                  className="mt-4"
+                  onClick={() => navigate("/search")}
+                >
+                  Clear filters
+                </Button>
               </div>
             ) : (
               <>
-                <div className={`grid gap-4 ${viewMode === "grid" ? "grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5" : "grid-cols-1"}`}>
+                <div
+                  className={`grid gap-4 ${viewMode === "grid" ? "grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" : "grid-cols-1"}`}
+                >
                   {displayProducts.map((product) => (
                     <ProductCard key={product._id} product={product} />
                   ))}
                 </div>
                 {visibleProduct < (productData as unknown[]).length && (
                   <div className="text-center mt-8">
-                    <Button variant="outline" onClick={() => setVisibleProduct((p) => p + 24)}>
+                    <Button
+                      variant="outline"
+                      onClick={() => setVisibleProduct((p) => p + 24)}
+                    >
                       Load More
                     </Button>
                   </div>

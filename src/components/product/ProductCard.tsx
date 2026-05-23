@@ -102,7 +102,7 @@ const ProductCard = ({ product, attributes }: ProductCardProps) => {
     } = product;
     const newItem = {
       ...updatedProduct,
-      title: String(p?.title ?? ''),
+      title: String(p?.title ?? ""),
       id: p._id,
       variant: isInCampaign
         ? { ...p.prices, price: campaign!.campaignPrice }
@@ -149,7 +149,7 @@ const ProductCard = ({ product, attributes }: ProductCardProps) => {
         />
       )}
 
-      <div className="group relative flex flex-col overflow-hidden rounded-xl border bg-card transition-all duration-200 ease-in-out hover:shadow-lg hover:-translate-y-1 hover:border-primary/50 ">
+      <div className="group relative flex flex-col overflow-hidden rounded-sm bg-card transition-all duration-200 ease-in-out hover:shadow-lg hover:-translate-y-1">
         <div className="w-full flex justify-between">
           <Discount product={product} />
         </div>
@@ -174,7 +174,7 @@ const ProductCard = ({ product, attributes }: ProductCardProps) => {
                 handleModalOpen(!modalOpen);
                 handleLogEvent(
                   "product",
-                  `opened ${String(product?.title ?? '')} product modal`
+                  `opened ${String(product?.title ?? "")} product modal`,
                 );
               }}
               className="relative h-auto inline-flex items-center cursor-pointer justify-center rounded-full transition-colors text-xs py-2 px-4 bg-background text-muted-foreground dark:bg-background dark:text-muted-foreground hover:text-primary hover:bg-muted dark:hover:bg-accent shadow-lg focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-primary dark:focus:ring-offset-0"
@@ -198,7 +198,7 @@ const ProductCard = ({ product, attributes }: ProductCardProps) => {
                           onClick={() =>
                             updateItemQuantity(
                               item.id,
-                              (item.quantity ?? 1) - 1
+                              (item.quantity ?? 1) - 1,
                             )
                           }
                         >
@@ -222,7 +222,7 @@ const ProductCard = ({ product, attributes }: ProductCardProps) => {
                           </span>
                         </button>
                       </div>
-                    )
+                    ),
                 )}{" "}
               </div>
             ) : (
@@ -244,7 +244,7 @@ const ProductCard = ({ product, attributes }: ProductCardProps) => {
               to={`/product/${product?.slug}`}
               className="text-sm font-medium text-foreground line-clamp-1 hover:text-primary"
             >
-              {String(product?.title ?? '')}
+              {String(product?.title ?? "")}
             </Link>
           </div>
           <div className="flex gap-0.5 items-center">
@@ -261,7 +261,7 @@ const ProductCard = ({ product, attributes }: ProductCardProps) => {
             product={product}
             price={effectivePrice}
             originalPrice={effectiveOriginalPrice}
-            campaign={isInCampaign ? campaign ?? undefined : undefined}
+            campaign={isInCampaign ? (campaign ?? undefined) : undefined}
           />
 
           {isInCampaign && campaign && (
