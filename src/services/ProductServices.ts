@@ -1,5 +1,24 @@
 import type { Product, Review } from "@appTypes/index";
 import allProductsRaw from "@localdata/products.json";
+import categoriesData from "@localdata/categories.json";
+
+// Build slug → Set<all descendant IDs including self> so any level of the
+// hierarchy resolves correctly when a URL slug is searched.
+const slugToIds = new Map<string, Set<string>>();
+(categoriesData as any[]).forEach((dept) => {
+  const deptIds = new Set<string>([dept._id]);
+  (dept.categories ?? []).forEach((cat: any) => {
+    const catIds = new Set<string>([cat._id]);
+    (cat.children ?? []).forEach((sub: any) => {
+      catIds.add(sub._id);
+      deptIds.add(sub._id);
+      slugToIds.set(sub.slug, new Set([sub._id]));
+    });
+    deptIds.add(cat._id);
+    slugToIds.set(cat.slug, catIds);
+  });
+  slugToIds.set(dept.slug, deptIds);
+});
 
 function normalize(p: Record<string, unknown>): Product {
   const product = p as Product;
@@ -32,24 +51,27 @@ interface StoreProductsResult {
 
 function matchCategory(product: Product, categorySlug: string): boolean {
   if (!categorySlug) return true;
+
+  // Primary: check the product's categories array against the slug→ID map.
+  // This handles dept, cat, and subcat slugs at all hierarchy levels.
+  const validIds = slugToIds.get(categorySlug);
+  if (validIds && validIds.size > 0) {
+    const productCatIds: string[] = ((product as any).categories ?? []).map((c: any) => c._id);
+    if (productCatIds.some((id) => validIds.has(id))) return true;
+  }
+
+  // Fallback: legacy field-level checks on product.category object
   const cat = product.category;
   if (!cat) return false;
-  if (typeof cat === "string") {
-    return cat === categorySlug;
-  }
+  if (typeof cat === "string") return cat === categorySlug;
   const c = cat as { _id?: string; slug?: string; name?: string; parentId?: string; parentName?: string };
-  // Direct _id match (CategoryNavigateButton passes _id as query param)
   if (c._id === categorySlug) return true;
-  // Child category: product belongs to a child whose parentId matches the clicked parent
   if (c.parentId === categorySlug) return true;
-  // Slug match
   if (c.slug === categorySlug) return true;
-  // Parent name slug match (e.g. parentName "Fish & Meat" → "fish-meat")
   if (c.parentName) {
     const parentSlug = c.parentName.toLowerCase().replace(/[^a-z0-9]+/g, "-");
     if (parentSlug === categorySlug) return true;
   }
-  // Slug-to-name regex: "fish-meat" → /^fish[^a-z0-9]+meat/i
   const pattern = categorySlug.replace(/-/g, "[^a-z0-9]+");
   const regex = new RegExp(`^${pattern}`, "i");
   return regex.test(c.name ?? "");

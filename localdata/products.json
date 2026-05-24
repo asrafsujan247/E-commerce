@@ -4010,6 +4010,9 @@
       },
       {
         "_id": "632aca7e4d87ff2494210c34"
+      },
+      {
+        "_id": "632aca754d87ff2494210c2c"
       }
     ],
     "category": {
@@ -4019,7 +4022,9 @@
       "parentId": "632aca6d4d87ff2494210c24",
       "parentName": "Fish & Meats"
     },
-    "image": [],
+    "image": [
+      "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=400&q=80"
+    ],
     "stock": 41,
     "tag": [
       "[]"
@@ -4056,6 +4061,9 @@
       },
       {
         "_id": "632aca7e4d87ff2494210c34"
+      },
+      {
+        "_id": "632aca754d87ff2494210c2c"
       }
     ],
     "category": {
@@ -4065,7 +4073,9 @@
       "parentId": "632aca6d4d87ff2494210c24",
       "parentName": "Fish & Meats"
     },
-    "image": [],
+    "image": [
+      "https://images.unsplash.com/photo-1602470520998-f4a52199a3d6?w=400&q=80"
+    ],
     "stock": 265,
     "tag": [
       "[]"
@@ -4102,6 +4112,9 @@
       },
       {
         "_id": "632aca7e4d87ff2494210c34"
+      },
+      {
+        "_id": "632aca754d87ff2494210c2c"
       }
     ],
     "category": {
@@ -4111,7 +4124,9 @@
       "parentId": "632aca6d4d87ff2494210c24",
       "parentName": "Fish & Meats"
     },
-    "image": [],
+    "image": [
+      "https://images.unsplash.com/photo-1519984388953-d2406bc725e1?w=400&q=80"
+    ],
     "stock": 301,
     "tag": [
       "[]"
@@ -4148,6 +4163,9 @@
       },
       {
         "_id": "632aca7e4d87ff2494210c34"
+      },
+      {
+        "_id": "632aca754d87ff2494210c2c"
       }
     ],
     "category": {
@@ -4157,7 +4175,9 @@
       "parentId": "632aca6d4d87ff2494210c24",
       "parentName": "Fish & Meats"
     },
-    "image": [],
+    "image": [
+      "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=400&q=80"
+    ],
     "stock": 159,
     "tag": [
       "[]"
@@ -4191,6 +4211,9 @@
       },
       {
         "_id": "632aca7e4d87ff2494210c34"
+      },
+      {
+        "_id": "632aca754d87ff2494210c2c"
       }
     ],
     "category": {
@@ -4200,7 +4223,9 @@
       "parentId": "632aca6d4d87ff2494210c24",
       "parentName": "Fish & Meats"
     },
-    "image": [],
+    "image": [
+      "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80"
+    ],
     "stock": 387,
     "tag": [
       "[]"
@@ -4950,6 +4975,9 @@
       },
       {
         "_id": "632ab0564d87ff24942109df"
+      },
+      {
+        "_id": "632ab04c4d87ff24942109d1"
       }
     ],
     "category": {
@@ -5532,6 +5560,9 @@
     "categories": [
       {
         "_id": "632aca374d87ff2494210bf0"
+      },
+      {
+        "_id": "632aca7e4d87ff2494210c34"
       }
     ],
     "category": {
@@ -5572,6 +5603,9 @@
     "categories": [
       {
         "_id": "632aca374d87ff2494210bf0"
+      },
+      {
+        "_id": "632aca7e4d87ff2494210c34"
       }
     ],
     "category": {
@@ -5612,6 +5646,9 @@
     "categories": [
       {
         "_id": "632aca374d87ff2494210bf0"
+      },
+      {
+        "_id": "632aca7e4d87ff2494210c34"
       }
     ],
     "category": {
@@ -5652,6 +5689,9 @@
     "categories": [
       {
         "_id": "632aca374d87ff2494210bf0"
+      },
+      {
+        "_id": "632aca7e4d87ff2494210c34"
       }
     ],
     "category": {
@@ -5692,6 +5732,9 @@
     "categories": [
       {
         "_id": "632aca374d87ff2494210bf0"
+      },
+      {
+        "_id": "632aca7e4d87ff2494210c34"
       }
     ],
     "category": {
@@ -5732,6 +5775,9 @@
     "categories": [
       {
         "_id": "632aca374d87ff2494210bf0"
+      },
+      {
+        "_id": "632aca7e4d87ff2494210c34"
       }
     ],
     "category": {
@@ -5772,6 +5818,9 @@
     "categories": [
       {
         "_id": "632aca374d87ff2494210bf0"
+      },
+      {
+        "_id": "632aca7e4d87ff2494210c34"
       }
     ],
     "category": {
@@ -6986,6 +7035,9 @@
     "categories": [
       {
         "_id": "632ac9e94d87ff2494210ba0"
+      },
+      {
+        "_id": "632ac9ef4d87ff2494210ba8"
       }
     ],
     "category": {
@@ -7028,6 +7080,9 @@
     "categories": [
       {
         "_id": "632ac9e94d87ff2494210ba0"
+      },
+      {
+        "_id": "632ac9ef4d87ff2494210ba8"
       }
     ],
     "category": {
@@ -7070,6 +7125,9 @@
     "categories": [
       {
         "_id": "632ac9e94d87ff2494210ba0"
+      },
+      {
+        "_id": "632ac9ef4d87ff2494210ba8"
       }
     ],
     "category": {
@@ -7112,6 +7170,9 @@
     "categories": [
       {
         "_id": "632ac9e94d87ff2494210ba0"
+      },
+      {
+        "_id": "632ac9ef4d87ff2494210ba8"
       }
     ],
     "category": {
@@ -7154,6 +7215,9 @@
     "categories": [
       {
         "_id": "632ac9e94d87ff2494210ba0"
+      },
+      {
+        "_id": "632ac9ef4d87ff2494210ba8"
       }
     ],
     "category": {
@@ -7196,6 +7260,9 @@
     "categories": [
       {
         "_id": "632ac9e94d87ff2494210ba0"
+      },
+      {
+        "_id": "632ac9f64d87ff2494210bb0"
       }
     ],
     "category": {
@@ -7238,6 +7305,9 @@
     "categories": [
       {
         "_id": "632ac9e94d87ff2494210ba0"
+      },
+      {
+        "_id": "632ac9f64d87ff2494210bb0"
       }
     ],
     "category": {
@@ -7280,6 +7350,9 @@
     "categories": [
       {
         "_id": "632ac9e94d87ff2494210ba0"
+      },
+      {
+        "_id": "632ac9f64d87ff2494210bb0"
       }
     ],
     "category": {
@@ -7322,6 +7395,9 @@
     "categories": [
       {
         "_id": "632ac9e94d87ff2494210ba0"
+      },
+      {
+        "_id": "632ac9f64d87ff2494210bb0"
       }
     ],
     "category": {
@@ -7364,6 +7440,9 @@
     "categories": [
       {
         "_id": "632ac9e94d87ff2494210ba0"
+      },
+      {
+        "_id": "632ac9f64d87ff2494210bb0"
       }
     ],
     "category": {
@@ -16845,5 +16924,4829 @@
     "updatedAt": "2023-04-23T09:56:18.434Z",
     "brand": "HomeCare",
     "supplier": "Metro Wholesale"
+  },
+  {
+    "_id": "elec001",
+    "productId": "elec001a",
+    "sku": "SKU-ELEC001",
+    "barcode": "",
+    "title": "ProMax Smartphone 5G 256GB",
+    "slug": "promax-smartphone-5g-256gb",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Latest 5G smartphone with triple camera and fast charging.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/smartphone1/400/400",
+      "https://picsum.photos/seed/smartphone2/400/400",
+      "https://picsum.photos/seed/smartphone3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/smartphone1/400/400",
+      "https://picsum.photos/seed/smartphone2/400/400",
+      "https://picsum.photos/seed/smartphone3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b002",
+      "name": "Consumer Electronics",
+      "slug": "consumer-electronics",
+      "parentId": "dept002",
+      "parentName": "Consumer Electronics",
+      "icon": "",
+      "description": "Consumer Electronics",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept002"
+      },
+      {
+        "_id": "b2b002"
+      },
+      {
+        "_id": "b2b002-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 33349,
+      "price": 28999,
+      "discount": 13
+    },
+    "originalPrice": 33349,
+    "price": 28999,
+    "discount": 13,
+    "sales": 177,
+    "quantity": 500,
+    "sold": 60,
+    "stock": 500,
+    "status": "show",
+    "brand": "TechVision",
+    "supplier": "Pacific Imports",
+    "reviews": [],
+    "rating": "3.7",
+    "numReviews": 78,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "elec002",
+    "productId": "elec002a",
+    "sku": "SKU-ELEC002",
+    "barcode": "",
+    "title": "SoundPro Wireless Earbuds ANC",
+    "slug": "soundpro-wireless-earbuds-anc",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Active noise cancelling wireless earbuds with 30h battery.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/earbuds1/400/400",
+      "https://picsum.photos/seed/earbuds2/400/400",
+      "https://picsum.photos/seed/earbuds3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/earbuds1/400/400",
+      "https://picsum.photos/seed/earbuds2/400/400",
+      "https://picsum.photos/seed/earbuds3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b002",
+      "name": "Consumer Electronics",
+      "slug": "consumer-electronics",
+      "parentId": "dept002",
+      "parentName": "Consumer Electronics",
+      "icon": "",
+      "description": "Consumer Electronics",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept002"
+      },
+      {
+        "_id": "b2b002"
+      },
+      {
+        "_id": "b2b002-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 6324,
+      "price": 5499,
+      "discount": 13
+    },
+    "originalPrice": 6324,
+    "price": 5499,
+    "discount": 13,
+    "sales": 198,
+    "quantity": 500,
+    "sold": 44,
+    "stock": 500,
+    "status": "show",
+    "brand": "SoundPro",
+    "supplier": "Pacific Imports",
+    "reviews": [],
+    "rating": "4.1",
+    "numReviews": 70,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "elec003",
+    "productId": "elec003a",
+    "sku": "SKU-ELEC003",
+    "barcode": "",
+    "title": "SmartView 55\" 4K OLED TV",
+    "slug": "smartview-55-4k-oled-tv",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "55-inch 4K OLED smart TV with Dolby Vision and HDMI 2.1.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/tv1/400/400",
+      "https://picsum.photos/seed/tv2/400/400",
+      "https://picsum.photos/seed/tv3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/tv1/400/400",
+      "https://picsum.photos/seed/tv2/400/400",
+      "https://picsum.photos/seed/tv3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b002",
+      "name": "Consumer Electronics",
+      "slug": "consumer-electronics",
+      "parentId": "dept002",
+      "parentName": "Consumer Electronics",
+      "icon": "",
+      "description": "Consumer Electronics",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept002"
+      },
+      {
+        "_id": "b2b002"
+      },
+      {
+        "_id": "b2b002-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 103499,
+      "price": 89999,
+      "discount": 13
+    },
+    "originalPrice": 103499,
+    "price": 89999,
+    "discount": 13,
+    "sales": 177,
+    "quantity": 500,
+    "sold": 63,
+    "stock": 500,
+    "status": "show",
+    "brand": "SmartView",
+    "supplier": "Pacific Imports",
+    "reviews": [],
+    "rating": "4.5",
+    "numReviews": 70,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "elec004",
+    "productId": "elec004a",
+    "sku": "SKU-ELEC004",
+    "barcode": "",
+    "title": "AuraWatch Pro Smartwatch",
+    "slug": "aurawatch-pro-smartwatch",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Smart watch with health tracking, GPS, and 7-day battery.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/watch1/400/400",
+      "https://picsum.photos/seed/watch2/400/400",
+      "https://picsum.photos/seed/watch3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/watch1/400/400",
+      "https://picsum.photos/seed/watch2/400/400",
+      "https://picsum.photos/seed/watch3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b002",
+      "name": "Consumer Electronics",
+      "slug": "consumer-electronics",
+      "parentId": "dept002",
+      "parentName": "Consumer Electronics",
+      "icon": "",
+      "description": "Consumer Electronics",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept002"
+      },
+      {
+        "_id": "b2b002"
+      },
+      {
+        "_id": "b2b002-g3"
+      }
+    ],
+    "prices": {
+      "originalPrice": 14374,
+      "price": 12499,
+      "discount": 13
+    },
+    "originalPrice": 14374,
+    "price": 12499,
+    "discount": 13,
+    "sales": 113,
+    "quantity": 500,
+    "sold": 87,
+    "stock": 500,
+    "status": "show",
+    "brand": "AuraWatch",
+    "supplier": "Pacific Imports",
+    "reviews": [],
+    "rating": "4.6",
+    "numReviews": 31,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "elec005",
+    "productId": "elec005a",
+    "sku": "SKU-ELEC005",
+    "barcode": "",
+    "title": "PowerMax 20000mAh Power Bank",
+    "slug": "powermax-20000mah-power-bank",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Slim 20000mAh power bank with dual fast-charge ports.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/powerbank1/400/400",
+      "https://picsum.photos/seed/powerbank2/400/400",
+      "https://picsum.photos/seed/powerbank3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/powerbank1/400/400",
+      "https://picsum.photos/seed/powerbank2/400/400",
+      "https://picsum.photos/seed/powerbank3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b002",
+      "name": "Consumer Electronics",
+      "slug": "consumer-electronics",
+      "parentId": "dept002",
+      "parentName": "Consumer Electronics",
+      "icon": "",
+      "description": "Consumer Electronics",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept002"
+      },
+      {
+        "_id": "b2b002"
+      },
+      {
+        "_id": "b2b002-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 3449,
+      "price": 2999,
+      "discount": 13
+    },
+    "originalPrice": 3449,
+    "price": 2999,
+    "discount": 13,
+    "sales": 83,
+    "quantity": 500,
+    "sold": 6,
+    "stock": 500,
+    "status": "show",
+    "brand": "PowerMax",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "3.6",
+    "numReviews": 76,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "comp001",
+    "productId": "comp001a",
+    "sku": "SKU-COMP001",
+    "barcode": "",
+    "title": "ProBook Elite 14\" Laptop i7",
+    "slug": "probook-elite-14-laptop-i7",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Intel i7, 16GB RAM, 512GB SSD, 14\" FHD display laptop.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/laptop1/400/400",
+      "https://picsum.photos/seed/laptop2/400/400",
+      "https://picsum.photos/seed/laptop3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/laptop1/400/400",
+      "https://picsum.photos/seed/laptop2/400/400",
+      "https://picsum.photos/seed/laptop3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b015",
+      "name": "Computer Products",
+      "slug": "computer-products",
+      "parentId": "dept002",
+      "parentName": "Computer Products",
+      "icon": "",
+      "description": "Computer Products",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept002"
+      },
+      {
+        "_id": "b2b015"
+      },
+      {
+        "_id": "b2b015-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 87399,
+      "price": 75999,
+      "discount": 13
+    },
+    "originalPrice": 87399,
+    "price": 75999,
+    "discount": 13,
+    "sales": 158,
+    "quantity": 500,
+    "sold": 10,
+    "stock": 500,
+    "status": "show",
+    "brand": "ProBook",
+    "supplier": "Pacific Imports",
+    "reviews": [],
+    "rating": "4.8",
+    "numReviews": 34,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "comp002",
+    "productId": "comp002a",
+    "sku": "SKU-COMP002",
+    "barcode": "",
+    "title": "MechKey RGB Mechanical Keyboard",
+    "slug": "mechkey-rgb-mechanical-keyboard",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Full-size RGB mechanical keyboard with Cherry MX switches.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/keyboard1/400/400",
+      "https://picsum.photos/seed/keyboard2/400/400",
+      "https://picsum.photos/seed/keyboard3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/keyboard1/400/400",
+      "https://picsum.photos/seed/keyboard2/400/400",
+      "https://picsum.photos/seed/keyboard3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b015",
+      "name": "Computer Products",
+      "slug": "computer-products",
+      "parentId": "dept002",
+      "parentName": "Computer Products",
+      "icon": "",
+      "description": "Computer Products",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept002"
+      },
+      {
+        "_id": "b2b015"
+      },
+      {
+        "_id": "b2b015-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 5749,
+      "price": 4999,
+      "discount": 13
+    },
+    "originalPrice": 5749,
+    "price": 4999,
+    "discount": 13,
+    "sales": 29,
+    "quantity": 500,
+    "sold": 90,
+    "stock": 500,
+    "status": "show",
+    "brand": "MechKey",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "5.0",
+    "numReviews": 84,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "comp003",
+    "productId": "comp003a",
+    "sku": "SKU-COMP003",
+    "barcode": "",
+    "title": "UltraView 27\" QHD Monitor",
+    "slug": "ultraview-27-qhd-monitor",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "27-inch QHD IPS monitor, 165Hz refresh rate, 1ms response.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/monitor1/400/400",
+      "https://picsum.photos/seed/monitor2/400/400",
+      "https://picsum.photos/seed/monitor3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/monitor1/400/400",
+      "https://picsum.photos/seed/monitor2/400/400",
+      "https://picsum.photos/seed/monitor3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b015",
+      "name": "Computer Products",
+      "slug": "computer-products",
+      "parentId": "dept002",
+      "parentName": "Computer Products",
+      "icon": "",
+      "description": "Computer Products",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept002"
+      },
+      {
+        "_id": "b2b015"
+      },
+      {
+        "_id": "b2b015-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 28749,
+      "price": 24999,
+      "discount": 13
+    },
+    "originalPrice": 28749,
+    "price": 24999,
+    "discount": 13,
+    "sales": 24,
+    "quantity": 500,
+    "sold": 91,
+    "stock": 500,
+    "status": "show",
+    "brand": "UltraView",
+    "supplier": "Pacific Imports",
+    "reviews": [],
+    "rating": "4.7",
+    "numReviews": 71,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "comp004",
+    "productId": "comp004a",
+    "sku": "SKU-COMP004",
+    "barcode": "",
+    "title": "SwiftStore 1TB NVMe SSD",
+    "slug": "swiftstore-1tb-nvme-ssd",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "1TB NVMe SSD with 7000MB/s read speed.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/ssd1/400/400",
+      "https://picsum.photos/seed/ssd2/400/400",
+      "https://picsum.photos/seed/ssd3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/ssd1/400/400",
+      "https://picsum.photos/seed/ssd2/400/400",
+      "https://picsum.photos/seed/ssd3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b015",
+      "name": "Computer Products",
+      "slug": "computer-products",
+      "parentId": "dept002",
+      "parentName": "Computer Products",
+      "icon": "",
+      "description": "Computer Products",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept002"
+      },
+      {
+        "_id": "b2b015"
+      },
+      {
+        "_id": "b2b015-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 10349,
+      "price": 8999,
+      "discount": 13
+    },
+    "originalPrice": 10349,
+    "price": 8999,
+    "discount": 13,
+    "sales": 122,
+    "quantity": 500,
+    "sold": 87,
+    "stock": 500,
+    "status": "show",
+    "brand": "SwiftStore",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "4.5",
+    "numReviews": 54,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "comp005",
+    "productId": "comp005a",
+    "sku": "SKU-COMP005",
+    "barcode": "",
+    "title": "NetSpeed AX3000 Wi-Fi 6 Router",
+    "slug": "netspeed-ax3000-wifi6-router",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Wi-Fi 6 router with AX3000 dual-band for home and office.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/router1/400/400",
+      "https://picsum.photos/seed/router2/400/400",
+      "https://picsum.photos/seed/router3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/router1/400/400",
+      "https://picsum.photos/seed/router2/400/400",
+      "https://picsum.photos/seed/router3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b015",
+      "name": "Computer Products",
+      "slug": "computer-products",
+      "parentId": "dept002",
+      "parentName": "Computer Products",
+      "icon": "",
+      "description": "Computer Products",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept002"
+      },
+      {
+        "_id": "b2b015"
+      },
+      {
+        "_id": "b2b015-g3"
+      }
+    ],
+    "prices": {
+      "originalPrice": 10924,
+      "price": 9499,
+      "discount": 13
+    },
+    "originalPrice": 10924,
+    "price": 9499,
+    "discount": 13,
+    "sales": 167,
+    "quantity": 500,
+    "sold": 50,
+    "stock": 500,
+    "status": "show",
+    "brand": "NetSpeed",
+    "supplier": "Pacific Imports",
+    "reviews": [],
+    "rating": "4.7",
+    "numReviews": 82,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "eleco001",
+    "productId": "eleco001a",
+    "sku": "SKU-ELECO001",
+    "barcode": "",
+    "title": "ProBoard PCB Development Board",
+    "slug": "proboard-pcb-development-board",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Arduino-compatible PCB development board with I/O pins.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/pcb1/400/400",
+      "https://picsum.photos/seed/pcb2/400/400",
+      "https://picsum.photos/seed/pcb3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/pcb1/400/400",
+      "https://picsum.photos/seed/pcb2/400/400",
+      "https://picsum.photos/seed/pcb3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b004",
+      "name": "Electrical & Electronics",
+      "slug": "electrical-electronics",
+      "parentId": "dept002",
+      "parentName": "Electrical & Electronics",
+      "icon": "",
+      "description": "Electrical & Electronics",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept002"
+      },
+      {
+        "_id": "b2b004"
+      },
+      {
+        "_id": "b2b004-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 1494,
+      "price": 1299,
+      "discount": 13
+    },
+    "originalPrice": 1494,
+    "price": 1299,
+    "discount": 13,
+    "sales": 165,
+    "quantity": 500,
+    "sold": 91,
+    "stock": 500,
+    "status": "show",
+    "brand": "ProBoard",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "4.5",
+    "numReviews": 20,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "eleco002",
+    "productId": "eleco002a",
+    "sku": "SKU-ELECO002",
+    "barcode": "",
+    "title": "PowerLine 10m Power Cable 6mm",
+    "slug": "powerline-10m-power-cable-6mm",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Heavy-duty 6mm copper power cable, 10 meters, heat resistant.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/cable1/400/400",
+      "https://picsum.photos/seed/cable2/400/400",
+      "https://picsum.photos/seed/cable3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/cable1/400/400",
+      "https://picsum.photos/seed/cable2/400/400",
+      "https://picsum.photos/seed/cable3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b004",
+      "name": "Electrical & Electronics",
+      "slug": "electrical-electronics",
+      "parentId": "dept002",
+      "parentName": "Electrical & Electronics",
+      "icon": "",
+      "description": "Electrical & Electronics",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept002"
+      },
+      {
+        "_id": "b2b004"
+      },
+      {
+        "_id": "b2b004-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 1034,
+      "price": 899,
+      "discount": 13
+    },
+    "originalPrice": 1034,
+    "price": 899,
+    "discount": 13,
+    "sales": 145,
+    "quantity": 500,
+    "sold": 22,
+    "stock": 500,
+    "status": "show",
+    "brand": "PowerLine",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "3.9",
+    "numReviews": 7,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "eleco003",
+    "productId": "eleco003a",
+    "sku": "SKU-ELECO003",
+    "barcode": "",
+    "title": "SafeBreak 63A Circuit Breaker",
+    "slug": "safebreak-63a-circuit-breaker",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "63A single-pole MCB circuit breaker, DIN rail mount.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/breaker1/400/400",
+      "https://picsum.photos/seed/breaker2/400/400",
+      "https://picsum.photos/seed/breaker3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/breaker1/400/400",
+      "https://picsum.photos/seed/breaker2/400/400",
+      "https://picsum.photos/seed/breaker3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b004",
+      "name": "Electrical & Electronics",
+      "slug": "electrical-electronics",
+      "parentId": "dept002",
+      "parentName": "Electrical & Electronics",
+      "icon": "",
+      "description": "Electrical & Electronics",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept002"
+      },
+      {
+        "_id": "b2b004"
+      },
+      {
+        "_id": "b2b004-g3"
+      }
+    ],
+    "prices": {
+      "originalPrice": 1839,
+      "price": 1599,
+      "discount": 13
+    },
+    "originalPrice": 1839,
+    "price": 1599,
+    "discount": 13,
+    "sales": 98,
+    "quantity": 500,
+    "sold": 84,
+    "stock": 500,
+    "status": "show",
+    "brand": "SafeBreak",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "4.0",
+    "numReviews": 81,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "eleco004",
+    "productId": "eleco004a",
+    "sku": "SKU-ELECO004",
+    "barcode": "",
+    "title": "LumiStrip RGB LED Strip 5m",
+    "slug": "lumistrip-rgb-led-strip-5m",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "5-meter RGB LED strip, 60 LEDs/m, IP65 waterproof.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/ledstrip1/400/400",
+      "https://picsum.photos/seed/ledstrip2/400/400",
+      "https://picsum.photos/seed/ledstrip3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/ledstrip1/400/400",
+      "https://picsum.photos/seed/ledstrip2/400/400",
+      "https://picsum.photos/seed/ledstrip3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b004",
+      "name": "Electrical & Electronics",
+      "slug": "electrical-electronics",
+      "parentId": "dept002",
+      "parentName": "Electrical & Electronics",
+      "icon": "",
+      "description": "Electrical & Electronics",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept002"
+      },
+      {
+        "_id": "b2b004"
+      },
+      {
+        "_id": "b2b004-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 2069,
+      "price": 1799,
+      "discount": 13
+    },
+    "originalPrice": 2069,
+    "price": 1799,
+    "discount": 13,
+    "sales": 132,
+    "quantity": 500,
+    "sold": 97,
+    "stock": 500,
+    "status": "show",
+    "brand": "LumiStrip",
+    "supplier": "Pacific Imports",
+    "reviews": [],
+    "rating": "3.9",
+    "numReviews": 54,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "const001",
+    "productId": "const001a",
+    "sku": "SKU-CONST001",
+    "barcode": "",
+    "title": "FineCraft Ceramic Floor Tile 60x60cm",
+    "slug": "finecraft-ceramic-floor-tile-60x60",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Premium polished ceramic floor tile, 60x60cm, frost resistant.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/tile1/400/400",
+      "https://picsum.photos/seed/tile2/400/400",
+      "https://picsum.photos/seed/tile3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/tile1/400/400",
+      "https://picsum.photos/seed/tile2/400/400",
+      "https://picsum.photos/seed/tile3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b005",
+      "name": "Construction & Decoration",
+      "slug": "construction-decoration",
+      "parentId": "dept003",
+      "parentName": "Construction & Decoration",
+      "icon": "",
+      "description": "Construction & Decoration",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept003"
+      },
+      {
+        "_id": "b2b005"
+      },
+      {
+        "_id": "b2b005-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 4024,
+      "price": 3499,
+      "discount": 13
+    },
+    "originalPrice": 4024,
+    "price": 3499,
+    "discount": 13,
+    "sales": 11,
+    "quantity": 500,
+    "sold": 67,
+    "stock": 500,
+    "status": "show",
+    "brand": "FineCraft",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "4.8",
+    "numReviews": 38,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "const002",
+    "productId": "const002a",
+    "sku": "SKU-CONST002",
+    "barcode": "",
+    "title": "EliteSteel TMT Rebar 12mm 12m",
+    "slug": "elitesteel-tmt-rebar-12mm",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "High-strength TMT steel rebar 12mm, 12-meter length.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/steel1/400/400",
+      "https://picsum.photos/seed/steel2/400/400",
+      "https://picsum.photos/seed/steel3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/steel1/400/400",
+      "https://picsum.photos/seed/steel2/400/400",
+      "https://picsum.photos/seed/steel3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b005",
+      "name": "Construction & Decoration",
+      "slug": "construction-decoration",
+      "parentId": "dept003",
+      "parentName": "Construction & Decoration",
+      "icon": "",
+      "description": "Construction & Decoration",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept003"
+      },
+      {
+        "_id": "b2b005"
+      },
+      {
+        "_id": "b2b005-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 2184,
+      "price": 1899,
+      "discount": 13
+    },
+    "originalPrice": 2184,
+    "price": 1899,
+    "discount": 13,
+    "sales": 182,
+    "quantity": 500,
+    "sold": 88,
+    "stock": 500,
+    "status": "show",
+    "brand": "EliteSteel",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "4.8",
+    "numReviews": 31,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "const003",
+    "productId": "const003a",
+    "sku": "SKU-CONST003",
+    "barcode": "",
+    "title": "WallArt Premium Wallpaper Roll",
+    "slug": "wallart-premium-wallpaper-roll",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Textured non-woven wallpaper roll, 10m x 53cm, moisture resistant.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/wallpaper1/400/400",
+      "https://picsum.photos/seed/wallpaper2/400/400",
+      "https://picsum.photos/seed/wallpaper3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/wallpaper1/400/400",
+      "https://picsum.photos/seed/wallpaper2/400/400",
+      "https://picsum.photos/seed/wallpaper3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b005",
+      "name": "Construction & Decoration",
+      "slug": "construction-decoration",
+      "parentId": "dept003",
+      "parentName": "Construction & Decoration",
+      "icon": "",
+      "description": "Construction & Decoration",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept003"
+      },
+      {
+        "_id": "b2b005"
+      },
+      {
+        "_id": "b2b005-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 2644,
+      "price": 2299,
+      "discount": 13
+    },
+    "originalPrice": 2644,
+    "price": 2299,
+    "discount": 13,
+    "sales": 35,
+    "quantity": 500,
+    "sold": 99,
+    "stock": 500,
+    "status": "show",
+    "brand": "WallArt",
+    "supplier": "National Distributors",
+    "reviews": [],
+    "rating": "4.8",
+    "numReviews": 81,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "const004",
+    "productId": "const004a",
+    "sku": "SKU-CONST004",
+    "barcode": "",
+    "title": "DuraFloor Laminate Flooring 12mm",
+    "slug": "durafloor-laminate-flooring-12mm",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "AC4-rated laminate flooring, 12mm thick, easy click installation.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/flooring1/400/400",
+      "https://picsum.photos/seed/flooring2/400/400",
+      "https://picsum.photos/seed/flooring3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/flooring1/400/400",
+      "https://picsum.photos/seed/flooring2/400/400",
+      "https://picsum.photos/seed/flooring3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b005",
+      "name": "Construction & Decoration",
+      "slug": "construction-decoration",
+      "parentId": "dept003",
+      "parentName": "Construction & Decoration",
+      "icon": "",
+      "description": "Construction & Decoration",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept003"
+      },
+      {
+        "_id": "b2b005"
+      },
+      {
+        "_id": "b2b005-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 5519,
+      "price": 4799,
+      "discount": 13
+    },
+    "originalPrice": 5519,
+    "price": 4799,
+    "discount": 13,
+    "sales": 18,
+    "quantity": 500,
+    "sold": 61,
+    "stock": 500,
+    "status": "show",
+    "brand": "DuraFloor",
+    "supplier": "National Distributors",
+    "reviews": [],
+    "rating": "4.8",
+    "numReviews": 61,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "light001",
+    "productId": "light001a",
+    "sku": "SKU-LIGHT001",
+    "barcode": "",
+    "title": "BrightLED E27 15W LED Bulb Pack 10",
+    "slug": "brightled-e27-15w-led-bulb-pack10",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Energy-saving E27 15W LED bulb, 1500lm, pack of 10.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/bulb1/400/400",
+      "https://picsum.photos/seed/bulb2/400/400",
+      "https://picsum.photos/seed/bulb3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/bulb1/400/400",
+      "https://picsum.photos/seed/bulb2/400/400",
+      "https://picsum.photos/seed/bulb3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b009",
+      "name": "Lights & Lighting",
+      "slug": "lights-lighting",
+      "parentId": "dept003",
+      "parentName": "Lights & Lighting",
+      "icon": "",
+      "description": "Lights & Lighting",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept003"
+      },
+      {
+        "_id": "b2b009"
+      },
+      {
+        "_id": "b2b009-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 1494,
+      "price": 1299,
+      "discount": 13
+    },
+    "originalPrice": 1494,
+    "price": 1299,
+    "discount": 13,
+    "sales": 189,
+    "quantity": 500,
+    "sold": 40,
+    "stock": 500,
+    "status": "show",
+    "brand": "BrightLED",
+    "supplier": "Pacific Imports",
+    "reviews": [],
+    "rating": "4.3",
+    "numReviews": 39,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "light002",
+    "productId": "light002a",
+    "sku": "SKU-LIGHT002",
+    "barcode": "",
+    "title": "StreetMax 100W LED Street Light",
+    "slug": "streetmax-100w-led-street-light",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "IP66 waterproof 100W LED street light, 10000lm, 5000K.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/streetlight1/400/400",
+      "https://picsum.photos/seed/streetlight2/400/400",
+      "https://picsum.photos/seed/streetlight3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/streetlight1/400/400",
+      "https://picsum.photos/seed/streetlight2/400/400",
+      "https://picsum.photos/seed/streetlight3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b009",
+      "name": "Lights & Lighting",
+      "slug": "lights-lighting",
+      "parentId": "dept003",
+      "parentName": "Lights & Lighting",
+      "icon": "",
+      "description": "Lights & Lighting",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept003"
+      },
+      {
+        "_id": "b2b009"
+      },
+      {
+        "_id": "b2b009-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 10349,
+      "price": 8999,
+      "discount": 13
+    },
+    "originalPrice": 10349,
+    "price": 8999,
+    "discount": 13,
+    "sales": 104,
+    "quantity": 500,
+    "sold": 19,
+    "stock": 500,
+    "status": "show",
+    "brand": "StreetMax",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "5.0",
+    "numReviews": 34,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "light003",
+    "productId": "light003a",
+    "sku": "SKU-LIGHT003",
+    "barcode": "",
+    "title": "LuxPanel 40W LED Panel Light",
+    "slug": "luxpanel-40w-led-panel-light",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Ultra-slim 40W LED panel light, 60x60cm, 4000K neutral white.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/panel1/400/400",
+      "https://picsum.photos/seed/panel2/400/400",
+      "https://picsum.photos/seed/panel3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/panel1/400/400",
+      "https://picsum.photos/seed/panel2/400/400",
+      "https://picsum.photos/seed/panel3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b009",
+      "name": "Lights & Lighting",
+      "slug": "lights-lighting",
+      "parentId": "dept003",
+      "parentName": "Lights & Lighting",
+      "icon": "",
+      "description": "Lights & Lighting",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept003"
+      },
+      {
+        "_id": "b2b009"
+      },
+      {
+        "_id": "b2b009-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 4024,
+      "price": 3499,
+      "discount": 13
+    },
+    "originalPrice": 4024,
+    "price": 3499,
+    "discount": 13,
+    "sales": 121,
+    "quantity": 500,
+    "sold": 15,
+    "stock": 500,
+    "status": "show",
+    "brand": "LuxPanel",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "4.6",
+    "numReviews": 39,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "light004",
+    "productId": "light004a",
+    "sku": "SKU-LIGHT004",
+    "barcode": "",
+    "title": "HomeGlow Crystal Chandelier 8-Light",
+    "slug": "homeglow-crystal-chandelier-8light",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Modern crystal chandelier, 8-light, adjustable chain, gold finish.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/chandelier1/400/400",
+      "https://picsum.photos/seed/chandelier2/400/400",
+      "https://picsum.photos/seed/chandelier3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/chandelier1/400/400",
+      "https://picsum.photos/seed/chandelier2/400/400",
+      "https://picsum.photos/seed/chandelier3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b009",
+      "name": "Lights & Lighting",
+      "slug": "lights-lighting",
+      "parentId": "dept003",
+      "parentName": "Lights & Lighting",
+      "icon": "",
+      "description": "Lights & Lighting",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept003"
+      },
+      {
+        "_id": "b2b009"
+      },
+      {
+        "_id": "b2b009-g3"
+      }
+    ],
+    "prices": {
+      "originalPrice": 14949,
+      "price": 12999,
+      "discount": 13
+    },
+    "originalPrice": 14949,
+    "price": 12999,
+    "discount": 13,
+    "sales": 61,
+    "quantity": 500,
+    "sold": 76,
+    "stock": 500,
+    "status": "show",
+    "brand": "HomeGlow",
+    "supplier": "National Distributors",
+    "reviews": [],
+    "rating": "4.0",
+    "numReviews": 60,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "daily001",
+    "productId": "daily001a",
+    "sku": "SKU-DAILY001",
+    "barcode": "",
+    "title": "StoreMate Stackable Storage Box Set 3",
+    "slug": "storemate-stackable-storage-box-set3",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Set of 3 stackable PP storage boxes with lids, 30L capacity.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/storagebox1/400/400",
+      "https://picsum.photos/seed/storagebox2/400/400",
+      "https://picsum.photos/seed/storagebox3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/storagebox1/400/400",
+      "https://picsum.photos/seed/storagebox2/400/400",
+      "https://picsum.photos/seed/storagebox3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b006",
+      "name": "Light Industry & Daily Use",
+      "slug": "light-industry-daily-use",
+      "parentId": "dept003",
+      "parentName": "Light Industry & Daily Use",
+      "icon": "",
+      "description": "Light Industry & Daily Use",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept003"
+      },
+      {
+        "_id": "b2b006"
+      },
+      {
+        "_id": "b2b006-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 1839,
+      "price": 1599,
+      "discount": 13
+    },
+    "originalPrice": 1839,
+    "price": 1599,
+    "discount": 13,
+    "sales": 88,
+    "quantity": 500,
+    "sold": 90,
+    "stock": 500,
+    "status": "show",
+    "brand": "StoreMate",
+    "supplier": "National Distributors",
+    "reviews": [],
+    "rating": "3.7",
+    "numReviews": 11,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "daily002",
+    "productId": "daily002a",
+    "sku": "SKU-DAILY002",
+    "barcode": "",
+    "title": "ThermoPro 1L Vacuum Flask",
+    "slug": "thermopro-1l-vacuum-flask",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Double-wall stainless steel vacuum flask, 1L, 24h hot/cold.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/thermos1/400/400",
+      "https://picsum.photos/seed/thermos2/400/400",
+      "https://picsum.photos/seed/thermos3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/thermos1/400/400",
+      "https://picsum.photos/seed/thermos2/400/400",
+      "https://picsum.photos/seed/thermos3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b006",
+      "name": "Light Industry & Daily Use",
+      "slug": "light-industry-daily-use",
+      "parentId": "dept003",
+      "parentName": "Light Industry & Daily Use",
+      "icon": "",
+      "description": "Light Industry & Daily Use",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept003"
+      },
+      {
+        "_id": "b2b006"
+      },
+      {
+        "_id": "b2b006-g3"
+      }
+    ],
+    "prices": {
+      "originalPrice": 1494,
+      "price": 1299,
+      "discount": 13
+    },
+    "originalPrice": 1494,
+    "price": 1299,
+    "discount": 13,
+    "sales": 160,
+    "quantity": 500,
+    "sold": 8,
+    "stock": 500,
+    "status": "show",
+    "brand": "ThermoPro",
+    "supplier": "National Distributors",
+    "reviews": [],
+    "rating": "4.0",
+    "numReviews": 56,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "daily003",
+    "productId": "daily003a",
+    "sku": "SKU-DAILY003",
+    "barcode": "",
+    "title": "CookMaster Non-Stick Cookware Set 5pc",
+    "slug": "cookmaster-nonstick-cookware-set-5pc",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "5-piece non-stick cookware set: pots, pans, and lids.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/cookware1/400/400",
+      "https://picsum.photos/seed/cookware2/400/400",
+      "https://picsum.photos/seed/cookware3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/cookware1/400/400",
+      "https://picsum.photos/seed/cookware2/400/400",
+      "https://picsum.photos/seed/cookware3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b006",
+      "name": "Light Industry & Daily Use",
+      "slug": "light-industry-daily-use",
+      "parentId": "dept003",
+      "parentName": "Light Industry & Daily Use",
+      "icon": "",
+      "description": "Light Industry & Daily Use",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept003"
+      },
+      {
+        "_id": "b2b006"
+      },
+      {
+        "_id": "b2b006-g3"
+      }
+    ],
+    "prices": {
+      "originalPrice": 6899,
+      "price": 5999,
+      "discount": 13
+    },
+    "originalPrice": 6899,
+    "price": 5999,
+    "discount": 13,
+    "sales": 103,
+    "quantity": 500,
+    "sold": 2,
+    "stock": 500,
+    "status": "show",
+    "brand": "CookMaster",
+    "supplier": "National Distributors",
+    "reviews": [],
+    "rating": "4.9",
+    "numReviews": 47,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "daily004",
+    "productId": "daily004a",
+    "sku": "SKU-DAILY004",
+    "barcode": "",
+    "title": "GlowSkin Vitamin C Serum 30ml",
+    "slug": "glowskin-vitamin-c-serum-30ml",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Vitamin C brightening face serum, 20% concentration, 30ml.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/serum1/400/400",
+      "https://picsum.photos/seed/serum2/400/400",
+      "https://picsum.photos/seed/serum3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/serum1/400/400",
+      "https://picsum.photos/seed/serum2/400/400",
+      "https://picsum.photos/seed/serum3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b006",
+      "name": "Light Industry & Daily Use",
+      "slug": "light-industry-daily-use",
+      "parentId": "dept003",
+      "parentName": "Light Industry & Daily Use",
+      "icon": "",
+      "description": "Light Industry & Daily Use",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept003"
+      },
+      {
+        "_id": "b2b006"
+      },
+      {
+        "_id": "b2b006-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 2184,
+      "price": 1899,
+      "discount": 13
+    },
+    "originalPrice": 2184,
+    "price": 1899,
+    "discount": 13,
+    "sales": 115,
+    "quantity": 500,
+    "sold": 18,
+    "stock": 500,
+    "status": "show",
+    "brand": "GlowSkin",
+    "supplier": "National Distributors",
+    "reviews": [],
+    "rating": "4.9",
+    "numReviews": 77,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "office001",
+    "productId": "office001a",
+    "sku": "SKU-OFFICE001",
+    "barcode": "",
+    "title": "ErgoChair Pro Mesh Office Chair",
+    "slug": "ergochair-pro-mesh-office-chair",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Ergonomic mesh office chair with lumbar support and adjustable armrests.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/officechair1/400/400",
+      "https://picsum.photos/seed/officechair2/400/400",
+      "https://picsum.photos/seed/officechair3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/officechair1/400/400",
+      "https://picsum.photos/seed/officechair2/400/400",
+      "https://picsum.photos/seed/officechair3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b020",
+      "name": "Office & School Supplies",
+      "slug": "office-school-supplies",
+      "parentId": "dept003",
+      "parentName": "Office & School Supplies",
+      "icon": "",
+      "description": "Office & School Supplies",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept003"
+      },
+      {
+        "_id": "b2b020"
+      },
+      {
+        "_id": "b2b020-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 21849,
+      "price": 18999,
+      "discount": 13
+    },
+    "originalPrice": 21849,
+    "price": 18999,
+    "discount": 13,
+    "sales": 108,
+    "quantity": 500,
+    "sold": 39,
+    "stock": 500,
+    "status": "show",
+    "brand": "ErgoChair",
+    "supplier": "National Distributors",
+    "reviews": [],
+    "rating": "4.7",
+    "numReviews": 64,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "office002",
+    "productId": "office002a",
+    "sku": "SKU-OFFICE002",
+    "barcode": "",
+    "title": "WriteRight Premium Ballpoint Pen Box 50",
+    "slug": "writeright-premium-ballpoint-box50",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Smooth-writing ballpoint pens, 0.7mm, blue ink, box of 50.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/pen1/400/400",
+      "https://picsum.photos/seed/pen2/400/400",
+      "https://picsum.photos/seed/pen3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/pen1/400/400",
+      "https://picsum.photos/seed/pen2/400/400",
+      "https://picsum.photos/seed/pen3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b020",
+      "name": "Office & School Supplies",
+      "slug": "office-school-supplies",
+      "parentId": "dept003",
+      "parentName": "Office & School Supplies",
+      "icon": "",
+      "description": "Office & School Supplies",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept003"
+      },
+      {
+        "_id": "b2b020"
+      },
+      {
+        "_id": "b2b020-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 804,
+      "price": 699,
+      "discount": 13
+    },
+    "originalPrice": 804,
+    "price": 699,
+    "discount": 13,
+    "sales": 91,
+    "quantity": 500,
+    "sold": 15,
+    "stock": 500,
+    "status": "show",
+    "brand": "WriteRight",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "4.3",
+    "numReviews": 81,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "office003",
+    "productId": "office003a",
+    "sku": "SKU-OFFICE003",
+    "barcode": "",
+    "title": "MegaBoard 180x90cm Whiteboard",
+    "slug": "megaboard-180x90cm-whiteboard",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Magnetic dry-erase whiteboard, 180x90cm, aluminum frame.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/whiteboard1/400/400",
+      "https://picsum.photos/seed/whiteboard2/400/400",
+      "https://picsum.photos/seed/whiteboard3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/whiteboard1/400/400",
+      "https://picsum.photos/seed/whiteboard2/400/400",
+      "https://picsum.photos/seed/whiteboard3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b020",
+      "name": "Office & School Supplies",
+      "slug": "office-school-supplies",
+      "parentId": "dept003",
+      "parentName": "Office & School Supplies",
+      "icon": "",
+      "description": "Office & School Supplies",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept003"
+      },
+      {
+        "_id": "b2b020"
+      },
+      {
+        "_id": "b2b020-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 8624,
+      "price": 7499,
+      "discount": 13
+    },
+    "originalPrice": 8624,
+    "price": 7499,
+    "discount": 13,
+    "sales": 52,
+    "quantity": 500,
+    "sold": 67,
+    "stock": 500,
+    "status": "show",
+    "brand": "MegaBoard",
+    "supplier": "National Distributors",
+    "reviews": [],
+    "rating": "4.1",
+    "numReviews": 21,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "office004",
+    "productId": "office004a",
+    "sku": "SKU-OFFICE004",
+    "barcode": "",
+    "title": "ClassicNote Hardcover Notebook A5 Pack 6",
+    "slug": "classicnote-hardcover-notebook-a5-pack6",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "A5 hardcover ruled notebooks, 200 pages each, pack of 6.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/notebook1/400/400",
+      "https://picsum.photos/seed/notebook2/400/400",
+      "https://picsum.photos/seed/notebook3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/notebook1/400/400",
+      "https://picsum.photos/seed/notebook2/400/400",
+      "https://picsum.photos/seed/notebook3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b020",
+      "name": "Office & School Supplies",
+      "slug": "office-school-supplies",
+      "parentId": "dept003",
+      "parentName": "Office & School Supplies",
+      "icon": "",
+      "description": "Office & School Supplies",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept003"
+      },
+      {
+        "_id": "b2b020"
+      },
+      {
+        "_id": "b2b020-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 1149,
+      "price": 999,
+      "discount": 13
+    },
+    "originalPrice": 1149,
+    "price": 999,
+    "discount": 13,
+    "sales": 28,
+    "quantity": 500,
+    "sold": 96,
+    "stock": 500,
+    "status": "show",
+    "brand": "ClassicNote",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "4.1",
+    "numReviews": 8,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "art001",
+    "productId": "art001a",
+    "sku": "SKU-ART001",
+    "barcode": "",
+    "title": "AcrylicPro Artist Paint Set 24 Colors",
+    "slug": "acrylicpro-artist-paint-set-24",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "24-color acrylic paint set, 75ml tubes, vibrant and fade-resistant.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/paint1/400/400",
+      "https://picsum.photos/seed/paint2/400/400",
+      "https://picsum.photos/seed/paint3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/paint1/400/400",
+      "https://picsum.photos/seed/paint2/400/400",
+      "https://picsum.photos/seed/paint3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b012",
+      "name": "Arts & Crafts",
+      "slug": "arts-crafts",
+      "parentId": "dept003",
+      "parentName": "Arts & Crafts",
+      "icon": "",
+      "description": "Arts & Crafts",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept003"
+      },
+      {
+        "_id": "b2b012"
+      },
+      {
+        "_id": "b2b012-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 2874,
+      "price": 2499,
+      "discount": 13
+    },
+    "originalPrice": 2874,
+    "price": 2499,
+    "discount": 13,
+    "sales": 112,
+    "quantity": 500,
+    "sold": 47,
+    "stock": 500,
+    "status": "show",
+    "brand": "AcrylicPro",
+    "supplier": "National Distributors",
+    "reviews": [],
+    "rating": "3.6",
+    "numReviews": 40,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "art002",
+    "productId": "art002a",
+    "sku": "SKU-ART002",
+    "barcode": "",
+    "title": "ResinCraft Epoxy Resin Kit 1kg",
+    "slug": "resincraftepoxy-resin-kit-1kg",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Crystal-clear epoxy resin kit, 1kg total, UV resistant, low odor.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/resin1/400/400",
+      "https://picsum.photos/seed/resin2/400/400",
+      "https://picsum.photos/seed/resin3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/resin1/400/400",
+      "https://picsum.photos/seed/resin2/400/400",
+      "https://picsum.photos/seed/resin3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b012",
+      "name": "Arts & Crafts",
+      "slug": "arts-crafts",
+      "parentId": "dept003",
+      "parentName": "Arts & Crafts",
+      "icon": "",
+      "description": "Arts & Crafts",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept003"
+      },
+      {
+        "_id": "b2b012"
+      },
+      {
+        "_id": "b2b012-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 3679,
+      "price": 3199,
+      "discount": 13
+    },
+    "originalPrice": 3679,
+    "price": 3199,
+    "discount": 13,
+    "sales": 107,
+    "quantity": 500,
+    "sold": 43,
+    "stock": 500,
+    "status": "show",
+    "brand": "ResinCraft",
+    "supplier": "National Distributors",
+    "reviews": [],
+    "rating": "4.3",
+    "numReviews": 69,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "art003",
+    "productId": "art003a",
+    "sku": "SKU-ART003",
+    "barcode": "",
+    "title": "CanvasPro Stretched Canvas 30x40cm Pack 5",
+    "slug": "canvaspro-stretched-canvas-30x40-pack5",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Pre-stretched cotton canvas, 30x40cm, triple-primed, pack of 5.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/canvas1/400/400",
+      "https://picsum.photos/seed/canvas2/400/400",
+      "https://picsum.photos/seed/canvas3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/canvas1/400/400",
+      "https://picsum.photos/seed/canvas2/400/400",
+      "https://picsum.photos/seed/canvas3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b012",
+      "name": "Arts & Crafts",
+      "slug": "arts-crafts",
+      "parentId": "dept003",
+      "parentName": "Arts & Crafts",
+      "icon": "",
+      "description": "Arts & Crafts",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept003"
+      },
+      {
+        "_id": "b2b012"
+      },
+      {
+        "_id": "b2b012-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 2184,
+      "price": 1899,
+      "discount": 13
+    },
+    "originalPrice": 2184,
+    "price": 1899,
+    "discount": 13,
+    "sales": 28,
+    "quantity": 500,
+    "sold": 0,
+    "stock": 500,
+    "status": "show",
+    "brand": "CanvasPro",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "4.3",
+    "numReviews": 68,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "fashion001",
+    "productId": "fashion001a",
+    "sku": "SKU-FASHION001",
+    "barcode": "",
+    "title": "ActiveFit Men Training T-Shirt 3-Pack",
+    "slug": "activefit-men-training-tshirt-3pack",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Moisture-wicking performance T-shirts for men, pack of 3 mixed colors.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/tshirt1/400/400",
+      "https://picsum.photos/seed/tshirt2/400/400",
+      "https://picsum.photos/seed/tshirt3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/tshirt1/400/400",
+      "https://picsum.photos/seed/tshirt2/400/400",
+      "https://picsum.photos/seed/tshirt3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b008",
+      "name": "Apparel & Accessories",
+      "slug": "apparel-accessories",
+      "parentId": "dept004",
+      "parentName": "Apparel & Accessories",
+      "icon": "",
+      "description": "Apparel & Accessories",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept004"
+      },
+      {
+        "_id": "b2b008"
+      },
+      {
+        "_id": "b2b008-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 2299,
+      "price": 1999,
+      "discount": 13
+    },
+    "originalPrice": 2299,
+    "price": 1999,
+    "discount": 13,
+    "sales": 146,
+    "quantity": 500,
+    "sold": 8,
+    "stock": 500,
+    "status": "show",
+    "brand": "ActiveFit",
+    "supplier": "National Distributors",
+    "reviews": [],
+    "rating": "4.5",
+    "numReviews": 23,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "fashion002",
+    "productId": "fashion002a",
+    "sku": "SKU-FASHION002",
+    "barcode": "",
+    "title": "UrbanStyle Women Floral Maxi Dress",
+    "slug": "urbanstyle-women-floral-maxi-dress",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Flowy floral printed maxi dress, V-neck, available in multiple sizes.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/dress1/400/400",
+      "https://picsum.photos/seed/dress2/400/400",
+      "https://picsum.photos/seed/dress3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/dress1/400/400",
+      "https://picsum.photos/seed/dress2/400/400",
+      "https://picsum.photos/seed/dress3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b008",
+      "name": "Apparel & Accessories",
+      "slug": "apparel-accessories",
+      "parentId": "dept004",
+      "parentName": "Apparel & Accessories",
+      "icon": "",
+      "description": "Apparel & Accessories",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept004"
+      },
+      {
+        "_id": "b2b008"
+      },
+      {
+        "_id": "b2b008-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 3219,
+      "price": 2799,
+      "discount": 13
+    },
+    "originalPrice": 3219,
+    "price": 2799,
+    "discount": 13,
+    "sales": 164,
+    "quantity": 500,
+    "sold": 65,
+    "stock": 500,
+    "status": "show",
+    "brand": "UrbanStyle",
+    "supplier": "National Distributors",
+    "reviews": [],
+    "rating": "4.6",
+    "numReviews": 25,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "fashion003",
+    "productId": "fashion003a",
+    "sku": "SKU-FASHION003",
+    "barcode": "",
+    "title": "TrekPack 40L Hiking Backpack",
+    "slug": "trekpack-40l-hiking-backpack",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "40L waterproof hiking backpack with rain cover, multiple compartments.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/backpack1/400/400",
+      "https://picsum.photos/seed/backpack2/400/400",
+      "https://picsum.photos/seed/backpack3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/backpack1/400/400",
+      "https://picsum.photos/seed/backpack2/400/400",
+      "https://picsum.photos/seed/backpack3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b008",
+      "name": "Apparel & Accessories",
+      "slug": "apparel-accessories",
+      "parentId": "dept004",
+      "parentName": "Apparel & Accessories",
+      "icon": "",
+      "description": "Apparel & Accessories",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept004"
+      },
+      {
+        "_id": "b2b008"
+      },
+      {
+        "_id": "b2b008-g3"
+      }
+    ],
+    "prices": {
+      "originalPrice": 5749,
+      "price": 4999,
+      "discount": 13
+    },
+    "originalPrice": 5749,
+    "price": 4999,
+    "discount": 13,
+    "sales": 67,
+    "quantity": 500,
+    "sold": 49,
+    "stock": 500,
+    "status": "show",
+    "brand": "TrekPack",
+    "supplier": "National Distributors",
+    "reviews": [],
+    "rating": "4.8",
+    "numReviews": 11,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "fashion004",
+    "productId": "fashion004a",
+    "sku": "SKU-FASHION004",
+    "barcode": "",
+    "title": "EliteLeather Genuine Leather Wallet",
+    "slug": "eliteleather-genuine-leather-wallet",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Slim bifold genuine leather wallet, RFID blocking, 8 card slots.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/wallet1/400/400",
+      "https://picsum.photos/seed/wallet2/400/400",
+      "https://picsum.photos/seed/wallet3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/wallet1/400/400",
+      "https://picsum.photos/seed/wallet2/400/400",
+      "https://picsum.photos/seed/wallet3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b008",
+      "name": "Apparel & Accessories",
+      "slug": "apparel-accessories",
+      "parentId": "dept004",
+      "parentName": "Apparel & Accessories",
+      "icon": "",
+      "description": "Apparel & Accessories",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept004"
+      },
+      {
+        "_id": "b2b008"
+      },
+      {
+        "_id": "b2b008-g3"
+      }
+    ],
+    "prices": {
+      "originalPrice": 2069,
+      "price": 1799,
+      "discount": 13
+    },
+    "originalPrice": 2069,
+    "price": 1799,
+    "discount": 13,
+    "sales": 79,
+    "quantity": 500,
+    "sold": 85,
+    "stock": 500,
+    "status": "show",
+    "brand": "EliteLeather",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "3.9",
+    "numReviews": 9,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "health001",
+    "productId": "health001a",
+    "sku": "SKU-HEALTH001",
+    "barcode": "",
+    "title": "BPCare Digital Blood Pressure Monitor",
+    "slug": "bpcare-digital-blood-pressure-monitor",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Automatic upper arm BP monitor with memory storage for 2 users.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/bpmonitor1/400/400",
+      "https://picsum.photos/seed/bpmonitor2/400/400",
+      "https://picsum.photos/seed/bpmonitor3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/bpmonitor1/400/400",
+      "https://picsum.photos/seed/bpmonitor2/400/400",
+      "https://picsum.photos/seed/bpmonitor3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b013",
+      "name": "Health & Medicine",
+      "slug": "health-medicine",
+      "parentId": "dept004",
+      "parentName": "Health & Medicine",
+      "icon": "",
+      "description": "Health & Medicine",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept004"
+      },
+      {
+        "_id": "b2b013"
+      },
+      {
+        "_id": "b2b013-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 4024,
+      "price": 3499,
+      "discount": 13
+    },
+    "originalPrice": 4024,
+    "price": 3499,
+    "discount": 13,
+    "sales": 189,
+    "quantity": 500,
+    "sold": 94,
+    "stock": 500,
+    "status": "show",
+    "brand": "BPCare",
+    "supplier": "National Distributors",
+    "reviews": [],
+    "rating": "4.3",
+    "numReviews": 36,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "health002",
+    "productId": "health002a",
+    "sku": "SKU-HEALTH002",
+    "barcode": "",
+    "title": "VitaMax Vitamin C & Zinc Tablets 60s",
+    "slug": "vitamax-vitamin-c-zinc-tablets-60s",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "High-potency Vitamin C 1000mg + Zinc 10mg immunity support, 60 tablets.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/vitamins1/400/400",
+      "https://picsum.photos/seed/vitamins2/400/400",
+      "https://picsum.photos/seed/vitamins3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/vitamins1/400/400",
+      "https://picsum.photos/seed/vitamins2/400/400",
+      "https://picsum.photos/seed/vitamins3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b013",
+      "name": "Health & Medicine",
+      "slug": "health-medicine",
+      "parentId": "dept004",
+      "parentName": "Health & Medicine",
+      "icon": "",
+      "description": "Health & Medicine",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept004"
+      },
+      {
+        "_id": "b2b013"
+      },
+      {
+        "_id": "b2b013-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 1034,
+      "price": 899,
+      "discount": 13
+    },
+    "originalPrice": 1034,
+    "price": 899,
+    "discount": 13,
+    "sales": 66,
+    "quantity": 500,
+    "sold": 99,
+    "stock": 500,
+    "status": "show",
+    "brand": "VitaMax",
+    "supplier": "National Distributors",
+    "reviews": [],
+    "rating": "4.6",
+    "numReviews": 56,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "health003",
+    "productId": "health003a",
+    "sku": "SKU-HEALTH003",
+    "barcode": "",
+    "title": "FlexSupport Adjustable Knee Brace",
+    "slug": "flexsupport-adjustable-knee-brace",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Adjustable knee brace with side stabilizers for sports and daily use.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/kneebrace1/400/400",
+      "https://picsum.photos/seed/kneebrace2/400/400",
+      "https://picsum.photos/seed/kneebrace3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/kneebrace1/400/400",
+      "https://picsum.photos/seed/kneebrace2/400/400",
+      "https://picsum.photos/seed/kneebrace3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b013",
+      "name": "Health & Medicine",
+      "slug": "health-medicine",
+      "parentId": "dept004",
+      "parentName": "Health & Medicine",
+      "icon": "",
+      "description": "Health & Medicine",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept004"
+      },
+      {
+        "_id": "b2b013"
+      },
+      {
+        "_id": "b2b013-g3"
+      }
+    ],
+    "prices": {
+      "originalPrice": 1839,
+      "price": 1599,
+      "discount": 13
+    },
+    "originalPrice": 1839,
+    "price": 1599,
+    "discount": 13,
+    "sales": 182,
+    "quantity": 500,
+    "sold": 43,
+    "stock": 500,
+    "status": "show",
+    "brand": "FlexSupport",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "4.0",
+    "numReviews": 36,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "health004",
+    "productId": "health004a",
+    "sku": "SKU-HEALTH004",
+    "barcode": "",
+    "title": "RelaxMate Electric Massage Cushion",
+    "slug": "relaxmate-electric-massage-cushion",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Shiatsu electric massage cushion, heated, for back neck and shoulder.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/massage1/400/400",
+      "https://picsum.photos/seed/massage2/400/400",
+      "https://picsum.photos/seed/massage3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/massage1/400/400",
+      "https://picsum.photos/seed/massage2/400/400",
+      "https://picsum.photos/seed/massage3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b013",
+      "name": "Health & Medicine",
+      "slug": "health-medicine",
+      "parentId": "dept004",
+      "parentName": "Health & Medicine",
+      "icon": "",
+      "description": "Health & Medicine",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept004"
+      },
+      {
+        "_id": "b2b013"
+      },
+      {
+        "_id": "b2b013-g3"
+      }
+    ],
+    "prices": {
+      "originalPrice": 6899,
+      "price": 5999,
+      "discount": 13
+    },
+    "originalPrice": 6899,
+    "price": 5999,
+    "discount": 13,
+    "sales": 105,
+    "quantity": 500,
+    "sold": 63,
+    "stock": 500,
+    "status": "show",
+    "brand": "RelaxMate",
+    "supplier": "National Distributors",
+    "reviews": [],
+    "rating": "4.0",
+    "numReviews": 74,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "sport001",
+    "productId": "sport001a",
+    "sku": "SKU-SPORT001",
+    "barcode": "",
+    "title": "YogaFlow Premium TPE Yoga Mat 6mm",
+    "slug": "yogaflow-premium-tpe-yoga-mat-6mm",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Non-slip TPE yoga mat, 6mm thick, 183x61cm, eco-friendly.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/yogamat1/400/400",
+      "https://picsum.photos/seed/yogamat2/400/400",
+      "https://picsum.photos/seed/yogamat3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/yogamat1/400/400",
+      "https://picsum.photos/seed/yogamat2/400/400",
+      "https://picsum.photos/seed/yogamat3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b010",
+      "name": "Sporting Goods & Recreation",
+      "slug": "sporting-goods-recreation",
+      "parentId": "dept004",
+      "parentName": "Sporting Goods & Recreation",
+      "icon": "",
+      "description": "Sporting Goods & Recreation",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept004"
+      },
+      {
+        "_id": "b2b010"
+      },
+      {
+        "_id": "b2b010-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 2299,
+      "price": 1999,
+      "discount": 13
+    },
+    "originalPrice": 2299,
+    "price": 1999,
+    "discount": 13,
+    "sales": 61,
+    "quantity": 500,
+    "sold": 85,
+    "stock": 500,
+    "status": "show",
+    "brand": "YogaFlow",
+    "supplier": "National Distributors",
+    "reviews": [],
+    "rating": "4.2",
+    "numReviews": 31,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "sport002",
+    "productId": "sport002a",
+    "sku": "SKU-SPORT002",
+    "barcode": "",
+    "title": "TrailBlazer Carbon Bicycle 21-Speed",
+    "slug": "trailblazer-carbon-bicycle-21speed",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "21-speed mountain bicycle, carbon steel frame, disc brakes.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/bicycle1/400/400",
+      "https://picsum.photos/seed/bicycle2/400/400",
+      "https://picsum.photos/seed/bicycle3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/bicycle1/400/400",
+      "https://picsum.photos/seed/bicycle2/400/400",
+      "https://picsum.photos/seed/bicycle3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b010",
+      "name": "Sporting Goods & Recreation",
+      "slug": "sporting-goods-recreation",
+      "parentId": "dept004",
+      "parentName": "Sporting Goods & Recreation",
+      "icon": "",
+      "description": "Sporting Goods & Recreation",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept004"
+      },
+      {
+        "_id": "b2b010"
+      },
+      {
+        "_id": "b2b010-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 28749,
+      "price": 24999,
+      "discount": 13
+    },
+    "originalPrice": 28749,
+    "price": 24999,
+    "discount": 13,
+    "sales": 33,
+    "quantity": 500,
+    "sold": 39,
+    "stock": 500,
+    "status": "show",
+    "brand": "TrailBlazer",
+    "supplier": "Pacific Imports",
+    "reviews": [],
+    "rating": "3.8",
+    "numReviews": 40,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "sport003",
+    "productId": "sport003a",
+    "sku": "SKU-SPORT003",
+    "barcode": "",
+    "title": "CampLite 3-Person Waterproof Tent",
+    "slug": "camplite-3person-waterproof-tent",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "3-person dome camping tent, 3000mm waterproof, quick setup.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/tent1/400/400",
+      "https://picsum.photos/seed/tent2/400/400",
+      "https://picsum.photos/seed/tent3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/tent1/400/400",
+      "https://picsum.photos/seed/tent2/400/400",
+      "https://picsum.photos/seed/tent3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b010",
+      "name": "Sporting Goods & Recreation",
+      "slug": "sporting-goods-recreation",
+      "parentId": "dept004",
+      "parentName": "Sporting Goods & Recreation",
+      "icon": "",
+      "description": "Sporting Goods & Recreation",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept004"
+      },
+      {
+        "_id": "b2b010"
+      },
+      {
+        "_id": "b2b010-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 9199,
+      "price": 7999,
+      "discount": 13
+    },
+    "originalPrice": 9199,
+    "price": 7999,
+    "discount": 13,
+    "sales": 87,
+    "quantity": 500,
+    "sold": 92,
+    "stock": 500,
+    "status": "show",
+    "brand": "CampLite",
+    "supplier": "National Distributors",
+    "reviews": [],
+    "rating": "4.8",
+    "numReviews": 55,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "sport004",
+    "productId": "sport004a",
+    "sku": "SKU-SPORT004",
+    "barcode": "",
+    "title": "PowerFlex Resistance Band Set 5-Level",
+    "slug": "powerflex-resistance-band-set-5level",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Set of 5 latex resistance bands, 10-50 lbs, for home workouts.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/bands1/400/400",
+      "https://picsum.photos/seed/bands2/400/400",
+      "https://picsum.photos/seed/bands3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/bands1/400/400",
+      "https://picsum.photos/seed/bands2/400/400",
+      "https://picsum.photos/seed/bands3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b010",
+      "name": "Sporting Goods & Recreation",
+      "slug": "sporting-goods-recreation",
+      "parentId": "dept004",
+      "parentName": "Sporting Goods & Recreation",
+      "icon": "",
+      "description": "Sporting Goods & Recreation",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept004"
+      },
+      {
+        "_id": "b2b010"
+      },
+      {
+        "_id": "b2b010-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 1494,
+      "price": 1299,
+      "discount": 13
+    },
+    "originalPrice": 1494,
+    "price": 1299,
+    "discount": 13,
+    "sales": 138,
+    "quantity": 500,
+    "sold": 36,
+    "stock": 500,
+    "status": "show",
+    "brand": "PowerFlex",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "4.1",
+    "numReviews": 57,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "mach001",
+    "productId": "mach001a",
+    "sku": "SKU-MACH001",
+    "barcode": "",
+    "title": "AgroTrak Mini Tiller Cultivator 7HP",
+    "slug": "agrotrak-mini-tiller-cultivator-7hp",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "7HP gasoline mini tiller cultivator, 4-blade rotary, ideal for small farms.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/tiller1/400/400",
+      "https://picsum.photos/seed/tiller2/400/400",
+      "https://picsum.photos/seed/tiller3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/tiller1/400/400",
+      "https://picsum.photos/seed/tiller2/400/400",
+      "https://picsum.photos/seed/tiller3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b001",
+      "name": "Manufacturing & Processing Machinery",
+      "slug": "manufacturing-processing-machinery",
+      "parentId": "dept005",
+      "parentName": "Manufacturing & Processing Machinery",
+      "icon": "",
+      "description": "Manufacturing & Processing Machinery",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b001"
+      },
+      {
+        "_id": "b2b001-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 57499,
+      "price": 49999,
+      "discount": 13
+    },
+    "originalPrice": 57499,
+    "price": 49999,
+    "discount": 13,
+    "sales": 196,
+    "quantity": 500,
+    "sold": 46,
+    "stock": 500,
+    "status": "show",
+    "brand": "AgroTrak",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "3.9",
+    "numReviews": 51,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "mach002",
+    "productId": "mach002a",
+    "sku": "SKU-MACH002",
+    "barcode": "",
+    "title": "PrecisionCNC Mini CNC Router 3040",
+    "slug": "precisioncnc-mini-cnc-router-3040",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "3-axis CNC router 3040, 300x400mm work area, for wood/aluminum.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/cnc1/400/400",
+      "https://picsum.photos/seed/cnc2/400/400",
+      "https://picsum.photos/seed/cnc3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/cnc1/400/400",
+      "https://picsum.photos/seed/cnc2/400/400",
+      "https://picsum.photos/seed/cnc3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b001",
+      "name": "Manufacturing & Processing Machinery",
+      "slug": "manufacturing-processing-machinery",
+      "parentId": "dept005",
+      "parentName": "Manufacturing & Processing Machinery",
+      "icon": "",
+      "description": "Manufacturing & Processing Machinery",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b001"
+      },
+      {
+        "_id": "b2b001-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 103499,
+      "price": 89999,
+      "discount": 13
+    },
+    "originalPrice": 103499,
+    "price": 89999,
+    "discount": 13,
+    "sales": 196,
+    "quantity": 500,
+    "sold": 90,
+    "stock": 500,
+    "status": "show",
+    "brand": "PrecisionCNC",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "3.8",
+    "numReviews": 31,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "mach003",
+    "productId": "mach003a",
+    "sku": "SKU-MACH003",
+    "barcode": "",
+    "title": "LaserMark 20W Fiber Laser Engraver",
+    "slug": "lasermark-20w-fiber-laser-engraver",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "20W fiber laser engraver for metal marking, 110x110mm field.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/laser1/400/400",
+      "https://picsum.photos/seed/laser2/400/400",
+      "https://picsum.photos/seed/laser3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/laser1/400/400",
+      "https://picsum.photos/seed/laser2/400/400",
+      "https://picsum.photos/seed/laser3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b001",
+      "name": "Manufacturing & Processing Machinery",
+      "slug": "manufacturing-processing-machinery",
+      "parentId": "dept005",
+      "parentName": "Manufacturing & Processing Machinery",
+      "icon": "",
+      "description": "Manufacturing & Processing Machinery",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b001"
+      },
+      {
+        "_id": "b2b001-g3"
+      }
+    ],
+    "prices": {
+      "originalPrice": 172499,
+      "price": 149999,
+      "discount": 13
+    },
+    "originalPrice": 172499,
+    "price": 149999,
+    "discount": 13,
+    "sales": 37,
+    "quantity": 500,
+    "sold": 14,
+    "stock": 500,
+    "status": "show",
+    "brand": "LaserMark",
+    "supplier": "Pacific Imports",
+    "reviews": [],
+    "rating": "4.6",
+    "numReviews": 81,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "ind001",
+    "productId": "ind001a",
+    "sku": "SKU-IND001",
+    "barcode": "",
+    "title": "HydroMax 50L/min Hydraulic Gear Pump",
+    "slug": "hydromax-50l-hydraulic-gear-pump",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Cast iron hydraulic gear pump, 50L/min, 250 bar max pressure.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/pump1/400/400",
+      "https://picsum.photos/seed/pump2/400/400",
+      "https://picsum.photos/seed/pump3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/pump1/400/400",
+      "https://picsum.photos/seed/pump2/400/400",
+      "https://picsum.photos/seed/pump3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b003",
+      "name": "Industrial Equipment & Components",
+      "slug": "industrial-equipment-components",
+      "parentId": "dept005",
+      "parentName": "Industrial Equipment & Components",
+      "icon": "",
+      "description": "Industrial Equipment & Components",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b003"
+      },
+      {
+        "_id": "b2b003-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 14949,
+      "price": 12999,
+      "discount": 13
+    },
+    "originalPrice": 14949,
+    "price": 12999,
+    "discount": 13,
+    "sales": 144,
+    "quantity": 500,
+    "sold": 2,
+    "stock": 500,
+    "status": "show",
+    "brand": "HydroMax",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "3.9",
+    "numReviews": 30,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "ind002",
+    "productId": "ind002a",
+    "sku": "SKU-IND002",
+    "barcode": "",
+    "title": "RollMate 6205 Deep Groove Ball Bearing Pack 10",
+    "slug": "rollmate-6205-ball-bearing-pack10",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "High-precision 6205 deep groove ball bearings, pack of 10.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/bearing1/400/400",
+      "https://picsum.photos/seed/bearing2/400/400",
+      "https://picsum.photos/seed/bearing3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/bearing1/400/400",
+      "https://picsum.photos/seed/bearing2/400/400",
+      "https://picsum.photos/seed/bearing3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b003",
+      "name": "Industrial Equipment & Components",
+      "slug": "industrial-equipment-components",
+      "parentId": "dept005",
+      "parentName": "Industrial Equipment & Components",
+      "icon": "",
+      "description": "Industrial Equipment & Components",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b003"
+      },
+      {
+        "_id": "b2b003-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 2184,
+      "price": 1899,
+      "discount": 13
+    },
+    "originalPrice": 2184,
+    "price": 1899,
+    "discount": 13,
+    "sales": 17,
+    "quantity": 500,
+    "sold": 2,
+    "stock": 500,
+    "status": "show",
+    "brand": "RollMate",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "4.0",
+    "numReviews": 56,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "ind003",
+    "productId": "ind003a",
+    "sku": "SKU-IND003",
+    "barcode": "",
+    "title": "FlowSafe DN50 Safety Valve 10bar",
+    "slug": "flowsafe-dn50-safety-valve-10bar",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Spring-loaded safety valve DN50, 10 bar set pressure, SS304.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/valve1/400/400",
+      "https://picsum.photos/seed/valve2/400/400",
+      "https://picsum.photos/seed/valve3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/valve1/400/400",
+      "https://picsum.photos/seed/valve2/400/400",
+      "https://picsum.photos/seed/valve3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b003",
+      "name": "Industrial Equipment & Components",
+      "slug": "industrial-equipment-components",
+      "parentId": "dept005",
+      "parentName": "Industrial Equipment & Components",
+      "icon": "",
+      "description": "Industrial Equipment & Components",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b003"
+      },
+      {
+        "_id": "b2b003-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 4024,
+      "price": 3499,
+      "discount": 13
+    },
+    "originalPrice": 4024,
+    "price": 3499,
+    "discount": 13,
+    "sales": 38,
+    "quantity": 500,
+    "sold": 29,
+    "stock": 500,
+    "status": "show",
+    "brand": "FlowSafe",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "4.3",
+    "numReviews": 75,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "auto001",
+    "productId": "auto001a",
+    "sku": "SKU-AUTO001",
+    "barcode": "",
+    "title": "AutoPure High-Performance Oil Filter",
+    "slug": "autopure-high-performance-oil-filter",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Universal high-flow oil filter, fits most Asian and European cars.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/filter1/400/400",
+      "https://picsum.photos/seed/filter2/400/400",
+      "https://picsum.photos/seed/filter3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/filter1/400/400",
+      "https://picsum.photos/seed/filter2/400/400",
+      "https://picsum.photos/seed/filter3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b007",
+      "name": "Auto, Motorcycle Parts & Accessories",
+      "slug": "auto-motorcycle-parts-accessories",
+      "parentId": "dept005",
+      "parentName": "Auto, Motorcycle Parts & Accessories",
+      "icon": "",
+      "description": "Auto, Motorcycle Parts & Accessories",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b007"
+      },
+      {
+        "_id": "b2b007-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 919,
+      "price": 799,
+      "discount": 13
+    },
+    "originalPrice": 919,
+    "price": 799,
+    "discount": 13,
+    "sales": 151,
+    "quantity": 500,
+    "sold": 40,
+    "stock": 500,
+    "status": "show",
+    "brand": "AutoPure",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "4.9",
+    "numReviews": 17,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "auto002",
+    "productId": "auto002a",
+    "sku": "SKU-AUTO002",
+    "barcode": "",
+    "title": "BrakeStar Ceramic Brake Pads Set",
+    "slug": "brakestar-ceramic-brake-pads-set",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Ceramic front brake pads set, low dust, silent operation.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/brakepad1/400/400",
+      "https://picsum.photos/seed/brakepad2/400/400",
+      "https://picsum.photos/seed/brakepad3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/brakepad1/400/400",
+      "https://picsum.photos/seed/brakepad2/400/400",
+      "https://picsum.photos/seed/brakepad3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b007",
+      "name": "Auto, Motorcycle Parts & Accessories",
+      "slug": "auto-motorcycle-parts-accessories",
+      "parentId": "dept005",
+      "parentName": "Auto, Motorcycle Parts & Accessories",
+      "icon": "",
+      "description": "Auto, Motorcycle Parts & Accessories",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b007"
+      },
+      {
+        "_id": "b2b007-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 2874,
+      "price": 2499,
+      "discount": 13
+    },
+    "originalPrice": 2874,
+    "price": 2499,
+    "discount": 13,
+    "sales": 143,
+    "quantity": 500,
+    "sold": 45,
+    "stock": 500,
+    "status": "show",
+    "brand": "BrakeStar",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "3.8",
+    "numReviews": 28,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "auto003",
+    "productId": "auto003a",
+    "sku": "SKU-AUTO003",
+    "barcode": "",
+    "title": "LumiLED H7 LED Headlight Bulb Pair 6000K",
+    "slug": "lumiled-h7-led-headlight-6000k-pair",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "H7 LED headlight conversion kit, 6000K pure white, 60W pair.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/headlight1/400/400",
+      "https://picsum.photos/seed/headlight2/400/400",
+      "https://picsum.photos/seed/headlight3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/headlight1/400/400",
+      "https://picsum.photos/seed/headlight2/400/400",
+      "https://picsum.photos/seed/headlight3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b007",
+      "name": "Auto, Motorcycle Parts & Accessories",
+      "slug": "auto-motorcycle-parts-accessories",
+      "parentId": "dept005",
+      "parentName": "Auto, Motorcycle Parts & Accessories",
+      "icon": "",
+      "description": "Auto, Motorcycle Parts & Accessories",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b007"
+      },
+      {
+        "_id": "b2b007-g3"
+      }
+    ],
+    "prices": {
+      "originalPrice": 3794,
+      "price": 3299,
+      "discount": 13
+    },
+    "originalPrice": 3794,
+    "price": 3299,
+    "discount": 13,
+    "sales": 206,
+    "quantity": 500,
+    "sold": 60,
+    "stock": 500,
+    "status": "show",
+    "brand": "LumiLED",
+    "supplier": "Pacific Imports",
+    "reviews": [],
+    "rating": "3.8",
+    "numReviews": 56,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "trans001",
+    "productId": "trans001a",
+    "sku": "SKU-TRANS001",
+    "barcode": "",
+    "title": "SpeedGo Electric Scooter 350W",
+    "slug": "speedgo-electric-scooter-350w",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "350W brushless motor e-scooter, 25km/h, 30km range, foldable.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/scooter1/400/400",
+      "https://picsum.photos/seed/scooter2/400/400",
+      "https://picsum.photos/seed/scooter3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/scooter1/400/400",
+      "https://picsum.photos/seed/scooter2/400/400",
+      "https://picsum.photos/seed/scooter3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b011",
+      "name": "Transportation",
+      "slug": "transportation",
+      "parentId": "dept005",
+      "parentName": "Transportation",
+      "icon": "",
+      "description": "Transportation",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b011"
+      },
+      {
+        "_id": "b2b011-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 41399,
+      "price": 35999,
+      "discount": 13
+    },
+    "originalPrice": 41399,
+    "price": 35999,
+    "discount": 13,
+    "sales": 21,
+    "quantity": 500,
+    "sold": 80,
+    "stock": 500,
+    "status": "show",
+    "brand": "SpeedGo",
+    "supplier": "Pacific Imports",
+    "reviews": [],
+    "rating": "3.9",
+    "numReviews": 17,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "trans002",
+    "productId": "trans002a",
+    "sku": "SKU-TRANS002",
+    "barcode": "",
+    "title": "EcoCycle Electric Bicycle 500W",
+    "slug": "ecocycle-electric-bicycle-500w",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "500W mid-drive electric bicycle, 50km range, hydraulic disc brakes.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/ebike1/400/400",
+      "https://picsum.photos/seed/ebike2/400/400",
+      "https://picsum.photos/seed/ebike3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/ebike1/400/400",
+      "https://picsum.photos/seed/ebike2/400/400",
+      "https://picsum.photos/seed/ebike3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b011",
+      "name": "Transportation",
+      "slug": "transportation",
+      "parentId": "dept005",
+      "parentName": "Transportation",
+      "icon": "",
+      "description": "Transportation",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b011"
+      },
+      {
+        "_id": "b2b011-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 80499,
+      "price": 69999,
+      "discount": 13
+    },
+    "originalPrice": 80499,
+    "price": 69999,
+    "discount": 13,
+    "sales": 147,
+    "quantity": 500,
+    "sold": 32,
+    "stock": 500,
+    "status": "show",
+    "brand": "EcoCycle",
+    "supplier": "Pacific Imports",
+    "reviews": [],
+    "rating": "4.7",
+    "numReviews": 74,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "chem001",
+    "productId": "chem001a",
+    "sku": "SKU-CHEM001",
+    "barcode": "",
+    "title": "ChemPure Isopropyl Alcohol 99.9% 5L",
+    "slug": "chempure-isopropyl-alcohol-5l",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Technical-grade isopropyl alcohol 99.9% purity, 5L can.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/chemical1/400/400",
+      "https://picsum.photos/seed/chemical2/400/400",
+      "https://picsum.photos/seed/chemical3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/chemical1/400/400",
+      "https://picsum.photos/seed/chemical2/400/400",
+      "https://picsum.photos/seed/chemical3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b016",
+      "name": "Chemicals",
+      "slug": "chemicals",
+      "parentId": "dept005",
+      "parentName": "Chemicals",
+      "icon": "",
+      "description": "Chemicals",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b016"
+      },
+      {
+        "_id": "b2b016-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 3449,
+      "price": 2999,
+      "discount": 13
+    },
+    "originalPrice": 3449,
+    "price": 2999,
+    "discount": 13,
+    "sales": 171,
+    "quantity": 500,
+    "sold": 54,
+    "stock": 500,
+    "status": "show",
+    "brand": "ChemPure",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "4.6",
+    "numReviews": 82,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "chem002",
+    "productId": "chem002a",
+    "sku": "SKU-CHEM002",
+    "barcode": "",
+    "title": "GrowPro NPK 20-20-20 Fertilizer 25kg",
+    "slug": "growpro-npk-20-20-20-fertilizer-25kg",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Balanced NPK 20-20-20 water-soluble fertilizer, 25kg bag.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/fertilizer1/400/400",
+      "https://picsum.photos/seed/fertilizer2/400/400",
+      "https://picsum.photos/seed/fertilizer3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/fertilizer1/400/400",
+      "https://picsum.photos/seed/fertilizer2/400/400",
+      "https://picsum.photos/seed/fertilizer3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b016",
+      "name": "Chemicals",
+      "slug": "chemicals",
+      "parentId": "dept005",
+      "parentName": "Chemicals",
+      "icon": "",
+      "description": "Chemicals",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b016"
+      },
+      {
+        "_id": "b2b016-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 4024,
+      "price": 3499,
+      "discount": 13
+    },
+    "originalPrice": 4024,
+    "price": 3499,
+    "discount": 13,
+    "sales": 99,
+    "quantity": 500,
+    "sold": 41,
+    "stock": 500,
+    "status": "show",
+    "brand": "GrowPro",
+    "supplier": "Green Valley Co.",
+    "reviews": [],
+    "rating": "4.1",
+    "numReviews": 70,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "chem003",
+    "productId": "chem003a",
+    "sku": "SKU-CHEM003",
+    "barcode": "",
+    "title": "SealTech Neutral Silicone Sealant 300ml",
+    "slug": "sealtech-neutral-silicone-sealant-300ml",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Neutral cure silicone sealant, 300ml cartridge, bathroom grade.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/sealant1/400/400",
+      "https://picsum.photos/seed/sealant2/400/400",
+      "https://picsum.photos/seed/sealant3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/sealant1/400/400",
+      "https://picsum.photos/seed/sealant2/400/400",
+      "https://picsum.photos/seed/sealant3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b016",
+      "name": "Chemicals",
+      "slug": "chemicals",
+      "parentId": "dept005",
+      "parentName": "Chemicals",
+      "icon": "",
+      "description": "Chemicals",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b016"
+      },
+      {
+        "_id": "b2b016-g3"
+      }
+    ],
+    "prices": {
+      "originalPrice": 574,
+      "price": 499,
+      "discount": 13
+    },
+    "originalPrice": 574,
+    "price": 499,
+    "discount": 13,
+    "sales": 127,
+    "quantity": 500,
+    "sold": 29,
+    "stock": 500,
+    "status": "show",
+    "brand": "SealTech",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "4.5",
+    "numReviews": 33,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "agri001",
+    "productId": "agri001a",
+    "sku": "SKU-AGRI001",
+    "barcode": "",
+    "title": "HarvestGold Premium Wheat Seeds 5kg",
+    "slug": "harvestgold-premium-wheat-seeds-5kg",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "High-yield disease-resistant wheat seeds, certified organic, 5kg.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/wheat1/400/400",
+      "https://picsum.photos/seed/wheat2/400/400",
+      "https://picsum.photos/seed/wheat3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/wheat1/400/400",
+      "https://picsum.photos/seed/wheat2/400/400",
+      "https://picsum.photos/seed/wheat3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b017",
+      "name": "Agriculture & Food",
+      "slug": "agriculture-food",
+      "parentId": "dept005",
+      "parentName": "Agriculture & Food",
+      "icon": "",
+      "description": "Agriculture & Food",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b017"
+      },
+      {
+        "_id": "b2b017-g3"
+      }
+    ],
+    "prices": {
+      "originalPrice": 1494,
+      "price": 1299,
+      "discount": 13
+    },
+    "originalPrice": 1494,
+    "price": 1299,
+    "discount": 13,
+    "sales": 150,
+    "quantity": 500,
+    "sold": 51,
+    "stock": 500,
+    "status": "show",
+    "brand": "HarvestGold",
+    "supplier": "Green Valley Co.",
+    "reviews": [],
+    "rating": "4.3",
+    "numReviews": 71,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "agri002",
+    "productId": "agri002a",
+    "sku": "SKU-AGRI002",
+    "barcode": "",
+    "title": "FoodTech Commercial Food Mixer 30L",
+    "slug": "foodtech-commercial-food-mixer-30l",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Commercial spiral dough mixer, 30L capacity, 1500W, SS bowl.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/mixer1/400/400",
+      "https://picsum.photos/seed/mixer2/400/400",
+      "https://picsum.photos/seed/mixer3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/mixer1/400/400",
+      "https://picsum.photos/seed/mixer2/400/400",
+      "https://picsum.photos/seed/mixer3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b017",
+      "name": "Agriculture & Food",
+      "slug": "agriculture-food",
+      "parentId": "dept005",
+      "parentName": "Agriculture & Food",
+      "icon": "",
+      "description": "Agriculture & Food",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b017"
+      },
+      {
+        "_id": "b2b017-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 52899,
+      "price": 45999,
+      "discount": 13
+    },
+    "originalPrice": 52899,
+    "price": 45999,
+    "discount": 13,
+    "sales": 85,
+    "quantity": 500,
+    "sold": 5,
+    "stock": 500,
+    "status": "show",
+    "brand": "FoodTech",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "4.9",
+    "numReviews": 9,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "agri003",
+    "productId": "agri003a",
+    "sku": "SKU-AGRI003",
+    "barcode": "",
+    "title": "Drip-Pro Micro Drip Irrigation Kit 100m",
+    "slug": "drippro-micro-drip-irrigation-kit-100m",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "100-meter complete drip irrigation kit for vegetable and fruit gardens.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/drip1/400/400",
+      "https://picsum.photos/seed/drip2/400/400",
+      "https://picsum.photos/seed/drip3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/drip1/400/400",
+      "https://picsum.photos/seed/drip2/400/400",
+      "https://picsum.photos/seed/drip3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b017",
+      "name": "Agriculture & Food",
+      "slug": "agriculture-food",
+      "parentId": "dept005",
+      "parentName": "Agriculture & Food",
+      "icon": "",
+      "description": "Agriculture & Food",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b017"
+      },
+      {
+        "_id": "b2b017-g3"
+      }
+    ],
+    "prices": {
+      "originalPrice": 4599,
+      "price": 3999,
+      "discount": 13
+    },
+    "originalPrice": 4599,
+    "price": 3999,
+    "discount": 13,
+    "sales": 49,
+    "quantity": 500,
+    "sold": 82,
+    "stock": 500,
+    "status": "show",
+    "brand": "Drip-Pro",
+    "supplier": "Green Valley Co.",
+    "reviews": [],
+    "rating": "4.0",
+    "numReviews": 55,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "textile001",
+    "productId": "textile001a",
+    "sku": "SKU-TEXTILE001",
+    "barcode": "",
+    "title": "SoftCotton Premium Cotton Fabric 10m Roll",
+    "slug": "softcotton-premium-cotton-fabric-10m",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "100% combed cotton fabric, 240 GSM, 150cm wide, 10m roll.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/cotton1/400/400",
+      "https://picsum.photos/seed/cotton2/400/400",
+      "https://picsum.photos/seed/cotton3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/cotton1/400/400",
+      "https://picsum.photos/seed/cotton2/400/400",
+      "https://picsum.photos/seed/cotton3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b018",
+      "name": "Textiles & Leather Products",
+      "slug": "textiles-leather-products",
+      "parentId": "dept005",
+      "parentName": "Textiles & Leather Products",
+      "icon": "",
+      "description": "Textiles & Leather Products",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b018"
+      },
+      {
+        "_id": "b2b018-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 3449,
+      "price": 2999,
+      "discount": 13
+    },
+    "originalPrice": 3449,
+    "price": 2999,
+    "discount": 13,
+    "sales": 10,
+    "quantity": 500,
+    "sold": 95,
+    "stock": 500,
+    "status": "show",
+    "brand": "SoftCotton",
+    "supplier": "National Distributors",
+    "reviews": [],
+    "rating": "4.0",
+    "numReviews": 27,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "textile002",
+    "productId": "textile002a",
+    "sku": "SKU-TEXTILE002",
+    "barcode": "",
+    "title": "GenuineHide Full-Grain Leather 1sqm",
+    "slug": "genuinehide-full-grain-leather-1sqm",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Full-grain vegetable-tanned cow leather, 1.5-2mm thickness, 1 sqm.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/leather1/400/400",
+      "https://picsum.photos/seed/leather2/400/400",
+      "https://picsum.photos/seed/leather3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/leather1/400/400",
+      "https://picsum.photos/seed/leather2/400/400",
+      "https://picsum.photos/seed/leather3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b018",
+      "name": "Textiles & Leather Products",
+      "slug": "textiles-leather-products",
+      "parentId": "dept005",
+      "parentName": "Textiles & Leather Products",
+      "icon": "",
+      "description": "Textiles & Leather Products",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b018"
+      },
+      {
+        "_id": "b2b018-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 5749,
+      "price": 4999,
+      "discount": 13
+    },
+    "originalPrice": 5749,
+    "price": 4999,
+    "discount": 13,
+    "sales": 22,
+    "quantity": 500,
+    "sold": 73,
+    "stock": 500,
+    "status": "show",
+    "brand": "GenuineHide",
+    "supplier": "National Distributors",
+    "reviews": [],
+    "rating": "3.6",
+    "numReviews": 37,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "textile003",
+    "productId": "textile003a",
+    "sku": "SKU-TEXTILE003",
+    "barcode": "",
+    "title": "PolyPro Nonwoven Fabric Roll 100m",
+    "slug": "polypro-nonwoven-fabric-roll-100m",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Spunbond PP nonwoven fabric, 80 GSM, 1.6m wide, 100m roll.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/nonwoven1/400/400",
+      "https://picsum.photos/seed/nonwoven2/400/400",
+      "https://picsum.photos/seed/nonwoven3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/nonwoven1/400/400",
+      "https://picsum.photos/seed/nonwoven2/400/400",
+      "https://picsum.photos/seed/nonwoven3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b018",
+      "name": "Textiles & Leather Products",
+      "slug": "textiles-leather-products",
+      "parentId": "dept005",
+      "parentName": "Textiles & Leather Products",
+      "icon": "",
+      "description": "Textiles & Leather Products",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b018"
+      },
+      {
+        "_id": "b2b018-g3"
+      }
+    ],
+    "prices": {
+      "originalPrice": 1839,
+      "price": 1599,
+      "discount": 13
+    },
+    "originalPrice": 1839,
+    "price": 1599,
+    "discount": 13,
+    "sales": 109,
+    "quantity": 500,
+    "sold": 95,
+    "stock": 500,
+    "status": "show",
+    "brand": "PolyPro",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "3.8",
+    "numReviews": 16,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "rubber001",
+    "productId": "rubber001a",
+    "sku": "SKU-RUBBER001",
+    "barcode": "",
+    "title": "SiliSeal Silicone O-Ring Kit 419pcs",
+    "slug": "siliseal-silicone-o-ring-kit-419pcs",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "419-piece metric silicone O-ring assortment kit, heat resistant to 200°C.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/oring1/400/400",
+      "https://picsum.photos/seed/oring2/400/400",
+      "https://picsum.photos/seed/oring3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/oring1/400/400",
+      "https://picsum.photos/seed/oring2/400/400",
+      "https://picsum.photos/seed/oring3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b019",
+      "name": "Rubber & Plastics",
+      "slug": "rubber-plastics",
+      "parentId": "dept005",
+      "parentName": "Rubber & Plastics",
+      "icon": "",
+      "description": "Rubber & Plastics",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b019"
+      },
+      {
+        "_id": "b2b019-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 1494,
+      "price": 1299,
+      "discount": 13
+    },
+    "originalPrice": 1494,
+    "price": 1299,
+    "discount": 13,
+    "sales": 123,
+    "quantity": 500,
+    "sold": 71,
+    "stock": 500,
+    "status": "show",
+    "brand": "SiliSeal",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "4.1",
+    "numReviews": 24,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "rubber002",
+    "productId": "rubber002a",
+    "sku": "SKU-RUBBER002",
+    "barcode": "",
+    "title": "FlexPipe HDPE Pipe 50mm 50m Roll",
+    "slug": "flexpipe-hdpe-pipe-50mm-50m-roll",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "PN10 HDPE water supply pipe, 50mm diameter, 50m coil.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/hdpe1/400/400",
+      "https://picsum.photos/seed/hdpe2/400/400",
+      "https://picsum.photos/seed/hdpe3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/hdpe1/400/400",
+      "https://picsum.photos/seed/hdpe2/400/400",
+      "https://picsum.photos/seed/hdpe3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b019",
+      "name": "Rubber & Plastics",
+      "slug": "rubber-plastics",
+      "parentId": "dept005",
+      "parentName": "Rubber & Plastics",
+      "icon": "",
+      "description": "Rubber & Plastics",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b019"
+      },
+      {
+        "_id": "b2b019-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 5749,
+      "price": 4999,
+      "discount": 13
+    },
+    "originalPrice": 5749,
+    "price": 4999,
+    "discount": 13,
+    "sales": 120,
+    "quantity": 500,
+    "sold": 71,
+    "stock": 500,
+    "status": "show",
+    "brand": "FlexPipe",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "4.7",
+    "numReviews": 65,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "rubber003",
+    "productId": "rubber003a",
+    "sku": "SKU-RUBBER003",
+    "barcode": "",
+    "title": "ClearPack PVC Shrink Film 45cm 500m Roll",
+    "slug": "clearpack-pvc-shrink-film-45cm-500m",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "PVC center-fold shrink film, 45cm wide, 500m roll, 19 micron.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/pvc1/400/400",
+      "https://picsum.photos/seed/pvc2/400/400",
+      "https://picsum.photos/seed/pvc3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/pvc1/400/400",
+      "https://picsum.photos/seed/pvc2/400/400",
+      "https://picsum.photos/seed/pvc3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b019",
+      "name": "Rubber & Plastics",
+      "slug": "rubber-plastics",
+      "parentId": "dept005",
+      "parentName": "Rubber & Plastics",
+      "icon": "",
+      "description": "Rubber & Plastics",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b019"
+      },
+      {
+        "_id": "b2b019-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 2644,
+      "price": 2299,
+      "discount": 13
+    },
+    "originalPrice": 2644,
+    "price": 2299,
+    "discount": 13,
+    "sales": 128,
+    "quantity": 500,
+    "sold": 95,
+    "stock": 500,
+    "status": "show",
+    "brand": "ClearPack",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "3.8",
+    "numReviews": 83,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "pack001",
+    "productId": "pack001a",
+    "sku": "SKU-PACK001",
+    "barcode": "",
+    "title": "BoxMaster Double-Wall Carton Box 40x30x30cm 25pcs",
+    "slug": "boxmaster-double-wall-carton-box-25pcs",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Double-wall corrugated carton boxes, 40x30x30cm, pack of 25.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/carton1/400/400",
+      "https://picsum.photos/seed/carton2/400/400",
+      "https://picsum.photos/seed/carton3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/carton1/400/400",
+      "https://picsum.photos/seed/carton2/400/400",
+      "https://picsum.photos/seed/carton3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b014",
+      "name": "Packaging & Printing",
+      "slug": "packaging-printing",
+      "parentId": "dept005",
+      "parentName": "Packaging & Printing",
+      "icon": "",
+      "description": "Packaging & Printing",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b014"
+      },
+      {
+        "_id": "b2b014-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 2184,
+      "price": 1899,
+      "discount": 13
+    },
+    "originalPrice": 2184,
+    "price": 1899,
+    "discount": 13,
+    "sales": 107,
+    "quantity": 500,
+    "sold": 30,
+    "stock": 500,
+    "status": "show",
+    "brand": "BoxMaster",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "3.7",
+    "numReviews": 41,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "pack002",
+    "productId": "pack002a",
+    "sku": "SKU-PACK002",
+    "barcode": "",
+    "title": "BubbleGuard Bubble Wrap Roll 50m",
+    "slug": "bubbleguard-bubble-wrap-roll-50m",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Small-bubble wrap roll, 50m x 50cm, anti-static option available.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/bubble1/400/400",
+      "https://picsum.photos/seed/bubble2/400/400",
+      "https://picsum.photos/seed/bubble3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/bubble1/400/400",
+      "https://picsum.photos/seed/bubble2/400/400",
+      "https://picsum.photos/seed/bubble3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b014",
+      "name": "Packaging & Printing",
+      "slug": "packaging-printing",
+      "parentId": "dept005",
+      "parentName": "Packaging & Printing",
+      "icon": "",
+      "description": "Packaging & Printing",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b014"
+      },
+      {
+        "_id": "b2b014-g1"
+      }
+    ],
+    "prices": {
+      "originalPrice": 1494,
+      "price": 1299,
+      "discount": 13
+    },
+    "originalPrice": 1494,
+    "price": 1299,
+    "discount": 13,
+    "sales": 209,
+    "quantity": 500,
+    "sold": 50,
+    "stock": 500,
+    "status": "show",
+    "brand": "BubbleGuard",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "4.9",
+    "numReviews": 40,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "pack003",
+    "productId": "pack003a",
+    "sku": "SKU-PACK003",
+    "barcode": "",
+    "title": "PrintPro DT-4100 Digital Label Printer",
+    "slug": "printpro-dt4100-digital-label-printer",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Industrial digital label printer, 300 DPI, 150mm/s, USB+LAN+WiFi.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/labelprinter1/400/400",
+      "https://picsum.photos/seed/labelprinter2/400/400",
+      "https://picsum.photos/seed/labelprinter3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/labelprinter1/400/400",
+      "https://picsum.photos/seed/labelprinter2/400/400",
+      "https://picsum.photos/seed/labelprinter3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b014",
+      "name": "Packaging & Printing",
+      "slug": "packaging-printing",
+      "parentId": "dept005",
+      "parentName": "Packaging & Printing",
+      "icon": "",
+      "description": "Packaging & Printing",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b014"
+      },
+      {
+        "_id": "b2b014-g2"
+      }
+    ],
+    "prices": {
+      "originalPrice": 40249,
+      "price": 34999,
+      "discount": 13
+    },
+    "originalPrice": 40249,
+    "price": 34999,
+    "discount": 13,
+    "sales": 66,
+    "quantity": 500,
+    "sold": 7,
+    "stock": 500,
+    "status": "show",
+    "brand": "PrintPro",
+    "supplier": "Pacific Imports",
+    "reviews": [],
+    "rating": "3.9",
+    "numReviews": 30,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "pack004",
+    "productId": "pack004a",
+    "sku": "SKU-PACK004",
+    "barcode": "",
+    "title": "StickyPro Custom Adhesive Labels 1000pcs",
+    "slug": "stickypro-custom-adhesive-labels-1000pcs",
+    "unit": "1 pc",
+    "weight": 1,
+    "description": "Blank white adhesive labels, 100x50mm, permanent glue, 1000 pcs.",
+    "type": "Wholesale",
+    "images": [
+      "https://picsum.photos/seed/label1/400/400",
+      "https://picsum.photos/seed/label2/400/400",
+      "https://picsum.photos/seed/label3/400/400"
+    ],
+    "image": [
+      "https://picsum.photos/seed/label1/400/400",
+      "https://picsum.photos/seed/label2/400/400",
+      "https://picsum.photos/seed/label3/400/400"
+    ],
+    "tag": [],
+    "category": {
+      "_id": "b2b014",
+      "name": "Packaging & Printing",
+      "slug": "packaging-printing",
+      "parentId": "dept005",
+      "parentName": "Packaging & Printing",
+      "icon": "",
+      "description": "Packaging & Printing",
+      "status": "show"
+    },
+    "categories": [
+      {
+        "_id": "dept005"
+      },
+      {
+        "_id": "b2b014"
+      },
+      {
+        "_id": "b2b014-g3"
+      }
+    ],
+    "prices": {
+      "originalPrice": 919,
+      "price": 799,
+      "discount": 13
+    },
+    "originalPrice": 919,
+    "price": 799,
+    "discount": 13,
+    "sales": 112,
+    "quantity": 500,
+    "sold": 17,
+    "stock": 500,
+    "status": "show",
+    "brand": "StickyPro",
+    "supplier": "Metro Wholesale",
+    "reviews": [],
+    "rating": "4.9",
+    "numReviews": 28,
+    "isCombination": false,
+    "variants": [],
+    "attributes": [],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
   }
 ]

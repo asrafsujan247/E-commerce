@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 
-import SearchScreenNew from "@components/search/SearchScreenNew";
+import ProductSearchScreen from "@components/search/SearchScreenNew";
 
 import { getShowingStoreProducts } from "@services/ProductServices";
 import { getShowingAttributes } from "@services/AttributeServices";
@@ -89,7 +89,7 @@ const Search = () => {
   }
 
   return (
-    <SearchScreenNew
+    <ProductSearchScreen
       products={products}
       attributes={attributes}
       categories={categories}

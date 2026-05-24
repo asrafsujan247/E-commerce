@@ -319,6 +319,72 @@
           }
         ],
         "image": "https://res.cloudinary.com/ahossain/image/upload/v1738769215/product/Calabaza-Squash-Package-each-removebg-preview%281%29.png"
+      },
+      {
+        "_id": "62cfab19484d89068aa7a7ef",
+        "name": "Snacks & Instant",
+        "slug": "snacks-instant",
+        "icon": "",
+        "description": "Snacks, instant noodles, canned food, chocolates, and chips",
+        "status": "show",
+        "departmentId": "dept001",
+        "departmentName": "Food & Daily Essentials",
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738824449/product/Hibiscus-Premium-Whole-Baby-Corn-425g-removebg-preview.png",
+        "children": [
+          {
+            "_id": "62cfab4b484d89068aa7a7ff",
+            "name": "Canned Food",
+            "slug": "canned-food",
+            "icon": "",
+            "description": "Canned Food",
+            "status": "show",
+            "parentId": "62cfab19484d89068aa7a7ef",
+            "parentName": "Snacks & Instant"
+          },
+          {
+            "_id": "62cfab39484d89068aa7a7fb",
+            "name": "Chips & Nuts",
+            "slug": "chips-nuts",
+            "icon": "",
+            "description": "Chips & Nuts",
+            "status": "show",
+            "parentId": "62cfab19484d89068aa7a7ef",
+            "parentName": "Snacks & Instant"
+          },
+          {
+            "_id": "62cfab28484d89068aa7a7f5",
+            "name": "Chocolate",
+            "slug": "chocolate",
+            "icon": "",
+            "description": "Chocolate & Candy",
+            "status": "show",
+            "parentId": "62cfab19484d89068aa7a7ef",
+            "parentName": "Snacks & Instant"
+          }
+        ]
+      },
+      {
+        "_id": "62cfad20484d89068aa7a812",
+        "name": "Sauces & Pickles",
+        "slug": "sauces-pickles",
+        "icon": "",
+        "description": "Sauces, condiments, pickles and vinegars",
+        "status": "show",
+        "departmentId": "dept001",
+        "departmentName": "Food & Daily Essentials",
+        "image": "https://res.cloudinary.com/ahossain/image/upload/v1738820891/product/Life-Tomato-Ketchup-330-Gm-removebg-preview.png",
+        "children": [
+          {
+            "_id": "62cfad52484d89068aa7a81f",
+            "name": "Pickles & Condiments",
+            "slug": "pickles-condiments",
+            "icon": "",
+            "description": "Pickles & Condiments",
+            "status": "show",
+            "parentId": "62cfad20484d89068aa7a812",
+            "parentName": "Sauces & Pickles"
+          }
+        ]
       }
     ]
   },
