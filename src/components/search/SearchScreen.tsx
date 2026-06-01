@@ -148,20 +148,22 @@ const ProductSearchScreen = ({
       return;
     }
     for (const dept of deptData) {
-      if (dept.slug === selectedCategory) {
+      if (dept.slug === selectedCategory || dept._id === selectedCategory) {
         setSelectedDept(dept._id);
         setSelectedFilterCat("");
         setSelectedSubCat("");
         return;
       }
       for (const cat of dept.categories) {
-        if (cat.slug === selectedCategory) {
+        if (cat.slug === selectedCategory || cat._id === selectedCategory) {
           setSelectedDept(dept._id);
           setSelectedFilterCat(cat._id);
           setSelectedSubCat("");
           return;
         }
-        const sub = (cat.children ?? []).find((s: SubCat) => s.slug === selectedCategory);
+        const sub = (cat.children ?? []).find(
+          (s: SubCat) => s.slug === selectedCategory || s._id === selectedCategory,
+        );
         if (sub) {
           setSelectedDept(dept._id);
           setSelectedFilterCat(cat._id);
@@ -597,7 +599,7 @@ const ProductSearchScreen = ({
                 <button
                   key={cat._id}
                   onClick={() => navigate(`/search?category=${cat.slug}`)}
-                  className={`shrink-0 px-3 py-1.5 text-sm rounded-full border transition-colors ${selectedCategory === cat.slug ? "bg-primary text-white border-primary" : "border-border hover:border-primary"}`}
+                  className={`shrink-0 px-3 py-1.5 text-sm rounded-full border transition-colors ${selectedCategory === cat.slug || selectedCategory === cat._id ? "bg-primary text-white border-primary" : "border-border hover:border-primary"}`}
                 >
                   {String(cat.name ?? "") ?? cat.slug}
                 </button>

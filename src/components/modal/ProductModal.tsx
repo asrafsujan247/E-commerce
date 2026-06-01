@@ -169,7 +169,7 @@ const ProductModal: React.FC<ProductModalProps> = ({
                   campaign={isInCampaign ? (campaign ?? undefined) : undefined}
                 />
                 <span className="ml-2">
-                  <Discount product={product} discount={discount} />
+                  <Discount product={product} discount={discount} slug={true} />
                 </span>
               </div>
 

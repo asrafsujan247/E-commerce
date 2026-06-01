@@ -165,7 +165,38 @@
         "status": "show",
         "departmentId": "dept001",
         "departmentName": "Food & Daily Essentials",
-        "children": [],
+        "children": [
+          {
+            "_id": "632ab1e14d87ff2494210a6b",
+            "name": "Jams",
+            "slug": "jams",
+            "icon": "",
+            "description": "Fruit Jams",
+            "status": "show",
+            "parentId": "632ab1e04d87ff2494210a6a",
+            "parentName": "Jam & Jelly"
+          },
+          {
+            "_id": "632ab1e24d87ff2494210a6c",
+            "name": "Jellies",
+            "slug": "jellies",
+            "icon": "",
+            "description": "Fruit Jellies",
+            "status": "show",
+            "parentId": "632ab1e04d87ff2494210a6a",
+            "parentName": "Jam & Jelly"
+          },
+          {
+            "_id": "632ab1e34d87ff2494210a6d",
+            "name": "Fruits & Spreads",
+            "slug": "fruits-spreads",
+            "icon": "",
+            "description": "Fresh Fruits and Spreads",
+            "status": "show",
+            "parentId": "632ab1e04d87ff2494210a6a",
+            "parentName": "Jam & Jelly"
+          }
+        ],
         "image": "https://res.cloudinary.com/ahossain/image/upload/v1738768992/product/Clementine-5ct-removebg-preview.png"
       },
       {

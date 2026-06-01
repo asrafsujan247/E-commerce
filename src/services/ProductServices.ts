@@ -52,13 +52,18 @@ interface StoreProductsResult {
 function matchCategory(product: Product, categorySlug: string): boolean {
   if (!categorySlug) return true;
 
+  const productCatIds: string[] = ((product as any).categories ?? []).map((c: any) => c._id);
+
   // Primary: check the product's categories array against the slug→ID map.
   // This handles dept, cat, and subcat slugs at all hierarchy levels.
   const validIds = slugToIds.get(categorySlug);
   if (validIds && validIds.size > 0) {
-    const productCatIds: string[] = ((product as any).categories ?? []).map((c: any) => c._id);
     if (productCatIds.some((id) => validIds.has(id))) return true;
   }
+
+  // Secondary: categorySlug may be a raw ObjectId (from ?_id= navigation).
+  // Check directly against the product's categories array.
+  if (productCatIds.includes(categorySlug)) return true;
 
   // Fallback: legacy field-level checks on product.category object
   const cat = product.category;
