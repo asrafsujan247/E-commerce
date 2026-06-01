@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 
-import ProductSearchScreen from "@components/search/SearchScreenNew";
+import ProductSearchScreen from "@components/search/SearchScreen";
 
 import { getShowingStoreProducts } from "@services/ProductServices";
 import { getShowingAttributes } from "@services/AttributeServices";
