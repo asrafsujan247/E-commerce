@@ -125,7 +125,7 @@ const ProductSearchScreen = ({
   const [selectedBrand, setSelectedBrand] = useState("");
   const [selectedSupplier, setSelectedSupplier] = useState("");
   const [priceMin, setPriceMin] = useState(0);
-  const [priceMax, setPriceMax] = useState(500);
+  const [priceMax, setPriceMax] = useState(0);
   const [expanded, setExpanded] = useState({
     department: true,
     category: true,
@@ -135,7 +135,7 @@ const ProductSearchScreen = ({
     price: true,
   });
 
-  const { setSortedField, productData } = useFilter(
+  const { productData } = useFilter(
     products as unknown as Product[],
   );
 
@@ -234,6 +234,11 @@ const ProductSearchScreen = ({
     return Math.ceil(Math.max(...prices, 500));
   }, [products]);
 
+  useEffect(() => {
+    setPriceMin(0);
+    setPriceMax(globalPriceMax);
+  }, [globalPriceMax]);
+
   // ── Filter logic ────────────────────────────────────────────────────────────
   const filteredProducts = useMemo<Product[]>(() => {
     let result = [...(productData as unknown as Product[])];
@@ -279,6 +284,26 @@ const ProductSearchScreen = ({
       }
     }
 
+    if (sortBy === "price-asc") {
+      result = result.slice().sort(
+        (a, b) => ((a as any).prices?.price ?? 0) - ((b as any).prices?.price ?? 0),
+      );
+    } else if (sortBy === "price-desc") {
+      result = result.slice().sort(
+        (a, b) => ((b as any).prices?.price ?? 0) - ((a as any).prices?.price ?? 0),
+      );
+    } else if (sortBy === "rating-desc") {
+      result = result.slice().sort(
+        (a, b) => ((b as any).average_rating ?? 0) - ((a as any).average_rating ?? 0),
+      );
+    } else if (sortBy === "newest") {
+      result = result.slice().sort((a, b) => {
+        const aDate = new Date((a as any).createdAt ?? 0).getTime();
+        const bDate = new Date((b as any).createdAt ?? 0).getTime();
+        return bDate - aDate;
+      });
+    }
+
     return result;
   }, [
     productData,
@@ -290,7 +315,12 @@ const ProductSearchScreen = ({
     selectedFilterCat,
     selectedDept,
     availableSubCats,
+    sortBy,
   ]);
+
+  useEffect(() => {
+    setVisibleProduct(24);
+  }, [selectedDept, selectedFilterCat, selectedSubCat, selectedBrand, selectedSupplier, priceMin, priceMax, sortBy]);
 
   useEffect(() => {
     const sentinel = sentinelRef.current;
@@ -318,7 +348,6 @@ const ProductSearchScreen = ({
   // ── Handlers ────────────────────────────────────────────────────────────────
   const handleSortChange = (value: string) => {
     setSortBy(value);
-    setSortedField(value);
   };
 
   const clearAllFilters = () => {
@@ -688,7 +717,7 @@ const ProductSearchScreen = ({
                   className={`grid gap-4 ${viewMode === "grid" ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" : "grid-cols-1"}`}
                 >
                   {displayProducts.map((product) => (
-                    <ProductCard key={product._id} product={product} />
+                    <ProductCard key={product._id} product={product} viewMode={viewMode} />
                   ))}
                 </div>
                 {visibleProduct < filteredProducts.length && (
