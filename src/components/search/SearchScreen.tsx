@@ -351,9 +351,7 @@ const ProductSearchScreen = ({
   };
 
   const clearAllFilters = () => {
-    setSelectedDept("");
-    setSelectedFilterCat("");
-    setSelectedSubCat("");
+    navigate("/search");
     setSelectedBrand("");
     setSelectedSupplier("");
     setPriceMin(0);
@@ -392,22 +390,14 @@ const ProductSearchScreen = ({
         <FilterOption
           label="All Departments"
           active={!selectedDept}
-          onClick={() => {
-            setSelectedDept("");
-            setSelectedFilterCat("");
-            setSelectedSubCat("");
-          }}
+          onClick={() => navigate("/search")}
         />
         {deptData.map((dept) => (
           <FilterOption
             key={dept._id}
             label={dept.name}
             active={selectedDept === dept._id}
-            onClick={() => {
-              setSelectedDept(dept._id);
-              setSelectedFilterCat("");
-              setSelectedSubCat("");
-            }}
+            onClick={() => navigate(`/search?category=${dept.slug}`)}
           />
         ))}
       </FilterSection>
@@ -422,8 +412,8 @@ const ProductSearchScreen = ({
           label="All Categories"
           active={!selectedFilterCat}
           onClick={() => {
-            setSelectedFilterCat("");
-            setSelectedSubCat("");
+            const dept = deptData.find((d) => d._id === selectedDept);
+            navigate(dept ? `/search?category=${dept.slug}` : "/search");
           }}
         />
         {availableCats.map((cat) => (
@@ -432,8 +422,7 @@ const ProductSearchScreen = ({
             label={cat.name}
             active={selectedFilterCat === cat._id}
             onClick={() => {
-              setSelectedFilterCat(cat._id);
-              setSelectedSubCat("");
+              navigate(`/search?category=${cat.slug}`);
               setExpanded((p) => ({ ...p, subcategory: true }));
             }}
           />
@@ -450,14 +439,17 @@ const ProductSearchScreen = ({
           <FilterOption
             label="All Subcategories"
             active={!selectedSubCat}
-            onClick={() => setSelectedSubCat("")}
+            onClick={() => {
+              const cat = availableCats.find((c) => c._id === selectedFilterCat);
+              navigate(cat ? `/search?category=${cat.slug}` : "/search");
+            }}
           />
           {availableSubCats.map((sub) => (
             <FilterOption
               key={sub._id}
               label={sub.name}
               active={selectedSubCat === sub._id}
-              onClick={() => setSelectedSubCat(sub._id)}
+              onClick={() => navigate(`/search?category=${sub.slug}`)}
             />
           ))}
         </FilterSection>
