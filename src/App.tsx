@@ -46,6 +46,7 @@ const PrivacyPolicyPage = lazy(() => import("@pages/PrivacyPolicy"));
 const TermsPage = lazy(() => import("@pages/Terms"));
 const NotFoundPage = lazy(() => import("@pages/NotFound"));
 const RfqPage = lazy(() => import("@pages/Rfq"));
+const InquiryPage = lazy(() => import("@pages/Inquiry"));
 
 // User dashboard pages
 const UserLayout = lazy(() => import("@pages/user/UserLayout"));
@@ -215,6 +216,7 @@ function AppWithSettings() {
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path="/terms-and-conditions" element={<TermsPage />} />
             <Route path="/rfq" element={<RfqPage />} />
+            <Route path="/inquiry" element={<InquiryPage />} />
 
             {/* Protected user dashboard routes */}
             <Route element={<ProtectedRoute />}>

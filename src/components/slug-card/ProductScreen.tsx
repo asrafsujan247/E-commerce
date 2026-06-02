@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FacebookShareButton, TwitterShareButton } from "react-share";
 import { Minus, Plus } from "lucide-react";
 import { Fragment } from "react";
@@ -46,6 +46,7 @@ const ProductScreen: React.FC<ProductScreenProps> = ({
   attributes,
   relatedProducts,
 }) => {
+  const navigate = useNavigate();
   const { globalSetting, storeCustomization } = useSetting();
   const { item, setItem } = useAddToCart();
   const {
@@ -272,6 +273,14 @@ const ProductScreen: React.FC<ProductScreenProps> = ({
                     </Button>
                   </div>
                 </div>
+
+                <button
+                  type="button"
+                  onClick={() => navigate("/inquiry", { state: { product } })}
+                  className="mt-3 w-full h-11 text-sm font-semibold border border-primary text-primary rounded-md hover:bg-primary hover:text-white transition-colors"
+                >
+                  Send Inquiry
+                </button>
 
                 <div className="flex items-center mt-4">
                   <div className="flex items-center justify-between space-s-3 sm:space-s-4 w-full">
