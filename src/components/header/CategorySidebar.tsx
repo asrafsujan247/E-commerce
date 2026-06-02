@@ -154,7 +154,7 @@ const CategorySidebar = ({
           className={`flex items-center justify-between px-4 py-1.5 text-[12.5px] transition-colors leading-snug cursor-pointer ${
             hoveredCat?._id === cat._id
               ? "text-primary bg-gray-50"
-              : "text-gray-500 hover:text-primary hover:bg-gray-50"
+              : "text-gray-500 hover:text-gray-800 hover:bg-gray-50"
           }`}
         >
           <Link to={`/search?_id=${cat._id}`} className="flex-1 truncate">

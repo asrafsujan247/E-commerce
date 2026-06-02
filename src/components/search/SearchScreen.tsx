@@ -125,7 +125,7 @@ const ProductSearchScreen = ({
   const [selectedBrand, setSelectedBrand] = useState("");
   const [selectedSupplier, setSelectedSupplier] = useState("");
   const [priceMin, setPriceMin] = useState(0);
-  const [priceMax, setPriceMax] = useState(500);
+  const [priceMax, setPriceMax] = useState(0);
   const [expanded, setExpanded] = useState({
     department: true,
     category: true,
@@ -135,7 +135,7 @@ const ProductSearchScreen = ({
     price: true,
   });
 
-  const { setSortedField, productData } = useFilter(
+  const { productData } = useFilter(
     products as unknown as Product[],
   );
 
@@ -148,20 +148,22 @@ const ProductSearchScreen = ({
       return;
     }
     for (const dept of deptData) {
-      if (dept.slug === selectedCategory) {
+      if (dept.slug === selectedCategory || dept._id === selectedCategory) {
         setSelectedDept(dept._id);
         setSelectedFilterCat("");
         setSelectedSubCat("");
         return;
       }
       for (const cat of dept.categories) {
-        if (cat.slug === selectedCategory) {
+        if (cat.slug === selectedCategory || cat._id === selectedCategory) {
           setSelectedDept(dept._id);
           setSelectedFilterCat(cat._id);
           setSelectedSubCat("");
           return;
         }
-        const sub = (cat.children ?? []).find((s: SubCat) => s.slug === selectedCategory);
+        const sub = (cat.children ?? []).find(
+          (s: SubCat) => s.slug === selectedCategory || s._id === selectedCategory,
+        );
         if (sub) {
           setSelectedDept(dept._id);
           setSelectedFilterCat(cat._id);
@@ -234,6 +236,11 @@ const ProductSearchScreen = ({
     return Math.ceil(Math.max(...prices, 500));
   }, [products]);
 
+  useEffect(() => {
+    setPriceMin(0);
+    setPriceMax(globalPriceMax);
+  }, [globalPriceMax]);
+
   // ── Filter logic ────────────────────────────────────────────────────────────
   const filteredProducts = useMemo<Product[]>(() => {
     let result = [...(productData as unknown as Product[])];
@@ -279,6 +286,26 @@ const ProductSearchScreen = ({
       }
     }
 
+    if (sortBy === "price-asc") {
+      result = result.slice().sort(
+        (a, b) => ((a as any).prices?.price ?? 0) - ((b as any).prices?.price ?? 0),
+      );
+    } else if (sortBy === "price-desc") {
+      result = result.slice().sort(
+        (a, b) => ((b as any).prices?.price ?? 0) - ((a as any).prices?.price ?? 0),
+      );
+    } else if (sortBy === "rating-desc") {
+      result = result.slice().sort(
+        (a, b) => ((b as any).average_rating ?? 0) - ((a as any).average_rating ?? 0),
+      );
+    } else if (sortBy === "newest") {
+      result = result.slice().sort((a, b) => {
+        const aDate = new Date((a as any).createdAt ?? 0).getTime();
+        const bDate = new Date((b as any).createdAt ?? 0).getTime();
+        return bDate - aDate;
+      });
+    }
+
     return result;
   }, [
     productData,
@@ -290,7 +317,12 @@ const ProductSearchScreen = ({
     selectedFilterCat,
     selectedDept,
     availableSubCats,
+    sortBy,
   ]);
+
+  useEffect(() => {
+    setVisibleProduct(24);
+  }, [selectedDept, selectedFilterCat, selectedSubCat, selectedBrand, selectedSupplier, priceMin, priceMax, sortBy]);
 
   useEffect(() => {
     const sentinel = sentinelRef.current;
@@ -318,13 +350,10 @@ const ProductSearchScreen = ({
   // ── Handlers ────────────────────────────────────────────────────────────────
   const handleSortChange = (value: string) => {
     setSortBy(value);
-    setSortedField(value);
   };
 
   const clearAllFilters = () => {
-    setSelectedDept("");
-    setSelectedFilterCat("");
-    setSelectedSubCat("");
+    navigate("/search");
     setSelectedBrand("");
     setSelectedSupplier("");
     setPriceMin(0);
@@ -363,22 +392,14 @@ const ProductSearchScreen = ({
         <FilterOption
           label="All Departments"
           active={!selectedDept}
-          onClick={() => {
-            setSelectedDept("");
-            setSelectedFilterCat("");
-            setSelectedSubCat("");
-          }}
+          onClick={() => navigate("/search")}
         />
         {deptData.map((dept) => (
           <FilterOption
             key={dept._id}
             label={dept.name}
             active={selectedDept === dept._id}
-            onClick={() => {
-              setSelectedDept(dept._id);
-              setSelectedFilterCat("");
-              setSelectedSubCat("");
-            }}
+            onClick={() => navigate(`/search?category=${dept.slug}`)}
           />
         ))}
       </FilterSection>
@@ -393,8 +414,8 @@ const ProductSearchScreen = ({
           label="All Categories"
           active={!selectedFilterCat}
           onClick={() => {
-            setSelectedFilterCat("");
-            setSelectedSubCat("");
+            const dept = deptData.find((d) => d._id === selectedDept);
+            navigate(dept ? `/search?category=${dept.slug}` : "/search");
           }}
         />
         {availableCats.map((cat) => (
@@ -403,8 +424,7 @@ const ProductSearchScreen = ({
             label={cat.name}
             active={selectedFilterCat === cat._id}
             onClick={() => {
-              setSelectedFilterCat(cat._id);
-              setSelectedSubCat("");
+              navigate(`/search?category=${cat.slug}`);
               setExpanded((p) => ({ ...p, subcategory: true }));
             }}
           />
@@ -421,14 +441,17 @@ const ProductSearchScreen = ({
           <FilterOption
             label="All Subcategories"
             active={!selectedSubCat}
-            onClick={() => setSelectedSubCat("")}
+            onClick={() => {
+              const cat = availableCats.find((c) => c._id === selectedFilterCat);
+              navigate(cat ? `/search?category=${cat.slug}` : "/search");
+            }}
           />
           {availableSubCats.map((sub) => (
             <FilterOption
               key={sub._id}
               label={sub.name}
               active={selectedSubCat === sub._id}
-              onClick={() => setSelectedSubCat(sub._id)}
+              onClick={() => navigate(`/search?category=${sub.slug}`)}
             />
           ))}
         </FilterSection>
@@ -576,7 +599,7 @@ const ProductSearchScreen = ({
                 <button
                   key={cat._id}
                   onClick={() => navigate(`/search?category=${cat.slug}`)}
-                  className={`shrink-0 px-3 py-1.5 text-sm rounded-full border transition-colors ${selectedCategory === cat.slug ? "bg-primary text-white border-primary" : "border-border hover:border-primary"}`}
+                  className={`shrink-0 px-3 py-1.5 text-sm rounded-full border transition-colors ${selectedCategory === cat.slug || selectedCategory === cat._id ? "bg-primary text-white border-primary" : "border-border hover:border-primary"}`}
                 >
                   {String(cat.name ?? "") ?? cat.slug}
                 </button>
@@ -688,7 +711,7 @@ const ProductSearchScreen = ({
                   className={`grid gap-4 ${viewMode === "grid" ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" : "grid-cols-1"}`}
                 >
                   {displayProducts.map((product) => (
-                    <ProductCard key={product._id} product={product} />
+                    <ProductCard key={product._id} product={product} viewMode={viewMode} />
                   ))}
                 </div>
                 {visibleProduct < filteredProducts.length && (

@@ -11,7 +11,6 @@ import useAddToCart from "@hooks/useAddToCart";
 import { useSetting } from "@stores/useSettingStore";
 import Discount from "@components/common/Discount";
 import { handleLogEvent } from "@lib/analytics";
-import useUtilsFunction from "@hooks/useUtilsFunction";
 import ProductModal from "@components/modal/ProductModal";
 import ImageWithFallback from "@components/common/ImageWithFallBack";
 import { useCartStore } from "@stores/useCartStore";
@@ -59,9 +58,10 @@ interface Product {
 interface ProductCardProps {
   product: Product;
   attributes?: ProductAttribute[];
+  viewMode?: "grid" | "list";
 }
 
-const ProductCard = ({ product, attributes }: ProductCardProps) => {
+const ProductCard = ({ product, attributes, viewMode = "grid" }: ProductCardProps) => {
   const modalRef = useRef<HTMLDivElement>(null);
   const [modalOpen, setModalOpen] = useState(false);
   const { globalSetting } = useSetting();
@@ -136,6 +136,162 @@ const ProductCard = ({ product, attributes }: ProductCardProps) => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [setModalOpen]);
+
+  if (viewMode === "list") {
+    return (
+      <>
+        {modalOpen && (
+          <ProductModal
+            product={product as unknown as import("@appTypes/index").Product}
+            modalOpen={modalOpen}
+            attributes={attributes}
+            setModalOpen={setModalOpen}
+            campaignInfo={isInCampaign ? campaign : null}
+          />
+        )}
+
+        <div className="group relative flex flex-row overflow-hidden rounded-xl bg-card border border-border/40 shadow-sm hover:shadow-md hover:border-primary/20 transition-all duration-200">
+          {/* Image */}
+          <div className="relative w-36 sm:w-44 shrink-0 overflow-hidden bg-muted">
+            <Link
+              to={`/product/${product?.slug}`}
+              className="block w-full h-full min-h-[148px]"
+            >
+              <ImageWithFallback
+                alt="product"
+                src={
+                  Array.isArray(product.image)
+                    ? product.image[0]
+                    : (product.image as string | undefined)
+                }
+              />
+            </Link>
+            <div className="absolute top-2 left-2">
+              <Discount product={product} />
+            </div>
+          </div>
+
+          {/* Content */}
+          <div className="flex flex-1 flex-col justify-between p-4 min-w-0 gap-3">
+            <div className="space-y-1.5">
+              <Link
+                to={`/product/${product?.slug}`}
+                className="block text-sm sm:text-base font-semibold text-foreground line-clamp-2 hover:text-primary leading-snug pr-8"
+              >
+                {String(product?.title ?? "")}
+              </Link>
+              <div className="flex items-center gap-1">
+                <Rating
+                  size="md"
+                  showReviews={true}
+                  rating={product?.average_rating}
+                  totalReviews={product?.total_reviews}
+                />
+              </div>
+              <Stock stock={product.stock ?? 0} card />
+            </div>
+
+            <div className="flex items-end justify-between gap-3">
+              <div className="space-y-1.5">
+                <Price
+                  card
+                  product={product}
+                  price={effectivePrice}
+                  originalPrice={effectiveOriginalPrice}
+                  campaign={isInCampaign ? (campaign ?? undefined) : undefined}
+                />
+                {isInCampaign && campaign && (
+                  <div className="w-28 sm:w-36">
+                    <div className="flex items-center justify-between text-[10px] text-muted-foreground mb-0.5">
+                      <span>{campaign.campaignSoldCount || 0} Sold</span>
+                      <span>
+                        {campaign.campaignSoldCount || 0}/
+                        {campaign.campaignStockLimit}
+                      </span>
+                    </div>
+                    <div className="relative w-full h-1 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                      <div
+                        className="absolute top-0 left-0 h-full bg-orange-500 rounded-full transition-all duration-500"
+                        style={{
+                          width: `${campaign.campaignStockLimit > 0 ? Math.min(Math.round(((campaign.campaignSoldCount || 0) / campaign.campaignStockLimit) * 100), 100) : 0}%`,
+                        }}
+                      />
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              <div className="shrink-0">
+                {inCart(product._id) ? (
+                  <div>
+                    {items.map(
+                      (item) =>
+                        item.id === product._id && (
+                          <div
+                            key={item.id}
+                            className="flex items-center gap-0.5 p-1 bg-primary text-primary-foreground ring-2 ring-white rounded-full"
+                          >
+                            <button
+                              onClick={() =>
+                                updateItemQuantity(
+                                  item.id,
+                                  (item.quantity ?? 1) - 1,
+                                )
+                              }
+                              className="w-7 h-7 flex items-center justify-center"
+                            >
+                              <IoRemove className="text-base" />
+                            </button>
+                            <span className="text-sm font-semibold min-w-[1.25rem] text-center">
+                              {item.quantity}
+                            </span>
+                            <button
+                              onClick={() =>
+                                item?.variants &&
+                                (item.variants as unknown[]).length > 0
+                                  ? handleAddItem(item as unknown as Product)
+                                  : handleIncreaseQuantity(item)
+                              }
+                              className="w-7 h-7 flex items-center justify-center"
+                            >
+                              <IoAdd className="text-base" />
+                            </button>
+                          </div>
+                        ),
+                    )}
+                  </div>
+                ) : (
+                  <button
+                    onClick={() => handleAddItem(product)}
+                    aria-label="cart"
+                    className="flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors"
+                  >
+                    <IoBagAdd className="text-base" />
+                    <span className="hidden sm:inline">Add</span>
+                  </button>
+                )}
+              </div>
+            </div>
+          </div>
+
+          {/* Quick view */}
+          <button
+            aria-label="quick view"
+            onClick={() => {
+              handleModalOpen(!modalOpen);
+              handleLogEvent(
+                "product",
+                `opened ${String(product?.title ?? "")} product modal`,
+              );
+            }}
+            className="absolute top-2 right-2 w-7 h-7 flex items-center justify-center rounded-full bg-background/90 text-muted-foreground shadow hover:text-primary hover:bg-background transition-colors opacity-0 group-hover:opacity-100"
+          >
+            <IoExpand className="w-3.5 h-3.5" />
+          </button>
+        </div>
+      </>
+    );
+  }
 
   return (
     <>
