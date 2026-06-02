@@ -39,6 +39,11 @@ export interface CouponInfo {
 
 // ===================== Product Types =====================
 
+export interface ProductSpecification {
+  label: string;
+  value: string;
+}
+
 export interface ProductVariant {
   _id?: string;
   color?: string;
@@ -76,6 +81,7 @@ export interface Product {
   attributes?: ProductAttribute[];
   status?: string;
   isFeatured?: boolean;
+  specifications?: ProductSpecification[];
   [key: string]: unknown;
 }
 

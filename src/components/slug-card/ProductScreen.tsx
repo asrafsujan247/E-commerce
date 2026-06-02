@@ -1,6 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
 import { FacebookShareButton, TwitterShareButton } from "react-share";
-import { Minus, Plus } from "lucide-react";
 import { Fragment } from "react";
 
 // internal imports
@@ -8,7 +7,6 @@ import Price from "@components/common/Price";
 import Stock from "@components/common/Stock";
 import Tags from "@components/common/Tags";
 import Card from "@components/slug-card/Card";
-import useAddToCart from "@hooks/useAddToCart";
 import Discount from "@components/common/Discount";
 import ProductCard from "@components/product/ProductCard";
 import VariantList from "@components/variants/VariantList";
@@ -20,6 +18,7 @@ import Rating from "@components/common/Rating";
 import { Button } from "@components/ui/button";
 import ProductReviews from "./ProductReviews";
 import { FiChevronRight, FiHeadphones } from "react-icons/fi";
+import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import CampaignCountdown from "@components/campaign/CampaignCountdown";
 import type { Product, ProductAttribute } from "@appTypes/index";
@@ -48,11 +47,9 @@ const ProductScreen: React.FC<ProductScreenProps> = ({
 }) => {
   const navigate = useNavigate();
   const { globalSetting, storeCustomization } = useSetting();
-  const { item, setItem } = useAddToCart();
   const {
     setValue,
     price,
-    stock,
     discount,
     isReadMore,
     selectedImage,
@@ -68,7 +65,9 @@ const ProductScreen: React.FC<ProductScreenProps> = ({
     campaign,
     handleAddToCart,
   } = useProductAction({
-    product: product as unknown as Parameters<typeof useProductAction>[0]["product"],
+    product: product as unknown as Parameters<
+      typeof useProductAction
+    >[0]["product"],
     attributes,
     globalSetting,
   });
@@ -76,10 +75,10 @@ const ProductScreen: React.FC<ProductScreenProps> = ({
   const productImages: string[] = Array.isArray(product?.image)
     ? (product.image as string[])
     : product?.images?.length
-    ? product.images
-    : product?.image
-    ? [product.image as string]
-    : [];
+      ? product.images
+      : product?.image
+        ? [product.image as string]
+        : [];
 
   type VariantTitleItem = {
     _id: string;
@@ -96,7 +95,7 @@ const ProductScreen: React.FC<ProductScreenProps> = ({
 
   return (
     <>
-      <div className="bg-background px-0">
+      <div className="bg-white px-0">
         <div className="container mx-auto px-3 sm:px-10 max-w-screen-2xl">
           <div className="flex items-center py-4 lg:py-6">
             <ol className="flex items-center w-full overflow-hidden text-muted-foreground">
@@ -111,9 +110,7 @@ const ProductScreen: React.FC<ProductScreenProps> = ({
                 <Link
                   to={`/search?category=${category_name}&_id=${typeof product?.category === "object" ? product.category?._id : ""}`}
                 >
-                  <button type="button">
-                    {category_display_name}
-                  </button>
+                  <button type="button">{category_display_name}</button>
                 </Link>
               </li>
               <li className="text-sm mt-[1px]">
@@ -121,7 +118,7 @@ const ProductScreen: React.FC<ProductScreenProps> = ({
                 <FiChevronRight />{" "}
               </li>
               <li className="text-sm px-1 transition duration-200 ease-in">
-                {String(product?.title ?? '')}
+                {String(product?.title ?? "")}
               </li>
             </ol>
           </div>
@@ -149,7 +146,9 @@ const ProductScreen: React.FC<ProductScreenProps> = ({
                 <div className="flex flex-row flex-wrap mt-4">
                   <ImageCarousel
                     images={productImages}
-                    handleChangeImage={setSelectedImage as (img: string) => void}
+                    handleChangeImage={
+                      setSelectedImage as (img: string) => void
+                    }
                   />
                 </div>
               )}
@@ -167,24 +166,30 @@ const ProductScreen: React.FC<ProductScreenProps> = ({
                         Campaign Deal
                       </span>
                       <span className="text-xs text-red-500 dark:text-red-300">
-                        — Only {(campaign as ProductCampaignInfo).campaignRemainingStock} left at this
-                        price!
+                        — Only{" "}
+                        {
+                          (campaign as ProductCampaignInfo)
+                            .campaignRemainingStock
+                        }{" "}
+                        left at this price!
                       </span>
                     </div>
                     <CampaignCountdown
-                      endTime={(campaign as ProductCampaignInfo).campaignEndTime ?? ""}
-                      startTime={(campaign as ProductCampaignInfo).campaignStartTime ?? ""}
+                      endTime={
+                        (campaign as ProductCampaignInfo).campaignEndTime ?? ""
+                      }
+                      startTime={
+                        (campaign as ProductCampaignInfo).campaignStartTime ??
+                        ""
+                      }
                     />
                   </div>
                 </div>
               )}
 
               <div className="mb-2 md:mb-2.5 block -mt-1.5">
-                <div className="relative">
-                  <Stock stock={stock} />
-                </div>
                 <h1 className="leading-7 text-lg md:text-xl lg:text-2xl mb-1 font-semibold text-foreground">
-                  {String(product?.title ?? '')}
+                  {String(product?.title ?? "")}
                 </h1>
                 <div className="flex gap-0.5 items-center mt-1">
                   <Rating
@@ -207,10 +212,12 @@ const ProductScreen: React.FC<ProductScreenProps> = ({
                 </span>
               </div>
               <div className="mb-6">
-                {(variantTitle as unknown as VariantTitleItem[] | undefined)?.map((a) => (
+                {(
+                  variantTitle as unknown as VariantTitleItem[] | undefined
+                )?.map((a) => (
                   <span key={a._id} className="mb-2 block">
                     <h4 className="text-sm py-1 text-foreground font-medium">
-                      {String(a?.name ?? '')}:
+                      {String(a?.name ?? "")}:
                     </h4>
 
                     <VariantList
@@ -222,65 +229,32 @@ const ProductScreen: React.FC<ProductScreenProps> = ({
                       variants={product.variants}
                       selectVariant={selectVariant}
                       setSelectVariant={setSelectVariant}
-                      attributeValues={attributes?.find((attr) => attr._id === a._id)?.values}
+                      attributeValues={
+                        attributes?.find((attr) => attr._id === a._id)?.values
+                      }
                     />
                   </span>
                 ))}
               </div>
 
               <div>
-                <div className="flex items-center mt-4">
-                  <div className="grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2 w-full">
-                    {/* Quantity Selector */}
-                    <div className="group flex items-center justify-between rounded-md overflow-hidden flex-shrink-0 border h-11 border-border">
-                      <Button
-                        variant="outline"
-                        onClick={() => setItem((item as number) - 1)}
-                        disabled={(item as number) === 1}
-                        className="border-0 border-e-1 border-border rounded-none flex items-center justify-center h-full flex-shrink-0 transition ease-in-out duration-300 focus:outline-none w-10 md:w-12 text-foreground hover:text-muted-foreground"
-                      >
-                        <span className="sm:text-2xl">
-                          <Minus />
-                        </span>
-                      </Button>
-
-                      <p className="font-semibold flex items-center justify-center transition-colors duration-250 ease-in-out cursor-default flex-shrink-0 text-base text-foreground w-10 md:w-20 xl:w-22">
-                        {item as number}
-                      </p>
-
-                      <Button
-                        variant="outline"
-                        onClick={() => setItem((item as number) + 1)}
-                        disabled={
-                          ((selectVariant as Record<string, unknown>)?.quantity as number) <=
-                          (item as number)
-                        }
-                        className="border-0 border-s-1 border-border rounded-none flex items-center justify-center h-full flex-shrink-0 transition ease-in-out duration-300 focus:outline-none w-10 md:w-12 text-foreground hover:text-muted-foreground"
-                      >
-                        <span className="sm:text-2xl">
-                          <Plus />
-                        </span>
-                      </Button>
-                    </div>
-
-                    {/* Add to Cart Button */}
-                    <Button
-                      onClick={() => handleAddToCart(item as number)}
-                      className="text-sm leading-4 inline-flex items-center cursor-pointer transition ease-in-out duration-300 font-semibold text-center justify-center border-0 border-transparent rounded-md focus-visible:outline-none focus:outline-none px-4 md:px-6 lg:px-8 py-4 md:py-3.5 lg:py-4 w-full h-11"
-                      variant="create"
-                    >
-                      Add to Cart
-                    </Button>
-                  </div>
+                <div className="flex items-center gap-3 mt-4">
+                  <Button
+                    onClick={() => handleAddToCart(1)}
+                    className="text-sm leading-4 inline-flex items-center gap-2 cursor-pointer transition ease-in-out duration-300 font-semibold text-center justify-center border-0 border-transparent rounded-md focus-visible:outline-none focus:outline-none px-4 md:px-6 lg:px-8 py-4 md:py-3.5 lg:py-4 flex-1 h-11"
+                    variant="create"
+                  >
+                    <ShoppingCartIcon className="size-6 shrink-0" />
+                    Add Inquiry Basket to Compare
+                  </Button>
+                  <button
+                    type="button"
+                    onClick={() => navigate("/inquiry", { state: { product } })}
+                    className="flex-1 h-11 text-sm font-semibold border border-primary text-primary rounded-md hover:bg-primary hover:text-white transition-colors"
+                  >
+                    Send Inquiry
+                  </button>
                 </div>
-
-                <button
-                  type="button"
-                  onClick={() => navigate("/inquiry", { state: { product } })}
-                  className="mt-3 w-full h-11 text-sm font-semibold border border-primary text-primary rounded-md hover:bg-primary hover:text-white transition-colors"
-                >
-                  Send Inquiry
-                </button>
 
                 <div className="flex items-center mt-4">
                   <div className="flex items-center justify-between space-s-3 sm:space-s-4 w-full">
@@ -320,7 +294,9 @@ const ProductScreen: React.FC<ProductScreenProps> = ({
                     Highlights
                   </h3>
                   <div className="mt-4">
-                    <Card storeCustomization={storeCustomization ?? undefined} />
+                    <Card
+                      storeCustomization={storeCustomization ?? undefined}
+                    />
                   </div>
                 </div>
 
@@ -402,34 +378,74 @@ const ProductScreen: React.FC<ProductScreenProps> = ({
               </div>
             </div>
             <div className="mx-auto w-full lg:col-span-3 lg:my-0 my-8 lg:max-w-none">
-              <TabGroup>
+              <TabGroup defaultIndex={0}>
                 <div className="border-b border-border">
                   <TabList className="-mb-px flex space-x-8">
                     <Tab className="cursor-pointer border-b-2 border-transparent pb-3 text-sm font-medium whitespace-nowrap text-muted-foreground hover:border-border focus:outline-0 hover:text-foreground data-selected:border-primary data-selected:text-primary">
-                      Customer Reviews
+                      Description
                     </Tab>
 
                     <Tab className="cursor-pointer border-b-2 border-transparent pb-3 text-sm font-medium whitespace-nowrap text-muted-foreground hover:border-border focus:outline-0 hover:text-foreground data-selected:border-primary data-selected:text-primary">
-                      Description
+                      Specification
+                    </Tab>
+
+                    <Tab className="cursor-pointer border-b-2 border-transparent pb-3 text-sm font-medium whitespace-nowrap text-muted-foreground hover:border-border focus:outline-0 hover:text-foreground data-selected:border-primary data-selected:text-primary">
+                      Customer Reviews
                     </Tab>
                   </TabList>
                 </div>
                 <TabPanels as={Fragment}>
-                  <TabPanel className="-mb-10">
-                    <h3 className="sr-only">Customer Reviews</h3>
-                    <ProductReviews reviews={reviews} />
-                  </TabPanel>
                   <TabPanel className="pt-8">
                     <h3 className="sr-only">Product Description</h3>
                     <p className="text-sm leading-6 text-muted-foreground md:leading-6 mb-3">
                       {isReadMore
-                        ? String(product?.description ?? '')?.slice(
-                            0,
-                            150,
-                          )
-                        : String(product?.description ?? '')}
+                        ? String(product?.description ?? "")?.slice(0, 150)
+                        : String(product?.description ?? "")}
                     </p>
                     <div className="text-sm text-muted-foreground [&_h4]:mt-5 [&_h4]:font-medium [&_h4]:text-foreground [&_li]:pl-2 [&_li::marker]:text-muted-foreground [&_p]:my-2 [&_p]:text-sm/6 [&_ul]:my-4 [&_ul]:list-disc [&_ul]:space-y-1 [&_ul]:pl-5 [&_ul]:text-sm/6 [&>:first-child]:mt-0" />
+                  </TabPanel>
+                  <TabPanel className="pt-8">
+                    <h3 className="sr-only">Product Specification</h3>
+                    {product?.specifications &&
+                    (
+                      product.specifications as {
+                        label: string;
+                        value: string;
+                      }[]
+                    ).length > 0 ? (
+                      <table className="w-full text-sm border border-border rounded-lg overflow-hidden">
+                        <tbody>
+                          {(
+                            product.specifications as {
+                              label: string;
+                              value: string;
+                            }[]
+                          ).map((spec, i) => (
+                            <tr
+                              key={i}
+                              className={
+                                i % 2 === 0 ? "bg-muted/40" : "bg-background"
+                              }
+                            >
+                              <td className="py-2.5 px-4 font-medium text-foreground w-1/3 border-r border-border">
+                                {spec.label}
+                              </td>
+                              <td className="py-2.5 px-4 text-muted-foreground">
+                                {spec.value}
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    ) : (
+                      <p className="text-sm text-muted-foreground">
+                        No specifications available.
+                      </p>
+                    )}
+                  </TabPanel>
+                  <TabPanel className="-mb-10">
+                    <h3 className="sr-only">Customer Reviews</h3>
+                    <ProductReviews reviews={reviews} />
                   </TabPanel>
                 </TabPanels>
               </TabGroup>
