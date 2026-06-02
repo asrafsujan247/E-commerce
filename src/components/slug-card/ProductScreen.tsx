@@ -3,7 +3,6 @@ import { FacebookShareButton, TwitterShareButton } from "react-share";
 import { Fragment } from "react";
 
 // internal imports
-import Price from "@components/common/Price";
 import Stock from "@components/common/Stock";
 import Tags from "@components/common/Tags";
 import Card from "@components/slug-card/Card";
@@ -49,11 +48,9 @@ const ProductScreen: React.FC<ProductScreenProps> = ({
   const { globalSetting, storeCustomization } = useSetting();
   const {
     setValue,
-    price,
     discount,
     isReadMore,
     selectedImage,
-    originalPrice,
     setSelectedImage,
     selectVariant,
     setSelectVariant,
@@ -201,12 +198,11 @@ const ProductScreen: React.FC<ProductScreenProps> = ({
                 </div>
               </div>
               <div className="flex items-center mb-8">
-                <Price
-                  price={price}
-                  product={product}
-                  originalPrice={originalPrice}
-                  campaign={isInCampaign ? (campaign ?? undefined) : undefined}
-                />
+                <div className="product-price font-bold">
+                  <span className="inline-block text-xl">
+                    BDT {(product?.prices?.minPrice ?? 0).toFixed(2)}-{(product?.prices?.maxPrice ?? 0).toFixed(2)}
+                  </span>
+                </div>
                 <span className="ml-2 block">
                   <Discount slug product={product} discount={discount} />
                 </span>

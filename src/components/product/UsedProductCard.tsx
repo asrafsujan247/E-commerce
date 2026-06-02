@@ -238,24 +238,11 @@ const UsedProductCard = ({ product, attributes }: UsedProductCardProps) => {
             />
           </div>
 
-          <PriceTwo
-            card
-            product={product}
-            price={
-              isInCampaign
-                ? campaign!.campaignPrice
-                : product?.isCombination
-                  ? product?.variants?.[0]?.price
-                  : product?.prices?.price
-            }
-            originalPrice={
-              isInCampaign
-                ? campaign!.campaignOriginalPrice
-                : product?.isCombination
-                  ? product?.variants?.[0]?.originalPrice
-                  : product?.prices?.originalPrice
-            }
-          />
+          <div className="product-price font-bold">
+            <span className="inline-block text-base text-foreground">
+              BDT {(product?.prices?.minPrice ?? 0).toFixed(2)}-{(product?.prices?.maxPrice ?? 0).toFixed(2)}
+            </span>
+          </div>
 
           {isInCampaign && campaign && (
             <div>

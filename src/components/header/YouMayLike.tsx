@@ -63,8 +63,8 @@ const YouMayLike = () => {
                   {String(product.title ?? '')}
                 </p>
                 <p className="text-[11px] text-gray-400 mt-0.5">
-                  {product.prices?.price != null
-                    ? `$${product.prices.price}`
+                  {product.prices?.minPrice != null
+                    ? `$${product.prices.minPrice}${product.prices.maxPrice !== product.prices.minPrice ? `-${product.prices.maxPrice}` : ""}`
                     : ""}
                 </p>
               </div>

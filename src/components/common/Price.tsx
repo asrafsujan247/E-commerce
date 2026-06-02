@@ -3,7 +3,8 @@ import useUtilsFunction from "@hooks/useUtilsFunction";
 interface PriceProduct {
   isCombination?: boolean;
   prices?: {
-    price?: number;
+    minPrice?: number;
+    maxPrice?: number;
     originalPrice?: number;
   };
   [key: string]: unknown;
@@ -34,7 +35,7 @@ const Price = ({ product, price, card, originalPrice, currency, campaign }: Pric
     ? price
     : isCombo
       ? price
-      : product?.prices?.price;
+      : product?.prices?.minPrice;
   const finalOriginal = campaign ? originalPrice : originalPrice;
   const discountAmount =
     (finalOriginal ?? 0) > (finalPrice ?? 0) ? (finalOriginal ?? 0) - (finalPrice ?? 0) : 0;

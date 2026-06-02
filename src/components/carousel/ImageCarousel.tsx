@@ -1,9 +1,7 @@
-import React, { useRef } from "react";
-import { IoChevronBackOutline, IoChevronForward } from "react-icons/io5";
+import React from "react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 interface ImageCarouselProps {
@@ -11,45 +9,50 @@ interface ImageCarouselProps {
   handleChangeImage: (img: string) => void;
 }
 
-const ImageCarousel: React.FC<ImageCarouselProps> = ({
-  images,
-  handleChangeImage,
-}) => {
-  const prevRef = useRef<HTMLButtonElement>(null);
-  const nextRef = useRef<HTMLButtonElement>(null);
+const Thumbnail: React.FC<{ img: string; onClick: () => void }> = ({ img, onClick }) => (
+  <button
+    onClick={onClick}
+    className="flex items-center justify-center border rounded overflow-hidden w-25 h-25 shrink-0 hover:border-primary transition-colors mt-2"
+  >
+    <img
+      src={img}
+      alt="product"
+      className="w-full h-full object-cover"
+    />
+  </button>
+);
+
+const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, handleChangeImage }) => {
+  if (!images || images.length === 0) return null;
+
+  if (images.length <= 4) {
+    return (
+      <div className="flex justify-center gap-4 flex-wrap w-full">
+        {images.map((img, i) => (
+          <Thumbnail key={i} img={img} onClick={() => handleChangeImage(img)} />
+        ))}
+      </div>
+    );
+  }
 
   return (
-    <>
-      <Swiper
-        spaceBetween={1}
-        navigation={true}
-        allowTouchMove={false}
-        loop={true}
-        slidesPerView={4}
-        modules={[Navigation]}
-        className="mySwiper image-carousel"
-      >
-        {images?.map((img, i) => (
-          <SwiperSlide key={i + 1} className="group">
-            <button onClick={() => handleChangeImage(img)}>
-              <img
-                className="border inline-flex items-center justify-center px-3 py-1 mt-2"
-                src={img}
-                alt="product"
-                width={100}
-                height={100}
-              />
-            </button>
-          </SwiperSlide>
-        ))}
-        <button ref={prevRef} className="prev">
-          <IoChevronBackOutline />
-        </button>
-        <button ref={nextRef} className="next">
-          <IoChevronForward />
-        </button>
-      </Swiper>
-    </>
+    <Swiper
+      spaceBetween={8}
+      navigation={true}
+      allowTouchMove={true}
+      grabCursor={true}
+      loop={false}
+      speed={400}
+      slidesPerView={4}
+      modules={[Navigation]}
+      className="mySwiper image-carousel w-full"
+    >
+      {images.map((img, i) => (
+        <SwiperSlide key={i} className="flex justify-center">
+          <Thumbnail img={img} onClick={() => handleChangeImage(img)} />
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 };
 

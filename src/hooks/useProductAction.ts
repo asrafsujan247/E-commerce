@@ -20,7 +20,7 @@ interface ProductCampaignInfo {
 interface UseProductActionOptions {
   product: Product & {
     campaign?: ProductCampaignInfo;
-    prices?: { price?: number; originalPrice?: number; discount?: number };
+    prices?: { minPrice?: number; maxPrice?: number; originalPrice?: number; discount?: number };
     stock?: number;
     image?: string | string[];
     category?: { name?: Record<string, string> };
@@ -224,7 +224,7 @@ export default function useProductAction({
         setSelectedImage(
           (product?.image as string[] | undefined)?.[0] ?? ""
         );
-        const p = getNumber(product?.prices?.price);
+        const p = getNumber(product?.prices?.minPrice);
         const op = getNumber(product?.prices?.originalPrice);
         setDiscount(getNumber(((op - p) / op) * 100));
         setPrice(p);
@@ -234,7 +234,7 @@ export default function useProductAction({
   }, [
     product?.prices?.discount,
     product?.prices?.originalPrice,
-    product?.prices?.price,
+    product?.prices?.minPrice,
     product?.stock,
     product?.variants,
     selectVa,

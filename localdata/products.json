@@ -38,8 +38,9 @@
     ],
     "prices": {
       "originalPrice": 450,
-      "price": 450,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 450,
+      "maxPrice": 450
     },
     "variants": [
       {
@@ -217,8 +218,9 @@
     ],
     "prices": {
       "originalPrice": 174.97,
-      "price": 160,
-      "discount": 14.969999999999999
+      "discount": 14.969999999999999,
+      "minPrice": 160,
+      "maxPrice": 174.97
     },
     "variants": [],
     "isCombination": false,
@@ -298,8 +300,9 @@
     ],
     "prices": {
       "originalPrice": 112.72,
-      "price": 112.72,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 112.72,
+      "maxPrice": 112.72
     },
     "variants": [],
     "isCombination": false,
@@ -378,8 +381,9 @@
     ],
     "prices": {
       "originalPrice": 7.07,
-      "price": 7.07,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 7.07,
+      "maxPrice": 7.07
     },
     "variants": [],
     "isCombination": false,
@@ -458,8 +462,9 @@
     ],
     "prices": {
       "originalPrice": 48.12,
-      "price": 48.12,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 48.12,
+      "maxPrice": 48.12
     },
     "variants": [],
     "isCombination": false,
@@ -537,8 +542,9 @@
     ],
     "prices": {
       "originalPrice": 106.06,
-      "price": 90,
-      "discount": 16.060000000000002
+      "discount": 16.060000000000002,
+      "minPrice": 90,
+      "maxPrice": 106.06
     },
     "variants": [],
     "isCombination": false,
@@ -617,8 +623,9 @@
     ],
     "prices": {
       "originalPrice": 90.85,
-      "price": 90.85,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 90.85,
+      "maxPrice": 90.85
     },
     "variants": [],
     "isCombination": false,
@@ -696,8 +703,9 @@
     ],
     "prices": {
       "originalPrice": 211.96,
-      "price": 211.96,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 211.96,
+      "maxPrice": 211.96
     },
     "variants": [],
     "isCombination": false,
@@ -776,8 +784,9 @@
     ],
     "prices": {
       "originalPrice": 98.03,
-      "price": 98.03,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 98.03,
+      "maxPrice": 98.03
     },
     "variants": [],
     "isCombination": false,
@@ -856,8 +865,9 @@
     ],
     "prices": {
       "originalPrice": 193.26,
-      "price": 193.26,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 193.26,
+      "maxPrice": 193.26
     },
     "variants": [],
     "isCombination": false,
@@ -935,8 +945,9 @@
     ],
     "prices": {
       "originalPrice": 58.66,
-      "price": 45,
-      "discount": 13.659999999999997
+      "discount": 13.659999999999997,
+      "minPrice": 45,
+      "maxPrice": 58.66
     },
     "variants": [],
     "isCombination": false,
@@ -1015,8 +1026,9 @@
     ],
     "prices": {
       "originalPrice": 134.63,
-      "price": 134.63,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 134.63,
+      "maxPrice": 134.63
     },
     "variants": [],
     "isCombination": false,
@@ -1094,8 +1106,9 @@
     ],
     "prices": {
       "originalPrice": 156.95,
-      "price": 140,
-      "discount": 16.94999999999999
+      "discount": 16.94999999999999,
+      "minPrice": 140,
+      "maxPrice": 156.95
     },
     "variants": [],
     "isCombination": false,
@@ -1174,8 +1187,9 @@
     ],
     "prices": {
       "originalPrice": 139.15,
-      "price": 139.15,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 139.15,
+      "maxPrice": 139.15
     },
     "variants": [],
     "isCombination": false,
@@ -1253,8 +1267,9 @@
     ],
     "prices": {
       "originalPrice": 19.57,
-      "price": 19.57,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 19.57,
+      "maxPrice": 19.57
     },
     "variants": [],
     "isCombination": false,
@@ -1332,8 +1347,9 @@
     ],
     "prices": {
       "originalPrice": 71.18,
-      "price": 71.18,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 71.18,
+      "maxPrice": 71.18
     },
     "variants": [],
     "isCombination": false,
@@ -1411,8 +1427,9 @@
     ],
     "prices": {
       "originalPrice": 247.39,
-      "price": 247.39,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 247.39,
+      "maxPrice": 247.39
     },
     "variants": [
       {
@@ -1521,8 +1538,9 @@
     ],
     "prices": {
       "originalPrice": 189.89,
-      "price": 189.89,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 189.89,
+      "maxPrice": 189.89
     },
     "variants": [
       {
@@ -1631,8 +1649,9 @@
     ],
     "prices": {
       "originalPrice": 157,
-      "price": 157,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 157,
+      "maxPrice": 157
     },
     "variants": [],
     "isCombination": false,
@@ -1711,8 +1730,9 @@
     ],
     "prices": {
       "originalPrice": 46.34,
-      "price": 30,
-      "discount": 16.340000000000003
+      "discount": 16.340000000000003,
+      "minPrice": 30,
+      "maxPrice": 46.34
     },
     "variants": [],
     "isCombination": false,
@@ -1790,8 +1810,9 @@
     ],
     "prices": {
       "originalPrice": 224.85,
-      "price": 224.85,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 224.85,
+      "maxPrice": 224.85
     },
     "variants": [],
     "isCombination": false,
@@ -1870,8 +1891,9 @@
     ],
     "prices": {
       "originalPrice": 106.49,
-      "price": 106.49,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 106.49,
+      "maxPrice": 106.49
     },
     "variants": [],
     "isCombination": false,
@@ -1949,8 +1971,9 @@
     ],
     "prices": {
       "originalPrice": 15.06,
-      "price": 15.06,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 15.06,
+      "maxPrice": 15.06
     },
     "variants": [],
     "isCombination": false,
@@ -2029,8 +2052,9 @@
     ],
     "prices": {
       "originalPrice": 80.97,
-      "price": 80.97,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 80.97,
+      "maxPrice": 80.97
     },
     "variants": [],
     "isCombination": false,
@@ -2109,8 +2133,9 @@
     ],
     "prices": {
       "originalPrice": 94.12,
-      "price": 94.12,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 94.12,
+      "maxPrice": 94.12
     },
     "variants": [
       {
@@ -2288,8 +2313,9 @@
     ],
     "prices": {
       "originalPrice": 65.22,
-      "price": 65.22,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 65.22,
+      "maxPrice": 65.22
     },
     "variants": [],
     "isCombination": false,
@@ -2368,8 +2394,9 @@
     ],
     "prices": {
       "originalPrice": 142.4,
-      "price": 142.4,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 142.4,
+      "maxPrice": 142.4
     },
     "variants": [],
     "isCombination": false,
@@ -2447,8 +2474,9 @@
     ],
     "prices": {
       "originalPrice": 175.32,
-      "price": 175.32,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 175.32,
+      "maxPrice": 175.32
     },
     "variants": [],
     "isCombination": false,
@@ -2527,8 +2555,9 @@
     ],
     "prices": {
       "originalPrice": 168.23,
-      "price": 150,
-      "discount": 18.22999999999999
+      "discount": 18.22999999999999,
+      "minPrice": 150,
+      "maxPrice": 168.23
     },
     "variants": [],
     "isCombination": false,
@@ -2607,8 +2636,9 @@
     ],
     "prices": {
       "originalPrice": 15.56,
-      "price": 15.56,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 15.56,
+      "maxPrice": 15.56
     },
     "variants": [],
     "isCombination": false,
@@ -2686,8 +2716,9 @@
     ],
     "prices": {
       "originalPrice": 116.45,
-      "price": 116.45,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 116.45,
+      "maxPrice": 116.45
     },
     "variants": [],
     "isCombination": false,
@@ -2765,8 +2796,9 @@
     ],
     "prices": {
       "originalPrice": 67.5,
-      "price": 67.5,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 67.5,
+      "maxPrice": 67.5
     },
     "variants": [
       {
@@ -2876,8 +2908,9 @@
     ],
     "prices": {
       "originalPrice": 30.78,
-      "price": 30.78,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 30.78,
+      "maxPrice": 30.78
     },
     "variants": [],
     "isCombination": false,
@@ -2955,8 +2988,9 @@
     ],
     "prices": {
       "originalPrice": 67.54,
-      "price": 55,
-      "discount": 12.540000000000006
+      "discount": 12.540000000000006,
+      "minPrice": 55,
+      "maxPrice": 67.54
     },
     "variants": [],
     "isCombination": false,
@@ -3034,8 +3068,9 @@
     ],
     "prices": {
       "originalPrice": 185.95,
-      "price": 185.95,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 185.95,
+      "maxPrice": 185.95
     },
     "variants": [],
     "isCombination": true,
@@ -3113,8 +3148,9 @@
     ],
     "prices": {
       "originalPrice": 55.91,
-      "price": 55.91,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 55.91,
+      "maxPrice": 55.91
     },
     "variants": [],
     "isCombination": false,
@@ -3192,8 +3228,9 @@
     ],
     "prices": {
       "originalPrice": 95.57,
-      "price": 80,
-      "discount": 15.569999999999993
+      "discount": 15.569999999999993,
+      "minPrice": 80,
+      "maxPrice": 95.57
     },
     "variants": [],
     "isCombination": false,
@@ -3271,8 +3308,9 @@
     ],
     "prices": {
       "originalPrice": 157.58,
-      "price": 140,
-      "discount": 17.580000000000013
+      "discount": 17.580000000000013,
+      "minPrice": 140,
+      "maxPrice": 157.58
     },
     "variants": [],
     "isCombination": false,
@@ -3350,8 +3388,9 @@
     ],
     "prices": {
       "originalPrice": 26.23,
-      "price": 26.23,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 26.23,
+      "maxPrice": 26.23
     },
     "variants": [],
     "isCombination": false,
@@ -3430,8 +3469,9 @@
     ],
     "prices": {
       "originalPrice": 156.25,
-      "price": 156.25,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 156.25,
+      "maxPrice": 156.25
     },
     "variants": [],
     "isCombination": true,
@@ -3509,8 +3549,9 @@
     ],
     "prices": {
       "originalPrice": 43.12,
-      "price": 30,
-      "discount": 13.119999999999997
+      "discount": 13.119999999999997,
+      "minPrice": 30,
+      "maxPrice": 43.12
     },
     "variants": [],
     "isCombination": false,
@@ -3588,8 +3629,9 @@
     ],
     "prices": {
       "originalPrice": 159.26,
-      "price": 159.26,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 159.26,
+      "maxPrice": 159.26
     },
     "variants": [],
     "isCombination": false,
@@ -3667,8 +3709,9 @@
     ],
     "prices": {
       "originalPrice": 32.71,
-      "price": 32.71,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 32.71,
+      "maxPrice": 32.71
     },
     "variants": [],
     "isCombination": false,
@@ -3746,8 +3789,9 @@
     ],
     "prices": {
       "originalPrice": 178.39,
-      "price": 178.39,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 178.39,
+      "maxPrice": 178.39
     },
     "variants": [],
     "isCombination": false,
@@ -3826,8 +3870,9 @@
     ],
     "prices": {
       "originalPrice": 226.98,
-      "price": 226.98,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 226.98,
+      "maxPrice": 226.98
     },
     "variants": [],
     "isCombination": false,
@@ -3905,8 +3950,9 @@
     ],
     "prices": {
       "originalPrice": 140.32,
-      "price": 140.32,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 140.32,
+      "maxPrice": 140.32
     },
     "variants": [],
     "isCombination": false,
@@ -3984,8 +4030,9 @@
     ],
     "prices": {
       "originalPrice": 66.52,
-      "price": 66.52,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 66.52,
+      "maxPrice": 66.52
     },
     "variants": [],
     "isCombination": false,
@@ -4063,8 +4110,9 @@
     ],
     "prices": {
       "originalPrice": 93.5,
-      "price": 93.5,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 93.5,
+      "maxPrice": 93.5
     },
     "variants": [],
     "isCombination": false,
@@ -4142,8 +4190,9 @@
     ],
     "prices": {
       "originalPrice": 171.02,
-      "price": 171.02,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 171.02,
+      "maxPrice": 171.02
     },
     "variants": [],
     "isCombination": false,
@@ -4221,8 +4270,9 @@
     ],
     "prices": {
       "originalPrice": 152.57,
-      "price": 152.57,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 152.57,
+      "maxPrice": 152.57
     },
     "variants": [],
     "isCombination": false,
@@ -4300,8 +4350,9 @@
     ],
     "prices": {
       "originalPrice": 128.87,
-      "price": 128.87,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 128.87,
+      "maxPrice": 128.87
     },
     "variants": [],
     "isCombination": false,
@@ -4380,8 +4431,9 @@
     ],
     "prices": {
       "originalPrice": 102.33,
-      "price": 102.33,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 102.33,
+      "maxPrice": 102.33
     },
     "variants": [],
     "isCombination": false,
@@ -4459,8 +4511,9 @@
     ],
     "prices": {
       "originalPrice": 113.54,
-      "price": 113.54,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 113.54,
+      "maxPrice": 113.54
     },
     "variants": [],
     "isCombination": false,
@@ -4526,8 +4579,9 @@
     ],
     "prices": {
       "originalPrice": 158.45,
-      "price": 158.45,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 158.45,
+      "maxPrice": 158.45
     },
     "variants": [],
     "isCombination": false,
@@ -4593,8 +4647,9 @@
     ],
     "prices": {
       "originalPrice": 17.67,
-      "price": 10,
-      "discount": 7.670000000000002
+      "discount": 7.670000000000002,
+      "minPrice": 10,
+      "maxPrice": 17.67
     },
     "variants": [],
     "isCombination": false,
@@ -4660,8 +4715,9 @@
     ],
     "prices": {
       "originalPrice": 171.22,
-      "price": 171.22,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 171.22,
+      "maxPrice": 171.22
     },
     "variants": [],
     "isCombination": false,
@@ -4727,8 +4783,9 @@
     ],
     "prices": {
       "originalPrice": 48.06,
-      "price": 48.06,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 48.06,
+      "maxPrice": 48.06
     },
     "variants": [],
     "isCombination": false,
@@ -4794,8 +4851,9 @@
     ],
     "prices": {
       "originalPrice": 6.39,
-      "price": 6.39,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 6.39,
+      "maxPrice": 6.39
     },
     "variants": [],
     "isCombination": false,
@@ -4861,8 +4919,9 @@
     ],
     "prices": {
       "originalPrice": 61,
-      "price": 50,
-      "discount": 11
+      "discount": 11,
+      "minPrice": 50,
+      "maxPrice": 61
     },
     "variants": [],
     "isCombination": false,
@@ -4928,8 +4987,9 @@
     ],
     "prices": {
       "originalPrice": 27.55,
-      "price": 27.55,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 27.55,
+      "maxPrice": 27.55
     },
     "variants": [],
     "isCombination": false,
@@ -5001,8 +5061,9 @@
     ],
     "prices": {
       "originalPrice": 62.5,
-      "price": 62.5,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 62.5,
+      "maxPrice": 62.5
     },
     "variants": [],
     "isCombination": false,
@@ -5069,8 +5130,9 @@
     ],
     "prices": {
       "originalPrice": 3.47,
-      "price": 3.47,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 3.47,
+      "maxPrice": 3.47
     },
     "variants": [],
     "isCombination": false,
@@ -5137,8 +5199,9 @@
     ],
     "prices": {
       "originalPrice": 221.96,
-      "price": 221.96,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 221.96,
+      "maxPrice": 221.96
     },
     "variants": [],
     "isCombination": false,
@@ -5206,8 +5269,9 @@
     ],
     "prices": {
       "originalPrice": 10.36,
-      "price": 10.36,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 10.36,
+      "maxPrice": 10.36
     },
     "variants": [],
     "isCombination": false,
@@ -5274,8 +5338,9 @@
     ],
     "prices": {
       "originalPrice": 57.46,
-      "price": 57.46,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 57.46,
+      "maxPrice": 57.46
     },
     "variants": [],
     "isCombination": false,
@@ -5342,8 +5407,9 @@
     ],
     "prices": {
       "originalPrice": 52.34,
-      "price": 52.34,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 52.34,
+      "maxPrice": 52.34
     },
     "variants": [],
     "isCombination": false,
@@ -5410,8 +5476,9 @@
     ],
     "prices": {
       "originalPrice": 104.45,
-      "price": 104.45,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 104.45,
+      "maxPrice": 104.45
     },
     "variants": [],
     "isCombination": false,
@@ -5478,8 +5545,9 @@
     ],
     "prices": {
       "originalPrice": 113.07,
-      "price": 113.07,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 113.07,
+      "maxPrice": 113.07
     },
     "variants": [],
     "isCombination": false,
@@ -5551,8 +5619,9 @@
     ],
     "prices": {
       "originalPrice": 236.38,
-      "price": 236.38,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 236.38,
+      "maxPrice": 236.38
     },
     "variants": [],
     "isCombination": false,
@@ -5624,8 +5693,9 @@
     ],
     "prices": {
       "originalPrice": 135.4,
-      "price": 135.4,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 135.4,
+      "maxPrice": 135.4
     },
     "variants": [],
     "isCombination": false,
@@ -5697,8 +5767,9 @@
     ],
     "prices": {
       "originalPrice": 160.83,
-      "price": 160.83,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 160.83,
+      "maxPrice": 160.83
     },
     "variants": [],
     "isCombination": false,
@@ -5770,8 +5841,9 @@
     ],
     "prices": {
       "originalPrice": 222.63,
-      "price": 222.63,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 222.63,
+      "maxPrice": 222.63
     },
     "variants": [],
     "isCombination": false,
@@ -5840,8 +5912,9 @@
     ],
     "prices": {
       "originalPrice": 231.61,
-      "price": 231.61,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 231.61,
+      "maxPrice": 231.61
     },
     "variants": [],
     "isCombination": false,
@@ -5907,8 +5980,9 @@
     ],
     "prices": {
       "originalPrice": 215.3,
-      "price": 215.3,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 215.3,
+      "maxPrice": 215.3
     },
     "variants": [],
     "isCombination": false,
@@ -5974,8 +6048,9 @@
     ],
     "prices": {
       "originalPrice": 35.75,
-      "price": 35.75,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 35.75,
+      "maxPrice": 35.75
     },
     "variants": [
       {
@@ -6072,8 +6147,9 @@
     ],
     "prices": {
       "originalPrice": 118.81,
-      "price": 118.81,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 118.81,
+      "maxPrice": 118.81
     },
     "variants": [
       {
@@ -6239,8 +6315,9 @@
     ],
     "prices": {
       "originalPrice": 33.67,
-      "price": 33.67,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 33.67,
+      "maxPrice": 33.67
     },
     "variants": [],
     "isCombination": false,
@@ -6306,8 +6383,9 @@
     ],
     "prices": {
       "originalPrice": 75.59,
-      "price": 75.59,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 75.59,
+      "maxPrice": 75.59
     },
     "variants": [],
     "isCombination": false,
@@ -6373,8 +6451,9 @@
     ],
     "prices": {
       "originalPrice": 97.21,
-      "price": 97.21,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 97.21,
+      "maxPrice": 97.21
     },
     "variants": [],
     "isCombination": false,
@@ -6440,8 +6519,9 @@
     ],
     "prices": {
       "originalPrice": 205.69,
-      "price": 205.69,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 205.69,
+      "maxPrice": 205.69
     },
     "variants": [
       {
@@ -6552,8 +6632,9 @@
     ],
     "prices": {
       "originalPrice": 36.93,
-      "price": 36.93,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 36.93,
+      "maxPrice": 36.93
     },
     "variants": [],
     "isCombination": false,
@@ -6619,8 +6700,9 @@
     ],
     "prices": {
       "originalPrice": 170.61,
-      "price": 170.61,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 170.61,
+      "maxPrice": 170.61
     },
     "variants": [],
     "isCombination": false,
@@ -6686,8 +6768,9 @@
     ],
     "prices": {
       "originalPrice": 130.42,
-      "price": 130.42,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 130.42,
+      "maxPrice": 130.42
     },
     "variants": [],
     "isCombination": false,
@@ -6753,8 +6836,9 @@
     ],
     "prices": {
       "originalPrice": 126.25,
-      "price": 126.25,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 126.25,
+      "maxPrice": 126.25
     },
     "variants": [],
     "isCombination": false,
@@ -6820,8 +6904,9 @@
     ],
     "prices": {
       "originalPrice": 78.71,
-      "price": 78.71,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 78.71,
+      "maxPrice": 78.71
     },
     "variants": [],
     "isCombination": false,
@@ -6890,8 +6975,9 @@
     ],
     "prices": {
       "originalPrice": 155.19,
-      "price": 155.19,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 155.19,
+      "maxPrice": 155.19
     },
     "variants": [],
     "isCombination": false,
@@ -6957,8 +7043,9 @@
     ],
     "prices": {
       "originalPrice": 180.19,
-      "price": 180.19,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 180.19,
+      "maxPrice": 180.19
     },
     "variants": [],
     "isCombination": false,
@@ -7024,8 +7111,9 @@
     ],
     "prices": {
       "originalPrice": 240.55,
-      "price": 240.55,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 240.55,
+      "maxPrice": 240.55
     },
     "variants": [],
     "isCombination": false,
@@ -7091,8 +7179,9 @@
     ],
     "prices": {
       "originalPrice": 10.08,
-      "price": 10.08,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 10.08,
+      "maxPrice": 10.08
     },
     "variants": [],
     "isCombination": false,
@@ -7158,8 +7247,9 @@
     ],
     "prices": {
       "originalPrice": 46.76,
-      "price": 46.76,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 46.76,
+      "maxPrice": 46.76
     },
     "variants": [],
     "isCombination": false,
@@ -7225,8 +7315,9 @@
     ],
     "prices": {
       "originalPrice": 142.05,
-      "price": 142.05,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 142.05,
+      "maxPrice": 142.05
     },
     "variants": [],
     "isCombination": false,
@@ -7292,8 +7383,9 @@
     ],
     "prices": {
       "originalPrice": 234.94,
-      "price": 234.94,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 234.94,
+      "maxPrice": 234.94
     },
     "variants": [],
     "isCombination": false,
@@ -7359,8 +7451,9 @@
     ],
     "prices": {
       "originalPrice": 242.94,
-      "price": 242.94,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 242.94,
+      "maxPrice": 242.94
     },
     "variants": [],
     "isCombination": false,
@@ -7426,8 +7519,9 @@
     ],
     "prices": {
       "originalPrice": 91.74,
-      "price": 91.74,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 91.74,
+      "maxPrice": 91.74
     },
     "variants": [],
     "isCombination": false,
@@ -7493,8 +7587,9 @@
     ],
     "prices": {
       "originalPrice": 243.63,
-      "price": 243.63,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 243.63,
+      "maxPrice": 243.63
     },
     "variants": [],
     "isCombination": false,
@@ -7560,8 +7655,9 @@
     ],
     "prices": {
       "originalPrice": 228.57,
-      "price": 228.57,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 228.57,
+      "maxPrice": 228.57
     },
     "variants": [],
     "isCombination": false,
@@ -7627,8 +7723,9 @@
     ],
     "prices": {
       "originalPrice": 164.3,
-      "price": 164.3,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 164.3,
+      "maxPrice": 164.3
     },
     "variants": [],
     "isCombination": false,
@@ -7694,8 +7791,9 @@
     ],
     "prices": {
       "originalPrice": 221.61,
-      "price": 221.61,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 221.61,
+      "maxPrice": 221.61
     },
     "variants": [],
     "isCombination": false,
@@ -7759,8 +7857,9 @@
     ],
     "prices": {
       "originalPrice": 79.7,
-      "price": 79.7,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 79.7,
+      "maxPrice": 79.7
     },
     "variants": [],
     "isCombination": false,
@@ -7824,8 +7923,9 @@
     ],
     "prices": {
       "originalPrice": 116.68,
-      "price": 116.68,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 116.68,
+      "maxPrice": 116.68
     },
     "variants": [],
     "isCombination": false,
@@ -7889,8 +7989,9 @@
     ],
     "prices": {
       "originalPrice": 15.08,
-      "price": 15.08,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 15.08,
+      "maxPrice": 15.08
     },
     "variants": [],
     "isCombination": false,
@@ -7954,8 +8055,9 @@
     ],
     "prices": {
       "originalPrice": 249.14,
-      "price": 249.14,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 249.14,
+      "maxPrice": 249.14
     },
     "variants": [],
     "isCombination": false,
@@ -8019,8 +8121,9 @@
     ],
     "prices": {
       "originalPrice": 80.11,
-      "price": 80.11,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 80.11,
+      "maxPrice": 80.11
     },
     "variants": [],
     "isCombination": false,
@@ -8084,8 +8187,9 @@
     ],
     "prices": {
       "originalPrice": 211.23,
-      "price": 211.23,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 211.23,
+      "maxPrice": 211.23
     },
     "variants": [],
     "isCombination": false,
@@ -8149,8 +8253,9 @@
     ],
     "prices": {
       "originalPrice": 57.85,
-      "price": 57.85,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 57.85,
+      "maxPrice": 57.85
     },
     "variants": [],
     "isCombination": false,
@@ -8213,8 +8318,9 @@
     ],
     "prices": {
       "originalPrice": 84.53,
-      "price": 84.53,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 84.53,
+      "maxPrice": 84.53
     },
     "variants": [],
     "isCombination": false,
@@ -8277,8 +8383,9 @@
     ],
     "prices": {
       "originalPrice": 54.68,
-      "price": 54.68,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 54.68,
+      "maxPrice": 54.68
     },
     "variants": [],
     "isCombination": false,
@@ -8344,8 +8451,9 @@
     ],
     "prices": {
       "originalPrice": 93.97,
-      "price": 93.97,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 93.97,
+      "maxPrice": 93.97
     },
     "variants": [],
     "isCombination": false,
@@ -8411,8 +8519,9 @@
     ],
     "prices": {
       "originalPrice": 135.56,
-      "price": 135.56,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 135.56,
+      "maxPrice": 135.56
     },
     "variants": [],
     "isCombination": false,
@@ -8478,8 +8587,9 @@
     ],
     "prices": {
       "originalPrice": 98.09,
-      "price": 98.09,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 98.09,
+      "maxPrice": 98.09
     },
     "variants": [],
     "isCombination": false,
@@ -8545,8 +8655,9 @@
     ],
     "prices": {
       "originalPrice": 70.86,
-      "price": 70.86,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 70.86,
+      "maxPrice": 70.86
     },
     "variants": [],
     "isCombination": false,
@@ -8612,8 +8723,9 @@
     ],
     "prices": {
       "originalPrice": 112.01,
-      "price": 112.01,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 112.01,
+      "maxPrice": 112.01
     },
     "variants": [
       {
@@ -8710,8 +8822,9 @@
     ],
     "prices": {
       "originalPrice": 177.71,
-      "price": 177.71,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 177.71,
+      "maxPrice": 177.71
     },
     "variants": [],
     "isCombination": false,
@@ -8777,8 +8890,9 @@
     ],
     "prices": {
       "originalPrice": 99.91,
-      "price": 99.91,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 99.91,
+      "maxPrice": 99.91
     },
     "variants": [],
     "isCombination": false,
@@ -8844,8 +8958,9 @@
     ],
     "prices": {
       "originalPrice": 140.09,
-      "price": 140.09,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 140.09,
+      "maxPrice": 140.09
     },
     "variants": [],
     "isCombination": false,
@@ -8911,8 +9026,9 @@
     ],
     "prices": {
       "originalPrice": 5.06,
-      "price": 5.06,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 5.06,
+      "maxPrice": 5.06
     },
     "variants": [
       {
@@ -9009,8 +9125,9 @@
     ],
     "prices": {
       "originalPrice": 144.39,
-      "price": 144.39,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 144.39,
+      "maxPrice": 144.39
     },
     "variants": [],
     "isCombination": false,
@@ -9073,8 +9190,9 @@
     ],
     "prices": {
       "originalPrice": 219.44,
-      "price": 219.44,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 219.44,
+      "maxPrice": 219.44
     },
     "variants": [],
     "isCombination": false,
@@ -9137,8 +9255,9 @@
     ],
     "prices": {
       "originalPrice": 194.61,
-      "price": 194.61,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 194.61,
+      "maxPrice": 194.61
     },
     "variants": [
       {
@@ -9301,8 +9420,9 @@
     ],
     "prices": {
       "originalPrice": 94.87,
-      "price": 94.87,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 94.87,
+      "maxPrice": 94.87
     },
     "variants": [
       {
@@ -9465,8 +9585,9 @@
     ],
     "prices": {
       "originalPrice": 31.64,
-      "price": 31.64,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 31.64,
+      "maxPrice": 31.64
     },
     "variants": [],
     "isCombination": false,
@@ -9529,8 +9650,9 @@
     ],
     "prices": {
       "originalPrice": 247.02,
-      "price": 247.02,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 247.02,
+      "maxPrice": 247.02
     },
     "variants": [],
     "isCombination": false,
@@ -9593,8 +9715,9 @@
     ],
     "prices": {
       "originalPrice": 160.96,
-      "price": 160.96,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 160.96,
+      "maxPrice": 160.96
     },
     "variants": [],
     "isCombination": false,
@@ -9657,8 +9780,9 @@
     ],
     "prices": {
       "originalPrice": 200.58,
-      "price": 200.58,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 200.58,
+      "maxPrice": 200.58
     },
     "variants": [],
     "isCombination": false,
@@ -9721,8 +9845,9 @@
     ],
     "prices": {
       "originalPrice": 15.38,
-      "price": 15.38,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 15.38,
+      "maxPrice": 15.38
     },
     "variants": [],
     "isCombination": false,
@@ -9785,8 +9910,9 @@
     ],
     "prices": {
       "originalPrice": 82.12,
-      "price": 82.12,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 82.12,
+      "maxPrice": 82.12
     },
     "variants": [],
     "isCombination": false,
@@ -9852,8 +9978,9 @@
     ],
     "prices": {
       "originalPrice": 147.83,
-      "price": 147.83,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 147.83,
+      "maxPrice": 147.83
     },
     "variants": [],
     "isCombination": false,
@@ -9919,8 +10046,9 @@
     ],
     "prices": {
       "originalPrice": 74.93,
-      "price": 74.93,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 74.93,
+      "maxPrice": 74.93
     },
     "variants": [],
     "isCombination": false,
@@ -9986,8 +10114,9 @@
     ],
     "prices": {
       "originalPrice": 237.66,
-      "price": 237.66,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 237.66,
+      "maxPrice": 237.66
     },
     "variants": [],
     "isCombination": false,
@@ -10053,8 +10182,9 @@
     ],
     "prices": {
       "originalPrice": 85.43,
-      "price": 85.43,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 85.43,
+      "maxPrice": 85.43
     },
     "variants": [],
     "isCombination": false,
@@ -10120,8 +10250,9 @@
     ],
     "prices": {
       "originalPrice": 59.06,
-      "price": 59.06,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 59.06,
+      "maxPrice": 59.06
     },
     "variants": [],
     "isCombination": false,
@@ -10187,8 +10318,9 @@
     ],
     "prices": {
       "originalPrice": 46.14,
-      "price": 46.14,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 46.14,
+      "maxPrice": 46.14
     },
     "variants": [],
     "isCombination": false,
@@ -10254,8 +10386,9 @@
     ],
     "prices": {
       "originalPrice": 220.77,
-      "price": 220.77,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 220.77,
+      "maxPrice": 220.77
     },
     "variants": [],
     "isCombination": false,
@@ -10321,8 +10454,9 @@
     ],
     "prices": {
       "originalPrice": 59.05,
-      "price": 59.05,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 59.05,
+      "maxPrice": 59.05
     },
     "variants": [],
     "isCombination": false,
@@ -10388,8 +10522,9 @@
     ],
     "prices": {
       "originalPrice": 70.18,
-      "price": 70.18,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 70.18,
+      "maxPrice": 70.18
     },
     "variants": [],
     "isCombination": false,
@@ -10455,8 +10590,9 @@
     ],
     "prices": {
       "originalPrice": 214.86,
-      "price": 214.86,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 214.86,
+      "maxPrice": 214.86
     },
     "variants": [],
     "isCombination": false,
@@ -10519,8 +10655,9 @@
     ],
     "prices": {
       "originalPrice": 175.54,
-      "price": 175.54,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 175.54,
+      "maxPrice": 175.54
     },
     "variants": [],
     "isCombination": false,
@@ -10583,8 +10720,9 @@
     ],
     "prices": {
       "originalPrice": 104.86,
-      "price": 104.86,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 104.86,
+      "maxPrice": 104.86
     },
     "variants": [],
     "isCombination": false,
@@ -10647,8 +10785,9 @@
     ],
     "prices": {
       "originalPrice": 71.24,
-      "price": 71.24,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 71.24,
+      "maxPrice": 71.24
     },
     "variants": [],
     "isCombination": false,
@@ -10711,8 +10850,9 @@
     ],
     "prices": {
       "originalPrice": 242.29,
-      "price": 242.29,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 242.29,
+      "maxPrice": 242.29
     },
     "variants": [],
     "isCombination": false,
@@ -10775,8 +10915,9 @@
     ],
     "prices": {
       "originalPrice": 235.15,
-      "price": 235.15,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 235.15,
+      "maxPrice": 235.15
     },
     "variants": [],
     "isCombination": false,
@@ -10839,8 +10980,9 @@
     ],
     "prices": {
       "originalPrice": 180.86,
-      "price": 180.86,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 180.86,
+      "maxPrice": 180.86
     },
     "variants": [],
     "isCombination": false,
@@ -10903,8 +11045,9 @@
     ],
     "prices": {
       "originalPrice": 239.55,
-      "price": 239.55,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 239.55,
+      "maxPrice": 239.55
     },
     "variants": [],
     "isCombination": false,
@@ -10967,8 +11110,9 @@
     ],
     "prices": {
       "originalPrice": 142.41,
-      "price": 142.41,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 142.41,
+      "maxPrice": 142.41
     },
     "variants": [],
     "isCombination": false,
@@ -11031,8 +11175,9 @@
     ],
     "prices": {
       "originalPrice": 220.99,
-      "price": 220.99,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 220.99,
+      "maxPrice": 220.99
     },
     "variants": [],
     "isCombination": false,
@@ -11095,8 +11240,9 @@
     ],
     "prices": {
       "originalPrice": 105.02,
-      "price": 105.02,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 105.02,
+      "maxPrice": 105.02
     },
     "variants": [],
     "isCombination": false,
@@ -11165,8 +11311,9 @@
     ],
     "prices": {
       "originalPrice": 9.86,
-      "price": 9.86,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 9.86,
+      "maxPrice": 9.86
     },
     "variants": [],
     "isCombination": false,
@@ -11235,8 +11382,9 @@
     ],
     "prices": {
       "originalPrice": 223.93,
-      "price": 223.93,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 223.93,
+      "maxPrice": 223.93
     },
     "variants": [],
     "isCombination": false,
@@ -11305,8 +11453,9 @@
     ],
     "prices": {
       "originalPrice": 27.08,
-      "price": 27.08,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 27.08,
+      "maxPrice": 27.08
     },
     "variants": [],
     "isCombination": false,
@@ -11375,8 +11524,9 @@
     ],
     "prices": {
       "originalPrice": 16.48,
-      "price": 16.48,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 16.48,
+      "maxPrice": 16.48
     },
     "variants": [],
     "isCombination": false,
@@ -11445,8 +11595,9 @@
     ],
     "prices": {
       "originalPrice": 201.52,
-      "price": 201.52,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 201.52,
+      "maxPrice": 201.52
     },
     "variants": [],
     "isCombination": false,
@@ -11515,8 +11666,9 @@
     ],
     "prices": {
       "originalPrice": 148.58,
-      "price": 148.58,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 148.58,
+      "maxPrice": 148.58
     },
     "variants": [],
     "isCombination": false,
@@ -11585,8 +11737,9 @@
     ],
     "prices": {
       "originalPrice": 169.66,
-      "price": 169.66,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 169.66,
+      "maxPrice": 169.66
     },
     "variants": [],
     "isCombination": false,
@@ -11655,8 +11808,9 @@
     ],
     "prices": {
       "originalPrice": 101.22,
-      "price": 101.22,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 101.22,
+      "maxPrice": 101.22
     },
     "variants": [],
     "isCombination": false,
@@ -11725,8 +11879,9 @@
     ],
     "prices": {
       "originalPrice": 154.04,
-      "price": 154.04,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 154.04,
+      "maxPrice": 154.04
     },
     "variants": [],
     "isCombination": false,
@@ -11798,8 +11953,9 @@
     ],
     "prices": {
       "originalPrice": 158.17,
-      "price": 158.17,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 158.17,
+      "maxPrice": 158.17
     },
     "variants": [],
     "isCombination": false,
@@ -11871,8 +12027,9 @@
     ],
     "prices": {
       "originalPrice": 189.93,
-      "price": 189.93,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 189.93,
+      "maxPrice": 189.93
     },
     "variants": [],
     "isCombination": false,
@@ -11944,8 +12101,9 @@
     ],
     "prices": {
       "originalPrice": 217.48,
-      "price": 217.48,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 217.48,
+      "maxPrice": 217.48
     },
     "variants": [],
     "isCombination": false,
@@ -12017,8 +12175,9 @@
     ],
     "prices": {
       "originalPrice": 122.52,
-      "price": 122.52,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 122.52,
+      "maxPrice": 122.52
     },
     "variants": [],
     "isCombination": false,
@@ -12090,8 +12249,9 @@
     ],
     "prices": {
       "originalPrice": 153.64,
-      "price": 153.64,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 153.64,
+      "maxPrice": 153.64
     },
     "variants": [],
     "isCombination": false,
@@ -12163,8 +12323,9 @@
     ],
     "prices": {
       "originalPrice": 281.58,
-      "price": 281.58,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 281.58,
+      "maxPrice": 281.58
     },
     "variants": [],
     "isCombination": false,
@@ -12236,8 +12397,9 @@
     ],
     "prices": {
       "originalPrice": 39.58,
-      "price": 39.58,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 39.58,
+      "maxPrice": 39.58
     },
     "variants": [],
     "isCombination": false,
@@ -12309,8 +12471,9 @@
     ],
     "prices": {
       "originalPrice": 154.98,
-      "price": 154.98,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 154.98,
+      "maxPrice": 154.98
     },
     "variants": [],
     "isCombination": false,
@@ -12382,8 +12545,9 @@
     ],
     "prices": {
       "originalPrice": 245.18,
-      "price": 245.18,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 245.18,
+      "maxPrice": 245.18
     },
     "variants": [],
     "isCombination": false,
@@ -12455,8 +12619,9 @@
     ],
     "prices": {
       "originalPrice": 35.9,
-      "price": 35.9,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 35.9,
+      "maxPrice": 35.9
     },
     "variants": [],
     "isCombination": false,
@@ -12528,8 +12693,9 @@
     ],
     "prices": {
       "originalPrice": 135.36,
-      "price": 135.36,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 135.36,
+      "maxPrice": 135.36
     },
     "variants": [],
     "isCombination": false,
@@ -12601,8 +12767,9 @@
     ],
     "prices": {
       "originalPrice": 201.67,
-      "price": 201.67,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 201.67,
+      "maxPrice": 201.67
     },
     "variants": [],
     "isCombination": false,
@@ -12674,8 +12841,9 @@
     ],
     "prices": {
       "originalPrice": 220.49,
-      "price": 220.49,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 220.49,
+      "maxPrice": 220.49
     },
     "variants": [],
     "isCombination": false,
@@ -12747,8 +12915,9 @@
     ],
     "prices": {
       "originalPrice": 30.82,
-      "price": 30.82,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 30.82,
+      "maxPrice": 30.82
     },
     "variants": [
       {
@@ -12920,8 +13089,9 @@
     ],
     "prices": {
       "originalPrice": 25.37,
-      "price": 25.37,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 25.37,
+      "maxPrice": 25.37
     },
     "variants": [],
     "isCombination": false,
@@ -13002,8 +13172,9 @@
     ],
     "prices": {
       "originalPrice": 51.28,
-      "price": 51.28,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 51.28,
+      "maxPrice": 51.28
     },
     "variants": [],
     "isCombination": false,
@@ -13084,8 +13255,9 @@
     ],
     "prices": {
       "originalPrice": 77.63,
-      "price": 77.63,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 77.63,
+      "maxPrice": 77.63
     },
     "variants": [],
     "isCombination": false,
@@ -13166,8 +13338,9 @@
     ],
     "prices": {
       "originalPrice": 133.67,
-      "price": 133.67,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 133.67,
+      "maxPrice": 133.67
     },
     "variants": [],
     "isCombination": false,
@@ -13248,8 +13421,9 @@
     ],
     "prices": {
       "originalPrice": 182.57,
-      "price": 182.57,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 182.57,
+      "maxPrice": 182.57
     },
     "variants": [],
     "isCombination": false,
@@ -13330,8 +13504,9 @@
     ],
     "prices": {
       "originalPrice": 229.97,
-      "price": 229.97,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 229.97,
+      "maxPrice": 229.97
     },
     "variants": [],
     "isCombination": false,
@@ -13412,8 +13587,9 @@
     ],
     "prices": {
       "originalPrice": 175.85,
-      "price": 175.85,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 175.85,
+      "maxPrice": 175.85
     },
     "variants": [],
     "isCombination": false,
@@ -13494,8 +13670,9 @@
     ],
     "prices": {
       "originalPrice": 141.68,
-      "price": 141.68,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 141.68,
+      "maxPrice": 141.68
     },
     "variants": [],
     "isCombination": false,
@@ -13576,8 +13753,9 @@
     ],
     "prices": {
       "originalPrice": 264.8,
-      "price": 264.8,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 264.8,
+      "maxPrice": 264.8
     },
     "variants": [],
     "isCombination": false,
@@ -13658,8 +13836,9 @@
     ],
     "prices": {
       "originalPrice": 129.32,
-      "price": 129.32,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 129.32,
+      "maxPrice": 129.32
     },
     "variants": [],
     "isCombination": false,
@@ -13740,8 +13919,9 @@
     ],
     "prices": {
       "originalPrice": 14.41,
-      "price": 14.41,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 14.41,
+      "maxPrice": 14.41
     },
     "variants": [],
     "isCombination": false,
@@ -13822,8 +14002,9 @@
     ],
     "prices": {
       "originalPrice": 297.8,
-      "price": 297.8,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 297.8,
+      "maxPrice": 297.8
     },
     "variants": [],
     "isCombination": false,
@@ -13904,8 +14085,9 @@
     ],
     "prices": {
       "originalPrice": 150.22,
-      "price": 150.22,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 150.22,
+      "maxPrice": 150.22
     },
     "variants": [],
     "isCombination": false,
@@ -13986,8 +14168,9 @@
     ],
     "prices": {
       "originalPrice": 285.11,
-      "price": 285.11,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 285.11,
+      "maxPrice": 285.11
     },
     "variants": [],
     "isCombination": false,
@@ -14068,8 +14251,9 @@
     ],
     "prices": {
       "originalPrice": 60.16,
-      "price": 60.16,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 60.16,
+      "maxPrice": 60.16
     },
     "variants": [],
     "isCombination": false,
@@ -14150,8 +14334,9 @@
     ],
     "prices": {
       "originalPrice": 170.86,
-      "price": 170.86,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 170.86,
+      "maxPrice": 170.86
     },
     "variants": [],
     "isCombination": false,
@@ -14232,8 +14417,9 @@
     ],
     "prices": {
       "originalPrice": 218.66,
-      "price": 218.66,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 218.66,
+      "maxPrice": 218.66
     },
     "variants": [],
     "isCombination": false,
@@ -14314,8 +14500,9 @@
     ],
     "prices": {
       "originalPrice": 168.22,
-      "price": 168.22,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 168.22,
+      "maxPrice": 168.22
     },
     "variants": [],
     "isCombination": false,
@@ -14396,8 +14583,9 @@
     ],
     "prices": {
       "originalPrice": 133.01,
-      "price": 133.01,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 133.01,
+      "maxPrice": 133.01
     },
     "variants": [],
     "isCombination": false,
@@ -14478,8 +14666,9 @@
     ],
     "prices": {
       "originalPrice": 229.52,
-      "price": 229.52,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 229.52,
+      "maxPrice": 229.52
     },
     "variants": [],
     "isCombination": false,
@@ -14560,8 +14749,9 @@
     ],
     "prices": {
       "originalPrice": 151.38,
-      "price": 151.38,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 151.38,
+      "maxPrice": 151.38
     },
     "variants": [],
     "isCombination": false,
@@ -14642,8 +14832,9 @@
     ],
     "prices": {
       "originalPrice": 138.13,
-      "price": 138.13,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 138.13,
+      "maxPrice": 138.13
     },
     "variants": [],
     "isCombination": false,
@@ -14724,8 +14915,9 @@
     ],
     "prices": {
       "originalPrice": 79.26,
-      "price": 79.26,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 79.26,
+      "maxPrice": 79.26
     },
     "variants": [],
     "isCombination": false,
@@ -14806,8 +14998,9 @@
     ],
     "prices": {
       "originalPrice": 256.48,
-      "price": 256.48,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 256.48,
+      "maxPrice": 256.48
     },
     "variants": [],
     "isCombination": false,
@@ -14888,8 +15081,9 @@
     ],
     "prices": {
       "originalPrice": 285.24,
-      "price": 285.24,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 285.24,
+      "maxPrice": 285.24
     },
     "variants": [],
     "isCombination": false,
@@ -14970,8 +15164,9 @@
     ],
     "prices": {
       "originalPrice": 35.71,
-      "price": 35.71,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 35.71,
+      "maxPrice": 35.71
     },
     "variants": [],
     "isCombination": false,
@@ -15052,8 +15247,9 @@
     ],
     "prices": {
       "originalPrice": 21.62,
-      "price": 21.62,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 21.62,
+      "maxPrice": 21.62
     },
     "variants": [],
     "isCombination": false,
@@ -15134,8 +15330,9 @@
     ],
     "prices": {
       "originalPrice": 184.82,
-      "price": 184.82,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 184.82,
+      "maxPrice": 184.82
     },
     "variants": [],
     "isCombination": false,
@@ -15216,8 +15413,9 @@
     ],
     "prices": {
       "originalPrice": 215.4,
-      "price": 215.4,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 215.4,
+      "maxPrice": 215.4
     },
     "variants": [],
     "isCombination": false,
@@ -15298,8 +15496,9 @@
     ],
     "prices": {
       "originalPrice": 262.08,
-      "price": 262.08,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 262.08,
+      "maxPrice": 262.08
     },
     "variants": [],
     "isCombination": false,
@@ -15380,8 +15579,9 @@
     ],
     "prices": {
       "originalPrice": 265.21,
-      "price": 265.21,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 265.21,
+      "maxPrice": 265.21
     },
     "variants": [],
     "isCombination": false,
@@ -15462,8 +15662,9 @@
     ],
     "prices": {
       "originalPrice": 13.06,
-      "price": 13.06,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 13.06,
+      "maxPrice": 13.06
     },
     "variants": [],
     "isCombination": false,
@@ -15544,8 +15745,9 @@
     ],
     "prices": {
       "originalPrice": 25.13,
-      "price": 25.13,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 25.13,
+      "maxPrice": 25.13
     },
     "variants": [],
     "isCombination": false,
@@ -15626,8 +15828,9 @@
     ],
     "prices": {
       "originalPrice": 53.4,
-      "price": 53.4,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 53.4,
+      "maxPrice": 53.4
     },
     "variants": [],
     "isCombination": false,
@@ -15708,8 +15911,9 @@
     ],
     "prices": {
       "originalPrice": 11.81,
-      "price": 11.81,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 11.81,
+      "maxPrice": 11.81
     },
     "variants": [],
     "isCombination": false,
@@ -15790,8 +15994,9 @@
     ],
     "prices": {
       "originalPrice": 29.26,
-      "price": 29.26,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 29.26,
+      "maxPrice": 29.26
     },
     "variants": [],
     "isCombination": false,
@@ -15872,8 +16077,9 @@
     ],
     "prices": {
       "originalPrice": 287.75,
-      "price": 287.75,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 287.75,
+      "maxPrice": 287.75
     },
     "variants": [],
     "isCombination": false,
@@ -15954,8 +16160,9 @@
     ],
     "prices": {
       "originalPrice": 248.3,
-      "price": 248.3,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 248.3,
+      "maxPrice": 248.3
     },
     "variants": [],
     "isCombination": false,
@@ -16036,8 +16243,9 @@
     ],
     "prices": {
       "originalPrice": 25.96,
-      "price": 25.96,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 25.96,
+      "maxPrice": 25.96
     },
     "variants": [],
     "isCombination": false,
@@ -16118,8 +16326,9 @@
     ],
     "prices": {
       "originalPrice": 82.73,
-      "price": 82.73,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 82.73,
+      "maxPrice": 82.73
     },
     "variants": [],
     "isCombination": false,
@@ -16200,8 +16409,9 @@
     ],
     "prices": {
       "originalPrice": 226.13,
-      "price": 226.13,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 226.13,
+      "maxPrice": 226.13
     },
     "variants": [],
     "isCombination": false,
@@ -16282,8 +16492,9 @@
     ],
     "prices": {
       "originalPrice": 91.99,
-      "price": 91.99,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 91.99,
+      "maxPrice": 91.99
     },
     "variants": [],
     "isCombination": false,
@@ -16347,8 +16558,9 @@
     ],
     "prices": {
       "originalPrice": 115.45,
-      "price": 115.45,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 115.45,
+      "maxPrice": 115.45
     },
     "variants": [],
     "isCombination": false,
@@ -16412,8 +16624,9 @@
     ],
     "prices": {
       "originalPrice": 228.43,
-      "price": 228.43,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 228.43,
+      "maxPrice": 228.43
     },
     "variants": [],
     "isCombination": false,
@@ -16477,8 +16690,9 @@
     ],
     "prices": {
       "originalPrice": 25.43,
-      "price": 25.43,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 25.43,
+      "maxPrice": 25.43
     },
     "variants": [],
     "isCombination": false,
@@ -16542,8 +16756,9 @@
     ],
     "prices": {
       "originalPrice": 48.84,
-      "price": 48.84,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 48.84,
+      "maxPrice": 48.84
     },
     "variants": [],
     "isCombination": false,
@@ -16607,8 +16822,9 @@
     ],
     "prices": {
       "originalPrice": 13.99,
-      "price": 13.99,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 13.99,
+      "maxPrice": 13.99
     },
     "variants": [],
     "isCombination": false,
@@ -16677,8 +16893,9 @@
     ],
     "prices": {
       "originalPrice": 210.67,
-      "price": 210.67,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 210.67,
+      "maxPrice": 210.67
     },
     "variants": [],
     "isCombination": false,
@@ -16747,8 +16964,9 @@
     ],
     "prices": {
       "originalPrice": 256.61,
-      "price": 256.61,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 256.61,
+      "maxPrice": 256.61
     },
     "variants": [],
     "isCombination": false,
@@ -16817,8 +17035,9 @@
     ],
     "prices": {
       "originalPrice": 46.63,
-      "price": 46.63,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 46.63,
+      "maxPrice": 46.63
     },
     "variants": [],
     "isCombination": false,
@@ -16887,8 +17106,9 @@
     ],
     "prices": {
       "originalPrice": 72.5,
-      "price": 72.5,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 72.5,
+      "maxPrice": 72.5
     },
     "variants": [],
     "isCombination": false,
@@ -16957,8 +17177,9 @@
     ],
     "prices": {
       "originalPrice": 152.82,
-      "price": 152.82,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 152.82,
+      "maxPrice": 152.82
     },
     "variants": [],
     "isCombination": false,
@@ -17027,8 +17248,9 @@
     ],
     "prices": {
       "originalPrice": 124.33,
-      "price": 124.33,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 124.33,
+      "maxPrice": 124.33
     },
     "variants": [],
     "isCombination": false,
@@ -17097,8 +17319,9 @@
     ],
     "prices": {
       "originalPrice": 291.73,
-      "price": 291.73,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 291.73,
+      "maxPrice": 291.73
     },
     "variants": [],
     "isCombination": false,
@@ -17167,8 +17390,9 @@
     ],
     "prices": {
       "originalPrice": 207.37,
-      "price": 207.37,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 207.37,
+      "maxPrice": 207.37
     },
     "variants": [],
     "isCombination": false,
@@ -17237,8 +17461,9 @@
     ],
     "prices": {
       "originalPrice": 159.85,
-      "price": 159.85,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 159.85,
+      "maxPrice": 159.85
     },
     "variants": [],
     "isCombination": false,
@@ -17307,8 +17532,9 @@
     ],
     "prices": {
       "originalPrice": 97.36,
-      "price": 97.36,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 97.36,
+      "maxPrice": 97.36
     },
     "variants": [],
     "isCombination": false,
@@ -17377,8 +17603,9 @@
     ],
     "prices": {
       "originalPrice": 166.38,
-      "price": 166.38,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 166.38,
+      "maxPrice": 166.38
     },
     "variants": [],
     "isCombination": false,
@@ -17447,8 +17674,9 @@
     ],
     "prices": {
       "originalPrice": 142.13,
-      "price": 142.13,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 142.13,
+      "maxPrice": 142.13
     },
     "variants": [],
     "isCombination": false,
@@ -17517,8 +17745,9 @@
     ],
     "prices": {
       "originalPrice": 45.56,
-      "price": 45.56,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 45.56,
+      "maxPrice": 45.56
     },
     "variants": [],
     "isCombination": false,
@@ -17587,8 +17816,9 @@
     ],
     "prices": {
       "originalPrice": 182.29,
-      "price": 182.29,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 182.29,
+      "maxPrice": 182.29
     },
     "variants": [],
     "isCombination": false,
@@ -17660,8 +17890,9 @@
     ],
     "prices": {
       "originalPrice": 56.36,
-      "price": 56.36,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 56.36,
+      "maxPrice": 56.36
     },
     "variants": [],
     "isCombination": false,
@@ -17733,8 +17964,9 @@
     ],
     "prices": {
       "originalPrice": 199.62,
-      "price": 199.62,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 199.62,
+      "maxPrice": 199.62
     },
     "variants": [],
     "isCombination": false,
@@ -17806,8 +18038,9 @@
     ],
     "prices": {
       "originalPrice": 182.88,
-      "price": 182.88,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 182.88,
+      "maxPrice": 182.88
     },
     "variants": [],
     "isCombination": false,
@@ -17879,8 +18112,9 @@
     ],
     "prices": {
       "originalPrice": 286.57,
-      "price": 286.57,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 286.57,
+      "maxPrice": 286.57
     },
     "variants": [],
     "isCombination": false,
@@ -17952,8 +18186,9 @@
     ],
     "prices": {
       "originalPrice": 180.43,
-      "price": 180.43,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 180.43,
+      "maxPrice": 180.43
     },
     "variants": [],
     "isCombination": false,
@@ -18025,8 +18260,9 @@
     ],
     "prices": {
       "originalPrice": 269,
-      "price": 269,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 269,
+      "maxPrice": 269
     },
     "variants": [],
     "isCombination": false,
@@ -18098,8 +18334,9 @@
     ],
     "prices": {
       "originalPrice": 213.38,
-      "price": 213.38,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 213.38,
+      "maxPrice": 213.38
     },
     "variants": [],
     "isCombination": false,
@@ -18171,8 +18408,9 @@
     ],
     "prices": {
       "originalPrice": 299.83,
-      "price": 299.83,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 299.83,
+      "maxPrice": 299.83
     },
     "variants": [],
     "isCombination": false,
@@ -18244,8 +18482,9 @@
     ],
     "prices": {
       "originalPrice": 127.72,
-      "price": 127.72,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 127.72,
+      "maxPrice": 127.72
     },
     "variants": [],
     "isCombination": false,
@@ -18317,8 +18556,9 @@
     ],
     "prices": {
       "originalPrice": 2.83,
-      "price": 2.83,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 2.83,
+      "maxPrice": 2.83
     },
     "variants": [],
     "isCombination": false,
@@ -18390,8 +18630,9 @@
     ],
     "prices": {
       "originalPrice": 153.44,
-      "price": 153.44,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 153.44,
+      "maxPrice": 153.44
     },
     "variants": [],
     "isCombination": false,
@@ -18463,8 +18704,9 @@
     ],
     "prices": {
       "originalPrice": 140.84,
-      "price": 140.84,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 140.84,
+      "maxPrice": 140.84
     },
     "variants": [],
     "isCombination": false,
@@ -18536,8 +18778,9 @@
     ],
     "prices": {
       "originalPrice": 42.89,
-      "price": 42.89,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 42.89,
+      "maxPrice": 42.89
     },
     "variants": [],
     "isCombination": false,
@@ -18609,8 +18852,9 @@
     ],
     "prices": {
       "originalPrice": 147.01,
-      "price": 147.01,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 147.01,
+      "maxPrice": 147.01
     },
     "variants": [],
     "isCombination": false,
@@ -18682,8 +18926,9 @@
     ],
     "prices": {
       "originalPrice": 49.01,
-      "price": 49.01,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 49.01,
+      "maxPrice": 49.01
     },
     "variants": [],
     "isCombination": false,
@@ -18755,8 +19000,9 @@
     ],
     "prices": {
       "originalPrice": 92.81,
-      "price": 92.81,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 92.81,
+      "maxPrice": 92.81
     },
     "variants": [],
     "isCombination": false,
@@ -18828,8 +19074,9 @@
     ],
     "prices": {
       "originalPrice": 40.19,
-      "price": 40.19,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 40.19,
+      "maxPrice": 40.19
     },
     "variants": [],
     "isCombination": false,
@@ -18901,8 +19148,9 @@
     ],
     "prices": {
       "originalPrice": 267.59,
-      "price": 267.59,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 267.59,
+      "maxPrice": 267.59
     },
     "variants": [],
     "isCombination": false,
@@ -18974,8 +19222,9 @@
     ],
     "prices": {
       "originalPrice": 81.56,
-      "price": 81.56,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 81.56,
+      "maxPrice": 81.56
     },
     "variants": [],
     "isCombination": false,
@@ -19047,8 +19296,9 @@
     ],
     "prices": {
       "originalPrice": 160.85,
-      "price": 160.85,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 160.85,
+      "maxPrice": 160.85
     },
     "variants": [],
     "isCombination": false,
@@ -19111,8 +19361,9 @@
     ],
     "prices": {
       "originalPrice": 284.68,
-      "price": 284.68,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 284.68,
+      "maxPrice": 284.68
     },
     "variants": [],
     "isCombination": false,
@@ -19175,8 +19426,9 @@
     ],
     "prices": {
       "originalPrice": 210.86,
-      "price": 210.86,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 210.86,
+      "maxPrice": 210.86
     },
     "variants": [],
     "isCombination": false,
@@ -19239,8 +19491,9 @@
     ],
     "prices": {
       "originalPrice": 92.63,
-      "price": 92.63,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 92.63,
+      "maxPrice": 92.63
     },
     "variants": [],
     "isCombination": false,
@@ -19303,8 +19556,9 @@
     ],
     "prices": {
       "originalPrice": 72.25,
-      "price": 72.25,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 72.25,
+      "maxPrice": 72.25
     },
     "variants": [],
     "isCombination": false,
@@ -19367,8 +19621,9 @@
     ],
     "prices": {
       "originalPrice": 262.85,
-      "price": 262.85,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 262.85,
+      "maxPrice": 262.85
     },
     "variants": [],
     "isCombination": false,
@@ -19431,8 +19686,9 @@
     ],
     "prices": {
       "originalPrice": 96.26,
-      "price": 96.26,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 96.26,
+      "maxPrice": 96.26
     },
     "variants": [],
     "isCombination": false,
@@ -19495,8 +19751,9 @@
     ],
     "prices": {
       "originalPrice": 196.67,
-      "price": 196.67,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 196.67,
+      "maxPrice": 196.67
     },
     "variants": [],
     "isCombination": false,
@@ -19559,8 +19816,9 @@
     ],
     "prices": {
       "originalPrice": 111.65,
-      "price": 111.65,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 111.65,
+      "maxPrice": 111.65
     },
     "variants": [],
     "isCombination": false,
@@ -19623,8 +19881,9 @@
     ],
     "prices": {
       "originalPrice": 264.42,
-      "price": 264.42,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 264.42,
+      "maxPrice": 264.42
     },
     "variants": [],
     "isCombination": false,
@@ -19690,8 +19949,9 @@
     ],
     "prices": {
       "originalPrice": 54.43,
-      "price": 54.43,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 54.43,
+      "maxPrice": 54.43
     },
     "variants": [],
     "isCombination": false,
@@ -19757,8 +20017,9 @@
     ],
     "prices": {
       "originalPrice": 209.63,
-      "price": 209.63,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 209.63,
+      "maxPrice": 209.63
     },
     "variants": [],
     "isCombination": false,
@@ -19824,8 +20085,9 @@
     ],
     "prices": {
       "originalPrice": 27.04,
-      "price": 27.04,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 27.04,
+      "maxPrice": 27.04
     },
     "variants": [],
     "isCombination": false,
@@ -19891,8 +20153,9 @@
     ],
     "prices": {
       "originalPrice": 270.4,
-      "price": 270.4,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 270.4,
+      "maxPrice": 270.4
     },
     "variants": [],
     "isCombination": false,
@@ -19958,8 +20221,9 @@
     ],
     "prices": {
       "originalPrice": 152.77,
-      "price": 152.77,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 152.77,
+      "maxPrice": 152.77
     },
     "variants": [],
     "isCombination": false,
@@ -20046,8 +20310,9 @@
     ],
     "prices": {
       "originalPrice": 20.83,
-      "price": 20.83,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 20.83,
+      "maxPrice": 20.83
     },
     "variants": [],
     "isCombination": false,
@@ -20134,8 +20399,9 @@
     ],
     "prices": {
       "originalPrice": 159.13,
-      "price": 159.13,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 159.13,
+      "maxPrice": 159.13
     },
     "variants": [],
     "isCombination": false,
@@ -20222,8 +20488,9 @@
     ],
     "prices": {
       "originalPrice": 120.7,
-      "price": 120.7,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 120.7,
+      "maxPrice": 120.7
     },
     "variants": [],
     "isCombination": false,
@@ -20310,8 +20577,9 @@
     ],
     "prices": {
       "originalPrice": 95.12,
-      "price": 95.12,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 95.12,
+      "maxPrice": 95.12
     },
     "variants": [],
     "isCombination": false,
@@ -20398,8 +20666,9 @@
     ],
     "prices": {
       "originalPrice": 102.47,
-      "price": 102.47,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 102.47,
+      "maxPrice": 102.47
     },
     "variants": [],
     "isCombination": false,
@@ -20486,8 +20755,9 @@
     ],
     "prices": {
       "originalPrice": 199.08,
-      "price": 199.08,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 199.08,
+      "maxPrice": 199.08
     },
     "variants": [],
     "isCombination": false,
@@ -20574,8 +20844,9 @@
     ],
     "prices": {
       "originalPrice": 174.85,
-      "price": 174.85,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 174.85,
+      "maxPrice": 174.85
     },
     "variants": [],
     "isCombination": false,
@@ -20662,8 +20933,9 @@
     ],
     "prices": {
       "originalPrice": 176.21,
-      "price": 176.21,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 176.21,
+      "maxPrice": 176.21
     },
     "variants": [],
     "isCombination": false,
@@ -20750,8 +21022,9 @@
     ],
     "prices": {
       "originalPrice": 114.26,
-      "price": 114.26,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 114.26,
+      "maxPrice": 114.26
     },
     "variants": [],
     "isCombination": false,
@@ -20838,8 +21111,9 @@
     ],
     "prices": {
       "originalPrice": 209.02,
-      "price": 209.02,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 209.02,
+      "maxPrice": 209.02
     },
     "variants": [],
     "isCombination": false,
@@ -20926,8 +21200,9 @@
     ],
     "prices": {
       "originalPrice": 74.1,
-      "price": 74.1,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 74.1,
+      "maxPrice": 74.1
     },
     "variants": [],
     "isCombination": false,
@@ -21014,8 +21289,9 @@
     ],
     "prices": {
       "originalPrice": 164.36,
-      "price": 164.36,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 164.36,
+      "maxPrice": 164.36
     },
     "variants": [],
     "isCombination": false,
@@ -21102,8 +21378,9 @@
     ],
     "prices": {
       "originalPrice": 42.95,
-      "price": 42.95,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 42.95,
+      "maxPrice": 42.95
     },
     "variants": [],
     "isCombination": false,
@@ -21190,8 +21467,9 @@
     ],
     "prices": {
       "originalPrice": 129.94,
-      "price": 129.94,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 129.94,
+      "maxPrice": 129.94
     },
     "variants": [],
     "isCombination": false,
@@ -21278,8 +21556,9 @@
     ],
     "prices": {
       "originalPrice": 141.05,
-      "price": 141.05,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 141.05,
+      "maxPrice": 141.05
     },
     "variants": [],
     "isCombination": false,
@@ -21366,8 +21645,9 @@
     ],
     "prices": {
       "originalPrice": 219.32,
-      "price": 219.32,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 219.32,
+      "maxPrice": 219.32
     },
     "variants": [],
     "isCombination": false,
@@ -21454,8 +21734,9 @@
     ],
     "prices": {
       "originalPrice": 64.38,
-      "price": 64.38,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 64.38,
+      "maxPrice": 64.38
     },
     "variants": [],
     "isCombination": false,
@@ -21543,8 +21824,9 @@
     ],
     "prices": {
       "originalPrice": 0.35,
-      "price": 0.35,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 0.35,
+      "maxPrice": 0.35
     },
     "variants": [],
     "isCombination": false,
@@ -21631,8 +21913,9 @@
     ],
     "prices": {
       "originalPrice": 78.56,
-      "price": 78.56,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 78.56,
+      "maxPrice": 78.56
     },
     "variants": [],
     "isCombination": false,
@@ -21719,8 +22002,9 @@
     ],
     "prices": {
       "originalPrice": 23.58,
-      "price": 23.58,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 23.58,
+      "maxPrice": 23.58
     },
     "variants": [],
     "isCombination": false,
@@ -21807,8 +22091,9 @@
     ],
     "prices": {
       "originalPrice": 152.48,
-      "price": 152.48,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 152.48,
+      "maxPrice": 152.48
     },
     "variants": [],
     "isCombination": false,
@@ -21895,8 +22180,9 @@
     ],
     "prices": {
       "originalPrice": 182.02,
-      "price": 182.02,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 182.02,
+      "maxPrice": 182.02
     },
     "variants": [],
     "isCombination": false,
@@ -21983,8 +22269,9 @@
     ],
     "prices": {
       "originalPrice": 118.22,
-      "price": 118.22,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 118.22,
+      "maxPrice": 118.22
     },
     "variants": [],
     "isCombination": false,
@@ -22071,8 +22358,9 @@
     ],
     "prices": {
       "originalPrice": 269.3,
-      "price": 269.3,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 269.3,
+      "maxPrice": 269.3
     },
     "variants": [],
     "isCombination": false,
@@ -22159,8 +22447,9 @@
     ],
     "prices": {
       "originalPrice": 210.76,
-      "price": 210.76,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 210.76,
+      "maxPrice": 210.76
     },
     "variants": [],
     "isCombination": false,
@@ -22247,8 +22536,9 @@
     ],
     "prices": {
       "originalPrice": 74.38,
-      "price": 74.38,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 74.38,
+      "maxPrice": 74.38
     },
     "variants": [],
     "isCombination": false,
@@ -22335,8 +22625,9 @@
     ],
     "prices": {
       "originalPrice": 6.86,
-      "price": 6.86,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 6.86,
+      "maxPrice": 6.86
     },
     "variants": [],
     "isCombination": false,
@@ -22423,8 +22714,9 @@
     ],
     "prices": {
       "originalPrice": 131.06,
-      "price": 131.06,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 131.06,
+      "maxPrice": 131.06
     },
     "variants": [],
     "isCombination": false,
@@ -22511,8 +22803,9 @@
     ],
     "prices": {
       "originalPrice": 18.66,
-      "price": 18.66,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 18.66,
+      "maxPrice": 18.66
     },
     "variants": [],
     "isCombination": false,
@@ -22599,8 +22892,9 @@
     ],
     "prices": {
       "originalPrice": 239.34,
-      "price": 239.34,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 239.34,
+      "maxPrice": 239.34
     },
     "variants": [],
     "isCombination": false,
@@ -22687,8 +22981,9 @@
     ],
     "prices": {
       "originalPrice": 168.48,
-      "price": 168.48,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 168.48,
+      "maxPrice": 168.48
     },
     "variants": [],
     "isCombination": false,
@@ -22772,8 +23067,9 @@
     ],
     "prices": {
       "originalPrice": 114.3,
-      "price": 114.3,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 114.3,
+      "maxPrice": 114.3
     },
     "variants": [],
     "isCombination": false,
@@ -22854,8 +23150,9 @@
     ],
     "prices": {
       "originalPrice": 79.3,
-      "price": 79.3,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 79.3,
+      "maxPrice": 79.3
     },
     "variants": [],
     "isCombination": false,
@@ -22942,8 +23239,9 @@
     ],
     "prices": {
       "originalPrice": 284.21,
-      "price": 284.21,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 284.21,
+      "maxPrice": 284.21
     },
     "variants": [],
     "isCombination": false,
@@ -23030,8 +23328,9 @@
     ],
     "prices": {
       "originalPrice": 136.85,
-      "price": 136.85,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 136.85,
+      "maxPrice": 136.85
     },
     "variants": [],
     "isCombination": false,
@@ -23118,8 +23417,9 @@
     ],
     "prices": {
       "originalPrice": 59.23,
-      "price": 59.23,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 59.23,
+      "maxPrice": 59.23
     },
     "variants": [],
     "isCombination": false,
@@ -23206,8 +23506,9 @@
     ],
     "prices": {
       "originalPrice": 8.32,
-      "price": 8.32,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 8.32,
+      "maxPrice": 8.32
     },
     "variants": [],
     "isCombination": false,
@@ -23294,8 +23595,9 @@
     ],
     "prices": {
       "originalPrice": 79.24,
-      "price": 79.24,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 79.24,
+      "maxPrice": 79.24
     },
     "variants": [],
     "isCombination": false,
@@ -23379,8 +23681,9 @@
     ],
     "prices": {
       "originalPrice": 251.57,
-      "price": 251.57,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 251.57,
+      "maxPrice": 251.57
     },
     "variants": [],
     "isCombination": false,
@@ -23443,8 +23746,9 @@
     ],
     "prices": {
       "originalPrice": 15.98,
-      "price": 15.98,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 15.98,
+      "maxPrice": 15.98
     },
     "variants": [],
     "isCombination": false,
@@ -23507,8 +23811,9 @@
     ],
     "prices": {
       "originalPrice": 202.02,
-      "price": 202.02,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 202.02,
+      "maxPrice": 202.02
     },
     "variants": [],
     "isCombination": false,
@@ -23574,8 +23879,9 @@
     ],
     "prices": {
       "originalPrice": 235.67,
-      "price": 235.67,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 235.67,
+      "maxPrice": 235.67
     },
     "variants": [],
     "isCombination": false,
@@ -23641,8 +23947,9 @@
     ],
     "prices": {
       "originalPrice": 243.28,
-      "price": 243.28,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 243.28,
+      "maxPrice": 243.28
     },
     "variants": [],
     "isCombination": false,
@@ -23705,8 +24012,9 @@
     ],
     "prices": {
       "originalPrice": 87.02,
-      "price": 87.02,
-      "discount": 0
+      "discount": 0,
+      "minPrice": 87.02,
+      "maxPrice": 87.02
     },
     "variants": [],
     "isCombination": false,
@@ -23785,8 +24093,9 @@
     ],
     "prices": {
       "originalPrice": 33349,
-      "price": 28999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 28999,
+      "maxPrice": 33349
     },
     "originalPrice": 33349,
     "price": 28999,
@@ -23874,8 +24183,9 @@
     ],
     "prices": {
       "originalPrice": 6324,
-      "price": 5499,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 5499,
+      "maxPrice": 6324
     },
     "originalPrice": 6324,
     "price": 5499,
@@ -23963,8 +24273,9 @@
     ],
     "prices": {
       "originalPrice": 103499,
-      "price": 89999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 89999,
+      "maxPrice": 103499
     },
     "originalPrice": 103499,
     "price": 89999,
@@ -24052,8 +24363,9 @@
     ],
     "prices": {
       "originalPrice": 14374,
-      "price": 12499,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 12499,
+      "maxPrice": 14374
     },
     "originalPrice": 14374,
     "price": 12499,
@@ -24141,8 +24453,9 @@
     ],
     "prices": {
       "originalPrice": 3449,
-      "price": 2999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 2999,
+      "maxPrice": 3449
     },
     "originalPrice": 3449,
     "price": 2999,
@@ -24230,8 +24543,9 @@
     ],
     "prices": {
       "originalPrice": 87399,
-      "price": 75999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 75999,
+      "maxPrice": 87399
     },
     "originalPrice": 87399,
     "price": 75999,
@@ -24319,8 +24633,9 @@
     ],
     "prices": {
       "originalPrice": 5749,
-      "price": 4999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 4999,
+      "maxPrice": 5749
     },
     "originalPrice": 5749,
     "price": 4999,
@@ -24408,8 +24723,9 @@
     ],
     "prices": {
       "originalPrice": 28749,
-      "price": 24999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 24999,
+      "maxPrice": 28749
     },
     "originalPrice": 28749,
     "price": 24999,
@@ -24497,8 +24813,9 @@
     ],
     "prices": {
       "originalPrice": 10349,
-      "price": 8999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 8999,
+      "maxPrice": 10349
     },
     "originalPrice": 10349,
     "price": 8999,
@@ -24586,8 +24903,9 @@
     ],
     "prices": {
       "originalPrice": 10924,
-      "price": 9499,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 9499,
+      "maxPrice": 10924
     },
     "originalPrice": 10924,
     "price": 9499,
@@ -24675,8 +24993,9 @@
     ],
     "prices": {
       "originalPrice": 1494,
-      "price": 1299,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 1299,
+      "maxPrice": 1494
     },
     "originalPrice": 1494,
     "price": 1299,
@@ -24764,8 +25083,9 @@
     ],
     "prices": {
       "originalPrice": 1034,
-      "price": 899,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 899,
+      "maxPrice": 1034
     },
     "originalPrice": 1034,
     "price": 899,
@@ -24853,8 +25173,9 @@
     ],
     "prices": {
       "originalPrice": 1839,
-      "price": 1599,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 1599,
+      "maxPrice": 1839
     },
     "originalPrice": 1839,
     "price": 1599,
@@ -24942,8 +25263,9 @@
     ],
     "prices": {
       "originalPrice": 2069,
-      "price": 1799,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 1799,
+      "maxPrice": 2069
     },
     "originalPrice": 2069,
     "price": 1799,
@@ -25031,8 +25353,9 @@
     ],
     "prices": {
       "originalPrice": 4024,
-      "price": 3499,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 3499,
+      "maxPrice": 4024
     },
     "originalPrice": 4024,
     "price": 3499,
@@ -25120,8 +25443,9 @@
     ],
     "prices": {
       "originalPrice": 2184,
-      "price": 1899,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 1899,
+      "maxPrice": 2184
     },
     "originalPrice": 2184,
     "price": 1899,
@@ -25209,8 +25533,9 @@
     ],
     "prices": {
       "originalPrice": 2644,
-      "price": 2299,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 2299,
+      "maxPrice": 2644
     },
     "originalPrice": 2644,
     "price": 2299,
@@ -25298,8 +25623,9 @@
     ],
     "prices": {
       "originalPrice": 5519,
-      "price": 4799,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 4799,
+      "maxPrice": 5519
     },
     "originalPrice": 5519,
     "price": 4799,
@@ -25387,8 +25713,9 @@
     ],
     "prices": {
       "originalPrice": 1494,
-      "price": 1299,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 1299,
+      "maxPrice": 1494
     },
     "originalPrice": 1494,
     "price": 1299,
@@ -25476,8 +25803,9 @@
     ],
     "prices": {
       "originalPrice": 10349,
-      "price": 8999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 8999,
+      "maxPrice": 10349
     },
     "originalPrice": 10349,
     "price": 8999,
@@ -25565,8 +25893,9 @@
     ],
     "prices": {
       "originalPrice": 4024,
-      "price": 3499,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 3499,
+      "maxPrice": 4024
     },
     "originalPrice": 4024,
     "price": 3499,
@@ -25654,8 +25983,9 @@
     ],
     "prices": {
       "originalPrice": 14949,
-      "price": 12999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 12999,
+      "maxPrice": 14949
     },
     "originalPrice": 14949,
     "price": 12999,
@@ -25743,8 +26073,9 @@
     ],
     "prices": {
       "originalPrice": 1839,
-      "price": 1599,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 1599,
+      "maxPrice": 1839
     },
     "originalPrice": 1839,
     "price": 1599,
@@ -25832,8 +26163,9 @@
     ],
     "prices": {
       "originalPrice": 1494,
-      "price": 1299,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 1299,
+      "maxPrice": 1494
     },
     "originalPrice": 1494,
     "price": 1299,
@@ -25921,8 +26253,9 @@
     ],
     "prices": {
       "originalPrice": 6899,
-      "price": 5999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 5999,
+      "maxPrice": 6899
     },
     "originalPrice": 6899,
     "price": 5999,
@@ -26010,8 +26343,9 @@
     ],
     "prices": {
       "originalPrice": 2184,
-      "price": 1899,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 1899,
+      "maxPrice": 2184
     },
     "originalPrice": 2184,
     "price": 1899,
@@ -26099,8 +26433,9 @@
     ],
     "prices": {
       "originalPrice": 21849,
-      "price": 18999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 18999,
+      "maxPrice": 21849
     },
     "originalPrice": 21849,
     "price": 18999,
@@ -26188,8 +26523,9 @@
     ],
     "prices": {
       "originalPrice": 804,
-      "price": 699,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 699,
+      "maxPrice": 804
     },
     "originalPrice": 804,
     "price": 699,
@@ -26277,8 +26613,9 @@
     ],
     "prices": {
       "originalPrice": 8624,
-      "price": 7499,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 7499,
+      "maxPrice": 8624
     },
     "originalPrice": 8624,
     "price": 7499,
@@ -26366,8 +26703,9 @@
     ],
     "prices": {
       "originalPrice": 1149,
-      "price": 999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 999,
+      "maxPrice": 1149
     },
     "originalPrice": 1149,
     "price": 999,
@@ -26455,8 +26793,9 @@
     ],
     "prices": {
       "originalPrice": 2874,
-      "price": 2499,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 2499,
+      "maxPrice": 2874
     },
     "originalPrice": 2874,
     "price": 2499,
@@ -26544,8 +26883,9 @@
     ],
     "prices": {
       "originalPrice": 3679,
-      "price": 3199,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 3199,
+      "maxPrice": 3679
     },
     "originalPrice": 3679,
     "price": 3199,
@@ -26633,8 +26973,9 @@
     ],
     "prices": {
       "originalPrice": 2184,
-      "price": 1899,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 1899,
+      "maxPrice": 2184
     },
     "originalPrice": 2184,
     "price": 1899,
@@ -26722,8 +27063,9 @@
     ],
     "prices": {
       "originalPrice": 2299,
-      "price": 1999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 1999,
+      "maxPrice": 2299
     },
     "originalPrice": 2299,
     "price": 1999,
@@ -26811,8 +27153,9 @@
     ],
     "prices": {
       "originalPrice": 3219,
-      "price": 2799,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 2799,
+      "maxPrice": 3219
     },
     "originalPrice": 3219,
     "price": 2799,
@@ -26900,8 +27243,9 @@
     ],
     "prices": {
       "originalPrice": 5749,
-      "price": 4999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 4999,
+      "maxPrice": 5749
     },
     "originalPrice": 5749,
     "price": 4999,
@@ -26989,8 +27333,9 @@
     ],
     "prices": {
       "originalPrice": 2069,
-      "price": 1799,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 1799,
+      "maxPrice": 2069
     },
     "originalPrice": 2069,
     "price": 1799,
@@ -27078,8 +27423,9 @@
     ],
     "prices": {
       "originalPrice": 4024,
-      "price": 3499,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 3499,
+      "maxPrice": 4024
     },
     "originalPrice": 4024,
     "price": 3499,
@@ -27167,8 +27513,9 @@
     ],
     "prices": {
       "originalPrice": 1034,
-      "price": 899,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 899,
+      "maxPrice": 1034
     },
     "originalPrice": 1034,
     "price": 899,
@@ -27256,8 +27603,9 @@
     ],
     "prices": {
       "originalPrice": 1839,
-      "price": 1599,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 1599,
+      "maxPrice": 1839
     },
     "originalPrice": 1839,
     "price": 1599,
@@ -27345,8 +27693,9 @@
     ],
     "prices": {
       "originalPrice": 6899,
-      "price": 5999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 5999,
+      "maxPrice": 6899
     },
     "originalPrice": 6899,
     "price": 5999,
@@ -27434,8 +27783,9 @@
     ],
     "prices": {
       "originalPrice": 2299,
-      "price": 1999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 1999,
+      "maxPrice": 2299
     },
     "originalPrice": 2299,
     "price": 1999,
@@ -27523,8 +27873,9 @@
     ],
     "prices": {
       "originalPrice": 28749,
-      "price": 24999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 24999,
+      "maxPrice": 28749
     },
     "originalPrice": 28749,
     "price": 24999,
@@ -27612,8 +27963,9 @@
     ],
     "prices": {
       "originalPrice": 9199,
-      "price": 7999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 7999,
+      "maxPrice": 9199
     },
     "originalPrice": 9199,
     "price": 7999,
@@ -27701,8 +28053,9 @@
     ],
     "prices": {
       "originalPrice": 1494,
-      "price": 1299,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 1299,
+      "maxPrice": 1494
     },
     "originalPrice": 1494,
     "price": 1299,
@@ -27790,8 +28143,9 @@
     ],
     "prices": {
       "originalPrice": 57499,
-      "price": 49999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 49999,
+      "maxPrice": 57499
     },
     "originalPrice": 57499,
     "price": 49999,
@@ -27879,8 +28233,9 @@
     ],
     "prices": {
       "originalPrice": 103499,
-      "price": 89999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 89999,
+      "maxPrice": 103499
     },
     "originalPrice": 103499,
     "price": 89999,
@@ -27968,8 +28323,9 @@
     ],
     "prices": {
       "originalPrice": 172499,
-      "price": 149999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 149999,
+      "maxPrice": 172499
     },
     "originalPrice": 172499,
     "price": 149999,
@@ -28057,8 +28413,9 @@
     ],
     "prices": {
       "originalPrice": 14949,
-      "price": 12999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 12999,
+      "maxPrice": 14949
     },
     "originalPrice": 14949,
     "price": 12999,
@@ -28146,8 +28503,9 @@
     ],
     "prices": {
       "originalPrice": 2184,
-      "price": 1899,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 1899,
+      "maxPrice": 2184
     },
     "originalPrice": 2184,
     "price": 1899,
@@ -28235,8 +28593,9 @@
     ],
     "prices": {
       "originalPrice": 4024,
-      "price": 3499,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 3499,
+      "maxPrice": 4024
     },
     "originalPrice": 4024,
     "price": 3499,
@@ -28324,8 +28683,9 @@
     ],
     "prices": {
       "originalPrice": 919,
-      "price": 799,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 799,
+      "maxPrice": 919
     },
     "originalPrice": 919,
     "price": 799,
@@ -28413,8 +28773,9 @@
     ],
     "prices": {
       "originalPrice": 2874,
-      "price": 2499,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 2499,
+      "maxPrice": 2874
     },
     "originalPrice": 2874,
     "price": 2499,
@@ -28502,8 +28863,9 @@
     ],
     "prices": {
       "originalPrice": 3794,
-      "price": 3299,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 3299,
+      "maxPrice": 3794
     },
     "originalPrice": 3794,
     "price": 3299,
@@ -28591,8 +28953,9 @@
     ],
     "prices": {
       "originalPrice": 41399,
-      "price": 35999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 35999,
+      "maxPrice": 41399
     },
     "originalPrice": 41399,
     "price": 35999,
@@ -28680,8 +29043,9 @@
     ],
     "prices": {
       "originalPrice": 80499,
-      "price": 69999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 69999,
+      "maxPrice": 80499
     },
     "originalPrice": 80499,
     "price": 69999,
@@ -28769,8 +29133,9 @@
     ],
     "prices": {
       "originalPrice": 3449,
-      "price": 2999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 2999,
+      "maxPrice": 3449
     },
     "originalPrice": 3449,
     "price": 2999,
@@ -28858,8 +29223,9 @@
     ],
     "prices": {
       "originalPrice": 4024,
-      "price": 3499,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 3499,
+      "maxPrice": 4024
     },
     "originalPrice": 4024,
     "price": 3499,
@@ -28947,8 +29313,9 @@
     ],
     "prices": {
       "originalPrice": 574,
-      "price": 499,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 499,
+      "maxPrice": 574
     },
     "originalPrice": 574,
     "price": 499,
@@ -29036,8 +29403,9 @@
     ],
     "prices": {
       "originalPrice": 1494,
-      "price": 1299,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 1299,
+      "maxPrice": 1494
     },
     "originalPrice": 1494,
     "price": 1299,
@@ -29125,8 +29493,9 @@
     ],
     "prices": {
       "originalPrice": 52899,
-      "price": 45999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 45999,
+      "maxPrice": 52899
     },
     "originalPrice": 52899,
     "price": 45999,
@@ -29214,8 +29583,9 @@
     ],
     "prices": {
       "originalPrice": 4599,
-      "price": 3999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 3999,
+      "maxPrice": 4599
     },
     "originalPrice": 4599,
     "price": 3999,
@@ -29303,8 +29673,9 @@
     ],
     "prices": {
       "originalPrice": 3449,
-      "price": 2999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 2999,
+      "maxPrice": 3449
     },
     "originalPrice": 3449,
     "price": 2999,
@@ -29392,8 +29763,9 @@
     ],
     "prices": {
       "originalPrice": 5749,
-      "price": 4999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 4999,
+      "maxPrice": 5749
     },
     "originalPrice": 5749,
     "price": 4999,
@@ -29481,8 +29853,9 @@
     ],
     "prices": {
       "originalPrice": 1839,
-      "price": 1599,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 1599,
+      "maxPrice": 1839
     },
     "originalPrice": 1839,
     "price": 1599,
@@ -29570,8 +29943,9 @@
     ],
     "prices": {
       "originalPrice": 1494,
-      "price": 1299,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 1299,
+      "maxPrice": 1494
     },
     "originalPrice": 1494,
     "price": 1299,
@@ -29659,8 +30033,9 @@
     ],
     "prices": {
       "originalPrice": 5749,
-      "price": 4999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 4999,
+      "maxPrice": 5749
     },
     "originalPrice": 5749,
     "price": 4999,
@@ -29748,8 +30123,9 @@
     ],
     "prices": {
       "originalPrice": 2644,
-      "price": 2299,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 2299,
+      "maxPrice": 2644
     },
     "originalPrice": 2644,
     "price": 2299,
@@ -29837,8 +30213,9 @@
     ],
     "prices": {
       "originalPrice": 2184,
-      "price": 1899,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 1899,
+      "maxPrice": 2184
     },
     "originalPrice": 2184,
     "price": 1899,
@@ -29926,8 +30303,9 @@
     ],
     "prices": {
       "originalPrice": 1494,
-      "price": 1299,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 1299,
+      "maxPrice": 1494
     },
     "originalPrice": 1494,
     "price": 1299,
@@ -30015,8 +30393,9 @@
     ],
     "prices": {
       "originalPrice": 40249,
-      "price": 34999,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 34999,
+      "maxPrice": 40249
     },
     "originalPrice": 40249,
     "price": 34999,
@@ -30104,8 +30483,9 @@
     ],
     "prices": {
       "originalPrice": 919,
-      "price": 799,
-      "discount": 13
+      "discount": 13,
+      "minPrice": 799,
+      "maxPrice": 919
     },
     "originalPrice": 919,
     "price": 799,

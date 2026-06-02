@@ -62,10 +62,10 @@ export interface Product {
   title: string | Record<string, string>;
   slug: string;
   description?: string | Record<string, string>;
-  price: number;
+  price?: number;
   originalPrice?: number;
   discount?: number;
-  prices?: { price: number; originalPrice?: number; discount?: number };
+  prices?: { minPrice: number; maxPrice: number; originalPrice?: number; discount?: number };
   image?: string | string[];
   images?: string[];
   category?: Category | string;
