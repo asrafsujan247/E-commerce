@@ -86,8 +86,7 @@ const AboutUs = () => {
                       </h4>
                       <p className="mb-0 text-muted-foreground leading-7">
                         {String(
-                          storeCustomizationSetting?.about_us?.card_two_description,
-                         ?? '') as string}
+                          storeCustomizationSetting?.about_us?.card_two_description ?? '') as string}
                       </p>
                     </>
                   )}
@@ -110,8 +109,7 @@ const AboutUs = () => {
                       </h4>
                       <p className="mb-0 text-muted-foreground leading-7">
                         {String(
-                          storeCustomizationSetting?.about_us?.card_one_description,
-                         ?? '') as string}
+                          storeCustomizationSetting?.about_us?.card_one_description ?? '') as string}
                       </p>
                     </>
                   )}

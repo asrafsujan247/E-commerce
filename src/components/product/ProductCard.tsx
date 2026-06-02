@@ -28,7 +28,8 @@ interface Campaign {
 }
 
 interface ProductPrices {
-  price: number;
+  minPrice: number;
+  maxPrice: number;
   originalPrice?: number;
 }
 
@@ -76,7 +77,7 @@ const ProductCard = ({ product, attributes, viewMode = "grid" }: ProductCardProp
     ? campaign.campaignPrice
     : product?.isCombination
       ? product?.variants?.[0]?.price
-      : product?.prices?.price;
+      : product?.prices?.minPrice;
   const effectiveOriginalPrice = isInCampaign
     ? campaign.campaignOriginalPrice
     : product?.isCombination
@@ -105,9 +106,9 @@ const ProductCard = ({ product, attributes, viewMode = "grid" }: ProductCardProp
       title: String(p?.title ?? ""),
       id: p._id,
       variant: isInCampaign
-        ? { ...p.prices, price: campaign!.campaignPrice }
+        ? { ...p.prices, minPrice: campaign!.campaignPrice }
         : p.prices,
-      price: isInCampaign ? campaign!.campaignPrice : p.prices!.price,
+      price: isInCampaign ? campaign!.campaignPrice : p.prices!.minPrice,
       originalPrice: isInCampaign
         ? campaign!.campaignOriginalPrice
         : product.prices?.originalPrice,
@@ -193,13 +194,11 @@ const ProductCard = ({ product, attributes, viewMode = "grid" }: ProductCardProp
 
             <div className="flex items-end justify-between gap-3">
               <div className="space-y-1.5">
-                <Price
-                  card
-                  product={product}
-                  price={effectivePrice}
-                  originalPrice={effectiveOriginalPrice}
-                  campaign={isInCampaign ? (campaign ?? undefined) : undefined}
-                />
+                <div className="product-price font-bold">
+                  <span className="inline-block text-base text-foreground">
+                    BDT {(product?.prices?.minPrice ?? 0).toFixed(2)}-{(product?.prices?.maxPrice ?? 0).toFixed(2)}
+                  </span>
+                </div>
                 {isInCampaign && campaign && (
                   <div className="w-28 sm:w-36">
                     <div className="flex items-center justify-between text-[10px] text-muted-foreground mb-0.5">
@@ -412,13 +411,11 @@ const ProductCard = ({ product, attributes, viewMode = "grid" }: ProductCardProp
             />
           </div>
 
-          <Price
-            card
-            product={product}
-            price={effectivePrice}
-            originalPrice={effectiveOriginalPrice}
-            campaign={isInCampaign ? (campaign ?? undefined) : undefined}
-          />
+          <div className="product-price font-bold">
+            <span className="inline-block text-base text-foreground">
+              BDT {(product?.prices?.minPrice ?? 0).toFixed(2)}-{(product?.prices?.maxPrice ?? 0).toFixed(2)}
+            </span>
+          </div>
 
           {isInCampaign && campaign && (
             <div>

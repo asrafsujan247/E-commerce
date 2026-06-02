@@ -4,7 +4,8 @@ import { useMemo, useState } from "react";
 interface ServiceItem {
   status?: string;
   prices?: {
-    price?: number;
+    minPrice?: number;
+    maxPrice?: number;
     [key: string]: unknown;
   };
   [key: string]: unknown;
@@ -50,13 +51,13 @@ const useFilter = (data: ServiceItem[] | undefined): UseFilterReturn => {
     if (sortedField === "Low") {
       services = services?.slice().sort(
         (a, b) =>
-          ((a.prices?.price ?? 0) < (b.prices?.price ?? 0) ? -1 : 1),
+          ((a.prices?.minPrice ?? 0) < (b.prices?.minPrice ?? 0) ? -1 : 1),
       );
     }
     if (sortedField === "High") {
       services = services?.slice().sort(
         (a, b) =>
-          ((a.prices?.price ?? 0) > (b.prices?.price ?? 0) ? -1 : 1),
+          ((a.prices?.minPrice ?? 0) > (b.prices?.minPrice ?? 0) ? -1 : 1),
       );
     }
 

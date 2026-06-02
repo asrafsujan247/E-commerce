@@ -113,7 +113,7 @@ const getShowingStoreProducts = async ({
       relatedProducts,
       popularProducts,
       usedProducts,
-      reviews: [],
+      reviews: ((product as any)?.reviews ?? []) as Review[],
       error: null,
     };
   }

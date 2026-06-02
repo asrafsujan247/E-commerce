@@ -12,8 +12,7 @@ const Terms = () => {
     "Terms & Conditions";
   const description =
     String(
-      terms?.description as Record<string, string> | undefined,
-     ?? '') ?? "";
+      (terms?.description as Record<string, string> | undefined) ?? '') ?? "";
 
   return (
     <div className="min-h-screen bg-background">

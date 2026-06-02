@@ -13,7 +13,7 @@ import useUtilsFunction from "@hooks/useUtilsFunction";
 import ProductModal from "@components/modal/ProductModal";
 import ImageWithFallback from "@components/common/ImageWithFallBack";
 import { useCartStore } from "@stores/useCartStore";
-import type { ProductAttribute } from "@appTypes/index";
+import type { ProductAttribute, Product } from "@appTypes/index";
 
 interface Campaign {
   inCampaign?: boolean;
@@ -26,33 +26,6 @@ interface Campaign {
   [key: string]: unknown;
 }
 
-interface ProductPrices {
-  price: number;
-  originalPrice?: number;
-}
-
-interface ProductVariant {
-  price?: number;
-  originalPrice?: number;
-  [key: string]: unknown;
-}
-
-interface Product {
-  _id: string;
-  slug: string;
-  title: unknown;
-  image?: string | string[];
-  stock?: number;
-  isCombination?: boolean;
-  variants?: ProductVariant[];
-  prices?: ProductPrices;
-  campaign?: Campaign;
-  average_rating?: number;
-  total_reviews?: number;
-  categories?: unknown;
-  description?: unknown;
-  [key: string]: unknown;
-}
 
 interface UsedProductCardProps {
   product: Product;
@@ -238,24 +211,11 @@ const UsedProductCard = ({ product, attributes }: UsedProductCardProps) => {
             />
           </div>
 
-          <PriceTwo
-            card
-            product={product}
-            price={
-              isInCampaign
-                ? campaign!.campaignPrice
-                : product?.isCombination
-                  ? product?.variants?.[0]?.price
-                  : product?.prices?.price
-            }
-            originalPrice={
-              isInCampaign
-                ? campaign!.campaignOriginalPrice
-                : product?.isCombination
-                  ? product?.variants?.[0]?.originalPrice
-                  : product?.prices?.originalPrice
-            }
-          />
+          <div className="product-price font-bold">
+            <span className="inline-block text-base text-foreground">
+              BDT {(product?.prices?.minPrice ?? 0).toFixed(2)}-{(product?.prices?.maxPrice ?? 0).toFixed(2)}
+            </span>
+          </div>
 
           {isInCampaign && campaign && (
             <div>

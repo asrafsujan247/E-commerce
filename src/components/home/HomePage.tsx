@@ -17,7 +17,7 @@ import ServiceAdd from "@components/home/ServiceAdd";
 import HighlightedCategoryProducts from "@components/home/HighlightedCategoryProducts";
 import type { LayoutProps } from "@appTypes/index";
 
-const HomeDefault = ({
+const HomePage = ({
   popularProducts,
   usedProducts,
   attributes,
@@ -142,9 +142,7 @@ const HomeDefault = ({
                       height={30}
                       loading={false}
                       error={storeCustomizationError ?? undefined}
-                      data={
-                        storeCustomizationSetting?.home?.used_product_title
-                      }
+                      data={storeCustomizationSetting?.home?.used_product_title}
                     />
                   </h2>
                   <p className="text-base font-sans text-muted-foreground leading-6">
@@ -154,7 +152,8 @@ const HomeDefault = ({
                       loading={false}
                       error={storeCustomizationError ?? undefined}
                       data={
-                        storeCustomizationSetting?.home?.used_product_description
+                        storeCustomizationSetting?.home
+                          ?.used_product_description
                       }
                     />
                   </p>
@@ -186,4 +185,4 @@ const HomeDefault = ({
   );
 };
 
-export default HomeDefault;
+export default HomePage;

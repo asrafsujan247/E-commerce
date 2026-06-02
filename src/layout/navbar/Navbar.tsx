@@ -1,15 +1,16 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { SignalIcon, CameraIcon } from "@heroicons/react/24/outline";
+import { SignalIcon, CameraIcon, ShoppingCartIcon } from "@heroicons/react/24/outline";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 import { FiMessageSquare, FiAlignLeft } from "react-icons/fi";
 
 import NavbarPromo from "@layout/navbar/NavbarPromo";
 import SearchInput from "@components/navbar/SearchInput";
-import NotifyIcon from "@components/navbar/NotifyIcon";
+import CartDrawer from "@components/drawer/CartDrawer";
 import ProfileDropDown from "@components/navbar/ProfileDropDown";
 import PagesDrawer from "@components/drawer/PagesDrawer";
 import { getShowingCategory } from "@services/CategoryService";
+import { useCartStore } from "@stores/useCartStore";
 import type { NavbarProps, Category } from "@appTypes/index";
 import { getLogoUrl } from "@utils/imageUtils";
 
@@ -22,7 +23,14 @@ const Navbar = ({
   const [categoryError, setCategoryError] = useState<string | null>(null);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [mobileSearch, setMobileSearch] = useState("");
+  const [openCartDrawer, setOpenCartDrawer] = useState<boolean>(false);
+  const [isHydrated, setIsHydrated] = useState<boolean>(false);
+  const { totalItems } = useCartStore();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    setIsHydrated(true);
+  }, []);
 
   useEffect(() => {
     getShowingCategory().then((catResult) => {
@@ -49,6 +57,8 @@ const Navbar = ({
 
   return (
     <div className="sticky z-40 top-0 w-full">
+      <CartDrawer open={openCartDrawer} setOpen={setOpenCartDrawer} />
+
       {/* ── Mobile header (< md) ── */}
       <div className="md:hidden bg-white border-b border-gray-200 shadow-sm">
         {/* Row 1: hamburger | logo centered | profile */}
@@ -149,12 +159,24 @@ const Navbar = ({
               </Link>
 
               {/* Cart */}
-              <div className="flex flex-col items-center gap-1 text-gray-600">
-                <NotifyIcon mode="cart-only" />
+              <button
+                type="button"
+                aria-label={isHydrated ? `Cart with ${totalItems} items` : "Cart"}
+                onClick={() => setOpenCartDrawer(!openCartDrawer)}
+                className="flex flex-col items-center gap-1 text-gray-600 hover:text-primary transition-colors focus:outline-none"
+              >
+                <div className="relative shrink-0">
+                  {isHydrated && totalItems > 0 && (
+                    <span className="absolute z-10 top-0 -right-1 inline-flex items-center justify-center p-1 h-5 w-5 text-xs font-medium leading-none text-red-100 transform -translate-x-1/2 -translate-y-1/2 bg-red-500 rounded-full">
+                      {totalItems}
+                    </span>
+                  )}
+                  <ShoppingCartIcon className="h-6 w-6" aria-hidden="true" />
+                </div>
                 <span className="hidden lg:block text-xs xl:text-sm font-medium">
                   Inquiry Basket
                 </span>
-              </div>
+              </button>
 
               {/* Profile */}
               <div className="flex flex-col items-center gap-1 text-gray-600">

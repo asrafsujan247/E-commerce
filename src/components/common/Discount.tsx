@@ -16,7 +16,7 @@ interface DiscountProduct {
     [key: string]: unknown;
   }>;
   prices?: {
-    price?: number;
+    minPrice?: number;
     originalPrice?: number;
   };
   [key: string]: unknown;
@@ -40,7 +40,7 @@ const Discount = ({ discount, product, slug, modal }: DiscountProps) => {
     ? getNumber(campaign?.campaignPrice)
     : product?.isCombination
       ? getNumber(product?.variants?.[0]?.price)
-      : getNumber(product?.prices?.price);
+      : getNumber(product?.prices?.minPrice);
 
   const originalPrice = isInCampaign
     ? getNumber(campaign?.campaignOriginalPrice)

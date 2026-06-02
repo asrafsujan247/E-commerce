@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import HomeDefault from "@components/home/HomeDefault";
+import HomePage from "@components/home/HomePage";
 
 import { getShowingStoreProducts } from "@services/ProductServices";
 import { getShowingAttributes } from "@services/AttributeServices";
@@ -95,7 +95,7 @@ const Home = () => {
     );
   }
 
-  return <HomeDefault {...layoutProps} />;
+  return <HomePage {...layoutProps} />;
 };
 
 export default Home;

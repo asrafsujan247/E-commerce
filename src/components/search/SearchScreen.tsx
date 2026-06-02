@@ -232,7 +232,7 @@ const ProductSearchScreen = ({
   );
 
   const globalPriceMax = useMemo(() => {
-    const prices = (products as any[]).map((p) => p.prices?.price ?? 0);
+    const prices = (products as any[]).map((p) => p.prices?.minPrice ?? 0);
     return Math.ceil(Math.max(...prices, 500));
   }, [products]);
 
@@ -247,7 +247,7 @@ const ProductSearchScreen = ({
 
     // Price
     result = result.filter((p) => {
-      const price = (p as any).prices?.price ?? 0;
+      const price = (p as any).prices?.minPrice ?? 0;
       return price >= priceMin && price <= priceMax;
     });
 
@@ -288,11 +288,11 @@ const ProductSearchScreen = ({
 
     if (sortBy === "price-asc") {
       result = result.slice().sort(
-        (a, b) => ((a as any).prices?.price ?? 0) - ((b as any).prices?.price ?? 0),
+        (a, b) => ((a as any).prices?.minPrice ?? 0) - ((b as any).prices?.minPrice ?? 0),
       );
     } else if (sortBy === "price-desc") {
       result = result.slice().sort(
-        (a, b) => ((b as any).prices?.price ?? 0) - ((a as any).prices?.price ?? 0),
+        (a, b) => ((b as any).prices?.minPrice ?? 0) - ((a as any).prices?.minPrice ?? 0),
       );
     } else if (sortBy === "rating-desc") {
       result = result.slice().sort(
