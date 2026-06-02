@@ -142,9 +142,7 @@ const HomePage = ({
                       height={30}
                       loading={false}
                       error={storeCustomizationError ?? undefined}
-                      data={
-                        storeCustomizationSetting?.home?.used_product_title
-                      }
+                      data={storeCustomizationSetting?.home?.used_product_title}
                     />
                   </h2>
                   <p className="text-base font-sans text-muted-foreground leading-6">
@@ -154,7 +152,8 @@ const HomePage = ({
                       loading={false}
                       error={storeCustomizationError ?? undefined}
                       data={
-                        storeCustomizationSetting?.home?.used_product_description
+                        storeCustomizationSetting?.home
+                          ?.used_product_description
                       }
                     />
                   </p>

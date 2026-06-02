@@ -13,7 +13,7 @@ import useUtilsFunction from "@hooks/useUtilsFunction";
 import ProductModal from "@components/modal/ProductModal";
 import ImageWithFallback from "@components/common/ImageWithFallBack";
 import { useCartStore } from "@stores/useCartStore";
-import type { ProductAttribute } from "@appTypes/index";
+import type { ProductAttribute, Product } from "@appTypes/index";
 
 interface Campaign {
   inCampaign?: boolean;
@@ -26,33 +26,6 @@ interface Campaign {
   [key: string]: unknown;
 }
 
-interface ProductPrices {
-  price: number;
-  originalPrice?: number;
-}
-
-interface ProductVariant {
-  price?: number;
-  originalPrice?: number;
-  [key: string]: unknown;
-}
-
-interface Product {
-  _id: string;
-  slug: string;
-  title: unknown;
-  image?: string | string[];
-  stock?: number;
-  isCombination?: boolean;
-  variants?: ProductVariant[];
-  prices?: ProductPrices;
-  campaign?: Campaign;
-  average_rating?: number;
-  total_reviews?: number;
-  categories?: unknown;
-  description?: unknown;
-  [key: string]: unknown;
-}
 
 interface UsedProductCardProps {
   product: Product;
