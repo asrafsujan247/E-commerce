@@ -3,13 +3,12 @@ import { FacebookShareButton, TwitterShareButton } from "react-share";
 import { Fragment } from "react";
 
 // internal imports
-import Stock from "@components/common/Stock";
+
 import Tags from "@components/common/Tags";
-import Card from "@components/slug-card/Card";
+import Card from "@components/product-details/Card";
 import Discount from "@components/common/Discount";
 import ProductCard from "@components/product/ProductCard";
 import VariantList from "@components/variants/VariantList";
-import useUtilsFunction from "@hooks/useUtilsFunction";
 import ImageCarousel from "@components/carousel/ImageCarousel";
 import { useSetting } from "@stores/useSettingStore";
 import useProductAction from "@hooks/useProductAction";
@@ -31,14 +30,14 @@ interface ReviewItem {
   images: string[];
 }
 
-interface ProductScreenProps {
+interface ProductDetailsProps {
   product: Product;
   reviews?: ReviewItem[];
   attributes?: ProductAttribute[];
   relatedProducts?: Product[];
 }
 
-const ProductScreen: React.FC<ProductScreenProps> = ({
+const ProductDetails: React.FC<ProductDetailsProps> = ({
   product,
   reviews,
   attributes,
@@ -474,4 +473,4 @@ const ProductScreen: React.FC<ProductScreenProps> = ({
   );
 };
 
-export default ProductScreen;
+export default ProductDetails;

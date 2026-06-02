@@ -17,7 +17,7 @@ import ServiceAdd from "@components/home/ServiceAdd";
 import HighlightedCategoryProducts from "@components/home/HighlightedCategoryProducts";
 import type { LayoutProps } from "@appTypes/index";
 
-const HomeDefault = ({
+const HomePage = ({
   popularProducts,
   usedProducts,
   attributes,
@@ -186,4 +186,4 @@ const HomeDefault = ({
   );
 };
 
-export default HomeDefault;
+export default HomePage;

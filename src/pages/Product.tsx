@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, Navigate } from "react-router-dom";
 
-import ProductScreen from "@components/slug-card/ProductScreen";
+import ProductDetails from "@components/product-details/ProductDetails";
 import { getShowingStoreProducts } from "@services/ProductServices";
 import { getShowingAttributes } from "@services/AttributeServices";
 
@@ -107,7 +107,7 @@ const Product = () => {
   if (!data.product) return null;
 
   return (
-    <ProductScreen
+    <ProductDetails
       product={data.product}
       reviews={data.reviews as unknown as { _id: string; rating: number; comment: string; images: string[]; [key: string]: unknown }[]}
       attributes={data.attributes}
