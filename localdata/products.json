@@ -33,9 +33,7 @@
     ],
     "stock": 4969,
     "sales": 19,
-    "tag": [
-      "[\"premium-shirt\",\"t-shirt\",\"new-t-shirt\"]"
-    ],
+    "tag": ["[\"premium-shirt\",\"t-shirt\",\"new-t-shirt\"]"],
     "prices": {
       "originalPrice": 450,
       "discount": 0,
@@ -248,9 +246,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738768685/product/Himalaya-Baby-Powder-100g-removebg-preview.png"
     ],
     "stock": 5471,
-    "tag": [
-      "[\"baby care\",\"baby accessories\"]"
-    ],
+    "tag": ["[\"baby care\",\"baby accessories\"]"],
     "prices": {
       "originalPrice": 174.97,
       "discount": 14.969999999999999,
@@ -365,9 +361,7 @@
     ],
     "stock": 463,
     "sales": 3,
-    "tag": [
-      "[\"lettuce\",\"fresh vegetable\"]"
-    ],
+    "tag": ["[\"lettuce\",\"fresh vegetable\"]"],
     "prices": {
       "originalPrice": 112.72,
       "discount": 0,
@@ -481,9 +475,7 @@
     ],
     "stock": 472,
     "sales": 6,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 7.07,
       "discount": 0,
@@ -597,9 +589,7 @@
     ],
     "stock": 443,
     "sales": 18,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 48.12,
       "discount": 0,
@@ -712,9 +702,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738769047/product/Kale-Sprouts-3oz-removebg-preview.png"
     ],
     "stock": 297,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 106.06,
       "discount": 16.060000000000002,
@@ -828,9 +816,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738769097/product/Rainbow-Peppers-4ct-removebg-preview.png"
     ],
     "stock": 412,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 90.85,
       "discount": 0,
@@ -943,9 +929,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738769161/product/Blackberries-1-25-qt-removebg-preview.png"
     ],
     "stock": 201,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 211.96,
       "discount": 0,
@@ -1059,9 +1043,7 @@
     ],
     "stock": 581,
     "sales": 13,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 98.03,
       "discount": 0,
@@ -1175,9 +1157,7 @@
     ],
     "stock": 367,
     "sales": 15,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 193.26,
       "discount": 0,
@@ -1290,9 +1270,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738769310/product/Radicchio-12ct-removebg-preview.png"
     ],
     "stock": 78,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 58.66,
       "discount": 13.659999999999997,
@@ -1406,9 +1384,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738769346/product/Parsley-each-removebg-preview%281%29.png"
     ],
     "stock": 172,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 134.63,
       "discount": 0,
@@ -1521,9 +1497,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738769375/product/Strawberries-9-25oz-removebg-preview.png"
     ],
     "stock": 421,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 156.95,
       "discount": 16.94999999999999,
@@ -1637,9 +1611,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738769405/product/Cauliflower-1-35lb-removebg-preview.png"
     ],
     "stock": 224,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 139.15,
       "discount": 0,
@@ -1752,9 +1724,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738769442/product/Organic-Purple-Cauliflower-1lb-removebg-preview.png"
     ],
     "stock": 29,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 19.57,
       "discount": 0,
@@ -1867,9 +1837,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738769470/product/Ahold-Acorn-Squash-1ct-removebg-preview.png"
     ],
     "stock": 767,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 71.18,
       "discount": 0,
@@ -1982,9 +1950,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738769498/product/Bok-Choy-Cabbage-per-lb-removebg-preview.png"
     ],
     "stock": 297,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 247.39,
       "discount": 0,
@@ -2128,9 +2094,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738769587/product/Strawberries-Package-2-25-oz-removebg-preview.png"
     ],
     "stock": 1302,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 189.89,
       "discount": 0,
@@ -2274,9 +2238,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738769612/product/Aloe-Vera-Leaf-each-removebg-preview.png"
     ],
     "stock": 14,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 157,
       "discount": 0,
@@ -2390,9 +2352,7 @@
     ],
     "stock": 502,
     "sales": 8,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 46.34,
       "discount": 16.340000000000003,
@@ -2505,9 +2465,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738769889/product/Organic-Broccoli-10oz-removebg-preview.png"
     ],
     "stock": 211,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 224.85,
       "discount": 0,
@@ -2621,9 +2579,7 @@
     ],
     "stock": 258,
     "sales": 6,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 106.49,
       "discount": 0,
@@ -2736,9 +2692,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738769968/product/Organic-Kale-8oz-removebg-preview.png"
     ],
     "stock": 37,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 15.06,
       "discount": 0,
@@ -2852,9 +2806,7 @@
     ],
     "stock": 774,
     "sales": 9,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 80.97,
       "discount": 0,
@@ -2968,9 +2920,7 @@
     ],
     "stock": 3312,
     "sales": 6,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 94.12,
       "discount": 0,
@@ -3183,9 +3133,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738770122/product/Organic-Greens-Red-Kale-per-lb-removebg-preview.png"
     ],
     "stock": 428,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 65.22,
       "discount": 0,
@@ -3299,9 +3247,7 @@
     ],
     "stock": 192,
     "sales": 3,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 142.4,
       "discount": 0,
@@ -3414,9 +3360,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738770369/product/Organic-Ginger-Root-per-lb-removebg-preview%281%29.png"
     ],
     "stock": 418,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 175.32,
       "discount": 0,
@@ -3530,9 +3474,7 @@
     ],
     "stock": 255,
     "sales": 13,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 168.23,
       "discount": 18.22999999999999,
@@ -3646,9 +3588,7 @@
     ],
     "stock": 682,
     "sales": 11,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 15.56,
       "discount": 0,
@@ -3761,9 +3701,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738770491/product/Orange-Bell-Pepper-22ct-removebg-preview%281%29.png"
     ],
     "stock": 345,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 116.45,
       "discount": 0,
@@ -3876,9 +3814,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738770547/product/Old-Oak-Farm-Small-Potatoes-each-removebg-preview.png"
     ],
     "stock": 1014,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 67.5,
       "discount": 0,
@@ -4023,9 +3959,7 @@
     ],
     "stock": 718,
     "sales": 28,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 30.78,
       "discount": 0,
@@ -4138,9 +4072,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738770614/product/Mini-Pumpkin-Box-each-removebg-preview.png"
     ],
     "stock": 53,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 67.54,
       "discount": 12.540000000000006,
@@ -4253,9 +4185,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738770639/product/Organic-White-Radish-each-removebg-preview.png"
     ],
     "stock": 302,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 185.95,
       "discount": 0,
@@ -4368,9 +4298,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738770683/product/Lacinato-Dinosaur-Kale-Box-per-lb-removebg-preview.png"
     ],
     "stock": 146,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 55.91,
       "discount": 0,
@@ -4483,9 +4411,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738770736/product/Iglotex-Cauliflower-Florets-removebg-preview.png"
     ],
     "stock": 61,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 95.57,
       "discount": 15.569999999999993,
@@ -4598,9 +4524,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773025/product/French-Green-Beans-16ct-removebg-preview.png"
     ],
     "stock": 819,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 157.58,
       "discount": 17.580000000000013,
@@ -4713,9 +4637,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773055/product/Fennel-Bulb-Package-each-removebg-preview.png"
     ],
     "stock": 501,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 26.23,
       "discount": 0,
@@ -4829,9 +4751,7 @@
     ],
     "stock": 221,
     "sales": 2,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 156.25,
       "discount": 0,
@@ -4944,9 +4864,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773111/product/Chinese-Broccoli-Gai-Lan-2lb-removebg-preview.png"
     ],
     "stock": 677,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 43.12,
       "discount": 13.119999999999997,
@@ -5059,9 +4977,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773134/product/Bicolor-Sw-eet-Corn-43ct-removebg-preview.png"
     ],
     "stock": 264,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 159.26,
       "discount": 0,
@@ -5174,9 +5090,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773152/product/Asparagus-15oz-removebg-preview.png"
     ],
     "stock": 666,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\",\"vegetable\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\",\"vegetable\"]"],
     "prices": {
       "originalPrice": 32.71,
       "discount": 0,
@@ -5289,9 +5203,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773182/product/Haitian-Mango-8ct-removebg-preview%281%29.png"
     ],
     "stock": 658,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\"]"],
     "prices": {
       "originalPrice": 178.39,
       "discount": 0,
@@ -5405,9 +5317,7 @@
     ],
     "stock": 591,
     "sales": 6,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\"]"],
     "prices": {
       "originalPrice": 226.98,
       "discount": 0,
@@ -5520,9 +5430,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773236/product/Cranberries-Package-9-5-oz-removebg-preview.png"
     ],
     "stock": 276,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\"]"],
     "prices": {
       "originalPrice": 140.32,
       "discount": 0,
@@ -5635,9 +5543,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773266/product/Mandarin-Clementine-22lb-removebg-preview.png"
     ],
     "stock": 246,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\"]"],
     "prices": {
       "originalPrice": 66.52,
       "discount": 0,
@@ -5750,9 +5656,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773289/product/avocado-juice-fruit-vegetable-removebg-preview.png"
     ],
     "stock": 176,
-    "tag": [
-      "[\"fresh fruits\",\"fruits\"]"
-    ],
+    "tag": ["[\"fresh fruits\",\"fruits\"]"],
     "prices": {
       "originalPrice": 93.5,
       "discount": 0,
@@ -5865,9 +5769,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773333/product/Golden-Garden-Love-Plum-220g-removebg-preview.png"
     ],
     "stock": 125,
-    "tag": [
-      "[\"dates\",\"dry fruits\",\"fruits\"]"
-    ],
+    "tag": ["[\"dates\",\"dry fruits\",\"fruits\"]"],
     "prices": {
       "originalPrice": 171.02,
       "discount": 0,
@@ -5980,9 +5882,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773354/product/Golden-Garden-Blueberry-Plum-220g-removebg-preview.png"
     ],
     "stock": 437,
-    "tag": [
-      "[\"dates\",\"dry fruits\",\"fruits\"]"
-    ],
+    "tag": ["[\"dates\",\"dry fruits\",\"fruits\"]"],
     "prices": {
       "originalPrice": 152.57,
       "discount": 0,
@@ -6095,9 +5995,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773381/product/Dry-Fig-Loose-Kg-1-Kg-removebg-preview.png"
     ],
     "stock": 369,
-    "tag": [
-      "[\"dates\",\"dry fruits\",\"fruits\"]"
-    ],
+    "tag": ["[\"dates\",\"dry fruits\",\"fruits\"]"],
     "prices": {
       "originalPrice": 128.87,
       "discount": 0,
@@ -6211,9 +6109,7 @@
     ],
     "stock": 137,
     "sales": 8,
-    "tag": [
-      "[\"dates\",\"dry fruits\",\"fruits\"]"
-    ],
+    "tag": ["[\"dates\",\"dry fruits\",\"fruits\"]"],
     "prices": {
       "originalPrice": 102.33,
       "discount": 0,
@@ -6326,9 +6222,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773432/product/Dates-Iranian-Maryam-Loose-Kg-1-Kg-removebg-preview.png"
     ],
     "stock": 181,
-    "tag": [
-      "[\"dates\",\"dry fruits\",\"fruits\"]"
-    ],
+    "tag": ["[\"dates\",\"dry fruits\",\"fruits\"]"],
     "prices": {
       "originalPrice": 113.54,
       "discount": 0,
@@ -6429,9 +6323,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773455/product/paka-pape-50-gm-1-kg-removebg-preview.png"
     ],
     "stock": 191,
-    "tag": [
-      "[\"organic food\",\"guava-jelly\"]"
-    ],
+    "tag": ["[\"organic food\",\"guava-jelly\"]"],
     "prices": {
       "originalPrice": 158.45,
       "discount": 0,
@@ -6532,9 +6424,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773509/product/komola-orange-imported-50-gm-1-kg-removebg-preview.png"
     ],
     "stock": 186,
-    "tag": [
-      "[\"organic food\",\"guava-jelly\"]"
-    ],
+    "tag": ["[\"organic food\",\"guava-jelly\"]"],
     "prices": {
       "originalPrice": 17.67,
       "discount": 7.670000000000002,
@@ -6635,9 +6525,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773530/product/china-fuji-apple-50-gm-1-kg-removebg-preview.png"
     ],
     "stock": 537,
-    "tag": [
-      "[\"organic food\",\"guava-jelly\"]"
-    ],
+    "tag": ["[\"organic food\",\"guava-jelly\"]"],
     "prices": {
       "originalPrice": 171.22,
       "discount": 0,
@@ -6738,9 +6626,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773582/product/Gerber-Organic-removebg-preview.png"
     ],
     "stock": 724,
-    "tag": [
-      "[\"organic food\",\"guava-jelly\"]"
-    ],
+    "tag": ["[\"organic food\",\"guava-jelly\"]"],
     "prices": {
       "originalPrice": 48.06,
       "discount": 0,
@@ -6841,9 +6727,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773642/product/ahmed-sugar-free-orange-jelly-375-gm-removebg-preview.png"
     ],
     "stock": 653,
-    "tag": [
-      "[\"organic food\",\"guava-jelly\"]"
-    ],
+    "tag": ["[\"organic food\",\"guava-jelly\"]"],
     "prices": {
       "originalPrice": 6.39,
       "discount": 0,
@@ -6944,9 +6828,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773665/product/jambura-pomelo-1-pcs-removebg-preview.png"
     ],
     "stock": 1,
-    "tag": [
-      "[\"organic food\",\"guava-jelly\"]"
-    ],
+    "tag": ["[\"organic food\",\"guava-jelly\"]"],
     "prices": {
       "originalPrice": 61,
       "discount": 11,
@@ -7047,9 +6929,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773686/product/anaros-pineapple-1-pcs-removebg-preview.png"
     ],
     "stock": 182,
-    "tag": [
-      "[\"organic food\",\"guava-jelly\"]"
-    ],
+    "tag": ["[\"organic food\",\"guava-jelly\"]"],
     "prices": {
       "originalPrice": 27.55,
       "discount": 0,
@@ -7156,9 +7036,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773708/product/ahmed-sugar-free-guava-jelly-375-gm-removebg-preview.png"
     ],
     "stock": 459,
-    "tag": [
-      "[\"organic food\",\"guava-jelly\"]"
-    ],
+    "tag": ["[\"organic food\",\"guava-jelly\"]"],
     "prices": {
       "originalPrice": 62.5,
       "discount": 0,
@@ -7260,9 +7138,7 @@
     },
     "image": [],
     "stock": 760,
-    "tag": [
-      "[]"
-    ],
+    "tag": ["[]"],
     "prices": {
       "originalPrice": 3.47,
       "discount": 0,
@@ -7364,9 +7240,7 @@
     },
     "image": [],
     "stock": 577,
-    "tag": [
-      "[]"
-    ],
+    "tag": ["[]"],
     "prices": {
       "originalPrice": 221.96,
       "discount": 0,
@@ -7469,9 +7343,7 @@
     "image": [],
     "stock": 734,
     "sales": 10,
-    "tag": [
-      "[]"
-    ],
+    "tag": ["[]"],
     "prices": {
       "originalPrice": 10.36,
       "discount": 0,
@@ -7573,9 +7445,7 @@
     },
     "image": [],
     "stock": 163,
-    "tag": [
-      "[]"
-    ],
+    "tag": ["[]"],
     "prices": {
       "originalPrice": 57.46,
       "discount": 0,
@@ -7677,9 +7547,7 @@
     },
     "image": [],
     "stock": 567,
-    "tag": [
-      "[]"
-    ],
+    "tag": ["[]"],
     "prices": {
       "originalPrice": 52.34,
       "discount": 0,
@@ -7781,9 +7649,7 @@
     },
     "image": [],
     "stock": 303,
-    "tag": [
-      "[]"
-    ],
+    "tag": ["[]"],
     "prices": {
       "originalPrice": 104.45,
       "discount": 0,
@@ -7885,9 +7751,7 @@
     },
     "image": [],
     "stock": 676,
-    "tag": [
-      "[]"
-    ],
+    "tag": ["[]"],
     "prices": {
       "originalPrice": 113.07,
       "discount": 0,
@@ -7994,9 +7858,7 @@
       "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=400&q=80"
     ],
     "stock": 41,
-    "tag": [
-      "[]"
-    ],
+    "tag": ["[]"],
     "prices": {
       "originalPrice": 236.38,
       "discount": 0,
@@ -8103,9 +7965,7 @@
       "https://images.unsplash.com/photo-1602470520998-f4a52199a3d6?w=400&q=80"
     ],
     "stock": 265,
-    "tag": [
-      "[]"
-    ],
+    "tag": ["[]"],
     "prices": {
       "originalPrice": 135.4,
       "discount": 0,
@@ -8212,9 +8072,7 @@
       "https://images.unsplash.com/photo-1519984388953-d2406bc725e1?w=400&q=80"
     ],
     "stock": 301,
-    "tag": [
-      "[]"
-    ],
+    "tag": ["[]"],
     "prices": {
       "originalPrice": 160.83,
       "discount": 0,
@@ -8321,9 +8179,7 @@
       "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=400&q=80"
     ],
     "stock": 159,
-    "tag": [
-      "[]"
-    ],
+    "tag": ["[]"],
     "prices": {
       "originalPrice": 222.63,
       "discount": 0,
@@ -8427,9 +8283,7 @@
       "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80"
     ],
     "stock": 387,
-    "tag": [
-      "[]"
-    ],
+    "tag": ["[]"],
     "prices": {
       "originalPrice": 231.61,
       "discount": 0,
@@ -8530,9 +8384,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773740/product/Marley-Coffee-Coffee-Whole-Beans-Medium-Dark-Espresso-8-oz-removebg-preview.png"
     ],
     "stock": 718,
-    "tag": [
-      "[\"drinks\",\"coffee\"]"
-    ],
+    "tag": ["[\"drinks\",\"coffee\"]"],
     "prices": {
       "originalPrice": 215.3,
       "discount": 0,
@@ -8633,9 +8485,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773778/product/Cafe-Escapes-Caf-Caramel-K-Cup-Pods-Coffe-0-5-oz__1_-removebg-preview.png"
     ],
     "stock": 471,
-    "tag": [
-      "[\"drinks\",\"coffee\"]"
-    ],
+    "tag": ["[\"drinks\",\"coffee\"]"],
     "prices": {
       "originalPrice": 35.75,
       "discount": 0,
@@ -8767,9 +8617,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773819/product/Caffe-Kimbo-Aroma-Espresso-8-8-oz-removebg-preview.png"
     ],
     "stock": 5193,
-    "tag": [
-      "[\"drinks\",\"coffee\"]"
-    ],
+    "tag": ["[\"drinks\",\"coffee\"]"],
     "prices": {
       "originalPrice": 118.81,
       "discount": 0,
@@ -8970,9 +8818,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773847/product/Just-Coffee-Coop-Organic-Honduran-Honey-Processed-Coffee-12oz-removebg-preview.png"
     ],
     "stock": 382,
-    "tag": [
-      "[\"drinks\",\"coffee\"]"
-    ],
+    "tag": ["[\"drinks\",\"coffee\"]"],
     "prices": {
       "originalPrice": 33.67,
       "discount": 0,
@@ -9073,9 +8919,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773882/product/Caffe-Perruci-Lungo-Dolce-Single-Serve-Coffee-Pack-10-ct-removebg-preview.png"
     ],
     "stock": 622,
-    "tag": [
-      "[\"drinks\",\"coffee\"]"
-    ],
+    "tag": ["[\"drinks\",\"coffee\"]"],
     "prices": {
       "originalPrice": 75.59,
       "discount": 0,
@@ -9176,9 +9020,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773903/product/Positive-Energy-Energy-Drink-Organic-Coconut-Water-12-oz-removebg-preview.png"
     ],
     "stock": 77,
-    "tag": [
-      "[\"drinks\",\"energy-drinks\"]"
-    ],
+    "tag": ["[\"drinks\",\"energy-drinks\"]"],
     "prices": {
       "originalPrice": 97.21,
       "discount": 0,
@@ -9279,9 +9121,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773932/product/Nerd-Focus-12oz-removebg-preview%281%29.png"
     ],
     "stock": 476,
-    "tag": [
-      "[\"drinks\",\"energy-drinks\"]"
-    ],
+    "tag": ["[\"drinks\",\"energy-drinks\"]"],
     "prices": {
       "originalPrice": 205.69,
       "discount": 0,
@@ -9427,9 +9267,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773957/product/Monster-Energy-Rehab-Orangeade-15-5-fl-oz-removebg-preview.png"
     ],
     "stock": 145,
-    "tag": [
-      "[\"drinks\",\"energy-drinks\"]"
-    ],
+    "tag": ["[\"drinks\",\"energy-drinks\"]"],
     "prices": {
       "originalPrice": 36.93,
       "discount": 0,
@@ -9530,9 +9368,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738773989/product/BING-Beverage-Made-with-Blackberry-Juice-12-fl-oz-removebg-preview.png"
     ],
     "stock": 237,
-    "tag": [
-      "[\"drinks\",\"energy-drinks\"]"
-    ],
+    "tag": ["[\"drinks\",\"energy-drinks\"]"],
     "prices": {
       "originalPrice": 170.61,
       "discount": 0,
@@ -9633,9 +9469,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738774017/product/go-grid-energy-removebg-preview.png"
     ],
     "stock": 546,
-    "tag": [
-      "[\"drinks\",\"energy-drinks\"]"
-    ],
+    "tag": ["[\"drinks\",\"energy-drinks\"]"],
     "prices": {
       "originalPrice": 130.42,
       "discount": 0,
@@ -9736,9 +9570,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738774067/product/Robinsons-Pink-Lemonade-Juice-Drink-10-fl-oz-removebg-preview.png"
     ],
     "stock": 313,
-    "tag": [
-      "[\"juice\",\"organic\"]"
-    ],
+    "tag": ["[\"juice\",\"organic\"]"],
     "prices": {
       "originalPrice": 126.25,
       "discount": 0,
@@ -9839,9 +9671,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738774106/product/Nature-s-Nectar-Strawberry-Lime-Agua-Fresca-33-floz-removebg-preview%281%29.png"
     ],
     "stock": 338,
-    "tag": [
-      "[\"juice\",\"organic\"]"
-    ],
+    "tag": ["[\"juice\",\"organic\"]"],
     "prices": {
       "originalPrice": 78.71,
       "discount": 0,
@@ -9945,9 +9775,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738774129/product/Musselman-s-Sparkling-Cider-750ml-removebg-preview.png"
     ],
     "stock": 91,
-    "tag": [
-      "[\"juice\",\"organic\"]"
-    ],
+    "tag": ["[\"juice\",\"organic\"]"],
     "prices": {
       "originalPrice": 155.19,
       "discount": 0,
@@ -10048,9 +9876,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738774156/product/Hood-Orange-Juice-14-fl-oz-removebg-preview.png"
     ],
     "stock": 56,
-    "tag": [
-      "[\"juice\",\"organic\"]"
-    ],
+    "tag": ["[\"juice\",\"organic\"]"],
     "prices": {
       "originalPrice": 180.19,
       "discount": 0,
@@ -10151,9 +9977,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738774177/product/Evolution-Fresh-Orange-Cold-Pressed-Orange-Juice-325-mol-removebg-preview.png"
     ],
     "stock": 481,
-    "tag": [
-      "[\"juice\",\"organic\"]"
-    ],
+    "tag": ["[\"juice\",\"organic\"]"],
     "prices": {
       "originalPrice": 240.55,
       "discount": 0,
@@ -10254,9 +10078,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738774196/product/VPK-Organic-Kapha-Tea-16-ct-removebg-preview.png"
     ],
     "stock": 719,
-    "tag": [
-      "[\"juice\",\"tea\"]"
-    ],
+    "tag": ["[\"juice\",\"tea\"]"],
     "prices": {
       "originalPrice": 10.08,
       "discount": 0,
@@ -10357,9 +10179,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738774393/product/Urban-Frgr-Organic-Calming-Herbal-Tea-15-ct-removebg-preview.png"
     ],
     "stock": 398,
-    "tag": [
-      "[\"juice\",\"tea\"]"
-    ],
+    "tag": ["[\"juice\",\"tea\"]"],
     "prices": {
       "originalPrice": 46.76,
       "discount": 0,
@@ -10460,9 +10280,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738774417/product/Now-Slimming-Slender-Chai-Tea-24-ct-removebg-preview%281%29.png"
     ],
     "stock": 157,
-    "tag": [
-      "[\"juice\",\"tea\"]"
-    ],
+    "tag": ["[\"juice\",\"tea\"]"],
     "prices": {
       "originalPrice": 142.05,
       "discount": 0,
@@ -10563,9 +10381,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738774438/product/Mt-Rose-Herb-Nepalese-Black-Tea-per-lb-removebg-preview.png"
     ],
     "stock": 455,
-    "tag": [
-      "[\"juice\",\"tea\"]"
-    ],
+    "tag": ["[\"juice\",\"tea\"]"],
     "prices": {
       "originalPrice": 234.94,
       "discount": 0,
@@ -10666,9 +10482,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738774567/product/Maharishi-Ayurveda-Organic-Pitta-Tea-16-ct-removebg-preview.png"
     ],
     "stock": 522,
-    "tag": [
-      "[\"juice\",\"tea\"]"
-    ],
+    "tag": ["[\"juice\",\"tea\"]"],
     "prices": {
       "originalPrice": 242.94,
       "discount": 0,
@@ -10769,9 +10583,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738774588/product/Alhambra-Purified-Water-1-Lt-removebg-preview.png"
     ],
     "stock": 183,
-    "tag": [
-      "[\"drinks\",\"water\"]"
-    ],
+    "tag": ["[\"drinks\",\"water\"]"],
     "prices": {
       "originalPrice": 91.74,
       "discount": 0,
@@ -10872,9 +10684,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738774610/product/Deer-Park-Sport-Bottle-with-Flip-Cap-Natural-Spring-Water-700ml-removebg-preview.png"
     ],
     "stock": 670,
-    "tag": [
-      "[\"drinks\",\"water\"]"
-    ],
+    "tag": ["[\"drinks\",\"water\"]"],
     "prices": {
       "originalPrice": 243.63,
       "discount": 0,
@@ -10975,9 +10785,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738774642/product/Food-Club-Original-Seltzer-Water-33-removebg-preview.png"
     ],
     "stock": 366,
-    "tag": [
-      "[\"drinks\",\"water\"]"
-    ],
+    "tag": ["[\"drinks\",\"water\"]"],
     "prices": {
       "originalPrice": 228.57,
       "discount": 0,
@@ -11078,9 +10886,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738774670/product/Fresh-Thyme-High-Alkaline-Water-3-Lt-removebg-preview.png"
     ],
     "stock": 253,
-    "tag": [
-      "[\"drinks\",\"water\"]"
-    ],
+    "tag": ["[\"drinks\",\"water\"]"],
     "prices": {
       "originalPrice": 164.3,
       "discount": 0,
@@ -11181,9 +10987,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738774723/product/Smeraldina-Water-Natural-Artesian-16-9ml-removebg-preview.png"
     ],
     "stock": 154,
-    "tag": [
-      "[\"drinks\",\"water\"]"
-    ],
+    "tag": ["[\"drinks\",\"water\"]"],
     "prices": {
       "originalPrice": 221.61,
       "discount": 0,
@@ -11282,9 +11086,7 @@
     },
     "image": [],
     "stock": 152,
-    "tag": [
-      "[\"seafood\",\"fish\"]"
-    ],
+    "tag": ["[\"seafood\",\"fish\"]"],
     "prices": {
       "originalPrice": 79.7,
       "discount": 0,
@@ -11383,9 +11185,7 @@
     },
     "image": [],
     "stock": 138,
-    "tag": [
-      "[\"seafood\",\"fish\"]"
-    ],
+    "tag": ["[\"seafood\",\"fish\"]"],
     "prices": {
       "originalPrice": 116.68,
       "discount": 0,
@@ -11484,9 +11284,7 @@
     },
     "image": [],
     "stock": 473,
-    "tag": [
-      "[\"seafood\",\"fish\"]"
-    ],
+    "tag": ["[\"seafood\",\"fish\"]"],
     "prices": {
       "originalPrice": 15.08,
       "discount": 0,
@@ -11585,9 +11383,7 @@
     },
     "image": [],
     "stock": 697,
-    "tag": [
-      "[\"seafood\",\"fish\"]"
-    ],
+    "tag": ["[\"seafood\",\"fish\"]"],
     "prices": {
       "originalPrice": 249.14,
       "discount": 0,
@@ -11686,9 +11482,7 @@
     },
     "image": [],
     "stock": 618,
-    "tag": [
-      "[\"seafood\",\"fish\"]"
-    ],
+    "tag": ["[\"seafood\",\"fish\"]"],
     "prices": {
       "originalPrice": 80.11,
       "discount": 0,
@@ -11787,9 +11581,7 @@
     },
     "image": [],
     "stock": 243,
-    "tag": [
-      "[\"seafood\",\"fish\"]"
-    ],
+    "tag": ["[\"seafood\",\"fish\"]"],
     "prices": {
       "originalPrice": 211.23,
       "discount": 0,
@@ -11888,9 +11680,7 @@
     },
     "image": [],
     "stock": 653,
-    "tag": [
-      "[\"seafood\",\"fish\"]"
-    ],
+    "tag": ["[\"seafood\",\"fish\"]"],
     "prices": {
       "originalPrice": 57.85,
       "discount": 0,
@@ -11988,9 +11778,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738774955/product/ACI-Pure-Sugar-1-Kg-removebg-preview.png"
     ],
     "stock": 206,
-    "tag": [
-      "[\"aci salt\",\"spices-mixes\"]"
-    ],
+    "tag": ["[\"aci salt\",\"spices-mixes\"]"],
     "prices": {
       "originalPrice": 84.53,
       "discount": 0,
@@ -12088,9 +11876,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738774974/product/ACI-Pure-Salt-Jar-750gm-removebg-preview.png"
     ],
     "stock": 515,
-    "tag": [
-      "[\"aci salt\",\"spices-mixes\"]"
-    ],
+    "tag": ["[\"aci salt\",\"spices-mixes\"]"],
     "prices": {
       "originalPrice": 54.68,
       "discount": 0,
@@ -12191,9 +11977,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738775032/product/Fresh-Atta-2-Kg-removebg-preview.png"
     ],
     "stock": 545,
-    "tag": [
-      "[\"fresh flour\",\"flour\"]"
-    ],
+    "tag": ["[\"fresh flour\",\"flour\"]"],
     "prices": {
       "originalPrice": 93.97,
       "discount": 0,
@@ -12294,9 +12078,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738775057/product/ACI-Pure-Maida-1-Kg-removebg-preview.png"
     ],
     "stock": 254,
-    "tag": [
-      "[\"aci flour\",\"flour\"]"
-    ],
+    "tag": ["[\"aci flour\",\"flour\"]"],
     "prices": {
       "originalPrice": 135.56,
       "discount": 0,
@@ -12397,9 +12179,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738775057/product/ACI-Pure-Maida-1-Kg-removebg-preview.png"
     ],
     "stock": 590,
-    "tag": [
-      "[\"aci flour\",\"flour\"]"
-    ],
+    "tag": ["[\"aci flour\",\"flour\"]"],
     "prices": {
       "originalPrice": 98.09,
       "discount": 0,
@@ -12500,9 +12280,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738775093/product/ACI-Nutrilife-Oats-Plus-Atta-removebg-preview.png"
     ],
     "stock": 593,
-    "tag": [
-      "[\"aci flour\",\"flour\"]"
-    ],
+    "tag": ["[\"aci flour\",\"flour\"]"],
     "prices": {
       "originalPrice": 70.86,
       "discount": 0,
@@ -12603,9 +12381,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738775111/product/ACI-Nutrilife-Multi-Grain-Atta-1-Kg__1_-removebg-preview.png"
     ],
     "stock": 879,
-    "tag": [
-      "[\"aci flour\",\"flour\"]"
-    ],
+    "tag": ["[\"aci flour\",\"flour\"]"],
     "prices": {
       "originalPrice": 112.01,
       "discount": 0,
@@ -12737,9 +12513,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738775167/product/Fresh-Soyabean-Oil-5-Ltr-removebg-preview.png"
     ],
     "stock": 445,
-    "tag": [
-      "[\"fresh oil\",\"oil\"]"
-    ],
+    "tag": ["[\"fresh oil\",\"oil\"]"],
     "prices": {
       "originalPrice": 177.71,
       "discount": 0,
@@ -12840,9 +12614,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738775203/product/Fresh-Mustard-Oil-500ml-removebg-preview.png"
     ],
     "stock": 88,
-    "tag": [
-      "[\"fresh oil\",\"oil\"]"
-    ],
+    "tag": ["[\"fresh oil\",\"oil\"]"],
     "prices": {
       "originalPrice": 99.91,
       "discount": 0,
@@ -12943,9 +12715,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738775231/product/Fortune-Rice-Bran-Oil-Pet-5ltr-removebg-preview.png"
     ],
     "stock": 486,
-    "tag": [
-      "[\"fortune oil\",\"oil\"]"
-    ],
+    "tag": ["[\"fortune oil\",\"oil\"]"],
     "prices": {
       "originalPrice": 140.09,
       "discount": 0,
@@ -13046,9 +12816,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738775253/product/ACI-Pure-Mustard-Oil-200ml-removebg-preview.png"
     ],
     "stock": 1479,
-    "tag": [
-      "[\"aci oil\",\"oil\"]"
-    ],
+    "tag": ["[\"aci oil\",\"oil\"]"],
     "prices": {
       "originalPrice": 5.06,
       "discount": 0,
@@ -13180,9 +12948,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738775284/product/ACI-Aroma-Mustard-Oil-1-Ltr-removebg-preview.png"
     ],
     "stock": 144,
-    "tag": [
-      "[\"aci oil\",\"oil\"]"
-    ],
+    "tag": ["[\"aci oil\",\"oil\"]"],
     "prices": {
       "originalPrice": 144.39,
       "discount": 0,
@@ -13280,9 +13046,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738820316/product/Kalijira-Premium-Rice-Loose-Kg-1-Kg-removebg-preview.png"
     ],
     "stock": 762,
-    "tag": [
-      "[\"kalijira rice\",\"rice\"]"
-    ],
+    "tag": ["[\"kalijira rice\",\"rice\"]"],
     "prices": {
       "originalPrice": 219.44,
       "discount": 0,
@@ -13380,9 +13144,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738820343/product/Fresh-Chinigura-Rice-1kg-removebg-preview.png"
     ],
     "stock": 6309,
-    "tag": [
-      "[\"chinigura rice\",\"rice\"]"
-    ],
+    "tag": ["[\"chinigura rice\",\"rice\"]"],
     "prices": {
       "originalPrice": 194.61,
       "discount": 0,
@@ -13580,9 +13342,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738820376/product/Chinigura-Premium-Rice-Loose-Kg-1-Kg-removebg-preview.png"
     ],
     "stock": 7020,
-    "tag": [
-      "[\"chinigura rice\",\"rice\"]"
-    ],
+    "tag": ["[\"chinigura rice\",\"rice\"]"],
     "prices": {
       "originalPrice": 94.87,
       "discount": 0,
@@ -13780,9 +13540,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738820403/product/Aarong-Nazirshail-Rice-5-Kg-removebg-preview.png"
     ],
     "stock": 689,
-    "tag": [
-      "[\"aarong rice\",\"rice\"]"
-    ],
+    "tag": ["[\"aarong rice\",\"rice\"]"],
     "prices": {
       "originalPrice": 31.64,
       "discount": 0,
@@ -13880,9 +13638,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738820422/product/Aarong-Kataribhog-Rice-5-Kg-removebg-preview.png"
     ],
     "stock": 186,
-    "tag": [
-      "[\"aarong rice\",\"rice\"]"
-    ],
+    "tag": ["[\"aarong rice\",\"rice\"]"],
     "prices": {
       "originalPrice": 247.02,
       "discount": 0,
@@ -13980,9 +13736,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738820445/product/Onion-Local-Loose-Kg-1-Kg-removebg-preview%281%29.png"
     ],
     "stock": 767,
-    "tag": [
-      "[\"onion\",\"dry vegetable\"]"
-    ],
+    "tag": ["[\"onion\",\"dry vegetable\"]"],
     "prices": {
       "originalPrice": 160.96,
       "discount": 0,
@@ -14080,9 +13834,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738820471/product/Ginger-Ada-Local-Hybrid-1-Kg-removebg-preview.png"
     ],
     "stock": 109,
-    "tag": [
-      "[\"ginger hybrid\",\"dry vegetable\"]"
-    ],
+    "tag": ["[\"ginger hybrid\",\"dry vegetable\"]"],
     "prices": {
       "originalPrice": 200.58,
       "discount": 0,
@@ -14180,9 +13932,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738820497/product/Garlic-Roshun-Deshi-Loose-P-1-Kg-removebg-preview.png"
     ],
     "stock": 752,
-    "tag": [
-      "[\"garlic\",\"dry vegetable\"]"
-    ],
+    "tag": ["[\"garlic\",\"dry vegetable\"]"],
     "prices": {
       "originalPrice": 15.38,
       "discount": 0,
@@ -14280,9 +14030,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738820535/product/Ada-Imported-Loose-1-Kg-removebg-preview.png"
     ],
     "stock": 411,
-    "tag": [
-      "[\"garlic\",\"dry vegetable\"]"
-    ],
+    "tag": ["[\"garlic\",\"dry vegetable\"]"],
     "prices": {
       "originalPrice": 82.12,
       "discount": 0,
@@ -14383,9 +14131,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738820566/product/Dan-Cake-Vanilla-Layer-Cake-25-5-Gm-removebg-preview.png"
     ],
     "stock": 517,
-    "tag": [
-      "[\"cake\",\"dan-cake\"]"
-    ],
+    "tag": ["[\"cake\",\"dan-cake\"]"],
     "prices": {
       "originalPrice": 147.83,
       "discount": 0,
@@ -14486,9 +14232,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738820587/product/Dan-Cake-Lemon-Pound-Cake-300g-removebg-preview.png"
     ],
     "stock": 795,
-    "tag": [
-      "[\"cake\",\"dan-cake\"]"
-    ],
+    "tag": ["[\"cake\",\"dan-cake\"]"],
     "prices": {
       "originalPrice": 74.93,
       "discount": 0,
@@ -14589,9 +14333,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738820688/product/Dan-Cake-chocolate-Pound-Cake-300g-removebg-preview.png"
     ],
     "stock": 630,
-    "tag": [
-      "[\"cake\",\"dan-cake\"]"
-    ],
+    "tag": ["[\"cake\",\"dan-cake\"]"],
     "prices": {
       "originalPrice": 237.66,
       "discount": 0,
@@ -14692,9 +14434,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738820710/product/Dan-Cake-chocolate-Muffin-25g-X-12-Pcs-removebg-preview.png"
     ],
     "stock": 0,
-    "tag": [
-      "[\"cake\",\"dan-cake\"]"
-    ],
+    "tag": ["[\"cake\",\"dan-cake\"]"],
     "prices": {
       "originalPrice": 85.43,
       "discount": 0,
@@ -14795,9 +14535,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738820733/product/Dan-Cake-chocolate-Layer-Cake-12-X30g-Box-removebg-preview.png"
     ],
     "stock": 418,
-    "tag": [
-      "[\"cake\",\"dan-cake\"]"
-    ],
+    "tag": ["[\"cake\",\"dan-cake\"]"],
     "prices": {
       "originalPrice": 59.06,
       "discount": 0,
@@ -14898,9 +14636,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738820759/product/Dekko-Ovaltine-Cookies-biscuits-330g-removebg-preview.png"
     ],
     "stock": 601,
-    "tag": [
-      "[\"biscuit\",\"dekko ovaltine-cookie\"]"
-    ],
+    "tag": ["[\"biscuit\",\"dekko ovaltine-cookie\"]"],
     "prices": {
       "originalPrice": 46.14,
       "discount": 0,
@@ -15001,9 +14737,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738820787/product/Danish-Florida-Orange-biscuits-210-45g-removebg-preview.png"
     ],
     "stock": 633,
-    "tag": [
-      "[\"biscuit\",\"danish biscuit\"]"
-    ],
+    "tag": ["[\"biscuit\",\"danish biscuit\"]"],
     "prices": {
       "originalPrice": 220.77,
       "discount": 0,
@@ -15104,9 +14838,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738820810/product/Bisk-Club-Shero-Cream-Biscuit-85g-removebg-preview.png"
     ],
     "stock": 672,
-    "tag": [
-      "[\"biscuit\",\"bisk club\"]"
-    ],
+    "tag": ["[\"biscuit\",\"bisk club\"]"],
     "prices": {
       "originalPrice": 59.05,
       "discount": 0,
@@ -15207,9 +14939,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738820833/product/Bisk-Club-Fit-Masala-Flavor-70g-removebg-preview.png"
     ],
     "stock": 432,
-    "tag": [
-      "[\"biscuit\",\"masala-flavor\"]"
-    ],
+    "tag": ["[\"biscuit\",\"masala-flavor\"]"],
     "prices": {
       "originalPrice": 70.18,
       "discount": 0,
@@ -15310,9 +15040,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738820867/product/2-Fun-Milk-Wafer-Biscuit-17gx12pack-removebg-preview.png"
     ],
     "stock": 184,
-    "tag": [
-      "[\"biscuit\",\"fun milk\"]"
-    ],
+    "tag": ["[\"biscuit\",\"fun milk\"]"],
     "prices": {
       "originalPrice": 214.86,
       "discount": 0,
@@ -15410,9 +15138,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738820891/product/Life-Tomato-Ketchup-330-Gm-removebg-preview.png"
     ],
     "stock": 105,
-    "tag": [
-      "[\"sauces\",\"tomato sauce\"]"
-    ],
+    "tag": ["[\"sauces\",\"tomato sauce\"]"],
     "prices": {
       "originalPrice": 175.54,
       "discount": 0,
@@ -15510,9 +15236,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738820955/product/Life-Soya-Sauce-Light-210ml-removebg-preview.png"
     ],
     "stock": 222,
-    "tag": [
-      "[\"sauces\",\"soya sauce\"]"
-    ],
+    "tag": ["[\"sauces\",\"soya sauce\"]"],
     "prices": {
       "originalPrice": 104.86,
       "discount": 0,
@@ -15610,9 +15334,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738820974/product/Life-Dark-Soya-Sauce-Small-210ml-removebg-preview.png"
     ],
     "stock": 43,
-    "tag": [
-      "[\"sauces\",\"soya sauce\"]"
-    ],
+    "tag": ["[\"sauces\",\"soya sauce\"]"],
     "prices": {
       "originalPrice": 71.24,
       "discount": 0,
@@ -15710,9 +15432,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738821001/product/Kikkoman-Soya-Sauce-150ml-removebg-preview.png"
     ],
     "stock": 458,
-    "tag": [
-      "[\"sauces\",\"soya sauce\"]"
-    ],
+    "tag": ["[\"sauces\",\"soya sauce\"]"],
     "prices": {
       "originalPrice": 242.29,
       "discount": 0,
@@ -15810,9 +15530,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738821155/product/Calypso-Pure-Salad-Style-Mustard-200ml-Jar-removebg-preview.png"
     ],
     "stock": 463,
-    "tag": [
-      "[\"sauces\",\"calypso sauce\"]"
-    ],
+    "tag": ["[\"sauces\",\"calypso sauce\"]"],
     "prices": {
       "originalPrice": 235.15,
       "discount": 0,
@@ -15910,9 +15628,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738821183/product/Heinz-Apple-Cider-Vinegar-473ml-US-removebg-preview.png"
     ],
     "stock": 723,
-    "tag": [
-      "[\"pickles\",\"Heinz vinegar\"]"
-    ],
+    "tag": ["[\"pickles\",\"Heinz vinegar\"]"],
     "prices": {
       "originalPrice": 180.86,
       "discount": 0,
@@ -16010,9 +15726,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738821207/product/Discovery-Apple-Cider-Vinegar-473ml-removebg-preview.png"
     ],
     "stock": 472,
-    "tag": [
-      "[\"pickles\",\"discovery vinegar\"]"
-    ],
+    "tag": ["[\"pickles\",\"discovery vinegar\"]"],
     "prices": {
       "originalPrice": 239.55,
       "discount": 0,
@@ -16110,9 +15824,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738821234/product/Ahmed-Garlic-Pickle-400g-removebg-preview%281%29.png"
     ],
     "stock": 569,
-    "tag": [
-      "[\"pickles\",\"ahmed pickle\"]"
-    ],
+    "tag": ["[\"pickles\",\"ahmed pickle\"]"],
     "prices": {
       "originalPrice": 142.41,
       "discount": 0,
@@ -16210,9 +15922,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738821257/product/American-Garden-Apple-Cider-Vinegar-473g-removebg-preview.png"
     ],
     "stock": 686,
-    "tag": [
-      "[\"pickles\",\"american vinegar\"]"
-    ],
+    "tag": ["[\"pickles\",\"american vinegar\"]"],
     "prices": {
       "originalPrice": 220.99,
       "discount": 0,
@@ -16310,9 +16020,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738821279/product/Ahmed-Mango-Pickle-400g-removebg-preview.png"
     ],
     "stock": 716,
-    "tag": [
-      "[\"pickles\",\"ahmed pickle\"]"
-    ],
+    "tag": ["[\"pickles\",\"ahmed pickle\"]"],
     "prices": {
       "originalPrice": 105.02,
       "discount": 0,
@@ -16416,9 +16124,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738821308/product/Pita-Bread-4-csc7se__1_-removebg-preview%281%29.png"
     ],
     "stock": 417,
-    "tag": [
-      "[\"breakfast\",\"pita-bread\"]"
-    ],
+    "tag": ["[\"breakfast\",\"pita-bread\"]"],
     "prices": {
       "originalPrice": 9.86,
       "discount": 0,
@@ -16522,9 +16228,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738821336/product/Bread-7-mv0yhz-removebg-preview%281%29.png"
     ],
     "stock": 722,
-    "tag": [
-      "[\"breakfast\",\"bread\"]"
-    ],
+    "tag": ["[\"breakfast\",\"bread\"]"],
     "prices": {
       "originalPrice": 223.93,
       "discount": 0,
@@ -16628,9 +16332,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738821308/product/Pita-Bread-4-csc7se__1_-removebg-preview%281%29.png"
     ],
     "stock": 84,
-    "tag": [
-      "[\"breakfast\",\"pita-bread\"]"
-    ],
+    "tag": ["[\"breakfast\",\"pita-bread\"]"],
     "prices": {
       "originalPrice": 27.08,
       "discount": 0,
@@ -16734,9 +16436,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738821434/product/Everyday-Essentials-Wholemeal-Bread-removebg-preview.png"
     ],
     "stock": 408,
-    "tag": [
-      "[\"breakfast\",\"wholemeal-bread\"]"
-    ],
+    "tag": ["[\"breakfast\",\"wholemeal-bread\"]"],
     "prices": {
       "originalPrice": 16.48,
       "discount": 0,
@@ -16840,9 +16540,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738821459/product/quaker-oats-jar-500-gm-removebg-preview.png"
     ],
     "stock": 352,
-    "tag": [
-      "[\"breakfast\",\"quaker-oats\"]"
-    ],
+    "tag": ["[\"breakfast\",\"quaker-oats\"]"],
     "prices": {
       "originalPrice": 201.52,
       "discount": 0,
@@ -16946,9 +16644,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738821578/product/nestle-koko-krunch-breakfast-cereal-pouch-80-gm-removebg-preview.png"
     ],
     "stock": 307,
-    "tag": [
-      "[\"breakfast\",\"breakfast-cereal-pouch\"]"
-    ],
+    "tag": ["[\"breakfast\",\"breakfast-cereal-pouch\"]"],
     "prices": {
       "originalPrice": 148.58,
       "discount": 0,
@@ -17052,9 +16748,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738821651/product/kelloggs-corn-flakes-real-honey-breakfast-cereal-300gm-removebg-preview.png"
     ],
     "stock": 372,
-    "tag": [
-      "[\"breakfast\",\"honey-breakfast-cereal\"]"
-    ],
+    "tag": ["[\"breakfast\",\"honey-breakfast-cereal\"]"],
     "prices": {
       "originalPrice": 169.66,
       "discount": 0,
@@ -17158,9 +16852,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738821704/product/kelloggs-chocos-fills-chocolate-breakfast-cereal-17gm-removebg-preview.png"
     ],
     "stock": 370,
-    "tag": [
-      "[\"breakfast\",\"chocolate-breakfast-cereal\"]"
-    ],
+    "tag": ["[\"breakfast\",\"chocolate-breakfast-cereal\"]"],
     "prices": {
       "originalPrice": 101.22,
       "discount": 0,
@@ -17264,9 +16956,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738821796/product/nestle-gold-corn-flakes-breakfast-cereal-box-275-gm-removebg-preview.png"
     ],
     "stock": 415,
-    "tag": [
-      "[\"breakfast\",\"flakes-breakfast-cereal\"]"
-    ],
+    "tag": ["[\"breakfast\",\"flakes-breakfast-cereal\"]"],
     "prices": {
       "originalPrice": 154.04,
       "discount": 0,
@@ -17373,9 +17063,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738821825/product/Aseel-Vegetable-Ghee-500gm-removebg-preview.png"
     ],
     "stock": 390,
-    "tag": [
-      "[\"aseel-vegetable\",\"ghee\"]"
-    ],
+    "tag": ["[\"aseel-vegetable\",\"ghee\"]"],
     "prices": {
       "originalPrice": 158.17,
       "discount": 0,
@@ -17482,9 +17170,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738821853/product/Ultra-Ghee-200g-removebg-preview.png"
     ],
     "stock": 264,
-    "tag": [
-      "[\"ultra\",\"ghee\"]"
-    ],
+    "tag": ["[\"ultra\",\"ghee\"]"],
     "prices": {
       "originalPrice": 189.93,
       "discount": 0,
@@ -17591,9 +17277,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738821877/product/Pran-Premium-Ghee-200g-removebg-preview.png"
     ],
     "stock": 258,
-    "tag": [
-      "[\"pran-premium\",\"ghee\"]"
-    ],
+    "tag": ["[\"pran-premium\",\"ghee\"]"],
     "prices": {
       "originalPrice": 217.48,
       "discount": 0,
@@ -17700,9 +17384,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738821895/product/Aarong-Ghee-200-Gm-removebg-preview.png"
     ],
     "stock": 728,
-    "tag": [
-      "[\"aarong\",\"ghee\"]"
-    ],
+    "tag": ["[\"aarong\",\"ghee\"]"],
     "prices": {
       "originalPrice": 122.52,
       "discount": 0,
@@ -17809,9 +17491,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738821909/product/Aarong-Dairy-Ghee-Tin-100-Gm-removebg-preview.png"
     ],
     "stock": 94,
-    "tag": [
-      "[\"aarong\",\"ghee\"]"
-    ],
+    "tag": ["[\"aarong\",\"ghee\"]"],
     "prices": {
       "originalPrice": 153.64,
       "discount": 0,
@@ -17918,9 +17598,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738821937/product/Shurfine-Whole-Milk-0-5-gal-removebg-preview.png"
     ],
     "stock": 771,
-    "tag": [
-      "[\"shurfine-milk\",\"dairy\"]"
-    ],
+    "tag": ["[\"shurfine-milk\",\"dairy\"]"],
     "prices": {
       "originalPrice": 281.58,
       "discount": 0,
@@ -18027,9 +17705,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738821962/product/Shurfine-Vanilla-Nonfat-Yogurt-6oz-removebg-preview.png"
     ],
     "stock": 140,
-    "tag": [
-      "[\"shurfine-yogurt\",\"dairy\"]"
-    ],
+    "tag": ["[\"shurfine-yogurt\",\"dairy\"]"],
     "prices": {
       "originalPrice": 39.58,
       "discount": 0,
@@ -18136,9 +17812,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738821987/product/El-Mexicano-Em-Youstir-Peach-each-removebg-preview.png"
     ],
     "stock": 558,
-    "tag": [
-      "[\"mexicano-yogurt\",\"dairy\"]"
-    ],
+    "tag": ["[\"mexicano-yogurt\",\"dairy\"]"],
     "prices": {
       "originalPrice": 154.98,
       "discount": 0,
@@ -18245,9 +17919,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738822012/product/Cowgirl-Creamery-Mt-Tam-Triple-Creme-Cheese-per-lb-removebg-preview.png"
     ],
     "stock": 211,
-    "tag": [
-      "[\"cowgirl-creamery\",\"dairy\"]"
-    ],
+    "tag": ["[\"cowgirl-creamery\",\"dairy\"]"],
     "prices": {
       "originalPrice": 245.18,
       "discount": 0,
@@ -18354,9 +18026,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738822037/product/Balducci-AUSTRALIAN-CHEDDAR-per-lb-removebg-preview.png"
     ],
     "stock": 749,
-    "tag": [
-      "[\"balducci\",\"dairy\"]"
-    ],
+    "tag": ["[\"balducci\",\"dairy\"]"],
     "prices": {
       "originalPrice": 35.9,
       "discount": 0,
@@ -18463,9 +18133,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738822072/product/Polar-1-Liter-Vanilla-removebg-preview.png"
     ],
     "stock": 211,
-    "tag": [
-      "[\"polar\",\"ice cream\"]"
-    ],
+    "tag": ["[\"polar\",\"ice cream\"]"],
     "prices": {
       "originalPrice": 135.36,
       "discount": 0,
@@ -18572,9 +18240,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738822111/product/Igloo-Kheer-Malai-Box-1-Ltr-removebg-preview.png"
     ],
     "stock": 566,
-    "tag": [
-      "[\"igloo\",\"ice cream\"]"
-    ],
+    "tag": ["[\"igloo\",\"ice cream\"]"],
     "prices": {
       "originalPrice": 201.67,
       "discount": 0,
@@ -18681,9 +18347,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738822137/product/Igloo-Cup-Vanilla-100-Ml-removebg-preview.png"
     ],
     "stock": 627,
-    "tag": [
-      "[\"igloo\",\"ice cream\"]"
-    ],
+    "tag": ["[\"igloo\",\"ice cream\"]"],
     "prices": {
       "originalPrice": 220.49,
       "discount": 0,
@@ -18790,9 +18454,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738822157/product/Igloo-Exotic-Sw-iss-Choccolate-Ice-Cream-100ml-removebg-preview.png"
     ],
     "stock": 4833,
-    "tag": [
-      "[\"igloo\",\"ice cream\"]"
-    ],
+    "tag": ["[\"igloo\",\"ice cream\"]"],
     "prices": {
       "originalPrice": 30.82,
       "discount": 0,
@@ -18999,9 +18661,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738822100/product/Igloo-Container-Vanilla-1000-Ml-removebg-preview.png"
     ],
     "stock": 104,
-    "tag": [
-      "[\"igloo\",\"ice cream\"]"
-    ],
+    "tag": ["[\"igloo\",\"ice cream\"]"],
     "prices": {
       "originalPrice": 25.37,
       "discount": 0,
@@ -19117,9 +18777,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738822287/product/Pure-Plant-Home-Lavender-Orange-Blossom-Candle-7oz-removebg-preview.png"
     ],
     "stock": 263,
-    "tag": [
-      "[\"air freshener\"]"
-    ],
+    "tag": ["[\"air freshener\"]"],
     "prices": {
       "originalPrice": 51.28,
       "discount": 0,
@@ -19235,9 +18893,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738822319/product/Glade-Clear-Springs-Sense-Spray-Motion-Sensor-Automatic-Spray-1ct-removebg-preview.png"
     ],
     "stock": 125,
-    "tag": [
-      "[\"air freshener\"]"
-    ],
+    "tag": ["[\"air freshener\"]"],
     "prices": {
       "originalPrice": 77.63,
       "discount": 0,
@@ -19353,9 +19009,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738822391/product/Natures-Alchemy-Essential-Oil-100-Pure-Rosewood-0-5oz-removebg-preview%281%29.png"
     ],
     "stock": 50,
-    "tag": [
-      "[\"air freshener\"]"
-    ],
+    "tag": ["[\"air freshener\"]"],
     "prices": {
       "originalPrice": 133.67,
       "discount": 0,
@@ -19471,9 +19125,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738822464/product/Glade-Be-At-Peace-Automatic-Spray-Refill-Air-Freshener-6-2oz-removebg-preview.png"
     ],
     "stock": 440,
-    "tag": [
-      "[\"air freshener\"]"
-    ],
+    "tag": ["[\"air freshener\"]"],
     "prices": {
       "originalPrice": 182.57,
       "discount": 0,
@@ -19589,9 +19241,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738822484/product/Glade-Oil-Refills-Scented-White-Tea-Lily-0-71oz-removebg-preview.png"
     ],
     "stock": 271,
-    "tag": [
-      "[\"air freshener\"]"
-    ],
+    "tag": ["[\"air freshener\"]"],
     "prices": {
       "originalPrice": 229.97,
       "discount": 0,
@@ -19707,9 +19357,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738822504/product/So-Phresh-Bio-enzymatic-Dog-Stain-Odor-Remover-2-23lb-removebg-preview.png"
     ],
     "stock": 331,
-    "tag": [
-      "[\"cleaner\"]"
-    ],
+    "tag": ["[\"cleaner\"]"],
     "prices": {
       "originalPrice": 175.85,
       "discount": 0,
@@ -19825,9 +19473,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738822559/product/Rejuvenate-Floor-Cleaner-Multi-Surface-34-oz-removebg-preview.png"
     ],
     "stock": 640,
-    "tag": [
-      "[\"cleaner\"]"
-    ],
+    "tag": ["[\"cleaner\"]"],
     "prices": {
       "originalPrice": 141.68,
       "discount": 0,
@@ -19943,9 +19589,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738822698/product/Refresh-Your-Car-Antibacterial-Leather-Automotive-Cleaning-Wipes-New-Car-Scent-25-CT-9oz-removebg-preview.png"
     ],
     "stock": 38,
-    "tag": [
-      "[\"cleaner\"]"
-    ],
+    "tag": ["[\"cleaner\"]"],
     "prices": {
       "originalPrice": 264.8,
       "discount": 0,
@@ -20061,9 +19705,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738822723/product/Pure-Citrus-Cleaner-Orange-32oz-removebg-preview.png"
     ],
     "stock": 523,
-    "tag": [
-      "[\"cleaner\"]"
-    ],
+    "tag": ["[\"cleaner\"]"],
     "prices": {
       "originalPrice": 129.32,
       "discount": 0,
@@ -20179,9 +19821,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738822746/product/Open-Nature-Granite-Cleaner-32-fl-oz-removebg-preview%281%29.png"
     ],
     "stock": 57,
-    "tag": [
-      "[\"cleaner\"]"
-    ],
+    "tag": ["[\"cleaner\"]"],
     "prices": {
       "originalPrice": 14.41,
       "discount": 0,
@@ -20297,9 +19937,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738822774/product/Mr-Clean-Multi-Purpose-Cleaner-with-Febreze-Freshness-New-Zealand-Springs-Scent-40oz-removebg-preview.png"
     ],
     "stock": 122,
-    "tag": [
-      "[\"cleaner\"]"
-    ],
+    "tag": ["[\"cleaner\"]"],
     "prices": {
       "originalPrice": 297.8,
       "discount": 0,
@@ -20415,9 +20053,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738822811/product/Good-Clean-Fresh-Scented-Disinfectant-Wipes-24ct-removebg-preview%281%29.png"
     ],
     "stock": 475,
-    "tag": [
-      "[\"cleaner\"]"
-    ],
+    "tag": ["[\"cleaner\"]"],
     "prices": {
       "originalPrice": 150.22,
       "discount": 0,
@@ -20533,9 +20169,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738822868/product/Everyday-Living-All-Purpose-Cleaner-with-Bleach-32-oz-removebg-preview.png"
     ],
     "stock": 131,
-    "tag": [
-      "[\"cleaner\"]"
-    ],
+    "tag": ["[\"cleaner\"]"],
     "prices": {
       "originalPrice": 285.11,
       "discount": 0,
@@ -20651,9 +20285,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738822896/product/Artik-Mandarine-Obsession-All-Purpose-Cleaner-8fl-oz-removebg-preview.png"
     ],
     "stock": 33,
-    "tag": [
-      "[\"cleaner\"]"
-    ],
+    "tag": ["[\"cleaner\"]"],
     "prices": {
       "originalPrice": 60.16,
       "discount": 0,
@@ -20769,9 +20401,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738822918/product/Drano-Build-Up-Remover-32-oz-removebg-preview.png"
     ],
     "stock": 487,
-    "tag": [
-      "[\"cleaner\"]"
-    ],
+    "tag": ["[\"cleaner\"]"],
     "prices": {
       "originalPrice": 170.86,
       "discount": 0,
@@ -20887,9 +20517,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738822953/product/Continental-Complete-Window-Squeegee-12-in-removebg-preview.png"
     ],
     "stock": 626,
-    "tag": [
-      "[\"cleaning tools\"]"
-    ],
+    "tag": ["[\"cleaning tools\"]"],
     "prices": {
       "originalPrice": 218.66,
       "discount": 0,
@@ -21005,9 +20633,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823109/product/Char-Bron-Dual-SS-Scubbing-Pad-Brush-1ct-removebg-preview.png"
     ],
     "stock": 766,
-    "tag": [
-      "[\"cleaning tools\"]"
-    ],
+    "tag": ["[\"cleaning tools\"]"],
     "prices": {
       "originalPrice": 168.22,
       "discount": 0,
@@ -21123,9 +20749,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823170/product/Butler-Gum-Scrub-Brush-each-removebg-preview.png"
     ],
     "stock": 376,
-    "tag": [
-      "[\"cleaning tools\"]"
-    ],
+    "tag": ["[\"cleaning tools\"]"],
     "prices": {
       "originalPrice": 133.01,
       "discount": 0,
@@ -21241,9 +20865,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823231/product/Butler-Gum-Scrub-Bob-each-removebg-preview.png"
     ],
     "stock": 83,
-    "tag": [
-      "[\"cleaning tools\"]"
-    ],
+    "tag": ["[\"cleaning tools\"]"],
     "prices": {
       "originalPrice": 229.52,
       "discount": 0,
@@ -21359,9 +20981,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823254/product/Casabella-Sponge-Brush-Loop-1-each-removebg-preview.png"
     ],
     "stock": 496,
-    "tag": [
-      "[\"cleaning tools\"]"
-    ],
+    "tag": ["[\"cleaning tools\"]"],
     "prices": {
       "originalPrice": 151.38,
       "discount": 0,
@@ -21477,9 +21097,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823273/product/Xtra-Spring-Sunshine-Scentsations-116-Loads-Liquid-Laundry-Detergent-175fl-oz-removebg-preview.png"
     ],
     "stock": 436,
-    "tag": [
-      "[\"xtra-spring\",\"laundry\"]"
-    ],
+    "tag": ["[\"xtra-spring\",\"laundry\"]"],
     "prices": {
       "originalPrice": 138.13,
       "discount": 0,
@@ -21595,9 +21213,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823294/product/Valu-Time-Fabric-Softener-Spring-Scent-128-fl-oz-removebg-preview.png"
     ],
     "stock": 352,
-    "tag": [
-      "[\"valu-time\",\"laundry\"]"
-    ],
+    "tag": ["[\"valu-time\",\"laundry\"]"],
     "prices": {
       "originalPrice": 79.26,
       "discount": 0,
@@ -21713,9 +21329,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823310/product/Valu-Time-Bleach-Lemon-Scent-96fl-oz-removebg-preview.png"
     ],
     "stock": 91,
-    "tag": [
-      "[\"valu-time\",\"laundry\"]"
-    ],
+    "tag": ["[\"valu-time\",\"laundry\"]"],
     "prices": {
       "originalPrice": 256.48,
       "discount": 0,
@@ -21831,9 +21445,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823330/product/Ultra-Clorox-Clorox-Smart-Bleach-Fresh-Meadow-116-oz-removebg-preview.png"
     ],
     "stock": 476,
-    "tag": [
-      "[\"ultra-clorox\",\"laundry\"]"
-    ],
+    "tag": ["[\"ultra-clorox\",\"laundry\"]"],
     "prices": {
       "originalPrice": 285.24,
       "discount": 0,
@@ -21949,9 +21561,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823349/product/Tide-Detergent-Fresh-Scent-100oz-removebg-preview.png"
     ],
     "stock": 770,
-    "tag": [
-      "[\"tide-detergent\",\"laundry\"]"
-    ],
+    "tag": ["[\"tide-detergent\",\"laundry\"]"],
     "prices": {
       "originalPrice": 35.71,
       "discount": 0,
@@ -22067,9 +21677,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823370/product/Open-Nature-Chlorine-free-Bleach-64fl-oz-removebg-preview.png"
     ],
     "stock": 678,
-    "tag": [
-      "[\"open-nature\",\"laundry\"]"
-    ],
+    "tag": ["[\"open-nature\",\"laundry\"]"],
     "prices": {
       "originalPrice": 21.62,
       "discount": 0,
@@ -22185,9 +21793,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823411/product/Febreze-D-Bsl-Gain-Scent-Stain-Odor-Remover-32-fl-oz-removebg-preview.png"
     ],
     "stock": 397,
-    "tag": [
-      "[\"febreze-gain\",\"laundry\"]"
-    ],
+    "tag": ["[\"febreze-gain\",\"laundry\"]"],
     "prices": {
       "originalPrice": 184.82,
       "discount": 0,
@@ -22303,9 +21909,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823433/product/Febreze-Bedding-Refresher-Moonlit-Lavender-16-9oz-removebg-preview.png"
     ],
     "stock": 692,
-    "tag": [
-      "[\"febreze-lavender\",\"laundry\"]"
-    ],
+    "tag": ["[\"febreze-lavender\",\"laundry\"]"],
     "prices": {
       "originalPrice": 215.4,
       "discount": 0,
@@ -22421,9 +22025,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823464/product/Arm-Hammer-Tropical-Paradise-Arm-Hammer-Clean-Scentsations-Tropical-Paradise-Laundry-Detergent-removebg-preview.png"
     ],
     "stock": 234,
-    "tag": [
-      "[\"arm-hammer\",\"laundry\"]"
-    ],
+    "tag": ["[\"arm-hammer\",\"laundry\"]"],
     "prices": {
       "originalPrice": 262.08,
       "discount": 0,
@@ -22539,9 +22141,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823483/product/Orange-Guard-Insect-Spray-Gallon-128-fl-oz-removebg-preview.png"
     ],
     "stock": 103,
-    "tag": [
-      "[\"Orange-guard\",\"pest-control\"]"
-    ],
+    "tag": ["[\"Orange-guard\",\"pest-control\"]"],
     "prices": {
       "originalPrice": 265.21,
       "discount": 0,
@@ -22657,9 +22257,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823501/product/Hot-Shot-Wasp-Hornet-Killer-14oz-removebg-preview.png"
     ],
     "stock": 591,
-    "tag": [
-      "[\"hot-shot\",\"pest-control\"]"
-    ],
+    "tag": ["[\"hot-shot\",\"pest-control\"]"],
     "prices": {
       "originalPrice": 13.06,
       "discount": 0,
@@ -22775,9 +22373,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823517/product/Hot-Shot-Flying-Insect-Killer-Mist-Spray-14-oz-removebg-preview.png"
     ],
     "stock": 655,
-    "tag": [
-      "[\"hot-shot\",\"pest-control\"]"
-    ],
+    "tag": ["[\"hot-shot\",\"pest-control\"]"],
     "prices": {
       "originalPrice": 25.13,
       "discount": 0,
@@ -22893,9 +22489,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823537/product/Hot-Shot-Ant-Roach-Plus-Germ-Killer-2-Fresh-Floral-Scent-Value-Pack-17-oz-removebg-preview.png"
     ],
     "stock": 599,
-    "tag": [
-      "[\"hot-shot\",\"pest-control\"]"
-    ],
+    "tag": ["[\"hot-shot\",\"pest-control\"]"],
     "prices": {
       "originalPrice": 53.4,
       "discount": 0,
@@ -23011,9 +22605,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823593/product/d-Con-Trap-Rat-and-Mouse-Glue-Professional-Strength-2ct-removebg-preview.png"
     ],
     "stock": 464,
-    "tag": [
-      "[\"d-con\",\"pest-control\"]"
-    ],
+    "tag": ["[\"d-con\",\"pest-control\"]"],
     "prices": {
       "originalPrice": 11.81,
       "discount": 0,
@@ -23129,9 +22721,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823615/product/Black-Flag-Ant-Roach-Spider-Killer-Fragrance-Free-20-5-ox-removebg-preview.png"
     ],
     "stock": 616,
-    "tag": [
-      "[\"black-flag\",\"pest-control\"]"
-    ],
+    "tag": ["[\"black-flag\",\"pest-control\"]"],
     "prices": {
       "originalPrice": 29.26,
       "discount": 0,
@@ -23247,9 +22837,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823632/product/Bayer-Insect-Killer-All-Purpose-Continuous-Spray-15-75oz-removebg-preview.png"
     ],
     "stock": 4,
-    "tag": [
-      "[\"bayer\",\"pest-control\"]"
-    ],
+    "tag": ["[\"bayer\",\"pest-control\"]"],
     "prices": {
       "originalPrice": 287.75,
       "discount": 0,
@@ -23365,9 +22953,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823650/product/BRITA-Water-Filter-Pitcher-1each-removebg-preview.png"
     ],
     "stock": 514,
-    "tag": [
-      "[\"brita\",\"water-filter\"]"
-    ],
+    "tag": ["[\"brita\",\"water-filter\"]"],
     "prices": {
       "originalPrice": 248.3,
       "discount": 0,
@@ -23483,9 +23069,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823674/product/BRITA-Water-Filter-Dispenser-1-each-removebg-preview.png"
     ],
     "stock": 262,
-    "tag": [
-      "[\"brita\",\"water-filter\"]"
-    ],
+    "tag": ["[\"brita\",\"water-filter\"]"],
     "prices": {
       "originalPrice": 25.96,
       "discount": 0,
@@ -23601,9 +23185,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823693/product/BRITA-Soho-Pitcher-Filter-Water-Filtration-System-White-5-Cup-each-removebg-preview%281%29.png"
     ],
     "stock": 687,
-    "tag": [
-      "[\"brita\",\"water-filter\"]"
-    ],
+    "tag": ["[\"brita\",\"water-filter\"]"],
     "prices": {
       "originalPrice": 82.73,
       "discount": 0,
@@ -23719,9 +23301,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823715/product/BRITA-Replacement-Water-Filters-3each-removebg-preview.png"
     ],
     "stock": 524,
-    "tag": [
-      "[\"brita\",\"water-filter\"]"
-    ],
+    "tag": ["[\"brita\",\"water-filter\"]"],
     "prices": {
       "originalPrice": 226.13,
       "discount": 0,
@@ -23837,9 +23417,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823650/product/BRITA-Water-Filter-Pitcher-1each-removebg-preview.png"
     ],
     "stock": 324,
-    "tag": [
-      "[\"brita\",\"water-filter\"]"
-    ],
+    "tag": ["[\"brita\",\"water-filter\"]"],
     "prices": {
       "originalPrice": 91.99,
       "discount": 0,
@@ -23938,9 +23516,7 @@
     },
     "image": [],
     "stock": 777,
-    "tag": [
-      "[]"
-    ],
+    "tag": ["[]"],
     "prices": {
       "originalPrice": 115.45,
       "discount": 0,
@@ -24039,9 +23615,7 @@
     },
     "image": [],
     "stock": 691,
-    "tag": [
-      "[]"
-    ],
+    "tag": ["[]"],
     "prices": {
       "originalPrice": 228.43,
       "discount": 0,
@@ -24140,9 +23714,7 @@
     },
     "image": [],
     "stock": 10,
-    "tag": [
-      "[]"
-    ],
+    "tag": ["[]"],
     "prices": {
       "originalPrice": 25.43,
       "discount": 0,
@@ -24241,9 +23813,7 @@
     },
     "image": [],
     "stock": 115,
-    "tag": [
-      "[]"
-    ],
+    "tag": ["[]"],
     "prices": {
       "originalPrice": 48.84,
       "discount": 0,
@@ -24342,9 +23912,7 @@
     },
     "image": [],
     "stock": 124,
-    "tag": [
-      "[]"
-    ],
+    "tag": ["[]"],
     "prices": {
       "originalPrice": 13.99,
       "discount": 0,
@@ -24448,9 +24016,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823763/product/So-Phresh-Pink-Scoopable-Odor-Lock-Clumping-Micro-Crystal-Cat-Litter-8-lb-removebg-preview.png"
     ],
     "stock": 569,
-    "tag": [
-      "[\"cat-food\",\"cat-care\"]"
-    ],
+    "tag": ["[\"cat-food\",\"cat-care\"]"],
     "prices": {
       "originalPrice": 210.67,
       "discount": 0,
@@ -24554,9 +24120,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823858/product/Pet-Qwerks-Incredibubbles-Catnip-Cat-Toy-each-removebg-preview.png"
     ],
     "stock": 744,
-    "tag": [
-      "[\"cat-toy\",\"cat-care\"]"
-    ],
+    "tag": ["[\"cat-toy\",\"cat-care\"]"],
     "prices": {
       "originalPrice": 256.61,
       "discount": 0,
@@ -24660,9 +24224,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823900/product/Leaps-Bounds-Multipack-Ball-Cat-Toy-0-05lb-removebg-preview.png"
     ],
     "stock": 149,
-    "tag": [
-      "[\"cat-toy\",\"cat-care\"]"
-    ],
+    "tag": ["[\"cat-toy\",\"cat-care\"]"],
     "prices": {
       "originalPrice": 46.63,
       "discount": 0,
@@ -24766,9 +24328,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823934/product/Leaps-Bounds-Electronic-Shelf-Teaser-each-removebg-preview.png"
     ],
     "stock": 724,
-    "tag": [
-      "[\"cat-toy\",\"cat-care\"]"
-    ],
+    "tag": ["[\"cat-toy\",\"cat-care\"]"],
     "prices": {
       "originalPrice": 72.5,
       "discount": 0,
@@ -24872,9 +24432,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738824014/product/IAMS-Proactive-Health-Oral-Care-Complete-Premium-Cat-Food-16-lb-removebg-preview.png"
     ],
     "stock": 490,
-    "tag": [
-      "[\"cat-toy\",\"cat-care\"]"
-    ],
+    "tag": ["[\"cat-toy\",\"cat-care\"]"],
     "prices": {
       "originalPrice": 152.82,
       "discount": 0,
@@ -24978,9 +24536,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738823921/product/Leaps-Bounds-Playful-by-Nature-Premium-Catnip-Silver-Vine-Blend-Cat-Toy-each-removebg-preview.png"
     ],
     "stock": 420,
-    "tag": [
-      "[\"cat-toy\",\"cat-care\"]"
-    ],
+    "tag": ["[\"cat-toy\",\"cat-care\"]"],
     "prices": {
       "originalPrice": 124.33,
       "discount": 0,
@@ -25084,9 +24640,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738824137/product/Wlgd-Small-Water-Blue-Pin-Brush-0-21lb-removebg-preview.png"
     ],
     "stock": 426,
-    "tag": [
-      "[\"dog-brush\",\"dog-care\"]"
-    ],
+    "tag": ["[\"dog-brush\",\"dog-care\"]"],
     "prices": {
       "originalPrice": 291.73,
       "discount": 0,
@@ -25190,9 +24744,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738824163/product/Royal-Canin-Medium-Adult-Dog-Food-17-lb-removebg-preview%281%29.png"
     ],
     "stock": 628,
-    "tag": [
-      "[\"dog-food\",\"dog-care\"]"
-    ],
+    "tag": ["[\"dog-food\",\"dog-care\"]"],
     "prices": {
       "originalPrice": 207.37,
       "discount": 0,
@@ -25296,9 +24848,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738824250/product/Pet-Safe-Elite-Big-Dog-Bark-Control-Collar-each-removebg-preview.png"
     ],
     "stock": 82,
-    "tag": [
-      "[\"dog-care\"]"
-    ],
+    "tag": ["[\"dog-care\"]"],
     "prices": {
       "originalPrice": 159.85,
       "discount": 0,
@@ -25402,9 +24952,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738824276/product/Hill-s-Science-Diet-Dog-Treat-Jerky-with-Real-Beef-Mini-Strips-7-2-oz-removebg-preview.png"
     ],
     "stock": 77,
-    "tag": [
-      "[\"dog-diet\",\"dog-care\"]"
-    ],
+    "tag": ["[\"dog-diet\",\"dog-care\"]"],
     "prices": {
       "originalPrice": 97.36,
       "discount": 0,
@@ -25508,9 +25056,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738824316/product/Extra-Extra-Small-Halloween-Dog-Taco-Costume-each-removebg-preview.png"
     ],
     "stock": 52,
-    "tag": [
-      "[\"dog-care\"]"
-    ],
+    "tag": ["[\"dog-care\"]"],
     "prices": {
       "originalPrice": 166.38,
       "discount": 0,
@@ -25614,9 +25160,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738824361/product/Buckle-Down-Pbkl-Large-Colorado-Dog-Collar-each-removebg-preview.png"
     ],
     "stock": 431,
-    "tag": [
-      "[\"dog-care\"]"
-    ],
+    "tag": ["[\"dog-care\"]"],
     "prices": {
       "originalPrice": 142.13,
       "discount": 0,
@@ -25720,9 +25264,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738824386/product/Bond-Co-XX-Small-For-Necks-8-10-Black-Bling-Dog-Collar-0-05lb-removebg-preview.png"
     ],
     "stock": 663,
-    "tag": [
-      "[\"dog-care\"]"
-    ],
+    "tag": ["[\"dog-care\"]"],
     "prices": {
       "originalPrice": 45.56,
       "discount": 0,
@@ -25826,9 +25368,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738824428/product/Bond-Co-Endless-Summer-Medium-Popsicle-Dog-Collar-each-removebg-preview.png"
     ],
     "stock": 164,
-    "tag": [
-      "[\"dog-care\"]"
-    ],
+    "tag": ["[\"dog-care\"]"],
     "prices": {
       "originalPrice": 182.29,
       "discount": 0,
@@ -25935,9 +25475,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738824449/product/Hibiscus-Premium-Whole-Baby-Corn-425g-removebg-preview.png"
     ],
     "stock": 485,
-    "tag": [
-      "[\"hibiscus-corn\",\"canned-food\"]"
-    ],
+    "tag": ["[\"hibiscus-corn\",\"canned-food\"]"],
     "prices": {
       "originalPrice": 56.36,
       "discount": 0,
@@ -26044,9 +25582,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738824529/product/Figaro-Plain-Green-Olives-340g-removebg-preview.png"
     ],
     "stock": 212,
-    "tag": [
-      "[\"figaro-olives\",\"canned-food\"]"
-    ],
+    "tag": ["[\"figaro-olives\",\"canned-food\"]"],
     "prices": {
       "originalPrice": 199.62,
       "discount": 0,
@@ -26153,9 +25689,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738824501/product/Borges-Green-Pitted-Olives-320g-removebg-preview.png"
     ],
     "stock": 249,
-    "tag": [
-      "[\"borges-olives\",\"canned-food\"]"
-    ],
+    "tag": ["[\"borges-olives\",\"canned-food\"]"],
     "prices": {
       "originalPrice": 182.88,
       "discount": 0,
@@ -26262,9 +25796,7 @@
       "https://i.postimg.cc/pT1WvKhs/Borges-Black-Whole-Olives-330-Gm.jpg"
     ],
     "stock": 18,
-    "tag": [
-      "[\"borges-olives\",\"canned-food\"]"
-    ],
+    "tag": ["[\"borges-olives\",\"canned-food\"]"],
     "prices": {
       "originalPrice": 286.57,
       "discount": 0,
@@ -26371,9 +25903,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738824564/product/American-Garden-Mushroom-Whole-Can-425g-removebg-preview.png"
     ],
     "stock": 188,
-    "tag": [
-      "[\"american-mushroom\",\"canned-food\"]"
-    ],
+    "tag": ["[\"american-mushroom\",\"canned-food\"]"],
     "prices": {
       "originalPrice": 180.43,
       "discount": 0,
@@ -26480,9 +26010,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738824776/product/Lays-Classic-Salted-25g-removebg-preview.png"
     ],
     "stock": 358,
-    "tag": [
-      "[\"lays-salted\",\"chips & nuts\"]"
-    ],
+    "tag": ["[\"lays-salted\",\"chips & nuts\"]"],
     "prices": {
       "originalPrice": 269,
       "discount": 0,
@@ -26589,9 +26117,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738824816/product/Lays-American-Style-Cream-And-Onion-Chips-25g-removebg-preview.png"
     ],
     "stock": 531,
-    "tag": [
-      "[\"lays-chips\",\"chips & nuts\"]"
-    ],
+    "tag": ["[\"lays-chips\",\"chips & nuts\"]"],
     "prices": {
       "originalPrice": 213.38,
       "discount": 0,
@@ -26698,9 +26224,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738824835/product/Kurkure-Chilli-Chatka-Crackers-removebg-preview.png"
     ],
     "stock": 473,
-    "tag": [
-      "[\"kurkure\",\"chips & nuts\"]"
-    ],
+    "tag": ["[\"kurkure\",\"chips & nuts\"]"],
     "prices": {
       "originalPrice": 299.83,
       "discount": 0,
@@ -26807,9 +26331,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738824857/product/Camel-Smoked-Almonds-40g-removebg-preview.png"
     ],
     "stock": 767,
-    "tag": [
-      "[\"chips & nuts\"]"
-    ],
+    "tag": ["[\"chips & nuts\"]"],
     "prices": {
       "originalPrice": 127.72,
       "discount": 0,
@@ -26916,9 +26438,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738824875/product/Blue-Diamond-Almonds-Smokehouse-43g-removebg-preview.png"
     ],
     "stock": 151,
-    "tag": [
-      "[\"chips & nuts\"]"
-    ],
+    "tag": ["[\"chips & nuts\"]"],
     "prices": {
       "originalPrice": 2.83,
       "discount": 0,
@@ -27025,9 +26545,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825024/product/M-M-Choco-Chocolate-45gm-removebg-preview.png"
     ],
     "stock": 297,
-    "tag": [
-      "[\"choco\",\"chocolate\"]"
-    ],
+    "tag": ["[\"choco\",\"chocolate\"]"],
     "prices": {
       "originalPrice": 153.44,
       "discount": 0,
@@ -27134,9 +26652,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825050/product/Lotte-Almond-Chocoball-46g-removebg-preview.png"
     ],
     "stock": 334,
-    "tag": [
-      "[\"lotte\",\"chocolate\"]"
-    ],
+    "tag": ["[\"lotte\",\"chocolate\"]"],
     "prices": {
       "originalPrice": 140.84,
       "discount": 0,
@@ -27243,9 +26759,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825108/product/Foxs-Crystal-Clear-Passiar-Mints-180g-removebg-preview.png"
     ],
     "stock": 248,
-    "tag": [
-      "[\"chocolate\"]"
-    ],
+    "tag": ["[\"chocolate\"]"],
     "prices": {
       "originalPrice": 42.89,
       "discount": 0,
@@ -27352,9 +26866,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825135/product/CHIKO-Assorted-Chocolate-Box-200g-removebg-preview.png"
     ],
     "stock": 543,
-    "tag": [
-      "[\"chocolate\"]"
-    ],
+    "tag": ["[\"chocolate\"]"],
     "prices": {
       "originalPrice": 147.01,
       "discount": 0,
@@ -27461,9 +26973,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825152/product/Alpenliebe-Smooth-Caramel-Candy-225g-removebg-preview.png"
     ],
     "stock": 284,
-    "tag": [
-      "[\"candy\"]"
-    ],
+    "tag": ["[\"candy\"]"],
     "prices": {
       "originalPrice": 49.01,
       "discount": 0,
@@ -27570,9 +27080,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825190/product/Mr-Noodles-Cup-Noodles-Magic-Masala-40g__1_-removebg-preview.png"
     ],
     "stock": 755,
-    "tag": [
-      "[\"mr-noodles\",\"noodles\"]"
-    ],
+    "tag": ["[\"mr-noodles\",\"noodles\"]"],
     "prices": {
       "originalPrice": 92.81,
       "discount": 0,
@@ -27679,9 +27187,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825212/product/Mama-Hot-Spicy-Flovour-Noodles-496-Gm-removebg-preview.png"
     ],
     "stock": 353,
-    "tag": [
-      "[\"mama-noodles\",\"noodles\"]"
-    ],
+    "tag": ["[\"mama-noodles\",\"noodles\"]"],
     "prices": {
       "originalPrice": 40.19,
       "discount": 0,
@@ -27788,9 +27294,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825236/product/Mama-Hot-Spicy-Flovour-Noodles-248g-removebg-preview.png"
     ],
     "stock": 9,
-    "tag": [
-      "[\"mama-noodles\",\"noodles\"]"
-    ],
+    "tag": ["[\"mama-noodles\",\"noodles\"]"],
     "prices": {
       "originalPrice": 267.59,
       "discount": 0,
@@ -27897,9 +27401,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825256/product/Maggi-Bangkok-Sw-eet-Chilli-Noodles-260g-removebg-preview.png"
     ],
     "stock": 627,
-    "tag": [
-      "[\"maggi-noodles\",\"noodles\"]"
-    ],
+    "tag": ["[\"maggi-noodles\",\"noodles\"]"],
     "prices": {
       "originalPrice": 81.56,
       "discount": 0,
@@ -28006,9 +27508,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825289/product/Doodles-Stick-Noodles-180-Gm-removebg-preview.png"
     ],
     "stock": 220,
-    "tag": [
-      "[\"doodles-noodles\",\"noodles\"]"
-    ],
+    "tag": ["[\"doodles-noodles\",\"noodles\"]"],
     "prices": {
       "originalPrice": 160.85,
       "discount": 0,
@@ -28106,9 +27606,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825307/product/Tropica-Mustard-Honey-250g-removebg-preview.png"
     ],
     "stock": 431,
-    "tag": [
-      "[\"tropica-mustard\",\"honey\"]"
-    ],
+    "tag": ["[\"tropica-mustard\",\"honey\"]"],
     "prices": {
       "originalPrice": 284.68,
       "discount": 0,
@@ -28206,9 +27704,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825337/product/Saffola-Honey-500ml-removebg-preview.png"
     ],
     "stock": 181,
-    "tag": [
-      "[\"saffola-honey\",\"honey\"]"
-    ],
+    "tag": ["[\"saffola-honey\",\"honey\"]"],
     "prices": {
       "originalPrice": 210.86,
       "discount": 0,
@@ -28306,9 +27802,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825359/product/Shefa-a-Natural-Honey-250g-removebg-preview.png"
     ],
     "stock": 548,
-    "tag": [
-      "[\"shefa\",\"honey\"]"
-    ],
+    "tag": ["[\"shefa\",\"honey\"]"],
     "prices": {
       "originalPrice": 92.63,
       "discount": 0,
@@ -28406,9 +27900,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825388/product/Dabur-Honey-250g-removebg-preview.png"
     ],
     "stock": 228,
-    "tag": [
-      "[\"dabur\",\"honey\"]"
-    ],
+    "tag": ["[\"dabur\",\"honey\"]"],
     "prices": {
       "originalPrice": 72.25,
       "discount": 0,
@@ -28506,9 +27998,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825382/product/Dabur-Honey-1-Kg-Vatika-Tin-Can-Oil-Free-removebg-preview.png"
     ],
     "stock": 688,
-    "tag": [
-      "[\"dabur\",\"honey\"]"
-    ],
+    "tag": ["[\"dabur\",\"honey\"]"],
     "prices": {
       "originalPrice": 262.85,
       "discount": 0,
@@ -28606,9 +28096,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825427/product/Aussiebee-Honey-312g-Glass-Bottle-removebg-preview.png"
     ],
     "stock": 341,
-    "tag": [
-      "[\"aussiebee-honey\",\"honey\"]"
-    ],
+    "tag": ["[\"aussiebee-honey\",\"honey\"]"],
     "prices": {
       "originalPrice": 96.26,
       "discount": 0,
@@ -28706,9 +28194,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825475/product/Aussiebee-Honey-375-Gm-Bottle-removebg-preview.png"
     ],
     "stock": 552,
-    "tag": [
-      "[\"aussiebee-honey\",\"honey\"]"
-    ],
+    "tag": ["[\"aussiebee-honey\",\"honey\"]"],
     "prices": {
       "originalPrice": 196.67,
       "discount": 0,
@@ -28806,9 +28292,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825489/product/Aussiebee-Honey-400g-Bottle-removebg-preview%281%29.png"
     ],
     "stock": 637,
-    "tag": [
-      "[\"aussiebee-honey\",\"honey\"]"
-    ],
+    "tag": ["[\"aussiebee-honey\",\"honey\"]"],
     "prices": {
       "originalPrice": 111.65,
       "discount": 0,
@@ -28906,9 +28390,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825505/product/Alshifa-Natural-Honey-250-Gm-removebg-preview.png"
     ],
     "stock": 756,
-    "tag": [
-      "[\"alshifa-honey\",\"honey\"]"
-    ],
+    "tag": ["[\"alshifa-honey\",\"honey\"]"],
     "prices": {
       "originalPrice": 264.42,
       "discount": 0,
@@ -29009,9 +28491,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825528/product/Pran-Mixed-Fruit-Jam-375gm-removebg-preview.png"
     ],
     "stock": 298,
-    "tag": [
-      "[\"pran-jam\",\"jam & jelly\"]"
-    ],
+    "tag": ["[\"pran-jam\",\"jam & jelly\"]"],
     "prices": {
       "originalPrice": 54.43,
       "discount": 0,
@@ -29112,9 +28592,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825545/product/Pran-Mango-Jam-375-Gm-removebg-preview.png"
     ],
     "stock": 720,
-    "tag": [
-      "[\"pran-jam\",\"jam & jelly\"]"
-    ],
+    "tag": ["[\"pran-jam\",\"jam & jelly\"]"],
     "prices": {
       "originalPrice": 209.63,
       "discount": 0,
@@ -29215,9 +28693,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825562/product/Pran-Apple-Jelly-375g-removebg-preview.png"
     ],
     "stock": 711,
-    "tag": [
-      "[\"pran-jelly\",\"jam & jelly\"]"
-    ],
+    "tag": ["[\"pran-jelly\",\"jam & jelly\"]"],
     "prices": {
       "originalPrice": 27.04,
       "discount": 0,
@@ -29318,9 +28794,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825585/product/Foster-Clark-Jam-Raspberry-450gm-removebg-preview.png"
     ],
     "stock": 1,
-    "tag": [
-      "[\"foster-clark-jam\",\"jam & jelly\"]"
-    ],
+    "tag": ["[\"foster-clark-jam\",\"jam & jelly\"]"],
     "prices": {
       "originalPrice": 270.4,
       "discount": 0,
@@ -29421,9 +28895,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825619/product/Ahmed-Mixed-Fruit-Jelly-500g-removebg-preview.png"
     ],
     "stock": 707,
-    "tag": [
-      "[\"fruit-jelly\",\"jam & jelly\"]"
-    ],
+    "tag": ["[\"fruit-jelly\",\"jam & jelly\"]"],
     "prices": {
       "originalPrice": 152.77,
       "discount": 0,
@@ -29545,9 +29017,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825647/product/Goddess-Garden-Broad-Spectrum-Spf-30-Natural-Mineral-Sunscreen-3-4-oz-removebg-preview.png"
     ],
     "stock": 433,
-    "tag": [
-      "[\"skin-care\",\"lotion\"]"
-    ],
+    "tag": ["[\"skin-care\",\"lotion\"]"],
     "prices": {
       "originalPrice": 20.83,
       "discount": 0,
@@ -29669,9 +29139,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825739/product/ultra-protect-sunscreen-lotion-removebg-preview.png"
     ],
     "stock": 550,
-    "tag": [
-      "[\"skin-care\",\"lotion\"]"
-    ],
+    "tag": ["[\"skin-care\",\"lotion\"]"],
     "prices": {
       "originalPrice": 159.13,
       "discount": 0,
@@ -29793,9 +29261,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825789/product/Earthly-Remedies-by-Erin-Face-Wash-each-removebg-preview%281%29.png"
     ],
     "stock": 727,
-    "tag": [
-      "[\"skin-care\",\"face wash\"]"
-    ],
+    "tag": ["[\"skin-care\",\"face wash\"]"],
     "prices": {
       "originalPrice": 120.7,
       "discount": 0,
@@ -29917,9 +29383,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825454/product/Best-Choice-Absorbing-Moisturizing-Soap-7-5-oz-removebg-preview%281%29.png"
     ],
     "stock": 625,
-    "tag": [
-      "[\"skin-care\",\"lotion\"]"
-    ],
+    "tag": ["[\"skin-care\",\"lotion\"]"],
     "prices": {
       "originalPrice": 95.12,
       "discount": 0,
@@ -30041,9 +29505,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825816/product/Banana-Boat-for-men-Triple-Defense-SPF-30-Sunscreen-Lotion-2fl-oz-removebg-preview.png"
     ],
     "stock": 710,
-    "tag": [
-      "[\"skin-care\",\"lotion\"]"
-    ],
+    "tag": ["[\"skin-care\",\"lotion\"]"],
     "prices": {
       "originalPrice": 102.47,
       "discount": 0,
@@ -30165,9 +29627,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825840/product/Gillette-Vector-2s-Cartridges-removebg-preview.png"
     ],
     "stock": 327,
-    "tag": [
-      "[\"gillette\",\"shaving needs\"]"
-    ],
+    "tag": ["[\"gillette\",\"shaving needs\"]"],
     "prices": {
       "originalPrice": 199.08,
       "discount": 0,
@@ -30289,9 +29749,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825860/product/Gillette-Vector-1-Refillable-removebg-preview.png"
     ],
     "stock": 746,
-    "tag": [
-      "[\"gillette\",\"shaving needs\"]"
-    ],
+    "tag": ["[\"gillette\",\"shaving needs\"]"],
     "prices": {
       "originalPrice": 174.85,
       "discount": 0,
@@ -30413,9 +29871,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825878/product/Schick-Exacta-2-Pouch-2-1-Free-removebg-preview.png"
     ],
     "stock": 665,
-    "tag": [
-      "[\"schick\",\"shaving needs\"]"
-    ],
+    "tag": ["[\"schick\",\"shaving needs\"]"],
     "prices": {
       "originalPrice": 176.21,
       "discount": 0,
@@ -30537,9 +29993,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825898/product/Gillette-Foam-98g-Sensitive-removebg-preview.png"
     ],
     "stock": 486,
-    "tag": [
-      "[\"gillette\",\"shaving needs\"]"
-    ],
+    "tag": ["[\"gillette\",\"shaving needs\"]"],
     "prices": {
       "originalPrice": 114.26,
       "discount": 0,
@@ -30661,9 +30115,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825920/product/Denim-Black-After-Shave-100-Ml-removebg-preview.png"
     ],
     "stock": 637,
-    "tag": [
-      "[\"denim\",\"shaving needs\"]"
-    ],
+    "tag": ["[\"denim\",\"shaving needs\"]"],
     "prices": {
       "originalPrice": 209.02,
       "discount": 0,
@@ -30785,9 +30237,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825938/product/Pepsodent-Action-Toothbrush-Medium-removebg-preview.png"
     ],
     "stock": 400,
-    "tag": [
-      "[\"oral care\",\"toothbrush\"]"
-    ],
+    "tag": ["[\"oral care\",\"toothbrush\"]"],
     "prices": {
       "originalPrice": 74.1,
       "discount": 0,
@@ -30909,9 +30359,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738825961/product/Kshore-Kids-Ex-Soft-Toothbrush-522-removebg-preview.png"
     ],
     "stock": 571,
-    "tag": [
-      "[\"oral care\",\"toothpaste\"]"
-    ],
+    "tag": ["[\"oral care\",\"toothpaste\"]"],
     "prices": {
       "originalPrice": 164.36,
       "discount": 0,
@@ -31033,9 +30481,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738828518/product/Eurofresh-S-Toothpaste-Strawb-Flv-50g-removebg-preview.png"
     ],
     "stock": 661,
-    "tag": [
-      "[\"oral care\",\"toothpaste\"]"
-    ],
+    "tag": ["[\"oral care\",\"toothpaste\"]"],
     "prices": {
       "originalPrice": 42.95,
       "discount": 0,
@@ -31157,9 +30603,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738828593/product/Colgate-Plax-Complete-Care-Mouthwash-250ml-removebg-preview.png"
     ],
     "stock": 8,
-    "tag": [
-      "[\"oral care\",\"mouthwash\"]"
-    ],
+    "tag": ["[\"oral care\",\"mouthwash\"]"],
     "prices": {
       "originalPrice": 129.94,
       "discount": 0,
@@ -31281,9 +30725,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738828614/product/Closeup-Coco-B-Charcoal-Toothpaste-140g-removebg-preview.png"
     ],
     "stock": 493,
-    "tag": [
-      "[\"oral care\",\"toothpaste\"]"
-    ],
+    "tag": ["[\"oral care\",\"toothpaste\"]"],
     "prices": {
       "originalPrice": 141.05,
       "discount": 0,
@@ -31405,9 +30847,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738828646/product/Pantene-Expert-Pro-V-Intense-Hydration-Shampoo-3-9-fl-oz-removebg-preview.png"
     ],
     "stock": 447,
-    "tag": [
-      "[\"hair care\",\"shampoo\"]"
-    ],
+    "tag": ["[\"hair care\",\"shampoo\"]"],
     "prices": {
       "originalPrice": 219.32,
       "discount": 0,
@@ -31529,9 +30969,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738828671/product/Head-Shoulders-Ocean-Lift-Head-and-Shoulders-Ocean-Lift-Anti-Dandruff-Shampoo-23-7-Fl-Oz-Female-Hair-removebg-preview.png"
     ],
     "stock": 544,
-    "tag": [
-      "[\"hair care\",\"shampoo\"]"
-    ],
+    "tag": ["[\"hair care\",\"shampoo\"]"],
     "prices": {
       "originalPrice": 64.38,
       "discount": 0,
@@ -31654,9 +31092,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738828693/product/Redken-Conditioner-Real-Control-8-5-oz-removebg-preview.png"
     ],
     "stock": 422,
-    "tag": [
-      "[\"hair care\",\"conditioner\"]"
-    ],
+    "tag": ["[\"hair care\",\"conditioner\"]"],
     "prices": {
       "originalPrice": 0.35,
       "discount": 0,
@@ -31778,9 +31214,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738828636/product/Pantene-Styling-Pantene-Pro-V-Power-Up-Daily-Treatment-16-9-fl-oz-Female-Hair-Care-16-9fl-oz-removebg-preview.png"
     ],
     "stock": 476,
-    "tag": [
-      "[\"hair care\",\"conditioner\"]"
-    ],
+    "tag": ["[\"hair care\",\"conditioner\"]"],
     "prices": {
       "originalPrice": 78.56,
       "discount": 0,
@@ -31902,9 +31336,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738828830/product/Herbal-Essences-Bio-Renew-Dry-Shampoo-4-9-fl-oz-removebg-preview.png"
     ],
     "stock": 435,
-    "tag": [
-      "[\"hair care\",\"shampoo\"]"
-    ],
+    "tag": ["[\"hair care\",\"shampoo\"]"],
     "prices": {
       "originalPrice": 23.58,
       "discount": 0,
@@ -32026,9 +31458,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738828849/product/Dark-and-Lovely-6-Week-Anti-Reversion-System-Conditioner-12-fl-oz-removebg-preview.png"
     ],
     "stock": 428,
-    "tag": [
-      "[\"hair care\",\"conditioner\"]"
-    ],
+    "tag": ["[\"hair care\",\"conditioner\"]"],
     "prices": {
       "originalPrice": 152.48,
       "discount": 0,
@@ -32150,9 +31580,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738828867/product/Clear-Scalp-Hair-Beauty-Therapy-Volumizing-Root-Boost-Nourishing-Daily-Conditioner-12-7-fl-oz-removebg-preview.png"
     ],
     "stock": 150,
-    "tag": [
-      "[\"hair care\",\"conditioner\"]"
-    ],
+    "tag": ["[\"hair care\",\"conditioner\"]"],
     "prices": {
       "originalPrice": 182.02,
       "discount": 0,
@@ -32274,9 +31702,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738828897/product/Revlon-Lipstick-Creme-Temptress-680-0-15oz-removebg-preview.png"
     ],
     "stock": 190,
-    "tag": [
-      "[\"cosmetics\",\"lipstick\"]"
-    ],
+    "tag": ["[\"cosmetics\",\"lipstick\"]"],
     "prices": {
       "originalPrice": 118.22,
       "discount": 0,
@@ -32398,9 +31824,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738828932/product/Cover-Girl-Olay-Face-Lift-Effect-Firming-Makeup-Light-Medium-340-Foundation-1-5-fl-oz-removebg-preview.png"
     ],
     "stock": 77,
-    "tag": [
-      "[\"cosmetics\",\"nail color\"]"
-    ],
+    "tag": ["[\"cosmetics\",\"nail color\"]"],
     "prices": {
       "originalPrice": 269.3,
       "discount": 0,
@@ -32522,9 +31946,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738828950/product/Essie-Midnight-Cami-Nail-Color-0-46-fl-oz-removebg-preview%281%29.png"
     ],
     "stock": 235,
-    "tag": [
-      "[\"cosmetics\",\"nail color\"]"
-    ],
+    "tag": ["[\"cosmetics\",\"nail color\"]"],
     "prices": {
       "originalPrice": 210.76,
       "discount": 0,
@@ -32646,9 +32068,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738829046/product/Zoya-N-E-Amanda-Nail-Polish-0-5fl-oz-removebg-preview.png"
     ],
     "stock": 775,
-    "tag": [
-      "[\"cosmetics\",\"nail polis\"]"
-    ],
+    "tag": ["[\"cosmetics\",\"nail polis\"]"],
     "prices": {
       "originalPrice": 74.38,
       "discount": 0,
@@ -32770,9 +32190,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738829074/product/Color-Elixir-By-Color-Sensational-Dashing-Orchid-Lipcolor-0-17fl-oz-removebg-preview.png"
     ],
     "stock": 770,
-    "tag": [
-      "[\"cosmetics\",\"lipcolor\"]"
-    ],
+    "tag": ["[\"cosmetics\",\"lipcolor\"]"],
     "prices": {
       "originalPrice": 6.86,
       "discount": 0,
@@ -32894,9 +32312,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738829190/product/Via-Nature-Skin-Lotion-Moisturizing-Vanilla-Coconut-8oz-removebg-preview.png"
     ],
     "stock": 786,
-    "tag": [
-      "[\"body care\",\"lotion\"]"
-    ],
+    "tag": ["[\"body care\",\"lotion\"]"],
     "prices": {
       "originalPrice": 131.06,
       "discount": 0,
@@ -33018,9 +32434,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738829233/product/Terra-Nova-Gardenia-Petal-Soft-Lotion-8-25fl-oz-removebg-preview.png"
     ],
     "stock": 692,
-    "tag": [
-      "[\"body care\",\"lotion\"]"
-    ],
+    "tag": ["[\"body care\",\"lotion\"]"],
     "prices": {
       "originalPrice": 18.66,
       "discount": 0,
@@ -33142,9 +32556,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738829405/product/Saavy-Naturals-Body-Wash-With-Moringa-Oil-Jasmine-8-fl-oz-removebg-preview.png"
     ],
     "stock": 313,
-    "tag": [
-      "[\"body care\",\"body oil\"]"
-    ],
+    "tag": ["[\"body care\",\"body oil\"]"],
     "prices": {
       "originalPrice": 239.34,
       "discount": 0,
@@ -33266,9 +32678,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738829472/product/Giovanni-Body-Lotion-Ultra-Sleek-For-All-Skin-Types-8-5-fl-oz-removebg-preview.png"
     ],
     "stock": 590,
-    "tag": [
-      "[\"body care\",\"lotion\"]"
-    ],
+    "tag": ["[\"body care\",\"lotion\"]"],
     "prices": {
       "originalPrice": 168.48,
       "discount": 0,
@@ -33387,9 +32797,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738829491/product/Dove-Creme-Mousse-Sensitive-Skin-Nourishing-Body-Wash-18-fl-oz-removebg-preview.png"
     ],
     "stock": 580,
-    "tag": [
-      "[\"body care\",\"creme\"]"
-    ],
+    "tag": ["[\"body care\",\"creme\"]"],
     "prices": {
       "originalPrice": 114.3,
       "discount": 0,
@@ -33505,9 +32913,7 @@
       "https://i.ibb.co/tx3FfLr/Dial-Nutri-Skin-Ultra-Hydrating-Body-Wash-Grape-Seed-Oil-Lemongrass-16-fl-oz.jpg"
     ],
     "stock": 282,
-    "tag": [
-      "[\"body care\",\"seed oil\"]"
-    ],
+    "tag": ["[\"body care\",\"seed oil\"]"],
     "prices": {
       "originalPrice": 79.3,
       "discount": 0,
@@ -33629,9 +33035,7 @@
       "https://i.ibb.co/J7cB7YY/Care-One-Moisturizing-Body-Wash-Cucumber-Melon-12-fl-o.jpg"
     ],
     "stock": 419,
-    "tag": [
-      "[\"body care\",\"gel\"]"
-    ],
+    "tag": ["[\"body care\",\"gel\"]"],
     "prices": {
       "originalPrice": 284.21,
       "discount": 0,
@@ -33753,9 +33157,7 @@
       "https://i.ibb.co/3NqJ10Q/Avalon-Organics-bath-Shower-Gel-Gluten-Free-Cucumber-12-oz.jpg"
     ],
     "stock": 203,
-    "tag": [
-      "[\"body care\",\"gel\"]"
-    ],
+    "tag": ["[\"body care\",\"gel\"]"],
     "prices": {
       "originalPrice": 136.85,
       "discount": 0,
@@ -33877,9 +33279,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738829516/product/Savlon-Fresh-Antiseptic-Soap-100-Gm-removebg-preview.png"
     ],
     "stock": 74,
-    "tag": [
-      "[\"bath\",\"soap\"]"
-    ],
+    "tag": ["[\"bath\",\"soap\"]"],
     "prices": {
       "originalPrice": 59.23,
       "discount": 0,
@@ -34001,9 +33401,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738829554/product/Sandalina-Soap-125-Gm-removebg-preview.png"
     ],
     "stock": 479,
-    "tag": [
-      "[\"bath\",\"soap\"]"
-    ],
+    "tag": ["[\"bath\",\"soap\"]"],
     "prices": {
       "originalPrice": 8.32,
       "discount": 0,
@@ -34125,9 +33523,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738829582/product/Nivea-Cr-me-Care-Soap-75g-removebg-preview.png"
     ],
     "stock": 179,
-    "tag": [
-      "[\"bath\",\"soap\"]"
-    ],
+    "tag": ["[\"bath\",\"soap\"]"],
     "prices": {
       "originalPrice": 79.24,
       "discount": 0,
@@ -34246,9 +33642,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738829614/product/Neem-Original-honey-Turmeric-Soap-75g-removebg-preview.png"
     ],
     "stock": 137,
-    "tag": [
-      "[\"bath\",\"soap\"]"
-    ],
+    "tag": ["[\"bath\",\"soap\"]"],
     "prices": {
       "originalPrice": 251.57,
       "discount": 0,
@@ -34346,9 +33740,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738829640/product/Harmony-Orange-Satsuma-Soap-70g-removebg-preview.png"
     ],
     "stock": 283,
-    "tag": [
-      "[\"bath\",\"soap\"]"
-    ],
+    "tag": ["[\"bath\",\"soap\"]"],
     "prices": {
       "originalPrice": 15.98,
       "discount": 0,
@@ -34446,9 +33838,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738829666/product/Glory-Adult-Diaper-Large-8-Packet-removebg-preview.png"
     ],
     "stock": 16,
-    "tag": [
-      "[\"baby care\",\"baby accessories\"]"
-    ],
+    "tag": ["[\"baby care\",\"baby accessories\"]"],
     "prices": {
       "originalPrice": 202.02,
       "discount": 0,
@@ -34549,9 +33939,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738829710/product/Cerelac-Wheat-apple-Cornflakes-400-Gm-BIB-removebg-preview.png"
     ],
     "stock": 597,
-    "tag": [
-      "[\"baby care\",\"baby-food\"]"
-    ],
+    "tag": ["[\"baby care\",\"baby-food\"]"],
     "prices": {
       "originalPrice": 235.67,
       "discount": 0,
@@ -34652,9 +34040,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738829743/product/Cerelac-Wheat-apple-Cherry-400-Gm-BIB-removebg-preview.png"
     ],
     "stock": 379,
-    "tag": [
-      "[\"baby care\",\"baby-food\"]"
-    ],
+    "tag": ["[\"baby care\",\"baby-food\"]"],
     "prices": {
       "originalPrice": 243.28,
       "discount": 0,
@@ -34752,9 +34138,7 @@
       "https://res.cloudinary.com/ahossain/image/upload/v1738829763/product/Biomil-1-MINI-Tin-200-Gm-removebg-preview.png"
     ],
     "stock": 51,
-    "tag": [
-      "[\"baby care\",\"baby-food\"]"
-    ],
+    "tag": ["[\"baby care\",\"baby-food\"]"],
     "prices": {
       "originalPrice": 87.02,
       "discount": 0,

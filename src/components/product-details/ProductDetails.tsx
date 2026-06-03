@@ -15,7 +15,7 @@ import useProductAction from "@hooks/useProductAction";
 import Rating from "@components/common/Rating";
 import { Button } from "@components/ui/button";
 import ProductReviews from "./ProductReviews";
-import { FiChevronRight, FiHeadphones } from "react-icons/fi";
+import { FiChevronRight, FiHeadphones, FiBriefcase } from "react-icons/fi";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import CampaignCountdown from "@components/campaign/CampaignCountdown";
@@ -294,6 +294,25 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
                     />
                   </div>
                 </div>
+
+                {(product as any)?.supplier && (
+                  <div className="mt-6 border-t border-border pt-6">
+                    <h3 className="text-sm font-medium text-foreground mb-3">
+                      Supplier
+                    </h3>
+                    <div className="flex items-center gap-3 rounded-lg border border-border bg-muted/30 px-4 py-3">
+                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary/10">
+                        <FiBriefcase className="h-4 w-4 text-primary" />
+                      </div>
+                      <div className="min-w-0">
+                        <p className="text-xs text-muted-foreground">Supplied by</p>
+                        <p className="text-sm font-semibold text-foreground truncate">
+                          {String((product as any).supplier)}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                )}
 
                 <div className="mt-6 border-t border-border pt-6">
                   <h3 className="text-sm font-medium text-foreground">
