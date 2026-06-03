@@ -1,11 +1,10 @@
 import { Link, useNavigate } from "react-router-dom";
 import { FacebookShareButton, TwitterShareButton } from "react-share";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 
 // internal imports
 
 import Tags from "@components/common/Tags";
-import Card from "@components/product-details/Card";
 import Discount from "@components/common/Discount";
 import ProductCard from "@components/product/ProductCard";
 import VariantList from "@components/variants/VariantList";
@@ -88,6 +87,17 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
     campaignStartTime?: string;
   };
 
+  const [videoOpen, setVideoOpen] = useState(false);
+
+  const videoLink = String((product as any)?.video?.link ?? "");
+  const ytId =
+    videoLink.match(
+      /(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]+)/,
+    )?.[1] ?? null;
+  const ytThumb = ytId
+    ? `https://img.youtube.com/vi/${ytId}/mqdefault.jpg`
+    : null;
+
   return (
     <>
       <div className="bg-white px-0">
@@ -118,27 +128,53 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
             </ol>
           </div>
           {/* Product */}
-          <div className="relative lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-8 lg:gap-y-8 mb-16 pt-8 md:pt-0">
+          <div className="relative lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-10 pt-8 md:pt-0">
             {/* Product image */}
-            <div className="lg:col-span-1 lg:row-end-1">
-              <div className="overflow-hidden w-full mx-auto">
-                {productImages[0] ? (
-                  <img
-                    src={(selectedImage as string) || productImages[0]}
-                    alt="product"
-                    className="aspect-square w-full rounded-xl bg-muted object-cover"
-                  />
-                ) : (
-                  <img
-                    src="/placeholder.png"
-                    alt="product Image"
-                    className="aspect-square w-full rounded-xl bg-muted object-cover"
-                  />
+            <div className="lg:col-span-1 lg:row-end-1 lg:sticky lg:top-6 lg:self-start">
+              <div className="flex flex-col lg:flex-row gap-3">
+                {/* Vertical thumbnail strip — lg+ only */}
+                {productImages.length > 1 && (
+                  <div className="hidden lg:flex flex-col gap-2 w-20 shrink-0">
+                    {productImages.map((img, i) => (
+                      <button
+                        key={i}
+                        type="button"
+                        onClick={() =>
+                          (setSelectedImage as (img: string) => void)(img)
+                        }
+                        className="h-20 w-20 shrink-0 overflow-hidden rounded-lg border border-border hover:border-primary transition-colors"
+                      >
+                        <img
+                          src={img}
+                          alt="product thumbnail"
+                          className="h-full w-full object-cover"
+                        />
+                      </button>
+                    ))}
+                  </div>
                 )}
+
+                {/* Main image */}
+                <div className="flex-1 overflow-hidden">
+                  {productImages[0] ? (
+                    <img
+                      src={(selectedImage as string) || productImages[0]}
+                      alt="product"
+                      className="aspect-square w-full rounded-xl bg-muted object-cover"
+                    />
+                  ) : (
+                    <img
+                      src="/placeholder.png"
+                      alt="product Image"
+                      className="aspect-square w-full rounded-xl bg-muted object-cover"
+                    />
+                  )}
+                </div>
               </div>
 
+              {/* Horizontal thumbnail strip — below lg */}
               {productImages.length > 1 && (
-                <div className="flex flex-row flex-wrap mt-4">
+                <div className="flex lg:hidden flex-row flex-wrap mt-4">
                   <ImageCarousel
                     images={productImages}
                     handleChangeImage={
@@ -147,10 +183,22 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
                   />
                 </div>
               )}
+
+              {/* Add to compare — below image */}
+              <div className="mt-4 flex justify-center">
+                <button
+                  type="button"
+                  onClick={() => handleAddToCart(1)}
+                  className="h-11 text-sm font-semibold inline-flex items-center gap-2 border border-primary text-primary rounded-md hover:bg-primary hover:text-white transition-colors px-8"
+                >
+                  <ShoppingCartIcon className="size-5 shrink-0" />
+                  Add Inquiry Basket to Compare
+                </button>
+              </div>
             </div>
 
             {/* Product details */}
-            <div className="mt-6 lg:mt-0 self-start z-10 mx-auto lg:col-span-1 lg:row-span-2 lg:row-end-2 lg:max-w-none">
+            <div className="mt-6 lg:mt-0 self-start z-10 mx-auto lg:mx-0 lg:col-span-1 lg:row-span-2 lg:row-end-2 lg:max-w-none">
               {/* Campaign Banner */}
               {isInCampaign && campaign && (
                 <div className="mb-4 px-4 py-3 rounded-xl bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800">
@@ -182,12 +230,12 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
                 </div>
               )}
 
-              <div className="mb-2 md:mb-2.5 block -mt-1.5">
+              <div className="mb-2 md:mb-5 block -mt-1.5">
                 <h1 className="leading-7 text-lg md:text-xl lg:text-2xl mb-1 font-semibold text-foreground">
                   {String(product?.title ?? "")}
                 </h1>
               </div>
-              <div className="flex items-center mb-8">
+              <div className="flex items-center mb-8 border-t border-border pt-5">
                 <div className="product-price font-bold">
                   <span className="inline-block text-xl">
                     BDT {(product?.prices?.minPrice ?? 0).toFixed(2)}-
@@ -225,241 +273,398 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
               </div>
 
               <div>
-                <div className="flex flex-col sm:flex-row items-stretch gap-3 mt-4">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-4">
                   <Button
-                    onClick={() => handleAddToCart(1)}
-                    className="text-sm leading-4 inline-flex items-center gap-2 cursor-pointer transition ease-in-out duration-300 font-semibold text-center justify-center border-0 border-transparent rounded-md focus-visible:outline-none focus:outline-none px-4 md:px-6 lg:px-8 py-4 md:py-3.5 lg:py-4 w-full sm:flex-1 h-11"
                     variant="create"
+                    className="w-full h-11 text-sm font-semibold has-[>svg]:px-4"
                   >
-                    <ShoppingCartIcon className="size-6 shrink-0" />
-                    Add Inquiry Basket to Compare
+                    Start Order Request
                   </Button>
                   <button
                     type="button"
                     onClick={() => navigate("/inquiry", { state: { product } })}
-                    className="w-full sm:flex-1 h-11 text-sm font-semibold border border-primary text-primary rounded-md hover:bg-primary hover:text-white transition-colors"
+                    className="w-full h-11 text-sm font-semibold border border-primary text-primary rounded-md hover:bg-primary hover:text-white transition-colors px-4"
                   >
                     Send Inquiry
                   </button>
-                </div>
-
-                <div className="flex items-center mt-4">
-                  <div className="flex items-center justify-between space-s-3 sm:space-s-4 w-full">
-                    <div>
-                      <span className="font-semibold py-1 text-sm d-block">
-                        <span className="text-muted-foreground">Category:</span>{" "}
-                        <Link
-                          to={`/search?category=${category_name}&_id=${typeof product?.category === "object" ? product.category?._id : ""}`}
-                          className="cursor-pointer"
-                        >
-                          <button
-                            type="button"
-                            className="text-muted-foreground font-medium ml-2 hover:text-primary"
-                          >
-                            {category_display_name}
-                          </button>
-                        </Link>
-                      </span>
-
-                      <Tags product={product} />
-                    </div>
-                  </div>
-                </div>
-                <div className="flex items-center text-sm text-muted-foreground mt-3">
-                  <FiHeadphones className="mr-1 text-md" />
-                  Call Us for Order
                   <a
-                    href={`tel:${globalSetting?.contact || "+099949343"}`}
-                    className="font-bold text-primary ml-1"
+                    href={`https://wa.me/?text=${encodeURIComponent(String(product?.title ?? ""))}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full h-11 text-sm font-semibold inline-flex items-center justify-center gap-2 rounded-md bg-[#25D366] text-white hover:bg-[#1ebe5d] transition-colors px-4"
                   >
-                    {globalSetting?.contact || "+099949343"}
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="h-4 w-4 shrink-0"
+                      fill="currentColor"
+                    >
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                    Buy On Chat
                   </a>
                 </div>
 
-                <div className="mt-6 border-t border-border pt-6">
-                  <h3 className="text-sm font-medium text-foreground">
-                    Highlights
-                  </h3>
-                  <div className="mt-4">
-                    <Card
-                      storeCustomization={storeCustomization ?? undefined}
-                    />
+                {/* Product Details Preview */}
+                <div className="mt-6 rounded-lg border border-border overflow-hidden text-sm">
+                  <button
+                    type="button"
+                    onClick={() =>
+                      (() => {
+                        const el = document.getElementById("product-info");
+                        if (!el) return;
+                        const navbar = document.querySelector<HTMLElement>(".sticky.top-0");
+                        const offset = (navbar?.offsetHeight ?? 80) + 16;
+                        window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - offset, behavior: "smooth" });
+                      })()
+                    }
+                    className="w-full flex items-center justify-between px-4 py-3 bg-muted/30 hover:bg-muted/50 transition-colors border-b border-border"
+                  >
+                    <span className="text-base font-bold text-foreground">Product Details</span>
+                    <FiChevronRight className="h-4 w-4 text-muted-foreground shrink-0" />
+                  </button>
+                  <div className="px-4 py-1 divide-y divide-border">
+                    {((product.specifications as { label: string; value: string }[] | undefined) ?? [])
+                      .slice(0, 3)
+                      .map((spec, i) => (
+                        <div key={i} className="flex items-start py-2">
+                          <span className="w-2/5 text-muted-foreground shrink-0">{spec.label}:</span>
+                          <span className="font-semibold text-foreground">{spec.value}</span>
+                        </div>
+                      ))}
+                    {!(product.specifications as any[])?.length && (
+                      <div className="py-2 text-muted-foreground">
+                        {String(product?.description ?? "").slice(0, 120)}…
+                      </div>
+                    )}
                   </div>
                 </div>
 
-                {(product as any)?.supplier && (
-                  <div className="mt-6 border-t border-border pt-6">
-                    <h3 className="text-sm font-medium text-foreground mb-3">
-                      Supplier
-                    </h3>
-                    <div className="flex items-center gap-3 rounded-lg border border-border bg-muted/30 px-4 py-3">
-                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary/10">
-                        <FiBriefcase className="h-4 w-4 text-primary" />
-                      </div>
-                      <div className="min-w-0">
-                        <p className="text-xs text-muted-foreground">
-                          Supplied by
-                        </p>
-                        <p className="text-sm font-semibold text-foreground truncate">
-                          {String((product as any).supplier)}
-                        </p>
-                      </div>
+                {/* Shipping */}
+                <div className="mt-4 rounded-lg border border-border overflow-hidden text-sm">
+                  <div className="px-4 py-3 bg-muted/30 border-b border-border">
+                    <p className="text-base font-bold text-foreground">Shipping</p>
+                  </div>
+                  <div className="px-4 py-3">
+                    <div className="flex items-start gap-2">
+                      <span className="w-2/5 text-muted-foreground shrink-0">Shipping Cost:</span>
+                      <span className="text-foreground">Contact the supplier about freight and estimated delivery time.</span>
                     </div>
                   </div>
-                )}
+                </div>
 
-                <div className="mt-6 border-t border-border pt-6">
-                  <h3 className="text-sm font-medium text-foreground">
-                    Share your social network
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    For get lots of traffic from social network share this
-                    product
-                  </p>
-                  <ul role="list" className="mt-4 flex items-center space-x-6">
-                    <li>
-                      <FacebookShareButton
-                        url={`${globalSetting?.meta_url || window.location.origin}/product/${product?.slug}`}
-                      >
-                        <a
-                          href="#"
-                          className="flex size-6 items-center justify-center text-muted-foreground hover:text-muted-foreground"
-                        >
-                          <span className="sr-only">Share on Facebook</span>
-                          <svg
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                            aria-hidden="true"
-                            className="size-5"
-                          >
-                            <path
-                              d="M20 10c0-5.523-4.477-10-10-10S0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.988C16.343 19.128 20 14.991 20 10z"
-                              clipRule="evenodd"
-                              fillRule="evenodd"
-                            />
-                          </svg>
-                        </a>
-                      </FacebookShareButton>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="flex size-6 items-center justify-center text-muted-foreground hover:text-muted-foreground"
-                      >
-                        <span className="sr-only">Share on Instagram</span>
-                        <svg
-                          fill="currentColor"
-                          viewBox="0 0 24 24"
-                          aria-hidden="true"
-                          className="size-6"
-                        >
-                          <path
-                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                            clipRule="evenodd"
-                            fillRule="evenodd"
-                          />
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <TwitterShareButton
-                        url={`${globalSetting?.meta_url || window.location.origin}/product/${product?.slug}`}
-                      >
-                        <a
-                          href="#"
-                          className="flex size-6 items-center justify-center text-muted-foreground hover:text-muted-foreground"
-                        >
-                          <span className="sr-only">Share on X</span>
-                          <svg
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                            aria-hidden="true"
-                            className="size-5"
-                          >
-                            <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
-                          </svg>
-                        </a>
-                      </TwitterShareButton>
-                    </li>
-                  </ul>
+                {/* Payment Guarantee */}
+                <div className="mt-4 rounded-lg border border-border overflow-hidden text-sm">
+                  <div className="px-4 py-3 bg-muted/30 border-b border-border">
+                    <p className="text-base font-bold text-foreground">Payment Guarantee</p>
+                  </div>
+                  <div className="px-4 py-3 space-y-3">
+                    <div className="flex items-start gap-2">
+                      <span className="w-2/5 text-muted-foreground shrink-0 pt-0.5">Payment Methods:</span>
+                      <div className="flex flex-col gap-1.5">
+                        <div className="flex flex-wrap gap-1">
+                          {["T/T", "PayPal", "Apple Pay", "Google Pay", "Visa", "Mastercard", "Amex", "Discover"].map((m) => (
+                            <span key={m} className="inline-flex items-center px-1.5 py-0.5 rounded border border-border text-[11px] font-medium text-foreground bg-background whitespace-nowrap">
+                              {m}
+                            </span>
+                          ))}
+                        </div>
+                        <span className="text-muted-foreground text-xs">Support payments in USD</span>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="w-2/5 text-muted-foreground shrink-0">Secure payments:</span>
+                      <span className="text-foreground">Every payment you make is protected by our secure platform.</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="w-2/5 text-muted-foreground shrink-0">Refund policy:</span>
+                      <span className="text-foreground">Claim a refund if your order doesn't ship, is missing, or arrives with product issues.</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            {/* products details and other info */}
-            <div className="mx-auto w-full lg:col-span-2 lg:my-0 my-8 lg:max-w-none">
-              <TabGroup defaultIndex={0}>
-                <div className="border-b border-border">
-                  <TabList className="-mb-px flex space-x-8 overflow-x-auto no-scrollbar">
-                    <Tab className="cursor-pointer border-b-2 border-transparent pb-3 text-sm font-medium whitespace-nowrap text-muted-foreground hover:border-border focus:outline-0 hover:text-foreground data-selected:border-primary data-selected:text-primary">
-                      Description
-                    </Tab>
-
-                    <Tab className="cursor-pointer border-b-2 border-transparent pb-3 text-sm font-medium whitespace-nowrap text-muted-foreground hover:border-border focus:outline-0 hover:text-foreground data-selected:border-primary data-selected:text-primary">
-                      Specification
-                    </Tab>
-
-                    {/* <Tab className="cursor-pointer border-b-2 border-transparent pb-3 text-sm font-medium whitespace-nowrap text-muted-foreground hover:border-border focus:outline-0 hover:text-foreground data-selected:border-primary data-selected:text-primary">
-                      Customer Reviews
-                    </Tab> */}
-                  </TabList>
-                </div>
-                <TabPanels as={Fragment}>
-                  <TabPanel className="pt-8">
-                    <h3 className="sr-only">Product Description</h3>
-                    <p className="text-sm leading-6 text-muted-foreground md:leading-6 mb-3">
-                      {isReadMore
-                        ? String(product?.description ?? "")?.slice(0, 150)
-                        : String(product?.description ?? "")}
-                    </p>
-                    <div className="text-sm text-muted-foreground [&_h4]:mt-5 [&_h4]:font-medium [&_h4]:text-foreground [&_li]:pl-2 [&_li::marker]:text-muted-foreground [&_p]:my-2 [&_p]:text-sm/6 [&_ul]:my-4 [&_ul]:list-disc [&_ul]:space-y-1 [&_ul]:pl-5 [&_ul]:text-sm/6 [&>:first-child]:mt-0" />
-                  </TabPanel>
-                  <TabPanel className="pt-8">
-                    <h3 className="sr-only">Product Specification</h3>
-                    {product?.specifications &&
-                    (
-                      product.specifications as {
-                        label: string;
-                        value: string;
-                      }[]
-                    ).length > 0 ? (
-                      <table className="w-full text-sm border border-border rounded-lg overflow-hidden">
-                        <tbody>
-                          {(
-                            product.specifications as {
-                              label: string;
-                              value: string;
-                            }[]
-                          ).map((spec, i) => (
-                            <tr
-                              key={i}
-                              className={
-                                i % 2 === 0 ? "bg-muted/40" : "bg-background"
-                              }
-                            >
-                              <td className="py-2.5 px-4 font-medium text-foreground w-1/3 border-r border-border">
-                                {spec.label}
-                              </td>
-                              <td className="py-2.5 px-4 text-muted-foreground">
-                                {spec.value}
-                              </td>
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
-                    ) : (
-                      <p className="text-sm text-muted-foreground">
-                        No specifications available.
-                      </p>
-                    )}
-                  </TabPanel>
-                  {/* <TabPanel className="-mb-10">
-                    <h3 className="sr-only">Customer Reviews</h3>
-                    <ProductReviews reviews={reviews} />
-                  </TabPanel> */}
-                </TabPanels>
-              </TabGroup>
-            </div>
           </div>
+          {/* products details and other info */}
+          <div id="product-info" className="mx-auto w-full my-8 mb-16 max-w-none">
+              <div className="flex flex-col lg:flex-row gap-8">
+                {/* Left: tabs */}
+                <div className="flex-1 min-w-0 border border-border rounded-md p-4 md:p-6">
+                  <TabGroup defaultIndex={0}>
+                    <div className="border-b border-border">
+                      <TabList className="-mb-px flex space-x-8 overflow-x-auto no-scrollbar">
+                        <Tab className="cursor-pointer border-b-2 border-transparent pb-3 text-xs font-semibold uppercase tracking-wide whitespace-nowrap text-muted-foreground hover:border-border focus:outline-0 hover:text-foreground data-selected:border-primary data-selected:text-primary">
+                          Description
+                        </Tab>
+                        <Tab className="cursor-pointer border-b-2 border-transparent pb-3 text-xs font-semibold uppercase tracking-wide whitespace-nowrap text-muted-foreground hover:border-border focus:outline-0 hover:text-foreground data-selected:border-primary data-selected:text-primary">
+                          Specifications
+                        </Tab>
+                      </TabList>
+                    </div>
+                    <TabPanels as={Fragment}>
+                      <TabPanel className="pt-8">
+                        <p className="text-[11px] font-bold uppercase tracking-widest text-primary mb-3">
+                          Product Overview
+                        </p>
+                        {(() => {
+                          const raw = String(product?.description ?? "");
+                          const parts = raw.split(/\n\n+/);
+                          const paragraphs: string[] = [];
+                          const bullets: string[] = [];
+                          parts.forEach((part) => {
+                            const lines = part
+                              .split("\n")
+                              .map((l) => l.trim())
+                              .filter(Boolean);
+                            const bulletLines = lines.filter((l) =>
+                              l.startsWith("•"),
+                            );
+                            const textLines = lines.filter(
+                              (l) => !l.startsWith("•"),
+                            );
+                            if (textLines.length)
+                              paragraphs.push(textLines.join(" "));
+                            bulletLines.forEach((l) =>
+                              bullets.push(l.replace(/^•\s*/, "")),
+                            );
+                          });
+                          return (
+                            <>
+                              {paragraphs.map((p, i) => (
+                                <p
+                                  key={i}
+                                  className="text-sm text-muted-foreground leading-6 mb-4"
+                                >
+                                  {p}
+                                </p>
+                              ))}
+                              {bullets.length > 0 && (
+                                <ul className="mt-2 space-y-3">
+                                  {bullets.map((b, i) => {
+                                    const sepIdx = b.indexOf(" — ");
+                                    const hasSep = sepIdx !== -1;
+                                    const title = hasSep
+                                      ? b.slice(0, sepIdx)
+                                      : null;
+                                    const body = hasSep
+                                      ? b.slice(sepIdx + 3)
+                                      : b;
+                                    return (
+                                      <li
+                                        key={i}
+                                        className="flex items-start gap-3 text-sm text-muted-foreground"
+                                      >
+                                        <span className="mt-[7px] h-2 w-2 shrink-0 rounded-full border-2 border-primary/40 bg-primary/20" />
+                                        <span>
+                                          {title && (
+                                            <>
+                                              <strong className="font-semibold text-foreground">
+                                                {title}
+                                              </strong>
+                                              {" — "}
+                                            </>
+                                          )}
+                                          {body}
+                                        </span>
+                                      </li>
+                                    );
+                                  })}
+                                </ul>
+                              )}
+                            </>
+                          );
+                        })()}
+                      </TabPanel>
+
+                      <TabPanel className="pt-8">
+                        <h3 className="sr-only">Product Specifications</h3>
+                        {product?.specifications &&
+                        (
+                          product.specifications as {
+                            label: string;
+                            value: string;
+                          }[]
+                        ).length > 0 ? (
+                          <div className="rounded-xl border border-border overflow-hidden">
+                            <table className="w-full text-sm">
+                              <tbody>
+                                {(
+                                  product.specifications as {
+                                    label: string;
+                                    value: string;
+                                  }[]
+                                ).map((spec, i) => (
+                                  <tr
+                                    key={i}
+                                    className={
+                                      i % 2 === 0 ? "bg-muted/30" : "bg-card"
+                                    }
+                                  >
+                                    <td className="py-3 px-5 font-medium text-foreground w-2/5 border-r border-border">
+                                      {spec.label}
+                                    </td>
+                                    <td className="py-3 px-5 text-muted-foreground">
+                                      {spec.value}
+                                    </td>
+                                  </tr>
+                                ))}
+                              </tbody>
+                            </table>
+                          </div>
+                        ) : (
+                          <p className="text-sm text-muted-foreground">
+                            No specifications available.
+                          </p>
+                        )}
+                      </TabPanel>
+                    </TabPanels>
+                  </TabGroup>
+                </div>
+
+                {/* Right: independent resource sidebar */}
+                <div className="w-full lg:w-72 xl:w-80 shrink-0 flex flex-col gap-4">
+                  {/* Document */}
+                  {(product as any)?.document?.link && (
+                    <div className="rounded-xl border border-border bg-card overflow-hidden shadow-card">
+                      <div className="flex items-center gap-2 px-4 py-3 border-b border-border">
+                        <span className="flex h-6 w-6 items-center justify-center rounded-md bg-violet-100">
+                          <svg
+                            viewBox="0 0 24 24"
+                            className="h-3.5 w-3.5 text-violet-600"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                          </svg>
+                        </span>
+                        <span className="text-[11px] font-bold uppercase tracking-widest text-foreground">
+                          Document
+                        </span>
+                      </div>
+                      <div className="flex items-center justify-between px-4 py-3">
+                        <p className="text-sm font-medium text-foreground">
+                          Product Document
+                        </p>
+                        <a
+                          href={String((product as any).document.link)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md border border-border bg-background hover:bg-muted transition-colors"
+                        >
+                          <svg
+                            viewBox="0 0 24 24"
+                            className="h-3.5 w-3.5 text-muted-foreground"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Video */}
+                  {videoLink && (
+                    <div className="rounded-xl border border-border bg-card overflow-hidden shadow-card">
+                      <div className="flex items-center gap-2 px-4 py-3 border-b border-border">
+                        <span className="flex h-6 w-6 items-center justify-center rounded-md bg-emerald-100">
+                          <svg
+                            viewBox="0 0 24 24"
+                            className="h-3 w-3 text-emerald-600"
+                            fill="currentColor"
+                          >
+                            <polygon points="5 3 19 12 5 21 5 3" />
+                          </svg>
+                        </span>
+                        <span className="text-[11px] font-bold uppercase tracking-widest text-foreground">
+                          Video
+                        </span>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => setVideoOpen(true)}
+                        className="w-full flex items-center gap-3 px-4 py-3 hover:bg-muted/40 transition-colors group text-left"
+                      >
+                        <div className="relative h-12 w-20 shrink-0 overflow-hidden rounded-lg bg-muted">
+                          {ytThumb && (
+                            <img
+                              src={ytThumb}
+                              alt="thumbnail"
+                              className="h-full w-full object-cover"
+                            />
+                          )}
+                          <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors">
+                            <svg
+                              viewBox="0 0 24 24"
+                              className="h-5 w-5 text-white"
+                              fill="white"
+                            >
+                              <polygon points="5 3 19 12 5 21 5 3" />
+                            </svg>
+                          </div>
+                        </div>
+                        <div>
+                          <p className="text-sm font-medium text-foreground">
+                            Product Video
+                          </p>
+                          <p className="text-xs text-muted-foreground mt-0.5">
+                            Click to play
+                          </p>
+                        </div>
+                      </button>
+                    </div>
+                  )}
+
+                  {/* Application */}
+                  {(product as any)?.application && (
+                    <div className="rounded-xl border border-border bg-card overflow-hidden shadow-card">
+                      <div className="flex items-center gap-2 px-4 py-3 border-b border-border">
+                        <span className="flex h-6 w-6 items-center justify-center rounded-md bg-amber-100">
+                          <svg
+                            viewBox="0 0 24 24"
+                            className="h-3.5 w-3.5 text-amber-600"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                          >
+                            <rect x="3" y="3" width="7" height="7" rx="1" />
+                            <rect x="14" y="3" width="7" height="7" rx="1" />
+                            <rect x="14" y="14" width="7" height="7" rx="1" />
+                            <rect x="3" y="14" width="7" height="7" rx="1" />
+                          </svg>
+                        </span>
+                        <span className="text-[11px] font-bold uppercase tracking-widest text-foreground">
+                          Application
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-3 px-4 py-3">
+                        {(product as any).application.image && (
+                          <div className="h-12 w-12 shrink-0 overflow-hidden rounded-xl border border-border">
+                            <img
+                              src={(product as any).application.image}
+                              alt={(product as any).application.title ?? "app"}
+                              className="h-full w-full object-cover"
+                            />
+                          </div>
+                        )}
+                        <p className="text-sm font-medium text-foreground">
+                          {(product as any).application.title ?? "Application"}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
           {/* related products */}
           {relatedProducts && relatedProducts.length >= 2 && (
             <div className="pt-10 lg:pt-16 lg:pb-10 mt-8 border-t border-border">
@@ -483,6 +688,50 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
           )}
         </div>
       </div>
+      {/* Video modal */}
+      {videoOpen && videoLink && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-sm"
+          onClick={() => setVideoOpen(false)}
+        >
+          <div
+            className="relative w-full max-w-3xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={() => setVideoOpen(false)}
+              className="absolute -top-9 right-0 flex items-center gap-1.5 text-white/80 hover:text-white text-sm transition-colors"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                className="h-5 w-5"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+              Close
+            </button>
+            <div
+              className="relative w-full rounded-xl overflow-hidden bg-black"
+              style={{ paddingBottom: "56.25%" }}
+            >
+              <iframe
+                src={`https://www.youtube.com/embed/${ytId ?? ""}?autoplay=1`}
+                className="absolute inset-0 w-full h-full"
+                allow="autoplay; encrypted-media; fullscreen"
+                allowFullScreen
+                title="Product Video"
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };
