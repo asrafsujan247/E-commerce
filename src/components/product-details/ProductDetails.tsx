@@ -14,32 +14,32 @@ import { useSetting } from "@stores/useSettingStore";
 import useProductAction from "@hooks/useProductAction";
 import Rating from "@components/common/Rating";
 import { Button } from "@components/ui/button";
-import ProductReviews from "./ProductReviews";
+// import ProductReviews from "./ProductReviews";
 import { FiChevronRight, FiHeadphones, FiBriefcase } from "react-icons/fi";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import CampaignCountdown from "@components/campaign/CampaignCountdown";
 import type { Product, ProductAttribute } from "@appTypes/index";
 
-interface ReviewItem {
-  _id: string;
-  user?: { name?: string; image?: string };
-  rating: number;
-  comment: string;
-  createdAt?: string;
-  images: string[];
-}
+// interface ReviewItem {
+//   _id: string;
+//   user?: { name?: string; image?: string };
+//   rating: number;
+//   comment: string;
+//   createdAt?: string;
+//   images: string[];
+// }
 
 interface ProductDetailsProps {
   product: Product;
-  reviews?: ReviewItem[];
+  // reviews?: ReviewItem[];
   attributes?: ProductAttribute[];
   relatedProducts?: Product[];
 }
 
 const ProductDetails: React.FC<ProductDetailsProps> = ({
   product,
-  reviews,
+  // reviews,
   attributes,
   relatedProducts,
 }) => {
@@ -119,9 +119,9 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
             </ol>
           </div>
           {/* Product */}
-          <div className="relative lg:grid lg:grid-cols-7 lg:grid-rows-1 lg:gap-x-8 lg:gap-y-8 mb-16 pt-8 md:pt-0">
+          <div className="relative lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-8 lg:gap-y-8 mb-16 pt-8 md:pt-0">
             {/* Product image */}
-            <div className="lg:col-span-3 lg:row-end-1">
+            <div className="lg:col-span-1 lg:row-end-1">
               <div className="overflow-hidden w-full mx-auto">
                 {productImages[0] ? (
                   <img
@@ -151,7 +151,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
             </div>
 
             {/* Product details */}
-            <div className="lg:sticky top-44 mt-6 lg:mt-0 self-start z-10 mx-auto lg:col-span-4 lg:row-span-2 lg:row-end-2 lg:max-w-none">
+            <div className="mt-6 lg:mt-0 self-start z-10 mx-auto lg:col-span-1 lg:row-span-2 lg:row-end-2 lg:max-w-none">
               {/* Campaign Banner */}
               {isInCampaign && campaign && (
                 <div className="mb-4 px-4 py-3 rounded-xl bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800">
@@ -187,14 +187,6 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
                 <h1 className="leading-7 text-lg md:text-xl lg:text-2xl mb-1 font-semibold text-foreground">
                   {String(product?.title ?? "")}
                 </h1>
-                <div className="flex gap-0.5 items-center mt-1">
-                  <Rating
-                    size="md"
-                    showReviews={true}
-                    rating={product?.average_rating as number}
-                    totalReviews={product?.total_reviews as number}
-                  />
-                </div>
               </div>
               <div className="flex items-center mb-8">
                 <div className="product-price font-bold">
@@ -394,10 +386,10 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
                 </div>
               </div>
             </div>
-            <div className="mx-auto w-full lg:col-span-3 lg:my-0 my-8 lg:max-w-none">
+            <div className="mx-auto w-full lg:col-span-2 lg:my-0 my-8 lg:max-w-none">
               <TabGroup defaultIndex={0}>
                 <div className="border-b border-border">
-                  <TabList className="-mb-px flex space-x-8">
+                  <TabList className="-mb-px flex space-x-8 overflow-x-auto no-scrollbar">
                     <Tab className="cursor-pointer border-b-2 border-transparent pb-3 text-sm font-medium whitespace-nowrap text-muted-foreground hover:border-border focus:outline-0 hover:text-foreground data-selected:border-primary data-selected:text-primary">
                       Description
                     </Tab>
@@ -406,9 +398,9 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
                       Specification
                     </Tab>
 
-                    <Tab className="cursor-pointer border-b-2 border-transparent pb-3 text-sm font-medium whitespace-nowrap text-muted-foreground hover:border-border focus:outline-0 hover:text-foreground data-selected:border-primary data-selected:text-primary">
+                    {/* <Tab className="cursor-pointer border-b-2 border-transparent pb-3 text-sm font-medium whitespace-nowrap text-muted-foreground hover:border-border focus:outline-0 hover:text-foreground data-selected:border-primary data-selected:text-primary">
                       Customer Reviews
-                    </Tab>
+                    </Tab> */}
                   </TabList>
                 </div>
                 <TabPanels as={Fragment}>
@@ -460,10 +452,10 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
                       </p>
                     )}
                   </TabPanel>
-                  <TabPanel className="-mb-10">
+                  {/* <TabPanel className="-mb-10">
                     <h3 className="sr-only">Customer Reviews</h3>
                     <ProductReviews reviews={reviews} />
-                  </TabPanel>
+                  </TabPanel> */}
                 </TabPanels>
               </TabGroup>
             </div>
