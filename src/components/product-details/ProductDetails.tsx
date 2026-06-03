@@ -12,7 +12,6 @@ import VariantList from "@components/variants/VariantList";
 import ImageCarousel from "@components/carousel/ImageCarousel";
 import { useSetting } from "@stores/useSettingStore";
 import useProductAction from "@hooks/useProductAction";
-import Rating from "@components/common/Rating";
 import { Button } from "@components/ui/button";
 // import ProductReviews from "./ProductReviews";
 import { FiChevronRight, FiHeadphones, FiBriefcase } from "react-icons/fi";
@@ -386,6 +385,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
                 </div>
               </div>
             </div>
+            {/* products details and other info */}
             <div className="mx-auto w-full lg:col-span-2 lg:my-0 my-8 lg:max-w-none">
               <TabGroup defaultIndex={0}>
                 <div className="border-b border-border">
