@@ -93,7 +93,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
     <>
       <div className="bg-white px-0">
         <div className="container mx-auto px-3 sm:px-10 max-w-screen-2xl">
-          <div className="flex items-center py-4 lg:py-6">
+          <div className="hidden md:flex items-center py-4 lg:py-6">
             <ol className="flex items-center w-full overflow-hidden text-muted-foreground">
               <li className="text-sm pr-1 transition duration-200 ease-in cursor-pointer hover:text-primary font-semibold">
                 <Link to="/">Home</Link>
@@ -119,7 +119,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
             </ol>
           </div>
           {/* Product */}
-          <div className="relative lg:grid lg:grid-cols-7 lg:grid-rows-1 lg:gap-x-8 lg:gap-y-8 mb-16">
+          <div className="relative lg:grid lg:grid-cols-7 lg:grid-rows-1 lg:gap-x-8 lg:gap-y-8 mb-16 pt-8 md:pt-0">
             {/* Product image */}
             <div className="lg:col-span-3 lg:row-end-1">
               <div className="overflow-hidden w-full mx-auto">
@@ -199,7 +199,8 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
               <div className="flex items-center mb-8">
                 <div className="product-price font-bold">
                   <span className="inline-block text-xl">
-                    BDT {(product?.prices?.minPrice ?? 0).toFixed(2)}-{(product?.prices?.maxPrice ?? 0).toFixed(2)}
+                    BDT {(product?.prices?.minPrice ?? 0).toFixed(2)}-
+                    {(product?.prices?.maxPrice ?? 0).toFixed(2)}
                   </span>
                 </div>
                 <span className="ml-2 block">
@@ -233,10 +234,10 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
               </div>
 
               <div>
-                <div className="flex items-center gap-3 mt-4">
+                <div className="flex flex-col sm:flex-row items-stretch gap-3 mt-4">
                   <Button
                     onClick={() => handleAddToCart(1)}
-                    className="text-sm leading-4 inline-flex items-center gap-2 cursor-pointer transition ease-in-out duration-300 font-semibold text-center justify-center border-0 border-transparent rounded-md focus-visible:outline-none focus:outline-none px-4 md:px-6 lg:px-8 py-4 md:py-3.5 lg:py-4 flex-1 h-11"
+                    className="text-sm leading-4 inline-flex items-center gap-2 cursor-pointer transition ease-in-out duration-300 font-semibold text-center justify-center border-0 border-transparent rounded-md focus-visible:outline-none focus:outline-none px-4 md:px-6 lg:px-8 py-4 md:py-3.5 lg:py-4 w-full sm:flex-1 h-11"
                     variant="create"
                   >
                     <ShoppingCartIcon className="size-6 shrink-0" />
@@ -245,7 +246,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
                   <button
                     type="button"
                     onClick={() => navigate("/inquiry", { state: { product } })}
-                    className="flex-1 h-11 text-sm font-semibold border border-primary text-primary rounded-md hover:bg-primary hover:text-white transition-colors"
+                    className="w-full sm:flex-1 h-11 text-sm font-semibold border border-primary text-primary rounded-md hover:bg-primary hover:text-white transition-colors"
                   >
                     Send Inquiry
                   </button>
@@ -305,7 +306,9 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
                         <FiBriefcase className="h-4 w-4 text-primary" />
                       </div>
                       <div className="min-w-0">
-                        <p className="text-xs text-muted-foreground">Supplied by</p>
+                        <p className="text-xs text-muted-foreground">
+                          Supplied by
+                        </p>
                         <p className="text-sm font-semibold text-foreground truncate">
                           {String((product as any).supplier)}
                         </p>
