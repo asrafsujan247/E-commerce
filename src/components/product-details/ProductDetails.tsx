@@ -715,7 +715,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
             <h3 className="text-xl font-semibold tracking-tight text-foreground sm:text-2xl mb-6">
               Related Products
             </h3>
-            <div className="grid gap-4 grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
+            <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
               {relatedProducts?.slice(1, 13).map((relProduct) => (
                 <ProductCard
                   key={relProduct._id}
