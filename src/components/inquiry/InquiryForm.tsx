@@ -32,9 +32,6 @@ const InquiryForm = ({ product }: InquiryFormProps) => {
   const productImage = Array.isArray(product?.image)
     ? (product.image as string[])[0]
     : (product?.image as string | undefined);
-  const supplierName = String(
-    product?.supplier || product?.brand || "Supplier",
-  );
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (!e.target.files) return;
@@ -48,11 +45,20 @@ const InquiryForm = ({ product }: InquiryFormProps) => {
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10 md:py-12">
+      <div className="mb-8">
+        <h1 className="text-xl sm:text-2xl font-bold text-foreground">
+          Send Your Purchase Inquiry
+        </h1>
+        <p className="mt-1.5 text-sm text-muted-foreground">
+          Share your requirements, and our team will provide you with the best
+          possible offer based on your needs.
+        </p>
+      </div>
       <form onSubmit={handleSubmit}>
         {/* Product card */}
         <div className="mb-8 rounded-lg">
           <div className="bg-gray-50 px-4 py-2.5 border-b border-gray-200 rounded-t-sm">
-            <span className="text-sm text-gray-700">{supplierName}</span>
+            <span className="text-sm text-gray-700">Your selected product</span>
           </div>
           <div className="flex flex-col sm:flex-row sm:items-center gap-3 px-4 py-4 bg-white rounded-b-sm">
             <div className="flex items-center gap-3 flex-1 min-w-0">
