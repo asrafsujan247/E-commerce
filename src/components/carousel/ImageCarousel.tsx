@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 interface ImageCarouselProps {
   images?: string[];
   handleChangeImage: (img: string) => void;
+  vertical?: boolean;
 }
 
 const Thumbnail: React.FC<{ img: string; onClick: () => void }> = ({ img, onClick }) => (
@@ -22,8 +23,24 @@ const Thumbnail: React.FC<{ img: string; onClick: () => void }> = ({ img, onClic
   </button>
 );
 
-const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, handleChangeImage }) => {
+const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, handleChangeImage, vertical = false }) => {
   if (!images || images.length === 0) return null;
+
+  if (vertical) {
+    return (
+      <div className="flex flex-col gap-2">
+        {images.map((img, i) => (
+          <button
+            key={i}
+            onClick={() => handleChangeImage(img)}
+            className="h-20 w-20 shrink-0 overflow-hidden rounded-lg border border-border hover:border-primary transition-colors"
+          >
+            <img src={img} alt="product thumbnail" className="h-full w-full object-cover" />
+          </button>
+        ))}
+      </div>
+    );
+  }
 
   if (images.length <= 4) {
     return (

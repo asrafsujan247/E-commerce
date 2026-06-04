@@ -100,7 +100,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
 
   return (
     <>
-      <div className="bg-white px-0">
+      <div className="bg-white px-0 pb-8 lg:pb-12">
         <div className="container mx-auto px-3 sm:px-10 max-w-screen-2xl">
           <div className="hidden md:flex items-center py-4 lg:py-6">
             <ol className="flex items-center w-full overflow-hidden text-muted-foreground">
@@ -134,23 +134,14 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
               <div className="flex flex-col lg:flex-row gap-3">
                 {/* Vertical thumbnail strip — lg+ only */}
                 {productImages.length > 1 && (
-                  <div className="hidden lg:flex flex-col gap-2 w-20 shrink-0">
-                    {productImages.map((img, i) => (
-                      <button
-                        key={i}
-                        type="button"
-                        onClick={() =>
-                          (setSelectedImage as (img: string) => void)(img)
-                        }
-                        className="h-20 w-20 shrink-0 overflow-hidden rounded-lg border border-border hover:border-primary transition-colors"
-                      >
-                        <img
-                          src={img}
-                          alt="product thumbnail"
-                          className="h-full w-full object-cover"
-                        />
-                      </button>
-                    ))}
+                  <div className="hidden lg:block w-20 shrink-0">
+                    <ImageCarousel
+                      images={productImages}
+                      handleChangeImage={
+                        setSelectedImage as (img: string) => void
+                      }
+                      vertical
+                    />
                   </div>
                 )}
 
@@ -198,7 +189,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
             </div>
 
             {/* Product details */}
-            <div className="mt-6 lg:mt-0 self-start z-10 mx-auto lg:mx-0 lg:col-span-1 lg:row-span-2 lg:row-end-2 lg:max-w-none">
+            <div className="mt-6 lg:mt-0 self-start z-10 mx-auto lg:mx-0 lg:col-span-1 lg:max-w-none">
               {/* Campaign Banner */}
               {isInCampaign && campaign && (
                 <div className="mb-4 px-4 py-3 rounded-xl bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800">
@@ -312,23 +303,40 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
                       (() => {
                         const el = document.getElementById("product-info");
                         if (!el) return;
-                        const navbar = document.querySelector<HTMLElement>(".sticky.top-0");
+                        const navbar =
+                          document.querySelector<HTMLElement>(".sticky.top-0");
                         const offset = (navbar?.offsetHeight ?? 80) + 16;
-                        window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - offset, behavior: "smooth" });
+                        window.scrollTo({
+                          top:
+                            el.getBoundingClientRect().top +
+                            window.scrollY -
+                            offset,
+                          behavior: "smooth",
+                        });
                       })()
                     }
                     className="w-full flex items-center justify-between px-4 py-3 bg-muted/30 hover:bg-muted/50 transition-colors border-b border-border"
                   >
-                    <span className="text-base font-bold text-foreground">Product Details</span>
+                    <span className="text-base font-bold text-foreground">
+                      Product Details
+                    </span>
                     <FiChevronRight className="h-4 w-4 text-muted-foreground shrink-0" />
                   </button>
                   <div className="px-4 py-1 divide-y divide-border">
-                    {((product.specifications as { label: string; value: string }[] | undefined) ?? [])
+                    {(
+                      (product.specifications as
+                        | { label: string; value: string }[]
+                        | undefined) ?? []
+                    )
                       .slice(0, 3)
                       .map((spec, i) => (
                         <div key={i} className="flex items-start py-2">
-                          <span className="w-2/5 text-muted-foreground shrink-0">{spec.label}:</span>
-                          <span className="font-semibold text-foreground">{spec.value}</span>
+                          <span className="w-2/5 text-muted-foreground shrink-0">
+                            {spec.label}:
+                          </span>
+                          <span className="font-semibold text-foreground">
+                            {spec.value}
+                          </span>
                         </div>
                       ))}
                     {!(product.specifications as any[])?.length && (
@@ -342,12 +350,19 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
                 {/* Shipping */}
                 <div className="mt-4 rounded-lg border border-border overflow-hidden text-sm">
                   <div className="px-4 py-3 bg-muted/30 border-b border-border">
-                    <p className="text-base font-bold text-foreground">Shipping</p>
+                    <p className="text-base font-bold text-foreground">
+                      Shipping
+                    </p>
                   </div>
                   <div className="px-4 py-3">
                     <div className="flex items-start gap-2">
-                      <span className="w-2/5 text-muted-foreground shrink-0">Shipping Cost:</span>
-                      <span className="text-foreground">Contact the supplier about freight and estimated delivery time.</span>
+                      <span className="w-2/5 text-muted-foreground shrink-0">
+                        Shipping Cost:
+                      </span>
+                      <span className="text-foreground">
+                        Contact the supplier about freight and estimated
+                        delivery time.
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -355,29 +370,57 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
                 {/* Payment Guarantee */}
                 <div className="mt-4 rounded-lg border border-border overflow-hidden text-sm">
                   <div className="px-4 py-3 bg-muted/30 border-b border-border">
-                    <p className="text-base font-bold text-foreground">Payment Guarantee</p>
+                    <p className="text-base font-bold text-foreground">
+                      Payment Guarantee
+                    </p>
                   </div>
                   <div className="px-4 py-3 space-y-3">
                     <div className="flex items-start gap-2">
-                      <span className="w-2/5 text-muted-foreground shrink-0 pt-0.5">Payment Methods:</span>
+                      <span className="w-2/5 text-muted-foreground shrink-0 pt-0.5">
+                        Payment Methods:
+                      </span>
                       <div className="flex flex-col gap-1.5">
                         <div className="flex flex-wrap gap-1">
-                          {["T/T", "PayPal", "Apple Pay", "Google Pay", "Visa", "Mastercard", "Amex", "Discover"].map((m) => (
-                            <span key={m} className="inline-flex items-center px-1.5 py-0.5 rounded border border-border text-[11px] font-medium text-foreground bg-background whitespace-nowrap">
+                          {[
+                            "T/T",
+                            "PayPal",
+                            "Apple Pay",
+                            "Google Pay",
+                            "Visa",
+                            "Mastercard",
+                            "Amex",
+                            "Discover",
+                          ].map((m) => (
+                            <span
+                              key={m}
+                              className="inline-flex items-center px-1.5 py-0.5 rounded border border-border text-[11px] font-medium text-foreground bg-background whitespace-nowrap"
+                            >
                               {m}
                             </span>
                           ))}
                         </div>
-                        <span className="text-muted-foreground text-xs">Support payments in USD</span>
+                        <span className="text-muted-foreground text-xs">
+                          Support payments in USD
+                        </span>
                       </div>
                     </div>
                     <div className="flex items-start gap-2">
-                      <span className="w-2/5 text-muted-foreground shrink-0">Secure payments:</span>
-                      <span className="text-foreground">Every payment you make is protected by our secure platform.</span>
+                      <span className="w-2/5 text-muted-foreground shrink-0">
+                        Secure payments:
+                      </span>
+                      <span className="text-foreground">
+                        Every payment you make is protected by our secure
+                        platform.
+                      </span>
                     </div>
                     <div className="flex items-start gap-2">
-                      <span className="w-2/5 text-muted-foreground shrink-0">Refund policy:</span>
-                      <span className="text-foreground">Claim a refund if your order doesn't ship, is missing, or arrives with product issues.</span>
+                      <span className="w-2/5 text-muted-foreground shrink-0">
+                        Refund policy:
+                      </span>
+                      <span className="text-foreground">
+                        Claim a refund if your order doesn't ship, is missing,
+                        or arrives with product issues.
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -385,309 +428,306 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
             </div>
           </div>
           {/* products details and other info */}
-          <div id="product-info" className="mx-auto w-full my-8 mb-16 max-w-none">
-              <div className="flex flex-col lg:flex-row gap-8">
-                {/* Left: tabs */}
-                <div className="flex-1 min-w-0 border border-border rounded-md p-4 md:p-6">
-                  <TabGroup defaultIndex={0}>
-                    <div className="border-b border-border">
-                      <TabList className="-mb-px flex space-x-8 overflow-x-auto no-scrollbar">
-                        <Tab className="cursor-pointer border-b-2 border-transparent pb-3 text-xs font-semibold uppercase tracking-wide whitespace-nowrap text-muted-foreground hover:border-border focus:outline-0 hover:text-foreground data-selected:border-primary data-selected:text-primary">
-                          Description
-                        </Tab>
-                        <Tab className="cursor-pointer border-b-2 border-transparent pb-3 text-xs font-semibold uppercase tracking-wide whitespace-nowrap text-muted-foreground hover:border-border focus:outline-0 hover:text-foreground data-selected:border-primary data-selected:text-primary">
-                          Specifications
-                        </Tab>
-                      </TabList>
-                    </div>
-                    <TabPanels as={Fragment}>
-                      <TabPanel className="pt-8">
-                        <p className="text-[11px] font-bold uppercase tracking-widest text-primary mb-3">
-                          Product Overview
-                        </p>
-                        {(() => {
-                          const raw = String(product?.description ?? "");
-                          const parts = raw.split(/\n\n+/);
-                          const paragraphs: string[] = [];
-                          const bullets: string[] = [];
-                          parts.forEach((part) => {
-                            const lines = part
-                              .split("\n")
-                              .map((l) => l.trim())
-                              .filter(Boolean);
-                            const bulletLines = lines.filter((l) =>
-                              l.startsWith("•"),
-                            );
-                            const textLines = lines.filter(
-                              (l) => !l.startsWith("•"),
-                            );
-                            if (textLines.length)
-                              paragraphs.push(textLines.join(" "));
-                            bulletLines.forEach((l) =>
-                              bullets.push(l.replace(/^•\s*/, "")),
-                            );
-                          });
-                          return (
-                            <>
-                              {paragraphs.map((p, i) => (
-                                <p
-                                  key={i}
-                                  className="text-sm text-muted-foreground leading-6 mb-4"
-                                >
-                                  {p}
-                                </p>
-                              ))}
-                              {bullets.length > 0 && (
-                                <ul className="mt-2 space-y-3">
-                                  {bullets.map((b, i) => {
-                                    const sepIdx = b.indexOf(" — ");
-                                    const hasSep = sepIdx !== -1;
-                                    const title = hasSep
-                                      ? b.slice(0, sepIdx)
-                                      : null;
-                                    const body = hasSep
-                                      ? b.slice(sepIdx + 3)
-                                      : b;
-                                    return (
-                                      <li
-                                        key={i}
-                                        className="flex items-start gap-3 text-sm text-muted-foreground"
-                                      >
-                                        <span className="mt-[7px] h-2 w-2 shrink-0 rounded-full border-2 border-primary/40 bg-primary/20" />
-                                        <span>
-                                          {title && (
-                                            <>
-                                              <strong className="font-semibold text-foreground">
-                                                {title}
-                                              </strong>
-                                              {" — "}
-                                            </>
-                                          )}
-                                          {body}
-                                        </span>
-                                      </li>
-                                    );
-                                  })}
-                                </ul>
-                              )}
-                            </>
+          <div id="product-info" className="mx-auto w-full my-8 max-w-none">
+            <div className="flex flex-col lg:flex-row gap-8">
+              {/* Left: tabs */}
+              <div className="flex-1 min-w-0 border border-border rounded-md p-4 md:p-6">
+                <TabGroup defaultIndex={0}>
+                  <div className="border-b border-border">
+                    <TabList className="-mb-px flex space-x-8 overflow-x-auto no-scrollbar">
+                      <Tab className="cursor-pointer border-b-2 border-transparent pb-3 text-xs font-semibold uppercase tracking-wide whitespace-nowrap text-muted-foreground hover:border-border focus:outline-0 hover:text-foreground data-selected:border-primary data-selected:text-primary">
+                        Description
+                      </Tab>
+                      <Tab className="cursor-pointer border-b-2 border-transparent pb-3 text-xs font-semibold uppercase tracking-wide whitespace-nowrap text-muted-foreground hover:border-border focus:outline-0 hover:text-foreground data-selected:border-primary data-selected:text-primary">
+                        Specifications
+                      </Tab>
+                    </TabList>
+                  </div>
+                  <TabPanels as={Fragment}>
+                    <TabPanel className="pt-8">
+                      <p className="text-[11px] font-bold uppercase tracking-widest text-primary mb-3">
+                        Product Overview
+                      </p>
+                      {(() => {
+                        const raw = String(product?.description ?? "");
+                        const parts = raw.split(/\n\n+/);
+                        const paragraphs: string[] = [];
+                        const bullets: string[] = [];
+                        parts.forEach((part) => {
+                          const lines = part
+                            .split("\n")
+                            .map((l) => l.trim())
+                            .filter(Boolean);
+                          const bulletLines = lines.filter((l) =>
+                            l.startsWith("•"),
                           );
-                        })()}
-                      </TabPanel>
+                          const textLines = lines.filter(
+                            (l) => !l.startsWith("•"),
+                          );
+                          if (textLines.length)
+                            paragraphs.push(textLines.join(" "));
+                          bulletLines.forEach((l) =>
+                            bullets.push(l.replace(/^•\s*/, "")),
+                          );
+                        });
+                        return (
+                          <>
+                            {paragraphs.map((p, i) => (
+                              <p
+                                key={i}
+                                className="text-sm text-muted-foreground leading-6 mb-4"
+                              >
+                                {p}
+                              </p>
+                            ))}
+                            {bullets.length > 0 && (
+                              <ul className="mt-2 space-y-3">
+                                {bullets.map((b, i) => {
+                                  const sepIdx = b.indexOf(" — ");
+                                  const hasSep = sepIdx !== -1;
+                                  const title = hasSep
+                                    ? b.slice(0, sepIdx)
+                                    : null;
+                                  const body = hasSep ? b.slice(sepIdx + 3) : b;
+                                  return (
+                                    <li
+                                      key={i}
+                                      className="flex items-start gap-3 text-sm text-muted-foreground"
+                                    >
+                                      <span className="mt-[7px] h-2 w-2 shrink-0 rounded-full border-2 border-primary/40 bg-primary/20" />
+                                      <span>
+                                        {title && (
+                                          <>
+                                            <strong className="font-semibold text-foreground">
+                                              {title}
+                                            </strong>
+                                            {" — "}
+                                          </>
+                                        )}
+                                        {body}
+                                      </span>
+                                    </li>
+                                  );
+                                })}
+                              </ul>
+                            )}
+                          </>
+                        );
+                      })()}
+                    </TabPanel>
 
-                      <TabPanel className="pt-8">
-                        <h3 className="sr-only">Product Specifications</h3>
-                        {product?.specifications &&
-                        (
-                          product.specifications as {
-                            label: string;
-                            value: string;
-                          }[]
-                        ).length > 0 ? (
-                          <div className="rounded-xl border border-border overflow-hidden">
-                            <table className="w-full text-sm">
-                              <tbody>
-                                {(
-                                  product.specifications as {
-                                    label: string;
-                                    value: string;
-                                  }[]
-                                ).map((spec, i) => (
-                                  <tr
-                                    key={i}
-                                    className={
-                                      i % 2 === 0 ? "bg-muted/30" : "bg-card"
-                                    }
-                                  >
-                                    <td className="py-3 px-5 font-medium text-foreground w-2/5 border-r border-border">
-                                      {spec.label}
-                                    </td>
-                                    <td className="py-3 px-5 text-muted-foreground">
-                                      {spec.value}
-                                    </td>
-                                  </tr>
-                                ))}
-                              </tbody>
-                            </table>
-                          </div>
-                        ) : (
-                          <p className="text-sm text-muted-foreground">
-                            No specifications available.
-                          </p>
-                        )}
-                      </TabPanel>
-                    </TabPanels>
-                  </TabGroup>
-                </div>
-
-                {/* Right: independent resource sidebar */}
-                <div className="w-full lg:w-72 xl:w-80 shrink-0 flex flex-col gap-4">
-                  {/* Document */}
-                  {(product as any)?.document?.link && (
-                    <div className="rounded-xl border border-border bg-card overflow-hidden shadow-card">
-                      <div className="flex items-center gap-2 px-4 py-3 border-b border-border">
-                        <span className="flex h-6 w-6 items-center justify-center rounded-md bg-violet-100">
-                          <svg
-                            viewBox="0 0 24 24"
-                            className="h-3.5 w-3.5 text-violet-600"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          >
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                            <polyline points="14 2 14 8 20 8" />
-                          </svg>
-                        </span>
-                        <span className="text-[11px] font-bold uppercase tracking-widest text-foreground">
-                          Document
-                        </span>
-                      </div>
-                      <div className="flex items-center justify-between px-4 py-3">
-                        <p className="text-sm font-medium text-foreground">
-                          Product Document
+                    <TabPanel className="pt-8">
+                      <h3 className="sr-only">Product Specifications</h3>
+                      {product?.specifications &&
+                      (
+                        product.specifications as {
+                          label: string;
+                          value: string;
+                        }[]
+                      ).length > 0 ? (
+                        <div className="rounded-xl border border-border overflow-hidden">
+                          <table className="w-full text-sm">
+                            <tbody>
+                              {(
+                                product.specifications as {
+                                  label: string;
+                                  value: string;
+                                }[]
+                              ).map((spec, i) => (
+                                <tr
+                                  key={i}
+                                  className={
+                                    i % 2 === 0 ? "bg-muted/30" : "bg-card"
+                                  }
+                                >
+                                  <td className="py-3 px-5 font-medium text-foreground w-2/5 border-r border-border">
+                                    {spec.label}
+                                  </td>
+                                  <td className="py-3 px-5 text-muted-foreground">
+                                    {spec.value}
+                                  </td>
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+                      ) : (
+                        <p className="text-sm text-muted-foreground">
+                          No specifications available.
                         </p>
-                        <a
-                          href={String((product as any).document.link)}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md border border-border bg-background hover:bg-muted transition-colors"
-                        >
-                          <svg
-                            viewBox="0 0 24 24"
-                            className="h-3.5 w-3.5 text-muted-foreground"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          >
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                            <polyline points="7 10 12 15 17 10" />
-                            <line x1="12" y1="15" x2="12" y2="3" />
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                  )}
+                      )}
+                    </TabPanel>
+                  </TabPanels>
+                </TabGroup>
+              </div>
 
-                  {/* Video */}
-                  {videoLink && (
-                    <div className="rounded-xl border border-border bg-card overflow-hidden shadow-card">
-                      <div className="flex items-center gap-2 px-4 py-3 border-b border-border">
-                        <span className="flex h-6 w-6 items-center justify-center rounded-md bg-emerald-100">
+              {/* Right: independent resource sidebar */}
+              <div className="w-full lg:w-72 xl:w-80 shrink-0 flex flex-col gap-4">
+                {/* Document */}
+                {(product as any)?.document?.link && (
+                  <div className="rounded-xl border border-border bg-card overflow-hidden shadow-card">
+                    <div className="flex items-center gap-2 px-4 py-3 border-b border-border">
+                      <span className="flex h-6 w-6 items-center justify-center rounded-md bg-violet-100">
+                        <svg
+                          viewBox="0 0 24 24"
+                          className="h-3.5 w-3.5 text-violet-600"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                          <polyline points="14 2 14 8 20 8" />
+                        </svg>
+                      </span>
+                      <span className="text-[11px] font-bold uppercase tracking-widest text-foreground">
+                        Document
+                      </span>
+                    </div>
+                    <div className="flex items-center justify-between px-4 py-3">
+                      <p className="text-sm font-medium text-foreground">
+                        Product Document
+                      </p>
+                      <a
+                        href={String((product as any).document.link)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md border border-border bg-background hover:bg-muted transition-colors"
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                          className="h-3.5 w-3.5 text-muted-foreground"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                          <polyline points="7 10 12 15 17 10" />
+                          <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                )}
+
+                {/* Video */}
+                {videoLink && (
+                  <div className="rounded-xl border border-border bg-card overflow-hidden shadow-card">
+                    <div className="flex items-center gap-2 px-4 py-3 border-b border-border">
+                      <span className="flex h-6 w-6 items-center justify-center rounded-md bg-emerald-100">
+                        <svg
+                          viewBox="0 0 24 24"
+                          className="h-3 w-3 text-emerald-600"
+                          fill="currentColor"
+                        >
+                          <polygon points="5 3 19 12 5 21 5 3" />
+                        </svg>
+                      </span>
+                      <span className="text-[11px] font-bold uppercase tracking-widest text-foreground">
+                        Video
+                      </span>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => setVideoOpen(true)}
+                      className="w-full flex items-center gap-3 px-4 py-3 hover:bg-muted/40 transition-colors group text-left"
+                    >
+                      <div className="relative h-12 w-20 shrink-0 overflow-hidden rounded-lg bg-muted">
+                        {ytThumb && (
+                          <img
+                            src={ytThumb}
+                            alt="thumbnail"
+                            className="h-full w-full object-cover"
+                          />
+                        )}
+                        <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors">
                           <svg
                             viewBox="0 0 24 24"
-                            className="h-3 w-3 text-emerald-600"
-                            fill="currentColor"
+                            className="h-5 w-5 text-white"
+                            fill="white"
                           >
                             <polygon points="5 3 19 12 5 21 5 3" />
                           </svg>
-                        </span>
-                        <span className="text-[11px] font-bold uppercase tracking-widest text-foreground">
-                          Video
-                        </span>
-                      </div>
-                      <button
-                        type="button"
-                        onClick={() => setVideoOpen(true)}
-                        className="w-full flex items-center gap-3 px-4 py-3 hover:bg-muted/40 transition-colors group text-left"
-                      >
-                        <div className="relative h-12 w-20 shrink-0 overflow-hidden rounded-lg bg-muted">
-                          {ytThumb && (
-                            <img
-                              src={ytThumb}
-                              alt="thumbnail"
-                              className="h-full w-full object-cover"
-                            />
-                          )}
-                          <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors">
-                            <svg
-                              viewBox="0 0 24 24"
-                              className="h-5 w-5 text-white"
-                              fill="white"
-                            >
-                              <polygon points="5 3 19 12 5 21 5 3" />
-                            </svg>
-                          </div>
                         </div>
-                        <div>
-                          <p className="text-sm font-medium text-foreground">
-                            Product Video
-                          </p>
-                          <p className="text-xs text-muted-foreground mt-0.5">
-                            Click to play
-                          </p>
-                        </div>
-                      </button>
-                    </div>
-                  )}
-
-                  {/* Application */}
-                  {(product as any)?.application && (
-                    <div className="rounded-xl border border-border bg-card overflow-hidden shadow-card">
-                      <div className="flex items-center gap-2 px-4 py-3 border-b border-border">
-                        <span className="flex h-6 w-6 items-center justify-center rounded-md bg-amber-100">
-                          <svg
-                            viewBox="0 0 24 24"
-                            className="h-3.5 w-3.5 text-amber-600"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                          >
-                            <rect x="3" y="3" width="7" height="7" rx="1" />
-                            <rect x="14" y="3" width="7" height="7" rx="1" />
-                            <rect x="14" y="14" width="7" height="7" rx="1" />
-                            <rect x="3" y="14" width="7" height="7" rx="1" />
-                          </svg>
-                        </span>
-                        <span className="text-[11px] font-bold uppercase tracking-widest text-foreground">
-                          Application
-                        </span>
                       </div>
-                      <div className="flex items-center gap-3 px-4 py-3">
-                        {(product as any).application.image && (
-                          <div className="h-12 w-12 shrink-0 overflow-hidden rounded-xl border border-border">
-                            <img
-                              src={(product as any).application.image}
-                              alt={(product as any).application.title ?? "app"}
-                              className="h-full w-full object-cover"
-                            />
-                          </div>
-                        )}
+                      <div>
                         <p className="text-sm font-medium text-foreground">
-                          {(product as any).application.title ?? "Application"}
+                          Product Video
+                        </p>
+                        <p className="text-xs text-muted-foreground mt-0.5">
+                          Click to play
                         </p>
                       </div>
-                    </div>
-                  )}
-                </div>
-              </div>
-            </div>
-          {/* related products */}
-          {relatedProducts && relatedProducts.length >= 2 && (
-            <div className="pt-10 lg:pt-16 lg:pb-10 mt-8 border-t border-border">
-              <h3 className="text-xl font-semibold tracking-tight text-foreground sm:text-2xl mb-6">
-                Related Products
-              </h3>
-              <div className="flex">
-                <div className="w-full">
-                  <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 2xl:grid-cols-6 gap-2 md:gap-3 lg:gap-3">
-                    {relatedProducts?.slice(1, 13).map((relProduct) => (
-                      <ProductCard
-                        key={relProduct._id}
-                        product={relProduct}
-                        attributes={attributes}
-                      />
-                    ))}
+                    </button>
                   </div>
-                </div>
+                )}
+
+                {/* Application */}
+                {(product as any)?.application && (
+                  <div className="rounded-xl border border-border bg-card overflow-hidden shadow-card">
+                    <div className="flex items-center gap-2 px-4 py-3 border-b border-border">
+                      <span className="flex h-6 w-6 items-center justify-center rounded-md bg-amber-100">
+                        <svg
+                          viewBox="0 0 24 24"
+                          className="h-3.5 w-3.5 text-amber-600"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                        >
+                          <rect x="3" y="3" width="7" height="7" rx="1" />
+                          <rect x="14" y="3" width="7" height="7" rx="1" />
+                          <rect x="14" y="14" width="7" height="7" rx="1" />
+                          <rect x="3" y="14" width="7" height="7" rx="1" />
+                        </svg>
+                      </span>
+                      <span className="text-[11px] font-bold uppercase tracking-widest text-foreground">
+                        Application
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-3 px-4 py-3">
+                      {(product as any).application.image && (
+                        <div className="h-12 w-12 shrink-0 overflow-hidden rounded-xl border border-border">
+                          <img
+                            src={(product as any).application.image}
+                            alt={(product as any).application.title ?? "app"}
+                            className="h-full w-full object-cover"
+                          />
+                        </div>
+                      )}
+                      <p className="text-sm font-medium text-foreground">
+                        {(product as any).application.title ?? "Application"}
+                      </p>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
-          )}
+          </div>
         </div>
       </div>
+      {/* related products */}
+      {relatedProducts && relatedProducts.length >= 2 && (
+        <div className="bg-background py-10 lg:py-12 mb-6">
+          <div className="container mx-auto px-3 sm:px-10 max-w-screen-2xl">
+            <h3 className="text-xl font-semibold tracking-tight text-foreground sm:text-2xl mb-6">
+              Related Products
+            </h3>
+            <div className="grid gap-4 grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
+              {relatedProducts?.slice(1, 13).map((relProduct) => (
+                <ProductCard
+                  key={relProduct._id}
+                  product={relProduct}
+                  attributes={attributes}
+                  viewMode="grid"
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
       {/* Video modal */}
       {videoOpen && videoLink && (
         <div
