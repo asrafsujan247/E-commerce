@@ -279,7 +279,9 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
                     Send Inquiry
                   </button>
                   <a
-                    href={`https://wa.me/?text=${encodeURIComponent(String(product?.title ?? ""))}`}
+                    href={`https://wa.me/?text=${encodeURIComponent(
+                      `Hi Team, I am interested in "${product?.title}". Could you please assist?\n\n${window.location.href}`
+                    )}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full h-11 text-sm font-semibold inline-flex items-center justify-center gap-2 rounded-md bg-[#25D366] text-white hover:bg-[#1ebe5d] transition-colors px-4"
