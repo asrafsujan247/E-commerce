@@ -3,7 +3,12 @@ import { FiChevronDown, FiPaperclip, FiInfo } from "react-icons/fi";
 
 import FormRow from "./FormRow";
 import SelectField from "./SelectField";
-import { UNITS, TRADE_TERMS, CURRENCIES, MAX_BUDGET_OPTIONS } from "@lib/rfqConstants";
+import {
+  UNITS,
+  TRADE_TERMS,
+  CURRENCIES,
+  MAX_BUDGET_OPTIONS,
+} from "@lib/rfqConstants";
 import type { FormState } from "@appTypes/rfq";
 
 const inputCls = (hasError: boolean) =>
@@ -27,7 +32,7 @@ const RfqBasicInfo = ({
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files) {
-      setFileCount((prev) => Math.min(3, prev + e.target.files!.length));
+      setFileCount((prev) => Math.min(1, prev + e.target.files!.length));
     }
   };
 
@@ -38,7 +43,6 @@ const RfqBasicInfo = ({
       </h2>
 
       <div className="space-y-4">
-
         {/* Product Name */}
         <FormRow label="Product Name" required>
           <input
@@ -57,10 +61,11 @@ const RfqBasicInfo = ({
             onClick={onCategoryClick}
             className="flex items-center justify-between gap-1.5 w-full sm:w-auto border border-gray-300 rounded px-3 py-1.5 text-sm bg-white hover:border-blue-400 transition-colors"
           >
-            {form.category
-              ? <span className="text-gray-800">{form.category}</span>
-              : <span className="text-gray-500">Please select</span>
-            }
+            {form.category ? (
+              <span className="text-gray-800">{form.category}</span>
+            ) : (
+              <span className="text-gray-500">Please select</span>
+            )}
             <FiChevronDown className="w-3.5 h-3.5 shrink-0 text-gray-400 ml-1" />
           </button>
         </FormRow>
@@ -79,7 +84,9 @@ const RfqBasicInfo = ({
               value={form.unit}
               onChange={(e) => onChange("unit", e.target.value)}
             >
-              {UNITS.map((u) => <option key={u}>{u}</option>)}
+              {UNITS.map((u) => (
+                <option key={u}>{u}</option>
+              ))}
             </SelectField>
           </div>
         </FormRow>
@@ -90,7 +97,9 @@ const RfqBasicInfo = ({
             value={form.tradeTerms}
             onChange={(e) => onChange("tradeTerms", e.target.value)}
           >
-            {TRADE_TERMS.map((t) => <option key={t}>{t}</option>)}
+            {TRADE_TERMS.map((t) => (
+              <option key={t}>{t}</option>
+            ))}
           </SelectField>
         </FormRow>
 
@@ -109,7 +118,9 @@ const RfqBasicInfo = ({
               value={form.currency}
               onChange={(e) => onChange("currency", e.target.value)}
             >
-              {CURRENCIES.map((c) => <option key={c}>{c}</option>)}
+              {CURRENCIES.map((c) => (
+                <option key={c}>{c}</option>
+              ))}
             </SelectField>
           </div>
         </FormRow>
@@ -123,7 +134,9 @@ const RfqBasicInfo = ({
               hasError={submitted && !form.maxBudget}
             >
               <option value="">Please select</option>
-              {MAX_BUDGET_OPTIONS.map((o) => <option key={o}>{o}</option>)}
+              {MAX_BUDGET_OPTIONS.map((o) => (
+                <option key={o}>{o}</option>
+              ))}
             </SelectField>
             <span className="text-sm text-gray-500">USD</span>
           </div>
@@ -149,18 +162,17 @@ const RfqBasicInfo = ({
                 type="file"
                 ref={fileInputRef}
                 onChange={handleFileChange}
-                multiple
                 accept="image/*,.pdf,.doc,.docx"
                 className="hidden"
               />
               <button
                 type="button"
                 onClick={() => fileInputRef.current?.click()}
-                disabled={fileCount >= 3}
+                disabled={fileCount >= 1}
                 className="flex items-center gap-1.5 text-sm text-blue-500 hover:text-blue-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
               >
                 <FiPaperclip className="w-3.5 h-3.5" />
-                Upload product images or files ({fileCount}/3)
+                Upload product image or file ({fileCount}/1)
                 <span className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-blue-100 text-blue-600 ml-0.5">
                   <FiInfo className="w-2.5 h-2.5" />
                 </span>
@@ -168,7 +180,6 @@ const RfqBasicInfo = ({
             </div>
           </div>
         </FormRow>
-
       </div>
     </div>
   );

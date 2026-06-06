@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
+import { FiPlus } from "react-icons/fi";
 import categoriesData from "@localdata/categories.json";
 
 import CategoryModal from "@components/rfq/CategoryModal";
-import RfqBasicInfo from "@components/rfq/RfqBasicInfo";
+import RfqProductAccordion, {
+  type ProductEntry,
+} from "@components/rfq/RfqProductAccordion";
 import RfqShipping from "@components/rfq/RfqShipping";
 import RfqCompleteness from "@components/rfq/RfqCompleteness";
 
@@ -19,7 +22,6 @@ import type {
   SubCategory,
 } from "@appTypes/rfq";
 
-// Fields that always have a default value and are always counted as filled
 const ALWAYS_FILLED_FIELDS = ["tradeTerms", "shippingMethod", "paymentTerms"];
 
 function calcCompletionPercent(form: FormState): number {
@@ -38,30 +40,94 @@ function getMissingRequired(form: FormState): (keyof FormState)[] {
   });
 }
 
+const FIRST_ID = "1";
+
 const Rfq = () => {
   const location = useLocation();
   const locationState = location.state as Partial<FormState> | null;
 
-  const [form, setForm] = useState<FormState>({
+  const [products, setProducts] = useState<ProductEntry[]>([
+    {
+      id: FIRST_ID,
+      form: { ...initialForm, ...(locationState ?? {}) },
+      submitted: false,
+    },
+  ]);
+  const [openId, setOpenId] = useState<string>(FIRST_ID);
+
+  // Shipping & payment is a single shared section for the whole RFQ
+  const [shippingForm, setShippingForm] = useState<FormState>({
     ...initialForm,
     ...(locationState ?? {}),
   });
-  const [submitted, setSubmitted] = useState(false);
-  const [modalOpen, setModalOpen] = useState(false);
+
+  const [modalProductId, setModalProductId] = useState<string | null>(null);
   const [selectedDept, setSelectedDept] = useState<Department | null>(null);
   const [selectedCat, setSelectedCat] = useState<RfqCategory | null>(null);
 
   const departments = categoriesData as Department[];
-  const completionPercent = calcCompletionPercent(form);
-  const missingRequired = getMissingRequired(form);
+
+  // Completeness tracker reflects the currently open product (or last product if none open)
+  const activeProduct =
+    products.find((p) => p.id === openId) ?? products[products.length - 1];
+  const effectiveForm: FormState = {
+    ...activeProduct.form,
+    shippingMethod: shippingForm.shippingMethod,
+    destinationPort: shippingForm.destinationPort,
+    leadTime: shippingForm.leadTime,
+    paymentTerms: shippingForm.paymentTerms,
+  };
+  const completionPercent = calcCompletionPercent(effectiveForm);
+  const missingRequired = getMissingRequired(effectiveForm);
   const isComplete = missingRequired.length === 0;
 
-  // Form field change handler
-  const handleChange = (field: keyof FormState, value: string) => {
-    setForm((prev) => ({ ...prev, [field]: value }));
+  // Open one accordion at a time; clicking the open one collapses it
+  const handleToggle = (id: string) => {
+    setOpenId((prev) => (prev === id ? "" : id));
   };
 
-  // Category modal handlers
+  const handleProductChange = (
+    id: string,
+    field: keyof FormState,
+    value: string,
+  ) => {
+    setProducts((prev) =>
+      prev.map((p) =>
+        p.id === id ? { ...p, form: { ...p.form, [field]: value } } : p,
+      ),
+    );
+  };
+
+  const handleShippingChange = (field: keyof FormState, value: string) => {
+    setShippingForm((prev) => ({ ...prev, [field]: value }));
+  };
+
+  // Validate the open product before allowing a new one to be added
+  const handleAddMore = () => {
+    const currentProduct = products.find((p) => p.id === openId);
+    if (currentProduct) {
+      const missing = getMissingRequired(currentProduct.form);
+      if (missing.length > 0) {
+        setProducts((prev) =>
+          prev.map((p) => (p.id === openId ? { ...p, submitted: true } : p)),
+        );
+        return;
+      }
+    }
+    const newId = Date.now().toString();
+    setProducts((prev) => [
+      ...prev,
+      { id: newId, form: { ...initialForm }, submitted: false },
+    ]);
+    setOpenId(newId);
+  };
+
+  const handleCategoryClick = (id: string) => {
+    setModalProductId(id);
+    setSelectedDept(null);
+    setSelectedCat(null);
+  };
+
   const handleDeptSelect = (dept: Department) => {
     setSelectedDept(dept);
     setSelectedCat(null);
@@ -72,23 +138,40 @@ const Rfq = () => {
   };
 
   const handleSubCatSelect = (sub: SubCategory) => {
-    setForm((prev) => ({
-      ...prev,
-      category: `${selectedDept?.name} > ${selectedCat?.name} > ${sub.name}`,
-      categoryId: sub._id,
-    }));
+    if (!modalProductId) return;
+    setProducts((prev) =>
+      prev.map((p) =>
+        p.id === modalProductId
+          ? {
+              ...p,
+              form: {
+                ...p.form,
+                category: `${selectedDept?.name} > ${selectedCat?.name} > ${sub.name}`,
+                categoryId: sub._id,
+              },
+            }
+          : p,
+      ),
+    );
     closeModal();
   };
 
   const closeModal = () => {
-    setModalOpen(false);
+    setModalProductId(null);
     setSelectedDept(null);
     setSelectedCat(null);
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setProducts((prev) => prev.map((p) => ({ ...p, submitted: true })));
+    const firstInvalid = products.find(
+      (p) => getMissingRequired(p.form).length > 0,
+    );
+    if (firstInvalid) {
+      setOpenId(firstInvalid.id);
+      return;
+    }
   };
 
   return (
@@ -112,13 +195,37 @@ const Rfq = () => {
           {/* Left: form */}
           <div className="flex-1 min-w-0">
             <form onSubmit={handleSubmit} noValidate>
-              <RfqBasicInfo
-                form={form}
-                submitted={submitted}
-                onChange={handleChange}
-                onCategoryClick={() => setModalOpen(true)}
+              {/* Product accordion items */}
+              {products.map((product, index) => (
+                <RfqProductAccordion
+                  key={product.id}
+                  product={product}
+                  index={index}
+                  isOpen={openId === product.id}
+                  onToggle={() => handleToggle(product.id)}
+                  onChange={(field, value) =>
+                    handleProductChange(product.id, field, value)
+                  }
+                  onCategoryClick={() => handleCategoryClick(product.id)}
+                />
+              ))}
+
+              {/* Add another product */}
+              <div className="mb-3">
+                <button
+                  type="button"
+                  onClick={handleAddMore}
+                  className="flex items-center justify-center gap-2 w-full py-3 px-4 text-sm font-medium text-blue-600 hover:text-blue-700 bg-white border border-dashed border-blue-300 hover:border-blue-400 hover:bg-blue-50/50 rounded transition-all duration-200"
+                >
+                  <FiPlus className="w-4 h-4" />
+                  Add Another Product
+                </button>
+              </div>
+
+              <RfqShipping
+                form={shippingForm}
+                onChange={handleShippingChange}
               />
-              <RfqShipping form={form} onChange={handleChange} />
             </form>
           </div>
 
@@ -133,8 +240,8 @@ const Rfq = () => {
         </div>
       </div>
 
-      {/* Category selection modal (Department → Category → Sub-category) */}
-      {modalOpen && (
+      {/* Category selection modal — scoped to whichever product triggered it */}
+      {modalProductId && (
         <CategoryModal
           departments={departments}
           selectedDept={selectedDept}
