@@ -89,12 +89,12 @@ const Rfq = () => {
   const handleProductChange = (
     id: string,
     field: keyof FormState,
-    value: string
+    value: string,
   ) => {
     setProducts((prev) =>
       prev.map((p) =>
-        p.id === id ? { ...p, form: { ...p.form, [field]: value } } : p
-      )
+        p.id === id ? { ...p, form: { ...p.form, [field]: value } } : p,
+      ),
     );
   };
 
@@ -109,9 +109,7 @@ const Rfq = () => {
       const missing = getMissingRequired(currentProduct.form);
       if (missing.length > 0) {
         setProducts((prev) =>
-          prev.map((p) =>
-            p.id === openId ? { ...p, submitted: true } : p
-          )
+          prev.map((p) => (p.id === openId ? { ...p, submitted: true } : p)),
         );
         return;
       }
@@ -152,8 +150,8 @@ const Rfq = () => {
                 categoryId: sub._id,
               },
             }
-          : p
-      )
+          : p,
+      ),
     );
     closeModal();
   };
@@ -168,14 +166,12 @@ const Rfq = () => {
     e.preventDefault();
     setProducts((prev) => prev.map((p) => ({ ...p, submitted: true })));
     const firstInvalid = products.find(
-      (p) => getMissingRequired(p.form).length > 0
+      (p) => getMissingRequired(p.form).length > 0,
     );
     if (firstInvalid) {
       setOpenId(firstInvalid.id);
       return;
     }
-    // All products valid — submit
-    console.log("Submitting RFQ:", { products, shippingForm });
   };
 
   return (
@@ -226,7 +222,10 @@ const Rfq = () => {
                 </button>
               </div>
 
-              <RfqShipping form={shippingForm} onChange={handleShippingChange} />
+              <RfqShipping
+                form={shippingForm}
+                onChange={handleShippingChange}
+              />
             </form>
           </div>
 

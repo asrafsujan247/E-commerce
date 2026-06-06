@@ -31,18 +31,12 @@ const RfqProductAccordion = ({
       <button
         type="button"
         onClick={onToggle}
-        className={`w-full flex items-center justify-between px-4 py-3 bg-white border rounded transition-colors duration-200 ${
-          isOpen
-            ? "border-blue-300 border-b-gray-100 rounded-b-none shadow-sm"
-            : "border-gray-200 hover:border-blue-300 hover:shadow-sm"
-        }`}
+        className={`w-full flex items-center justify-between px-4 py-3 bg-white border rounded transition-colors duration-200`}
       >
         <div className="flex items-center gap-2.5 min-w-0">
           <span
             className={`inline-flex items-center text-xs font-semibold px-2 py-0.5 rounded shrink-0 transition-colors duration-200 ${
-              isOpen
-                ? "bg-blue-500 text-white"
-                : "bg-blue-50 text-blue-600"
+              isOpen ? "bg-blue-500 text-white" : "bg-blue-50 text-blue-600"
             }`}
           >
             Product {index + 1}
