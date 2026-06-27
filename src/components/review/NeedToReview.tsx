@@ -64,6 +64,7 @@ const NeedToReview: React.FC<NeedToReviewProps> = ({ reviews, error }) => {
                   height="80"
                   alt="product"
                   src={item?.image}
+                  className="size-20 flex-none rounded-md object-cover"
                 />
                 <div className="block py-3 w-auto">
                   <h3 className="font-medium text-sm mb-2 line-clamp-1 text-muted-foreground">

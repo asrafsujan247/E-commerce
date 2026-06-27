@@ -71,6 +71,7 @@ const Reviewed: React.FC<ReviewedProps> = ({ reviews, error }) => {
                   height="80"
                   alt="product"
                   src={item?.image}
+                  className="size-20 flex-none rounded-md object-cover"
                 />
 
                 {/* Title */}

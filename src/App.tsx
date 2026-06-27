@@ -41,7 +41,6 @@ const OffersPage = lazy(() => import("@pages/Offers"));
 const FlashSalePage = lazy(() => import("@pages/FlashSale"));
 const AboutUsPage = lazy(() => import("@pages/AboutUs"));
 const ContactUsPage = lazy(() => import("@pages/ContactUs"));
-const FaqPage = lazy(() => import("@pages/Faq"));
 const PrivacyPolicyPage = lazy(() => import("@pages/PrivacyPolicy"));
 const TermsPage = lazy(() => import("@pages/Terms"));
 const NotFoundPage = lazy(() => import("@pages/NotFound"));
@@ -212,7 +211,6 @@ function AppWithSettings() {
             <Route path="/flash-sale" element={<FlashSalePage />} />
             <Route path="/about-us" element={<AboutUsPage />} />
             <Route path="/contact-us" element={<ContactUsPage />} />
-            <Route path="/faq" element={<FaqPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path="/terms-and-conditions" element={<TermsPage />} />
             <Route path="/rfq" element={<RfqPage />} />

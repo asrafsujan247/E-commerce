@@ -3,7 +3,6 @@ import {
   FiGift,
   FiGrid,
   FiAlertCircle,
-  FiHelpCircle,
   FiTruck,
   FiPhoneCall,
   FiCreditCard,
@@ -130,11 +129,6 @@ const pages: PageItem[] = [
     title: "Checkout",
     href: "/checkout",
     icon: FiShoppingBag,
-  },
-  {
-    title: "FAQ",
-    href: "/faq",
-    icon: FiHelpCircle,
   },
   {
     title: "About Us",
