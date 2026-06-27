@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { cn } from "@lib/utils";
 
 const fallbackImage = "/placeholder.png";
 
@@ -29,9 +30,10 @@ const ImageWithFallback = ({
       onError={() => setImgSrc(fallback)}
       alt={alt}
       {...props}
-      className={`w-full h-full object-cover transition duration-150 ease-linear transform group-hover:scale-105 ${
-        props.className || ""
-      }`}
+      className={cn(
+        "w-full h-full object-cover transition duration-150 ease-linear transform group-hover:scale-105",
+        props.className,
+      )}
     />
   );
 };
