@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { FiChevronDown, FiPaperclip, FiInfo } from "react-icons/fi";
+import { FiChevronDown, FiPaperclip, FiInfo, FiX } from "react-icons/fi";
 
 import FormRow from "./FormRow";
 import SelectField from "./SelectField";
@@ -14,6 +14,8 @@ import type { FormState } from "@appTypes/rfq";
 const inputCls = (hasError: boolean) =>
   `border rounded px-3 py-1.5 text-sm text-gray-700 placeholder-gray-400 bg-white focus:outline-none focus:border-blue-400 transition-colors ${hasError ? "border-red-400 bg-red-50" : "border-gray-300"}`;
 
+const MAX_FILES = 1;
+
 interface RfqBasicInfoProps {
   form: FormState;
   submitted: boolean;
@@ -27,13 +29,27 @@ const RfqBasicInfo = ({
   onChange,
   onCategoryClick,
 }: RfqBasicInfoProps) => {
-  const [fileCount, setFileCount] = useState(0);
+  const [files, setFiles] = useState<File[]>([]);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files) {
-      setFileCount((prev) => Math.min(1, prev + e.target.files!.length));
-    }
+    const selected = e.target.files;
+    if (!selected || selected.length === 0) return;
+    setFiles((prev) => [...prev, ...Array.from(selected)].slice(0, MAX_FILES));
+  };
+
+  const openFilePicker = () => {
+    const input = fileInputRef.current;
+    if (!input) return;
+    // Clear the value before opening so picking a file (even the same one as
+    // before, or after removing) always fires onChange and registers again.
+    input.value = "";
+    input.click();
+  };
+
+  const removeFile = (index: number) => {
+    setFiles((prev) => prev.filter((_, i) => i !== index));
+    if (fileInputRef.current) fileInputRef.current.value = "";
   };
 
   return (
@@ -157,7 +173,7 @@ const RfqBasicInfo = ({
             />
 
             {/* File upload trigger */}
-            <div className="mt-1.5 border-t border-gray-200 pt-2">
+            <div className="mt-1.5 flex flex-wrap items-center gap-2 border-t border-gray-200 pt-2">
               <input
                 type="file"
                 ref={fileInputRef}
@@ -167,16 +183,35 @@ const RfqBasicInfo = ({
               />
               <button
                 type="button"
-                onClick={() => fileInputRef.current?.click()}
-                disabled={fileCount >= 1}
+                onClick={openFilePicker}
+                disabled={files.length >= MAX_FILES}
                 className="flex items-center gap-1.5 text-sm text-blue-500 hover:text-blue-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
               >
                 <FiPaperclip className="w-3.5 h-3.5" />
-                Upload product image or file ({fileCount}/1)
+                Upload product image or file ({files.length}/{MAX_FILES})
                 <span className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-blue-100 text-blue-600 ml-0.5">
                   <FiInfo className="w-2.5 h-2.5" />
                 </span>
               </button>
+
+              {files.map((file, index) => (
+                <span
+                  key={`${file.name}-${index}`}
+                  className="inline-flex max-w-55 items-center gap-1.5 rounded-full border border-gray-200 bg-white py-1 pl-2.5 pr-1 text-xs text-gray-600"
+                >
+                  <span className="truncate" title={file.name}>
+                    {file.name}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => removeFile(index)}
+                    aria-label={`Remove ${file.name}`}
+                    className="inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full text-gray-400 transition-colors hover:bg-gray-100 hover:text-red-500"
+                  >
+                    <FiX className="h-3 w-3" />
+                  </button>
+                </span>
+              ))}
             </div>
           </div>
         </FormRow>
