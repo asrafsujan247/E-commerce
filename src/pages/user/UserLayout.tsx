@@ -11,11 +11,6 @@ const UserLayout: React.FC = () => {
             <Sidebar />
           </div>
           <div className="w-full overflow-hidden">
-            {/* Local Suspense so navigating between lazy dashboard pages only
-                swaps the content area instead of replacing the whole layout
-                (sidebar) with the full-screen loader. Fallback is null to match
-                the app's other Suspense boundaries; each page renders its own
-                loading skeleton on mount. */}
             <Suspense fallback={null}>
               <Outlet />
             </Suspense>
