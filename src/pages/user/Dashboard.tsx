@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FiCheck, FiRefreshCw, FiShoppingCart, FiTruck } from "react-icons/fi";
+import { LayoutDashboard } from "lucide-react";
 
 import { useAuth } from "@stores/useAuthStore";
 import { useSearchParams } from "react-router-dom";
@@ -65,11 +66,17 @@ const Dashboard: React.FC = () => {
   if (loading) {
     return (
       <div className="overflow-hidden border-0">
-        <div className="animate-pulse space-y-4">
-          <div className="h-8 bg-muted rounded w-48" />
+        <div className="animate-pulse space-y-6">
+          <div className="flex items-center gap-3">
+            <div className="h-11 w-11 rounded-xl bg-muted" />
+            <div className="space-y-2">
+              <div className="h-4 w-48 rounded bg-muted" />
+              <div className="h-3 w-64 rounded bg-muted" />
+            </div>
+          </div>
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="h-24 bg-muted rounded-xl" />
+              <div key={i} className="h-24 rounded-2xl bg-muted" />
             ))}
           </div>
         </div>
@@ -77,11 +84,26 @@ const Dashboard: React.FC = () => {
     );
   }
 
+  const dashboardTitle = String(dashboard?.dashboard_title ?? "") || "Dashboard";
+
   return (
     <div className="overflow-hidden border-0">
-      <h2 className="text-xl font-semibold mb-5">
-        {String(dashboard?.dashboard_title ?? '') ?? "Dashboard"}
-      </h2>
+      {/* Header */}
+      <div className="mb-6 flex items-center gap-3">
+        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+          <LayoutDashboard className="h-5 w-5" />
+        </div>
+        <div>
+          <h2 className="text-lg font-semibold leading-none text-foreground sm:text-xl">
+            {dashboardTitle}
+          </h2>
+          <p className="mt-1.5 text-sm text-muted-foreground">
+            Welcome back{user?.name ? `, ${user.name}` : ""} — here's your order
+            overview.
+          </p>
+        </div>
+      </div>
+
       <div className="grid gap-4 mb-8 md:grid-cols-2 xl:grid-cols-4">
         <Card
           title={
@@ -89,7 +111,7 @@ const Dashboard: React.FC = () => {
           }
           Icon={FiShoppingCart}
           quantity={orderData?.totalDoc}
-          className="text-red-600 bg-red-200"
+          className="text-rose-600 bg-rose-100"
         />
         <Card
           title={
@@ -97,7 +119,7 @@ const Dashboard: React.FC = () => {
           }
           Icon={FiRefreshCw}
           quantity={orderData?.pending}
-          className="text-orange-600 bg-orange-200"
+          className="text-amber-600 bg-amber-100"
         />
         <Card
           title={
@@ -106,7 +128,7 @@ const Dashboard: React.FC = () => {
           }
           Icon={FiTruck}
           quantity={orderData?.processing}
-          className="text-indigo-600 bg-indigo-200"
+          className="text-indigo-600 bg-indigo-100"
         />
         <Card
           title={
@@ -115,7 +137,7 @@ const Dashboard: React.FC = () => {
           }
           Icon={FiCheck}
           quantity={orderData?.delivered}
-          className="text-primary bg-accent"
+          className="text-emerald-600 bg-emerald-100"
         />
       </div>
       <RecentOrder
