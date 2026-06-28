@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { PenLine, Star } from "lucide-react";
 
 import ReviewModal from "@components/modal/ReviewModal";
 import Rating from "@components/common/Rating";
@@ -54,16 +55,22 @@ const Reviewed: React.FC<ReviewedProps> = ({ reviews, error }) => {
           {error}
         </h2>
       ) : reviews?.reviewed?.length === 0 ? (
-        <p className="text-rose-500 text-center">
-          You haven't reviewed any products yet.
-        </p>
+        <div className="py-12 text-center">
+          <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-muted">
+            <Star className="h-7 w-7 text-muted-foreground" />
+          </div>
+          <h4 className="font-medium text-foreground">No reviews yet</h4>
+          <p className="mt-1.5 text-sm text-muted-foreground">
+            You haven't reviewed any products yet.
+          </p>
+        </div>
       ) : (
         <div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-3">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
             {reviews?.reviewed?.map((item, index) => (
               <div
                 key={index + 1}
-                className="p-3 gap-1 bg-card border border-border rounded-lg flex flex-col items-center"
+                className="group flex flex-col items-center rounded-xl border border-border bg-card p-4 text-center transition-all hover:border-primary/30 hover:shadow-sm"
               >
                 {/* Image */}
                 <ImageWithFallback
@@ -71,16 +78,16 @@ const Reviewed: React.FC<ReviewedProps> = ({ reviews, error }) => {
                   height="80"
                   alt="product"
                   src={item?.image}
-                  className="size-20 flex-none rounded-md object-cover"
+                  className="size-20 flex-none rounded-lg object-cover"
                 />
 
                 {/* Title */}
-                <h3 className="font-medium text-sm text-center text-foreground mb-0 line-clamp-1">
+                <h3 className="mt-3 line-clamp-1 text-sm font-medium text-foreground">
                   {item?.title}
                 </h3>
 
                 {/* Rating */}
-                <div className="mb-0">
+                <div className="mt-1.5">
                   <Rating
                     size="sm"
                     showReviews={false}
@@ -91,8 +98,9 @@ const Reviewed: React.FC<ReviewedProps> = ({ reviews, error }) => {
                 {/* Review Button */}
                 <button
                   onClick={() => openModal(item)}
-                  className="mt-auto px-4 py-1 text-sm font-medium 0 text-primary rounded hover:text-primary w-full"
+                  className="mt-4 inline-flex w-full items-center justify-center gap-1.5 rounded-lg border border-border px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:border-primary/30 hover:text-primary"
                 >
+                  <PenLine className="h-3.5 w-3.5" />
                   Edit Review
                 </button>
               </div>

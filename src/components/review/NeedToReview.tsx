@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { PenLine, CheckCircle2 } from "lucide-react";
 
 import ReviewModal from "@components/modal/ReviewModal";
 import Pagination from "@components/pagination/Pagination";
@@ -48,32 +49,39 @@ const NeedToReview: React.FC<NeedToReviewProps> = ({ reviews, error }) => {
           {error}
         </h2>
       ) : reviews?.notReviewed?.length === 0 ? (
-        <p className="text-rose-500 flex justify-center items-center">
-          You have no products left to review.
-        </p>
+        <div className="py-12 text-center">
+          <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-muted">
+            <CheckCircle2 className="h-7 w-7 text-muted-foreground" />
+          </div>
+          <h4 className="font-medium text-foreground">All caught up</h4>
+          <p className="mt-1.5 text-sm text-muted-foreground">
+            You have no products left to review.
+          </p>
+        </div>
       ) : (
         <div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-3">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
             {reviews?.notReviewed?.map((item, index) => (
               <div
                 key={index + 1}
-                className="flex items-center gap-2 bg-card border border-border rounded-lg"
+                className="group flex items-center gap-3 rounded-xl border border-border bg-card p-3 transition-all hover:border-primary/30 hover:shadow-sm"
               >
                 <ImageWithFallback
                   width="80"
                   height="80"
                   alt="product"
                   src={item?.image}
-                  className="size-20 flex-none rounded-md object-cover"
+                  className="size-16 flex-none rounded-lg object-cover sm:size-20"
                 />
-                <div className="block py-3 w-auto">
-                  <h3 className="font-medium text-sm mb-2 line-clamp-1 text-muted-foreground">
+                <div className="min-w-0 flex-1">
+                  <h3 className="mb-2 line-clamp-2 text-sm font-medium text-foreground">
                     {item?.title}
                   </h3>
                   <button
                     onClick={() => openModal(item)}
-                    className="flex-1 min-w-min px-2 py-1 text-xs font-semibold bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
+                    className="inline-flex items-center gap-1.5 rounded-lg bg-primary px-3 py-1.5 text-xs font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
                   >
+                    <PenLine className="h-3.5 w-3.5" />
                     Write Review
                   </button>
                 </div>
