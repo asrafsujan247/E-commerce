@@ -1,6 +1,17 @@
 import React, { useRef, useState, useEffect } from "react";
+import {
+  ShieldCheck,
+  Mail,
+  Lock,
+  KeyRound,
+  Eye,
+  EyeOff,
+  CheckCircle2,
+  Circle,
+} from "lucide-react";
 
 import { useAuth } from "@stores/useAuthStore";
+import { Button } from "@components/ui/button";
 import useUtilsFunction from "@hooks/useUtilsFunction";
 import { changePassword } from "@services/CustomerServices";
 import { getStoreCustomizationSetting } from "@services/SettingServices";
@@ -76,6 +87,8 @@ const ChangePasswordPage: React.FC = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
 
   const [newPassword, setNewPassword] = useState<string>("");
+  const [showCurrent, setShowCurrent] = useState(false);
+  const [showNew, setShowNew] = useState(false);
   const [isPending, setIsPending] = useState(false);
   const [state, setState] = useState<FormState>({
     success: false,
@@ -141,32 +154,29 @@ const ChangePasswordPage: React.FC = () => {
     setIsPending(false);
   };
 
+  const requirements = [
+    { met: newPassword.length >= 8, label: "At least 8 characters" },
+    { met: /[a-zA-Z]/.test(newPassword), label: "At least one letter" },
+    { met: /[0-9]/.test(newPassword), label: "At least one number" },
+    {
+      met: /[^a-zA-Z0-9]/.test(newPassword),
+      label: "At least one special character",
+    },
+  ];
+
   return (
     <div className="max-w-screen-2xl">
       {/* Header */}
       <div className="mb-6">
-        <div className="flex items-center gap-3 mb-2">
-          <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center shadow-lg shadow-primary/20">
-            <svg
-              className="w-5 h-5 text-primary-foreground"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"
-              />
-            </svg>
+        <div className="flex items-center gap-3">
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+            <ShieldCheck className="h-5 w-5" />
           </div>
           <div>
-            <h2 className="text-xl font-bold text-foreground">
-              {String(dashboard?.change_password ?? '') ??
-                "Change Password"}
+            <h2 className="text-lg font-semibold leading-none text-foreground sm:text-xl">
+              {String(dashboard?.change_password ?? "") || "Change Password"}
             </h2>
-            <p className="text-sm text-muted-foreground">
+            <p className="mt-1.5 text-sm text-muted-foreground">
               Update your account password for security
             </p>
           </div>
@@ -174,40 +184,27 @@ const ChangePasswordPage: React.FC = () => {
       </div>
 
       <form ref={formRef} onSubmit={handleSubmit}>
-        <div className="bg-background rounded-2xl shadow-lg border border-border p-6">
+        <div className="rounded-2xl border border-border bg-card p-6">
           <div className="space-y-5">
             {/* Email Field */}
             <div className="form-group">
-              <label className="block text-muted-foreground font-medium text-sm mb-2">
-                {String(dashboard?.user_email ?? '') ??
-                  "Email Address"}
+              <label className="mb-2 block text-sm font-medium text-muted-foreground">
+                {String(dashboard?.user_email ?? "") || "Email Address"}
               </label>
-              <div className="relative group">
-                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                  <svg
-                    className="w-5 h-5 text-muted-foreground"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                    />
-                  </svg>
+              <div className="relative">
+                <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4">
+                  <Mail className="h-5 w-5 text-muted-foreground" />
                 </div>
                 <input
                   type="email"
                   name="email"
                   defaultValue={user?.email ?? ""}
                   readOnly
-                  className="h-10 text-sm pl-11 pr-4 w-full rounded-xl border border-border bg-muted text-muted-foreground cursor-not-allowed"
+                  className="h-12 w-full cursor-not-allowed rounded-xl border border-border bg-muted pl-11 pr-4 text-sm text-muted-foreground"
                 />
               </div>
               {state.errors.email && (
-                <p className="mt-1 text-sm text-red-500">
+                <p className="mt-1 text-sm text-destructive">
                   {state.errors.email}
                 </p>
               )}
@@ -215,39 +212,36 @@ const ChangePasswordPage: React.FC = () => {
 
             {/* Current Password */}
             <div className="form-group">
-              <label className="block text-muted-foreground font-medium text-sm mb-2">
-                {String(dashboard?.current_password ?? '') ??
+              <label className="mb-2 block text-sm font-medium text-muted-foreground">
+                {String(dashboard?.current_password ?? "") ||
                   "Current Password"}
               </label>
-              <div className="relative group">
-                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                  <svg
-                    className="w-5 h-5 text-muted-foreground group-focus-within:text-primary transition-colors"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                    />
-                  </svg>
+              <div className="group relative">
+                <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4">
+                  <Lock className="h-5 w-5 text-muted-foreground transition-colors group-focus-within:text-primary" />
                 </div>
                 <input
-                  type="password"
+                  type={showCurrent ? "text" : "password"}
                   name="currentPassword"
                   autoComplete="new-password"
-                  placeholder={
-                    String(dashboard?.current_password ?? '') ??
-                    "Enter current password"
-                  }
-                  className="h-10 text-sm pl-11 pr-4 w-full rounded-xl border border-border bg-background text-foreground placeholder-muted-foreground transition-all duration-200 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none"
+                  placeholder="Enter current password"
+                  className="h-12 w-full rounded-xl border border-border bg-background pl-11 pr-11 text-sm text-foreground placeholder-muted-foreground outline-none transition-all duration-200 focus:border-primary focus:ring-2 focus:ring-primary/20"
                 />
+                <button
+                  type="button"
+                  onClick={() => setShowCurrent((v) => !v)}
+                  aria-label={showCurrent ? "Hide password" : "Show password"}
+                  className="absolute inset-y-0 right-0 flex items-center pr-4 text-muted-foreground transition-colors hover:text-primary"
+                >
+                  {showCurrent ? (
+                    <EyeOff className="h-5 w-5" />
+                  ) : (
+                    <Eye className="h-5 w-5" />
+                  )}
+                </button>
               </div>
               {state.errors.currentPassword && (
-                <p className="mt-1 text-sm text-red-500">
+                <p className="mt-1 text-sm text-destructive">
                   {state.errors.currentPassword}
                 </p>
               )}
@@ -255,43 +249,39 @@ const ChangePasswordPage: React.FC = () => {
 
             {/* New Password */}
             <div className="form-group">
-              <label className="block text-muted-foreground font-medium text-sm mb-2">
-                {String(dashboard?.new_password ?? '') ??
-                  "New Password"}
+              <label className="mb-2 block text-sm font-medium text-muted-foreground">
+                {String(dashboard?.new_password ?? "") || "New Password"}
               </label>
-              <div className="relative group">
-                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                  <svg
-                    className="w-5 h-5 text-muted-foreground group-focus-within:text-primary transition-colors"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"
-                    />
-                  </svg>
+              <div className="group relative">
+                <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4">
+                  <KeyRound className="h-5 w-5 text-muted-foreground transition-colors group-focus-within:text-primary" />
                 </div>
                 <input
-                  type="password"
+                  type={showNew ? "text" : "password"}
                   name="newPassword"
                   autoComplete="new-password"
-                  placeholder={
-                    String(dashboard?.new_password ?? '') ??
-                    "Enter new password"
-                  }
+                  placeholder="Enter new password"
                   onChange={(e) => setNewPassword(e.target.value)}
-                  className="h-10 text-sm pl-11 pr-4 w-full rounded-xl border border-border bg-background text-foreground placeholder-muted-foreground transition-all duration-200 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none"
+                  className="h-12 w-full rounded-xl border border-border bg-background pl-11 pr-11 text-sm text-foreground placeholder-muted-foreground outline-none transition-all duration-200 focus:border-primary focus:ring-2 focus:ring-primary/20"
                 />
+                <button
+                  type="button"
+                  onClick={() => setShowNew((v) => !v)}
+                  aria-label={showNew ? "Hide password" : "Show password"}
+                  className="absolute inset-y-0 right-0 flex items-center pr-4 text-muted-foreground transition-colors hover:text-primary"
+                >
+                  {showNew ? (
+                    <EyeOff className="h-5 w-5" />
+                  ) : (
+                    <Eye className="h-5 w-5" />
+                  )}
+                </button>
               </div>
 
               {/* Password Strength Indicator */}
               {newPassword && (
                 <div className="mt-3">
-                  <div className="flex gap-1 mb-1.5">
+                  <div className="mb-1.5 flex gap-1">
                     {[1, 2, 3, 4, 5].map((i) => (
                       <div
                         key={i}
@@ -308,7 +298,7 @@ const ChangePasswordPage: React.FC = () => {
               )}
 
               {state.errors.newPassword && (
-                <ul className="mt-1.5 text-sm text-red-500 space-y-0.5">
+                <ul className="mt-1.5 space-y-0.5 text-sm text-destructive">
                   {state.errors.newPassword.map((msg, i) => (
                     <li key={i}>{msg}</li>
                   ))}
@@ -317,38 +307,23 @@ const ChangePasswordPage: React.FC = () => {
             </div>
 
             {/* Password Requirements */}
-            <div className="bg-muted rounded-xl p-4">
-              <p className="text-sm font-medium text-muted-foreground mb-2">
-                Password requirements:
+            <div className="rounded-xl border border-border bg-muted/50 p-4">
+              <p className="mb-2 text-sm font-medium text-foreground">
+                Password requirements
               </p>
-              <ul className="text-xs text-muted-foreground space-y-1">
-                {[
-                  {
-                    met: newPassword.length >= 8,
-                    label: "At least 8 characters",
-                  },
-                  {
-                    met: /[a-zA-Z]/.test(newPassword),
-                    label: "At least one letter",
-                  },
-                  { met: /[0-9]/.test(newPassword), label: "At least one number" },
-                  {
-                    met: /[^a-zA-Z0-9]/.test(newPassword),
-                    label: "At least one special character",
-                  },
-                ].map(({ met, label }) => (
-                  <li key={label} className="flex items-center gap-2">
-                    <svg
-                      className={`w-4 h-4 ${met ? "text-primary" : "text-muted-foreground"}`}
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
+              <ul className="grid grid-cols-1 gap-1.5 text-xs sm:grid-cols-2">
+                {requirements.map(({ met, label }) => (
+                  <li
+                    key={label}
+                    className={`flex items-center gap-2 transition-colors ${
+                      met ? "text-foreground" : "text-muted-foreground"
+                    }`}
+                  >
+                    {met ? (
+                      <CheckCircle2 className="h-4 w-4 shrink-0 text-primary" />
+                    ) : (
+                      <Circle className="h-4 w-4 shrink-0 text-muted-foreground/50" />
+                    )}
                     {label}
                   </li>
                 ))}
@@ -358,38 +333,15 @@ const ChangePasswordPage: React.FC = () => {
 
           {/* Submit Button */}
           <div className="mt-8 flex justify-end">
-            <button
+            <Button
               type="submit"
-              disabled={isPending}
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-xl shadow-lg shadow-primary/30 hover:shadow-primary/40 hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+              size="lg"
+              isLoading={isPending}
+              loadingText="Updating..."
             >
-              {isPending ? (
-                <>
-                  <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
-                    <circle
-                      className="opacity-25"
-                      cx="12"
-                      cy="12"
-                      r="10"
-                      stroke="currentColor"
-                      strokeWidth="4"
-                      fill="none"
-                    />
-                    <path
-                      className="opacity-75"
-                      fill="currentColor"
-                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                    />
-                  </svg>
-                  <span>Updating...</span>
-                </>
-              ) : (
-                <span>
-                  {String(dashboard?.change_password ?? '') ??
-                    "Update Password"}
-                </span>
-              )}
-            </button>
+              <ShieldCheck className="h-4 w-4" />
+              {String(dashboard?.change_password ?? "") || "Update Password"}
+            </Button>
           </div>
         </div>
       </form>

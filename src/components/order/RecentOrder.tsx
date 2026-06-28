@@ -62,107 +62,111 @@ const RecentOrder: React.FC<RecentOrderProps> = ({ data, error, link, title }) =
             </div>
           ) : (
             <div className="flex flex-col">
-              <h3 className="text-lg font-medium mb-5">
-                {String(title ?? '')}
-              </h3>
-              <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
-                <div className="align-middle inline-block min-w-full pb-2 sm:px-6 lg:px-8 rounded-md">
-                  <div className="overflow-hidden border-b last:border-b-0 border-border rounded-md">
-                    <div className="inline-block min-w-full py-2 align-middle">
-                      <div className="overflow-hidden border border-border sm:rounded-lg">
-                        <table className="table-auto min-w-full divide-y divide-border">
-                          <thead className="bg-muted pb-10">
-                            <tr className="bg-muted">
-                              <th
-                                scope="col"
-                                className="py-3 pr-1 pl-4 text-left text-sm font-semibold text-muted-foreground sm:pl-6"
+              {title && (
+                <h3 className="mb-5 text-lg font-semibold text-foreground">
+                  {String(title ?? "")}
+                </h3>
+              )}
+              <div className="overflow-hidden rounded-2xl border border-border bg-card">
+                <div className="overflow-x-auto">
+                  <table className="min-w-full divide-y divide-border text-sm">
+                    <thead className="bg-muted/50">
+                      <tr>
+                        <th
+                          scope="col"
+                          className="py-3.5 pr-3 pl-4 text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground sm:pl-6"
+                        >
+                          Order ID
+                        </th>
+                        <th
+                          scope="col"
+                          className="px-3 py-3.5 text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+                        >
+                          Order Time
+                        </th>
+                        <th
+                          scope="col"
+                          className="px-3 py-3.5 text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+                        >
+                          Method
+                        </th>
+                        <th
+                          scope="col"
+                          className="px-3 py-3.5 text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+                        >
+                          Status
+                        </th>
+                        <th
+                          scope="col"
+                          className="px-3 py-3.5 text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+                        >
+                          Shipping
+                        </th>
+                        <th
+                          scope="col"
+                          className="px-3 py-3.5 text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+                        >
+                          Shipping Cost
+                        </th>
+                        <th
+                          scope="col"
+                          className="px-3 py-3.5 text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+                        >
+                          Total
+                        </th>
+                        <th
+                          scope="col"
+                          className="py-3.5 pr-4 pl-3 text-right text-xs font-semibold uppercase tracking-wider text-muted-foreground sm:pr-6"
+                        >
+                          Action
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-border">
+                      {data?.orders?.map((order) => (
+                        <tr
+                          key={order._id}
+                          className="transition-colors hover:bg-muted/40"
+                        >
+                          <OrderHistory order={order} />
+                          <td className="py-3 pr-4 pl-3 text-right whitespace-nowrap sm:pr-6">
+                            {link ? (
+                              <Link
+                                to={`/order/${order._id}`}
+                                className="inline-flex h-8 w-8 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-muted hover:text-primary"
+                                aria-label="View order"
                               >
-                                Order ID
-                              </th>
-                              <th
-                                scope="col"
-                                className="px-3 py-1 text-left text-sm font-semibold text-muted-foreground"
+                                <Eye className="h-4 w-4" />
+                              </Link>
+                            ) : (
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  handleOrderDetails(order);
+                                  setDrawerOpen(true);
+                                }}
+                                className="inline-flex h-8 w-8 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-muted hover:text-primary"
+                                aria-label="View order"
                               >
-                                OrderTime
-                              </th>
-
-                              <th
-                                scope="col"
-                                className="px-3 py-1 text-left text-sm font-semibold text-muted-foreground"
-                              >
-                                Method
-                              </th>
-                              <th
-                                scope="col"
-                                className="px-3 py-1 text-left text-sm font-semibold text-muted-foreground"
-                              >
-                                Status
-                              </th>
-                              <th
-                                scope="col"
-                                className="px-3 py-1 text-left text-sm font-semibold text-muted-foreground"
-                              >
-                                Shipping
-                              </th>
-                              <th
-                                scope="col"
-                                className="px-3 py-1 text-left text-sm font-semibold text-muted-foreground"
-                              >
-                                Shipping Cost
-                              </th>
-                              <th
-                                scope="col"
-                                className="px-3 py-1 text-left text-sm font-semibold text-muted-foreground"
-                              >
-                                Total
-                              </th>
-                              <th
-                                scope="col"
-                                className="relative text-end py-1 pr-3 pl-3 text-sm sm:pr-6 font-semibold text-muted-foreground"
-                              >
-                                Action
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody className="divide-y divide-border bg-background">
-                            {data?.orders?.map((order) => (
-                              <tr key={order._id}>
-                                <OrderHistory order={order} />
-                                <td className="px-4 text-sm whitespace-nowrap text-end">
-                                  {link ? (
-                                    <Link to={`/order/${order._id}`}>
-                                      <span className="text-primary text-end cursor-pointer hover:text-primary transition-all p-3 font-semibold rounded-full flex items-center justify-end gap-1.5">
-                                        <Eye className="h-4 w-4" />
-                                      </span>
-                                    </Link>
-                                  ) : (
-                                    <span
-                                      onClick={() => {
-                                        handleOrderDetails(order);
-                                        setDrawerOpen(true);
-                                      }}
-                                      className="text-primary text-end cursor-pointer hover:text-primary transition-all p-3 font-semibold rounded-full flex items-center justify-end gap-1.5"
-                                    >
-                                      <Eye className="h-4 w-4" />
-                                    </span>
-                                  )}
-                                </td>
-                              </tr>
-                            ))}
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                    {data?.totalDoc !== undefined && data.totalDoc > 10 && (
-                      <Pagination
-                        totalResults={data.totalDoc}
-                        resultsPerPage={10}
-                        onChange={handleChangePage}
-                        label="Product Page Navigation"
-                      />
-                    )}
-                  </div>
+                                <Eye className="h-4 w-4" />
+                              </button>
+                            )}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
                 </div>
+                {data?.totalDoc !== undefined && data.totalDoc > 10 && (
+                  <div className="border-t border-border px-4 pb-3 sm:px-6">
+                    <Pagination
+                      totalResults={data.totalDoc}
+                      resultsPerPage={10}
+                      onChange={handleChangePage}
+                      label="Product Page Navigation"
+                    />
+                  </div>
+                )}
               </div>
             </div>
           )}

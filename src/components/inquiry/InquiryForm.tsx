@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import { Paperclip, X } from "lucide-react";
 import SelectField from "@components/rfq/SelectField";
 import { UNITS } from "@lib/rfqConstants";
 
@@ -23,7 +24,7 @@ const InquiryForm = ({ product }: InquiryFormProps) => {
   const [unit, setUnit] = useState("Piece(s)");
   const [content, setContent] = useState("");
   const [email, setEmail] = useState("");
-  const [fileCount, setFileCount] = useState(0);
+  const [files, setFiles] = useState<File[]>([]);
   const [submitted, setSubmitted] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -33,8 +34,23 @@ const InquiryForm = ({ product }: InquiryFormProps) => {
     : (product?.image as string | undefined);
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (!e.target.files) return;
-    setFileCount((prev) => Math.min(MAX_FILES, prev + e.target.files!.length));
+    const selected = e.target.files;
+    if (!selected || selected.length === 0) return;
+    setFiles((prev) => [...prev, ...Array.from(selected)].slice(0, MAX_FILES));
+  };
+
+  const openFilePicker = () => {
+    const input = fileInputRef.current;
+    if (!input) return;
+    // Clear the value before opening so picking a file (even the same one as
+    // before, or after removing) always fires onChange and registers again.
+    input.value = "";
+    input.click();
+  };
+
+  const removeFile = (index: number) => {
+    setFiles((prev) => prev.filter((_, i) => i !== index));
+    if (fileInputRef.current) fileInputRef.current.value = "";
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -122,7 +138,7 @@ const InquiryForm = ({ product }: InquiryFormProps) => {
                 {content.length}/{MAX_CONTENT}
               </span>
             </div>
-            <div className="bg-gray-50 flex items-center px-3 py-2 border-t border-gray-100">
+            <div className="bg-gray-50 flex flex-wrap items-center gap-2 px-3 py-2 border-t border-gray-100">
               <input
                 type="file"
                 ref={fileInputRef}
@@ -132,23 +148,32 @@ const InquiryForm = ({ product }: InquiryFormProps) => {
               />
               <button
                 type="button"
-                onClick={() => fileInputRef.current?.click()}
-                disabled={fileCount >= MAX_FILES}
+                onClick={openFilePicker}
+                disabled={files.length >= MAX_FILES}
                 className="inline-flex items-center gap-1.5 text-sm text-blue-500 hover:text-blue-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
               >
-                <svg
-                  viewBox="0 0 24 24"
-                  className="h-4 w-4 shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48" />
-                </svg>
-                Attach Files ({fileCount}/{MAX_FILES})
+                <Paperclip className="h-4 w-4 shrink-0" />
+                Attach Files ({files.length}/{MAX_FILES})
               </button>
+
+              {files.map((file, index) => (
+                <span
+                  key={`${file.name}-${index}`}
+                  className="inline-flex max-w-55 items-center gap-1.5 rounded-full border border-gray-200 bg-white py-1 pl-2.5 pr-1 text-xs text-gray-600"
+                >
+                  <span className="truncate" title={file.name}>
+                    {file.name}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => removeFile(index)}
+                    aria-label={`Remove ${file.name}`}
+                    className="inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full text-gray-400 transition-colors hover:bg-gray-100 hover:text-red-500"
+                  >
+                    <X className="h-3 w-3" />
+                  </button>
+                </span>
+              ))}
             </div>
           </div>
         </div>

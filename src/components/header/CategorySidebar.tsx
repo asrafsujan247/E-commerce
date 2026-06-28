@@ -38,6 +38,7 @@ const CategorySidebar = ({
     top: 0,
     left: 0,
     maxHeight: 0,
+    minHeight: 0,
   });
   const [products, setProducts] = useState<Product[]>([]);
   const [sliderPage, setSliderPage] = useState(0);
@@ -89,10 +90,20 @@ const CategorySidebar = ({
       const containerEl = fromExtraPanel
         ? expandedPanelRef.current
         : sidebarRef.current;
-      const containerTop =
-        containerEl?.getBoundingClientRect().top ?? itemRect.top;
+      const containerRect = containerEl?.getBoundingClientRect();
+      const containerTop = containerRect?.top ?? itemRect.top;
       const maxHeight = window.innerHeight - containerTop - 8;
-      setFlyoutStyle({ top: containerTop, left: itemRect.right, maxHeight });
+      // Anchor the flyout to the container's top and make it at least as tall as
+      // the category column. Otherwise a short panel (few subcategories) for an
+      // item low in the list leaves a vertical dead zone — moving the cursor
+      // right from the item lands below the panel and it closes before reaching.
+      const minHeight = Math.min(containerRect?.height ?? 0, maxHeight);
+      setFlyoutStyle({
+        top: containerTop,
+        left: itemRect.right,
+        maxHeight,
+        minHeight,
+      });
       setHoveredCat(cat);
       setSliderPage(0);
       getShowingStoreProducts({ category: cat._id }).then((res) => {
@@ -175,14 +186,15 @@ const CategorySidebar = ({
         top: flyoutStyle.top,
         left: flyoutStyle.left,
         maxHeight: flyoutStyle.maxHeight,
+        minHeight: flyoutStyle.minHeight,
         zIndex: 9999,
       }}
-      className="w-150 bg-white shadow-xl border border-gray-200 rounded-r-sm overflow-y-auto [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-thumb]:bg-gray-200 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-gray-300"
+      className="w-150 flex flex-col bg-white shadow-xl border border-gray-200 rounded-r-sm overflow-y-auto [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-thumb]:bg-gray-200 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-gray-300"
       onMouseEnter={cancelClose}
       onMouseLeave={scheduleClose}
     >
       {/* Category heading */}
-      <div className="px-5 pt-4 pb-2">
+      <div className="shrink-0 px-5 pt-4 pb-2">
         <h3 className="font-bold text-gray-900 text-[13px] mb-3">
           {catName(hoveredCat)}
         </h3>
@@ -232,6 +244,8 @@ const CategorySidebar = ({
         </Link>
       </div>
 
+      {/* Bottom block — pinned to the bottom of the panel via mt-auto */}
+      <div className="mt-auto shrink-0">
       {/* Product slider */}
       {products.length > 0 && (
         <>
@@ -330,6 +344,7 @@ const CategorySidebar = ({
           </div>
         </>
       )}
+      </div>
     </div>
   ) : null;
 
