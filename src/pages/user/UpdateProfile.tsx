@@ -10,6 +10,7 @@ import {
 } from "react-icons/fi";
 
 import { useAuth } from "@stores/useAuthStore";
+import { Button } from "@components/ui/button";
 import useUtilsFunction from "@hooks/useUtilsFunction";
 import Uploader from "@components/image-uploader/Uploader";
 import { updateCustomer } from "@services/CustomerServices";
@@ -114,16 +115,16 @@ const UpdateProfile: React.FC = () => {
     <div className="max-w-screen-2xl">
       {/* Header */}
       <div className="mb-6">
-        <div className="flex items-center gap-3 mb-2">
-          <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center shadow-lg shadow-primary/20">
-            <FiUser className="w-5 h-5 text-primary-foreground" />
+        <div className="flex items-center gap-3">
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+            <FiUser className="h-5 w-5" />
           </div>
           <div>
-            <h2 className="text-xl font-bold text-foreground">
+            <h2 className="text-lg font-semibold leading-none text-foreground sm:text-xl">
               {String(dashboard?.update_profile ?? '') ??
                 "Update Profile"}
             </h2>
-            <p className="text-sm text-muted-foreground">
+            <p className="mt-1.5 text-sm text-muted-foreground">
               Update your personal information
             </p>
           </div>
@@ -132,22 +133,22 @@ const UpdateProfile: React.FC = () => {
 
       {/* Success Message */}
       {state.success && (
-        <div className="mb-6 p-4 bg-accent border border-primary rounded-xl flex items-center gap-3">
-          <FiCheck className="w-5 h-5 text-primary flex-shrink-0" />
+        <div className="mb-6 flex items-center gap-3 rounded-xl border border-primary/20 bg-primary/5 p-4">
+          <FiCheck className="h-5 w-5 shrink-0 text-primary" />
           <p className="text-sm text-primary">{state.message}</p>
         </div>
       )}
 
       {/* Error Message */}
       {state.error && (
-        <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-xl flex items-center gap-3">
-          <FiAlertCircle className="w-5 h-5 text-red-500 flex-shrink-0" />
-          <p className="text-sm text-red-600">{state.error}</p>
+        <div className="mb-6 flex items-center gap-3 rounded-xl border border-destructive/20 bg-destructive/5 p-4">
+          <FiAlertCircle className="h-5 w-5 shrink-0 text-destructive" />
+          <p className="text-sm text-destructive">{state.error}</p>
         </div>
       )}
 
       <form ref={formRef} onSubmit={handleSubmit}>
-        <div className="bg-background rounded-2xl shadow-lg border border-border p-6 lg:p-8">
+        <div className="rounded-2xl border border-border bg-card p-6 lg:p-8">
           {/* Profile Photo Section */}
           <div className="mb-8">
             <label className="block text-muted-foreground font-medium text-sm mb-3">
@@ -269,41 +270,15 @@ const UpdateProfile: React.FC = () => {
 
           {/* Submit Button */}
           <div className="mt-8 flex justify-end">
-            <button
+            <Button
               type="submit"
-              disabled={isPending}
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-primary to-primary text-white font-semibold rounded-xl shadow-lg shadow-primary/30 hover:shadow-primary/40 hover:from-primary hover:to-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+              size="lg"
+              isLoading={isPending}
+              loadingText="Updating..."
             >
-              {isPending ? (
-                <>
-                  <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
-                    <circle
-                      className="opacity-25"
-                      cx="12"
-                      cy="12"
-                      r="10"
-                      stroke="currentColor"
-                      strokeWidth="4"
-                      fill="none"
-                    />
-                    <path
-                      className="opacity-75"
-                      fill="currentColor"
-                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                    />
-                  </svg>
-                  <span>Updating...</span>
-                </>
-              ) : (
-                <>
-                  <FiCheck className="w-5 h-5" />
-                  <span>
-                    {String(dashboard?.update_button ?? '') ??
-                      "Update Profile"}
-                  </span>
-                </>
-              )}
-            </button>
+              <FiCheck className="h-4 w-4" />
+              {String(dashboard?.update_button ?? "") || "Update Profile"}
+            </Button>
           </div>
         </div>
       </form>
