@@ -13,8 +13,12 @@ import {
   Star,
   Clock,
   ShoppingBag,
+  ChevronRight,
+  CheckCheck,
 } from "lucide-react";
 
+import { cn } from "@lib/utils";
+import { Button } from "@components/ui/button";
 import { useAuth } from "@stores/useAuthStore";
 import { loadNotifications, NOTIFS_KEY } from "@services/NotificationServices";
 import type { StoredNotification } from "@services/NotificationServices";
@@ -129,6 +133,7 @@ const Notifications: React.FC = () => {
   const [fetchError, setFetchError] = useState<string | null>(null);
   const [isMarkingAll, setIsMarkingAll] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [filter, setFilter] = useState<"all" | "unread">("all");
 
   const loadNotifications = async () => {
     if (!user?.token) {
@@ -168,145 +173,241 @@ const Notifications: React.FC = () => {
 
   const notifications = notifData?.notifications ?? [];
   const unreadCount = notifData?.unreadCount ?? 0;
+  const visibleNotifications =
+    filter === "unread"
+      ? notifications.filter((n) => n.status === "unread")
+      : notifications;
 
   if (loading) {
     return (
       <div className="overflow-hidden">
-        <div className="animate-pulse space-y-3">
-          {[1, 2, 3, 4].map((i) => (
-            <div key={i} className="h-20 bg-muted rounded-lg" />
-          ))}
+        <div className="rounded-2xl border border-border bg-card p-5 sm:p-6">
+          <div className="animate-pulse space-y-5">
+            <div className="flex items-center gap-3">
+              <div className="h-11 w-11 rounded-xl bg-muted" />
+              <div className="space-y-2">
+                <div className="h-4 w-40 rounded bg-muted" />
+                <div className="h-3 w-24 rounded bg-muted" />
+              </div>
+            </div>
+            <div className="space-y-3">
+              {[1, 2, 3, 4].map((i) => (
+                <div key={i} className="h-[72px] rounded-xl bg-muted" />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     );
   }
 
+  const totalPages = Math.ceil((notifData?.totalDoc ?? 0) / 20);
+
   return (
     <div className="overflow-hidden">
-      <div className="max-w-screen-2xl mx-auto">
-        {/* Header */}
-        <div className="flex items-center justify-between mb-6">
-          <div>
-            <h3 className="text-lg font-semibold flex items-center gap-2">
-              <Bell className="h-5 w-5" />
-              Notifications
-              {unreadCount > 0 && (
-                <span className="inline-flex items-center justify-center h-5 min-w-[20px] px-1.5 text-xs font-semibold leading-none text-white bg-red-500 rounded-full">
-                  {unreadCount}
-                </span>
-              )}
-            </h3>
+      <div className="mx-auto max-w-screen-2xl">
+        <div className="rounded-2xl border border-border bg-card">
+          {/* Header */}
+          <div className="flex flex-col gap-4 border-b border-border p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6">
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                <Bell className="h-5 w-5" />
+              </div>
+              <div>
+                <h3 className="flex items-center gap-2 text-lg font-semibold leading-none text-foreground">
+                  Notifications
+                  {unreadCount > 0 && (
+                    <span className="inline-flex h-5 min-w-[20px] items-center justify-center rounded-full bg-primary px-1.5 text-xs font-semibold leading-none text-primary-foreground">
+                      {unreadCount}
+                    </span>
+                  )}
+                </h3>
+                <p className="mt-1.5 text-sm text-muted-foreground">
+                  {unreadCount > 0
+                    ? `You have ${unreadCount} unread ${
+                        unreadCount === 1 ? "notification" : "notifications"
+                      }`
+                    : "You're all caught up"}
+                </p>
+              </div>
+            </div>
+
+            {unreadCount > 0 && (
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={handleMarkAllRead}
+                disabled={isMarkingAll}
+                className="self-start sm:self-auto"
+              >
+                <CheckCheck className="h-4 w-4" />
+                {isMarkingAll ? "Marking..." : "Mark all as read"}
+              </Button>
+            )}
           </div>
-          {unreadCount > 0 && (
-            <button
-              onClick={handleMarkAllRead}
-              disabled={isMarkingAll}
-              className="text-sm text-primary hover:underline disabled:opacity-50"
-            >
-              {isMarkingAll ? "Marking..." : "Mark all as read"}
-            </button>
+
+          {/* Filter tabs */}
+          {notifications.length > 0 && (
+            <div className="flex items-center gap-1 border-b border-border px-5 py-3 sm:px-6">
+              <div className="inline-flex items-center gap-1 rounded-lg bg-muted p-1">
+                {(["all", "unread"] as const).map((key) => (
+                  <button
+                    key={key}
+                    onClick={() => setFilter(key)}
+                    className={cn(
+                      "inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-medium capitalize transition-colors",
+                      filter === key
+                        ? "bg-card text-foreground shadow-xs"
+                        : "text-muted-foreground hover:text-foreground",
+                    )}
+                  >
+                    {key}
+                    {key === "unread" && unreadCount > 0 && (
+                      <span
+                        className={cn(
+                          "inline-flex h-4 min-w-[16px] items-center justify-center rounded-full px-1 text-[10px] font-semibold leading-none",
+                          filter === "unread"
+                            ? "bg-primary text-primary-foreground"
+                            : "bg-muted-foreground/20 text-muted-foreground",
+                        )}
+                      >
+                        {unreadCount}
+                      </span>
+                    )}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Body */}
+          <div className="p-3 sm:p-4">
+            {fetchError ? (
+              <div className="py-16 text-center">
+                <p className="text-destructive">{fetchError}</p>
+              </div>
+            ) : visibleNotifications.length === 0 ? (
+              <div className="py-16 text-center">
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-muted">
+                  <BellOff className="h-7 w-7 text-muted-foreground" />
+                </div>
+                <h4 className="font-medium text-foreground">
+                  {filter === "unread"
+                    ? "No unread notifications"
+                    : "No notifications yet"}
+                </h4>
+                <p className="mx-auto mt-1.5 max-w-sm text-sm text-muted-foreground">
+                  {filter === "unread"
+                    ? "You've read everything. Switch to All to see your history."
+                    : "You'll receive notifications when there are updates to your orders."}
+                </p>
+              </div>
+            ) : (
+              <div className="space-y-2">
+                {visibleNotifications.map((notification) => {
+                  const Icon = notificationIcons[notification.type] ?? Bell;
+                  const colorClass =
+                    notificationColors[notification.type] ??
+                    "text-gray-500 bg-gray-50";
+                  const isUnread = notification.status === "unread";
+
+                  return (
+                    <div
+                      key={notification._id}
+                      className={cn(
+                        "group relative flex cursor-pointer items-start gap-4 rounded-xl border p-4 transition-all",
+                        isUnread
+                          ? "border-primary/30 bg-primary/5 hover:bg-primary/10"
+                          : "border-border bg-card hover:border-primary/20 hover:bg-muted/50",
+                      )}
+                      onClick={() => {
+                        if (isUnread) {
+                          handleMarkRead(notification._id);
+                        }
+                        if (notification.trackingId) {
+                          navigate(`/track/${notification.trackingId}`);
+                        }
+                      }}
+                    >
+                      {/* Unread accent bar */}
+                      {isUnread && (
+                        <span className="absolute left-0 top-1/2 h-7 w-1 -translate-y-1/2 rounded-r-full bg-primary" />
+                      )}
+
+                      {/* Icon */}
+                      <div
+                        className={cn(
+                          "flex h-11 w-11 shrink-0 items-center justify-center rounded-full",
+                          colorClass,
+                        )}
+                      >
+                        <Icon className="h-5 w-5" />
+                      </div>
+
+                      {/* Content */}
+                      <div className="min-w-0 flex-1">
+                        <div className="flex items-start justify-between gap-2">
+                          <p
+                            className={cn(
+                              "text-sm text-foreground",
+                              isUnread ? "font-semibold" : "font-medium",
+                            )}
+                          >
+                            {notification.title}
+                          </p>
+                          {isUnread && (
+                            <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary" />
+                          )}
+                        </div>
+                        <p className="mt-1 line-clamp-2 text-sm text-muted-foreground">
+                          {notification.message}
+                        </p>
+                        <div className="mt-2 flex flex-wrap items-center gap-2">
+                          <time className="inline-flex items-center gap-1 text-xs text-muted-foreground">
+                            <Clock className="h-3 w-3" />
+                            {dayjs(notification.createdAt).fromNow()}
+                          </time>
+                          {notification.trackingId && (
+                            <span className="inline-flex items-center rounded-md bg-muted px-2 py-0.5 font-mono text-xs text-muted-foreground">
+                              {notification.trackingId}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Navigable affordance */}
+                      {notification.trackingId && (
+                        <ChevronRight className="mt-0.5 h-4 w-4 shrink-0 self-center text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:text-primary" />
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+
+          {/* Pagination */}
+          {totalPages > 1 && (
+            <div className="flex justify-center gap-2 border-t border-border p-4">
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map(
+                (page) => (
+                  <Link
+                    key={page}
+                    to={`?page=${page}`}
+                    className={cn(
+                      "inline-flex h-8 w-8 items-center justify-center rounded-md border text-sm font-medium transition-colors",
+                      page === currentPage
+                        ? "border-primary bg-primary text-primary-foreground"
+                        : "border-border text-muted-foreground hover:border-primary/30 hover:bg-muted",
+                    )}
+                  >
+                    {page}
+                  </Link>
+                ),
+              )}
+            </div>
           )}
         </div>
-
-        {fetchError ? (
-          <div className="text-center py-16">
-            <p className="text-red-500">{fetchError}</p>
-          </div>
-        ) : notifications.length === 0 ? (
-          <div className="text-center py-16">
-            <BellOff className="h-12 w-12 text-muted-foreground mx-auto mb-3" />
-            <h4 className="font-medium text-muted-foreground">
-              No notifications yet
-            </h4>
-            <p className="text-sm text-muted-foreground mt-1">
-              You'll receive notifications when there are updates to your
-              orders.
-            </p>
-          </div>
-        ) : (
-          <div className="space-y-2">
-            {notifications.map((notification) => {
-              const Icon = notificationIcons[notification.type] ?? Bell;
-              const colorClass =
-                notificationColors[notification.type] ??
-                "text-gray-500 bg-gray-50";
-              const isUnread = notification.status === "unread";
-
-              return (
-                <div
-                  key={notification._id}
-                  className={`flex items-start gap-3 p-4 rounded-lg border transition-colors cursor-pointer ${
-                    isUnread
-                      ? "bg-primary/5 border-primary/20"
-                      : "bg-background border-border hover:bg-muted/50"
-                  }`}
-                  onClick={() => {
-                    if (isUnread) {
-                      handleMarkRead(notification._id);
-                    }
-                    if (notification.trackingId) {
-                      navigate(`/track/${notification.trackingId}`);
-                    }
-                  }}
-                >
-                  {/* Icon */}
-                  <div
-                    className={`flex-shrink-0 h-10 w-10 rounded-full flex items-center justify-center ${colorClass}`}
-                  >
-                    <Icon className="h-5 w-5" />
-                  </div>
-
-                  {/* Content */}
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-start justify-between gap-2">
-                      <p
-                        className={`text-sm ${
-                          isUnread ? "font-semibold" : "font-medium"
-                        }`}
-                      >
-                        {notification.title}
-                      </p>
-                      {isUnread && (
-                        <span className="flex-shrink-0 h-2 w-2 rounded-full bg-primary mt-1.5" />
-                      )}
-                    </div>
-                    <p className="text-sm text-muted-foreground mt-0.5 line-clamp-2">
-                      {notification.message}
-                    </p>
-                    <div className="flex items-center gap-3 mt-1.5">
-                      <time className="text-xs text-muted-foreground">
-                        {dayjs(notification.createdAt).fromNow()}
-                      </time>
-                      {notification.trackingId && (
-                        <span className="text-xs font-mono text-primary">
-                          {notification.trackingId}
-                        </span>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        )}
-
-        {/* Pagination */}
-        {(notifData?.totalDoc ?? 0) > 20 && (
-          <div className="flex justify-center mt-6 gap-2">
-            {Array.from(
-              { length: Math.ceil((notifData?.totalDoc ?? 0) / 20) },
-              (_, i) => i + 1,
-            ).map((page) => (
-              <Link
-                key={page}
-                to={`?page=${page}`}
-                className="inline-flex items-center justify-center h-8 w-8 text-sm rounded-md border border-border hover:bg-muted"
-              >
-                {page}
-              </Link>
-            ))}
-          </div>
-        )}
       </div>
     </div>
   );
