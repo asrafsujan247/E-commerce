@@ -11,6 +11,7 @@ import ProfileDropDown from "@components/navbar/ProfileDropDown";
 import PagesDrawer from "@components/drawer/PagesDrawer";
 import { getShowingCategory } from "@services/CategoryService";
 import { useCartStore } from "@stores/useCartStore";
+import { useAuth } from "@stores/useAuthStore";
 import type { NavbarProps, Category } from "@appTypes/index";
 import { getLogoUrl } from "@utils/imageUtils";
 
@@ -26,7 +27,12 @@ const Navbar = ({
   const [openCartDrawer, setOpenCartDrawer] = useState<boolean>(false);
   const [isHydrated, setIsHydrated] = useState<boolean>(false);
   const { totalItems } = useCartStore();
+  const { user } = useAuth();
   const navigate = useNavigate();
+
+  const profileLabel = user?.email
+    ? user?.name?.split(" ")[0] || "Account"
+    : "Sign in";
 
   useEffect(() => {
     setIsHydrated(true);
@@ -141,7 +147,9 @@ const Navbar = ({
                 to="/rfq"
                 className="hidden lg:flex flex-col items-center gap-1 text-primary hover:text-primary/80 transition-colors"
               >
-                <SignalIcon className="h-6 w-6" />
+                <span className="flex h-8 items-center justify-center">
+                  <SignalIcon className="h-6 w-6" />
+                </span>
                 <span className="text-xs xl:text-sm font-medium whitespace-nowrap">
                   Post My RFQ
                 </span>
@@ -152,7 +160,9 @@ const Navbar = ({
                 to="/user/notifications"
                 className="flex flex-col items-center gap-1 text-gray-600 hover:text-primary transition-colors"
               >
-                <FiMessageSquare className="h-6 w-6" />
+                <span className="flex h-8 items-center justify-center">
+                  <FiMessageSquare className="h-6 w-6" />
+                </span>
                 <span className="hidden lg:block text-xs xl:text-sm font-medium">
                   Messages
                 </span>
@@ -165,14 +175,16 @@ const Navbar = ({
                 onClick={() => setOpenCartDrawer(!openCartDrawer)}
                 className="flex flex-col items-center gap-1 text-gray-600 hover:text-primary transition-colors focus:outline-none"
               >
-                <div className="relative shrink-0">
-                  {isHydrated && totalItems > 0 && (
-                    <span className="absolute z-10 top-0 -right-1 inline-flex items-center justify-center p-1 h-5 w-5 text-xs font-medium leading-none text-red-100 transform -translate-x-1/2 -translate-y-1/2 bg-red-500 rounded-full">
-                      {totalItems}
-                    </span>
-                  )}
-                  <ShoppingCartIcon className="h-6 w-6" aria-hidden="true" />
-                </div>
+                <span className="flex h-8 items-center justify-center">
+                  <span className="relative shrink-0">
+                    {isHydrated && totalItems > 0 && (
+                      <span className="absolute z-10 top-0 -right-1 inline-flex items-center justify-center p-1 h-5 w-5 text-xs font-medium leading-none text-red-100 transform -translate-x-1/2 -translate-y-1/2 bg-red-500 rounded-full">
+                        {totalItems}
+                      </span>
+                    )}
+                    <ShoppingCartIcon className="h-6 w-6" aria-hidden="true" />
+                  </span>
+                </span>
                 <span className="hidden lg:block text-xs xl:text-sm font-medium">
                   Inquiry Basket
                 </span>
@@ -180,9 +192,11 @@ const Navbar = ({
 
               {/* Profile */}
               <div className="flex flex-col items-center gap-1 text-gray-600">
-                <ProfileDropDown />
-                <span className="hidden lg:block text-xs xl:text-sm font-medium">
-                  Sign in
+                <span className="flex h-8 items-center justify-center">
+                  <ProfileDropDown />
+                </span>
+                <span className="hidden lg:block max-w-24 truncate text-xs xl:text-sm font-medium">
+                  {profileLabel}
                 </span>
               </div>
             </div>
