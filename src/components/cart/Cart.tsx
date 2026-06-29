@@ -107,32 +107,32 @@ const Cart = ({ setOpen }: CartProps) => {
         <div className="bg-card border-t border-border p-5 space-y-4">
           <div className="flex justify-between items-end gap-4">
             <div className="flex flex-col">
-              <span className="text-base font-semibold text-foreground">
+              <span className="text-sm font-semibold text-foreground">
                 Subtotal
               </span>
-              <span className="text-sm text-muted-foreground font-normal">
+              <span className="text-xs text-muted-foreground font-normal">
                 Shipping and taxes calculated at checkout.
               </span>
             </div>
-            <span className="text-xl font-bold text-foreground tabular-nums whitespace-nowrap">
+            <span className="text-base font-bold text-foreground tabular-nums whitespace-nowrap">
               {formatPrice(cartTotal)}
             </span>
           </div>
 
-          <div className="flex space-x-3">
+          <div className="flex justify-end space-x-2">
             <Link
               to="/checkout-cart"
-              className="relative h-auto inline-flex items-center justify-center gap-2 rounded-lg transition-colors text-sm sm:text-base font-medium py-2.5 px-3 bg-card text-primary border border-primary hover:bg-primary/5 flex-1 focus:outline-none"
+              className="relative h-auto inline-flex items-center justify-center gap-1.5 rounded-lg transition-colors text-sm font-medium py-2 px-3.5 bg-card text-primary border border-primary hover:bg-primary/5 focus:outline-none"
             >
-              <FiShoppingCart className="size-5 shrink-0" />
+              <FiShoppingCart className="size-4 shrink-0" />
               View Cart
             </Link>
             <button
               type="button"
               onClick={handleCheckout}
-              className="relative h-auto inline-flex items-center justify-center gap-2 rounded-lg transition-colors text-sm sm:text-base font-medium py-2.5 px-3 bg-primary hover:bg-primary/90 text-primary-foreground flex-1 focus:outline-none shadow-sm shadow-primary/30"
+              className="relative h-auto inline-flex items-center justify-center gap-1.5 rounded-lg transition-colors text-sm font-medium py-2 px-3.5 bg-primary hover:bg-primary/90 text-primary-foreground focus:outline-none shadow-sm shadow-primary/30"
             >
-              <IoBagCheckOutline className="size-5 shrink-0" />
+              <IoBagCheckOutline className="size-4 shrink-0" />
               Checkout
             </button>
           </div>
