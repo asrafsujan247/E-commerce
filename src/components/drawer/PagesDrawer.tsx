@@ -12,6 +12,8 @@ import {
   DevicePhoneMobileIcon,
   GlobeAltIcon,
 } from "@heroicons/react/24/outline";
+import { useAuth } from "@stores/useAuthStore";
+import { isValidImageUrl } from "@utils/imageUtils";
 import type { Category as CategoryType } from "@appTypes/index";
 
 interface PagesDrawerProps {
@@ -29,6 +31,8 @@ const PagesDrawer: React.FC<PagesDrawerProps> = ({
   categories,
   categoryError,
 }) => {
+  const { user } = useAuth();
+  const hasValidImage = isValidImageUrl(user?.image);
   const close = () => setOpen(false);
 
   const topCats = (categories ?? []).slice(0, CATEGORY_LIMIT);
@@ -65,24 +69,54 @@ const PagesDrawer: React.FC<PagesDrawerProps> = ({
             leaveTo="-translate-x-full"
           >
             <DialogPanel className="relative flex w-72 flex-col overflow-y-auto bg-white shadow-xl">
-              {/* Sign In / Join Free */}
-              <div className="flex items-center gap-3 px-5 py-4">
+              {/* Account — signed-in user or Sign In / Join Free */}
+              {user?.email ? (
                 <Link
-                  to="/auth/login"
+                  to="/user/dashboard"
                   onClick={close}
-                  className="text-sm font-semibold text-primary hover:underline"
+                  className="flex items-center gap-3 px-5 py-4"
                 >
-                  Sign In
+                  {hasValidImage && user.image ? (
+                    <img
+                      src={user.image}
+                      width={40}
+                      height={40}
+                      className="h-10 w-10 rounded-full object-cover"
+                      alt={user?.name || "User"}
+                    />
+                  ) : (
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-base font-bold text-primary">
+                      {user?.name?.charAt(0) || "U"}
+                    </div>
+                  )}
+                  <div className="min-w-0">
+                    <span className="block truncate text-sm font-semibold text-gray-900">
+                      {user?.name || "User"}
+                    </span>
+                    <span className="block truncate text-xs text-gray-500">
+                      {user.email}
+                    </span>
+                  </div>
                 </Link>
-                <span className="text-gray-300 text-sm">|</span>
-                <Link
-                  to="/auth/register"
-                  onClick={close}
-                  className="text-sm font-semibold text-primary hover:underline"
-                >
-                  Join Free
-                </Link>
-              </div>
+              ) : (
+                <div className="flex items-center gap-3 px-5 py-4">
+                  <Link
+                    to="/auth/login"
+                    onClick={close}
+                    className="text-sm font-semibold text-primary hover:underline"
+                  >
+                    Sign In
+                  </Link>
+                  <span className="text-gray-300 text-sm">|</span>
+                  <Link
+                    to="/auth/register"
+                    onClick={close}
+                    className="text-sm font-semibold text-primary hover:underline"
+                  >
+                    Join Free
+                  </Link>
+                </div>
+              )}
 
               <div className="border-t border-gray-100" />
 

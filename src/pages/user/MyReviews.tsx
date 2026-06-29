@@ -50,10 +50,10 @@ const MyReviews: React.FC = () => {
   if (loading) {
     return (
       <div className="overflow-hidden">
-        <div className="rounded-2xl border border-border bg-card p-5 sm:p-6">
+        <div className="rounded-xl border border-border bg-card p-5 sm:p-6">
           <div className="animate-pulse space-y-5">
             <div className="flex items-center gap-3">
-              <div className="h-11 w-11 rounded-xl bg-muted" />
+              <div className="h-11 w-11 rounded-lg bg-muted" />
               <div className="space-y-2">
                 <div className="h-4 w-32 rounded bg-muted" />
                 <div className="h-3 w-52 rounded bg-muted" />
@@ -61,7 +61,7 @@ const MyReviews: React.FC = () => {
             </div>
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
               {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="h-36 rounded-xl bg-muted" />
+                <div key={i} className="h-36 rounded-lg bg-muted" />
               ))}
             </div>
           </div>
@@ -87,10 +87,10 @@ const MyReviews: React.FC = () => {
   return (
     <div className="overflow-hidden">
       <div className="mx-auto max-w-screen-2xl">
-        <div className="rounded-2xl border border-border bg-card">
+        <div className="rounded-xl border border-border bg-card">
           {/* Header */}
           <div className="flex items-center gap-3 border-b border-border p-5 sm:p-6">
-            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
               <Star className="h-5 w-5" />
             </div>
             <div>
@@ -105,7 +105,7 @@ const MyReviews: React.FC = () => {
 
           {/* Tabs */}
           <div className="border-b border-border px-5 py-3 sm:px-6">
-            <div className="inline-flex items-center gap-1 rounded-lg bg-muted p-1">
+            <div className="inline-flex items-center gap-1 rounded-md bg-muted p-1">
               {tabs.map((tab) => {
                 const isActive = activeTab === tab.key;
                 return (

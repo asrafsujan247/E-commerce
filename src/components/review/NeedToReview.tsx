@@ -64,14 +64,14 @@ const NeedToReview: React.FC<NeedToReviewProps> = ({ reviews, error }) => {
             {reviews?.notReviewed?.map((item, index) => (
               <div
                 key={index + 1}
-                className="group flex items-center gap-3 rounded-xl border border-border bg-card p-3 transition-all hover:border-primary/30 hover:shadow-sm"
+                className="group flex items-center gap-3 rounded-lg border border-border bg-card p-3 transition-all hover:border-primary/30 hover:shadow-sm"
               >
                 <ImageWithFallback
                   width="80"
                   height="80"
                   alt="product"
                   src={item?.image}
-                  className="size-16 flex-none rounded-lg object-cover sm:size-20"
+                  className="size-16 flex-none rounded-md object-cover sm:size-20"
                 />
                 <div className="min-w-0 flex-1">
                   <h3 className="mb-2 line-clamp-2 text-sm font-medium text-foreground">
@@ -79,7 +79,7 @@ const NeedToReview: React.FC<NeedToReviewProps> = ({ reviews, error }) => {
                   </h3>
                   <button
                     onClick={() => openModal(item)}
-                    className="inline-flex items-center gap-1.5 rounded-lg bg-primary px-3 py-1.5 text-xs font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+                    className="inline-flex items-center gap-1.5 rounded-md bg-primary px-3 py-1.5 text-xs font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
                   >
                     <PenLine className="h-3.5 w-3.5" />
                     Write Review

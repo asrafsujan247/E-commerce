@@ -199,7 +199,7 @@ const ShippingAddress: React.FC = () => {
     return (
       <div className="max-w-screen-2xl animate-pulse space-y-4">
         <div className="h-10 bg-muted rounded w-64" />
-        <div className="h-64 bg-muted rounded-2xl" />
+        <div className="h-64 bg-muted rounded-xl" />
       </div>
     );
   }
@@ -209,7 +209,7 @@ const ShippingAddress: React.FC = () => {
       {/* Header */}
       <div className="mb-6">
         <div className="flex items-center gap-3 mb-2">
-          <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center shadow-lg shadow-primary/20">
+          <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center shadow-lg shadow-primary/20">
             <FiMapPin className="w-5 h-5 text-primary-foreground" />
           </div>
           <div>
@@ -227,7 +227,7 @@ const ShippingAddress: React.FC = () => {
 
       {/* Fetch Error */}
       {fetchError && (
-        <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-xl flex items-center gap-3">
+        <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg flex items-center gap-3">
           <FiAlertCircle className="w-5 h-5 text-red-500 flex-shrink-0" />
           <p className="text-sm text-red-600">{fetchError}</p>
         </div>
@@ -235,14 +235,14 @@ const ShippingAddress: React.FC = () => {
 
       {/* Success Message */}
       {state.success && (
-        <div className="mb-6 p-4 bg-accent border border-primary rounded-xl flex items-center gap-3">
+        <div className="mb-6 p-4 bg-accent border border-primary rounded-lg flex items-center gap-3">
           <FiCheck className="w-5 h-5 text-primary flex-shrink-0" />
           <p className="text-sm text-primary">{state.message}</p>
         </div>
       )}
 
       <form onSubmit={handleSubmit}>
-        <div className="bg-background rounded-2xl shadow-lg border border-border p-6 lg:p-8">
+        <div className="bg-background rounded-xl shadow-lg border border-border p-6 lg:p-8">
           <div className="space-y-5">
             {/* Full Name */}
             <div className="form-group">
@@ -258,7 +258,7 @@ const ShippingAddress: React.FC = () => {
                   name="name"
                   defaultValue={shippingAddress?.name ?? ""}
                   placeholder="Enter your full name"
-                  className="h-12 text-sm pl-11 pr-4 w-full rounded-xl border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none"
+                  className="h-12 text-sm pl-11 pr-4 w-full rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none"
                 />
               </div>
               {state.errors.name && (
@@ -283,7 +283,7 @@ const ShippingAddress: React.FC = () => {
                   name="address"
                   defaultValue={shippingAddress?.address ?? ""}
                   placeholder="Street address, building, apartment"
-                  className="h-12 text-sm pl-11 pr-4 w-full rounded-xl border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none"
+                  className="h-12 text-sm pl-11 pr-4 w-full rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none"
                 />
               </div>
               {state.errors.address && (
@@ -308,7 +308,7 @@ const ShippingAddress: React.FC = () => {
                   name="contact"
                   defaultValue={shippingAddress?.contact ?? ""}
                   placeholder="+1 (555) 000-0000"
-                  className="h-12 text-sm pl-11 pr-4 w-full rounded-xl border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none"
+                  className="h-12 text-sm pl-11 pr-4 w-full rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none"
                 />
               </div>
               {state.errors.contact && (
@@ -335,7 +335,7 @@ const ShippingAddress: React.FC = () => {
                     onChange={(e) =>
                       handleInputChange("country", e.target.value)
                     }
-                    className="h-12 text-sm pl-11 pr-4 w-full rounded-xl border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none appearance-none cursor-pointer"
+                    className="h-12 text-sm pl-11 pr-4 w-full rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none appearance-none cursor-pointer"
                   >
                     <option value="">Select Country</option>
                     {countries.map((country) => (
@@ -371,7 +371,7 @@ const ShippingAddress: React.FC = () => {
                     value={selectedValue.city}
                     onChange={(e) => handleInputChange("city", e.target.value)}
                     disabled={!selectedValue.country}
-                    className="h-12 text-sm pl-11 pr-4 w-full rounded-xl border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none appearance-none cursor-pointer disabled:bg-muted disabled:cursor-not-allowed"
+                    className="h-12 text-sm pl-11 pr-4 w-full rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none appearance-none cursor-pointer disabled:bg-muted disabled:cursor-not-allowed"
                   >
                     <option value="">Select City</option>
                     {cities.map((city) => (
@@ -408,7 +408,7 @@ const ShippingAddress: React.FC = () => {
                   value={selectedValue.area}
                   onChange={(e) => handleInputChange("area", e.target.value)}
                   disabled={!selectedValue.city || areas.length === 0}
-                  className="h-12 text-sm pl-11 pr-4 w-full rounded-xl border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none appearance-none cursor-pointer disabled:bg-muted disabled:cursor-not-allowed"
+                  className="h-12 text-sm pl-11 pr-4 w-full rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none appearance-none cursor-pointer disabled:bg-muted disabled:cursor-not-allowed"
                 >
                   <option value="">Select Area</option>
                   {areas.map((area) => (
@@ -434,7 +434,7 @@ const ShippingAddress: React.FC = () => {
             <button
               type="submit"
               disabled={isPending}
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-xl shadow-lg shadow-primary/30 hover:shadow-primary/40 hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg shadow-lg shadow-primary/30 hover:shadow-primary/40 hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isPending ? (
                 <>

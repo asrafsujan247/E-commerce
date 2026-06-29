@@ -59,7 +59,7 @@ const ForgetPasswordToken = () => {
       <div className="mx-auto max-w-md w-full">
         {success ? (
           <div className="text-center">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-primary rounded-2xl shadow-lg mb-6">
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-primary rounded-xl shadow-lg mb-6">
               <FiCheck className="w-10 h-10 text-white" />
             </div>
             <h1 className="text-3xl font-bold text-foreground mb-2">Password Reset!</h1>
@@ -68,13 +68,13 @@ const ForgetPasswordToken = () => {
         ) : (
           <>
             <div className="text-center mb-8">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-primary rounded-2xl shadow-lg mb-6">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-primary rounded-xl shadow-lg mb-6">
                 <FiLock className="w-10 h-10 text-white" />
               </div>
               <h1 className="text-3xl font-bold text-foreground mb-2">Reset Password</h1>
               <p className="text-muted-foreground">Enter your new password below</p>
             </div>
-            <div className="bg-background rounded-2xl shadow-xl p-8 border border-border">
+            <div className="bg-background rounded-xl shadow-xl p-8 border border-border">
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
                 <div>
                   <label className="block text-sm font-medium mb-2">New Password</label>

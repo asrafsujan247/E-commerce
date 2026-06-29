@@ -116,7 +116,7 @@ const UpdateProfile: React.FC = () => {
       {/* Header */}
       <div className="mb-6">
         <div className="flex items-center gap-3">
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
             <FiUser className="h-5 w-5" />
           </div>
           <div>
@@ -133,7 +133,7 @@ const UpdateProfile: React.FC = () => {
 
       {/* Success Message */}
       {state.success && (
-        <div className="mb-6 flex items-center gap-3 rounded-xl border border-primary/20 bg-primary/5 p-4">
+        <div className="mb-6 flex items-center gap-3 rounded-lg border border-primary/20 bg-primary/5 p-4">
           <FiCheck className="h-5 w-5 shrink-0 text-primary" />
           <p className="text-sm text-primary">{state.message}</p>
         </div>
@@ -141,14 +141,14 @@ const UpdateProfile: React.FC = () => {
 
       {/* Error Message */}
       {state.error && (
-        <div className="mb-6 flex items-center gap-3 rounded-xl border border-destructive/20 bg-destructive/5 p-4">
+        <div className="mb-6 flex items-center gap-3 rounded-lg border border-destructive/20 bg-destructive/5 p-4">
           <FiAlertCircle className="h-5 w-5 shrink-0 text-destructive" />
           <p className="text-sm text-destructive">{state.error}</p>
         </div>
       )}
 
       <form ref={formRef} onSubmit={handleSubmit}>
-        <div className="rounded-2xl border border-border bg-card p-6 lg:p-8">
+        <div className="rounded-xl border border-border bg-card p-6 lg:p-8">
           {/* Profile Photo Section */}
           <div className="mb-8">
             <label className="block text-muted-foreground font-medium text-sm mb-3">
@@ -179,7 +179,7 @@ const UpdateProfile: React.FC = () => {
                   name="name"
                   defaultValue={user?.name ?? ""}
                   placeholder="Enter your full name"
-                  className="h-12 text-sm pl-11 pr-4 w-full rounded-xl border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none"
+                  className="h-12 text-sm pl-11 pr-4 w-full rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none"
                 />
               </div>
               {state.errors.name && (
@@ -205,7 +205,7 @@ const UpdateProfile: React.FC = () => {
                   name="email"
                   defaultValue={user?.email ?? ""}
                   readOnly
-                  className="h-12 text-sm pl-11 pr-4 w-full rounded-xl border border-border bg-muted text-muted-foreground cursor-not-allowed"
+                  className="h-12 text-sm pl-11 pr-4 w-full rounded-lg border border-border bg-muted text-muted-foreground cursor-not-allowed"
                 />
               </div>
               <p className="mt-1 text-xs text-muted-foreground">
@@ -230,7 +230,7 @@ const UpdateProfile: React.FC = () => {
                     name="phone"
                     defaultValue={user?.phone ?? ""}
                     placeholder="+1 (555) 000-0000"
-                    className="h-12 text-sm pl-11 pr-4 w-full rounded-xl border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none"
+                    className="h-12 text-sm pl-11 pr-4 w-full rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none"
                   />
                 </div>
                 {state.errors.phone && (
@@ -255,7 +255,7 @@ const UpdateProfile: React.FC = () => {
                     name="address"
                     defaultValue={user?.address ?? ""}
                     placeholder="Your address"
-                    className="h-12 text-sm pl-11 pr-4 w-full rounded-xl border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none"
+                    className="h-12 text-sm pl-11 pr-4 w-full rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none"
                   />
                 </div>
                 {state.errors.address && (

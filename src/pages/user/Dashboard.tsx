@@ -68,7 +68,7 @@ const Dashboard: React.FC = () => {
       <div className="overflow-hidden border-0">
         <div className="animate-pulse space-y-6">
           <div className="flex items-center gap-3">
-            <div className="h-11 w-11 rounded-xl bg-muted" />
+            <div className="h-11 w-11 rounded-lg bg-muted" />
             <div className="space-y-2">
               <div className="h-4 w-48 rounded bg-muted" />
               <div className="h-3 w-64 rounded bg-muted" />
@@ -76,7 +76,7 @@ const Dashboard: React.FC = () => {
           </div>
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="h-24 rounded-2xl bg-muted" />
+              <div key={i} className="h-24 rounded-xl bg-muted" />
             ))}
           </div>
         </div>
@@ -90,7 +90,7 @@ const Dashboard: React.FC = () => {
     <div className="overflow-hidden border-0">
       {/* Header */}
       <div className="mb-6 flex items-center gap-3">
-        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
           <LayoutDashboard className="h-5 w-5" />
         </div>
         <div>

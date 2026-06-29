@@ -46,15 +46,15 @@ const MyAccount: React.FC = () => {
       <div className="overflow-hidden">
         <div className="animate-pulse">
           <div className="mb-6 flex items-center gap-3">
-            <div className="h-11 w-11 rounded-xl bg-muted" />
+            <div className="h-11 w-11 rounded-lg bg-muted" />
             <div className="space-y-2">
               <div className="h-4 w-32 rounded bg-muted" />
               <div className="h-3 w-56 rounded bg-muted" />
             </div>
           </div>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <div className="h-40 rounded-2xl bg-muted" />
-            <div className="h-40 rounded-2xl bg-muted" />
+            <div className="h-40 rounded-xl bg-muted" />
+            <div className="h-40 rounded-xl bg-muted" />
           </div>
         </div>
       </div>
@@ -62,14 +62,14 @@ const MyAccount: React.FC = () => {
   }
 
   const editButtonClass =
-    "inline-flex items-center gap-1.5 rounded-lg border border-border px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:border-primary/30 hover:text-primary";
+    "inline-flex items-center gap-1.5 rounded-md border border-border px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:border-primary/30 hover:text-primary";
 
   return (
     <div className="overflow-hidden">
       <div className="mx-auto max-w-screen-2xl">
         {/* Header */}
         <div className="mb-6 flex items-center gap-3">
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
             <User className="h-5 w-5" />
           </div>
           <div>
@@ -84,7 +84,7 @@ const MyAccount: React.FC = () => {
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           {/* Profile Card */}
-          <div className="flex flex-col rounded-2xl border border-border bg-card p-5">
+          <div className="flex flex-col rounded-xl border border-border bg-card p-5">
             <div className="mb-4 flex items-center justify-between">
               <span className="inline-flex items-center gap-2 text-sm font-semibold text-foreground">
                 <User className="h-4 w-4 text-primary" />
@@ -133,7 +133,7 @@ const MyAccount: React.FC = () => {
 
           {/* Shipping Address Card */}
           {hasShippingAddress ? (
-            <div className="flex flex-col rounded-2xl border border-border bg-card p-5">
+            <div className="flex flex-col rounded-xl border border-border bg-card p-5">
               <div className="mb-4 flex items-center justify-between">
                 <span className="inline-flex items-center gap-2 text-sm font-semibold text-foreground">
                   <MapPin className="h-4 w-4 text-primary" />
@@ -175,7 +175,7 @@ const MyAccount: React.FC = () => {
           ) : (
             <Link
               to="/user/add-shipping-address"
-              className="flex flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-border bg-card p-6 text-center transition-colors hover:border-primary/40 hover:bg-muted/30"
+              className="flex flex-col items-center justify-center gap-3 rounded-xl border border-dashed border-border bg-card p-6 text-center transition-colors hover:border-primary/40 hover:bg-muted/30"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
                 <Plus className="h-6 w-6" />

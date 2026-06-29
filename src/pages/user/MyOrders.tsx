@@ -60,7 +60,7 @@ const MyOrders: React.FC = () => {
       <div className="overflow-hidden">
         <div className="animate-pulse space-y-3">
           {[1, 2, 3].map((i) => (
-            <div key={i} className="h-16 bg-muted rounded-xl" />
+            <div key={i} className="h-16 bg-muted rounded-lg" />
           ))}
         </div>
       </div>

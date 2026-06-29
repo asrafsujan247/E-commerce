@@ -59,14 +59,14 @@ const YouMayLike = () => {
                 />
               </div>
               <div className="min-w-0">
-                <p className="text-[12.5px] font-medium text-[#1a4fb3] group-hover:underline leading-snug line-clamp-2">
+                <span className="block text-[12.5px] font-medium text-[#1a4fb3] group-hover:underline leading-snug line-clamp-2">
                   {String(product.title ?? '')}
-                </p>
-                <p className="text-[11px] text-gray-400 mt-0.5">
+                </span>
+                <span className="block text-[11px] text-gray-400 mt-0.5">
                   {product.prices?.minPrice != null
                     ? `$${product.prices.minPrice}${product.prices.maxPrice !== product.prices.minPrice ? `-${product.prices.maxPrice}` : ""}`
                     : ""}
-                </p>
+                </span>
               </div>
             </Link>
           </li>

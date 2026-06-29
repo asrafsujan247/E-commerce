@@ -527,25 +527,23 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
                           value: string;
                         }[]
                       ).length > 0 ? (
-                        <div className="rounded-xl border border-border overflow-hidden">
+                        <div className="overflow-hidden rounded-xl border border-border">
                           <table className="w-full text-sm">
-                            <tbody>
+                            <tbody className="divide-y divide-border">
                               {(
                                 product.specifications as {
                                   label: string;
                                   value: string;
                                 }[]
                               ).map((spec, i) => (
-                                <tr
-                                  key={i}
-                                  className={
-                                    i % 2 === 0 ? "bg-muted/30" : "bg-card"
-                                  }
-                                >
-                                  <td className="py-3 px-5 font-medium text-foreground w-2/5 border-r border-border">
+                                <tr key={i}>
+                                  <th
+                                    scope="row"
+                                    className="w-2/5 border-r border-border bg-muted/40 px-5 py-3 text-left align-top font-medium text-foreground"
+                                  >
                                     {spec.label}
-                                  </td>
-                                  <td className="py-3 px-5 text-muted-foreground">
+                                  </th>
+                                  <td className="px-5 py-3 align-top text-muted-foreground">
                                     {spec.value}
                                   </td>
                                 </tr>

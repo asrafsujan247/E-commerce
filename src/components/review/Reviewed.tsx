@@ -70,7 +70,7 @@ const Reviewed: React.FC<ReviewedProps> = ({ reviews, error }) => {
             {reviews?.reviewed?.map((item, index) => (
               <div
                 key={index + 1}
-                className="group flex flex-col items-center rounded-xl border border-border bg-card p-4 text-center transition-all hover:border-primary/30 hover:shadow-sm"
+                className="group flex flex-col items-center rounded-lg border border-border bg-card p-4 text-center transition-all hover:border-primary/30 hover:shadow-sm"
               >
                 {/* Image */}
                 <ImageWithFallback
@@ -78,7 +78,7 @@ const Reviewed: React.FC<ReviewedProps> = ({ reviews, error }) => {
                   height="80"
                   alt="product"
                   src={item?.image}
-                  className="size-20 flex-none rounded-lg object-cover"
+                  className="size-20 flex-none rounded-md object-cover"
                 />
 
                 {/* Title */}
@@ -98,7 +98,7 @@ const Reviewed: React.FC<ReviewedProps> = ({ reviews, error }) => {
                 {/* Review Button */}
                 <button
                   onClick={() => openModal(item)}
-                  className="mt-4 inline-flex w-full items-center justify-center gap-1.5 rounded-lg border border-border px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:border-primary/30 hover:text-primary"
+                  className="mt-4 inline-flex w-full items-center justify-center gap-1.5 rounded-md border border-border px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:border-primary/30 hover:text-primary"
                 >
                   <PenLine className="h-3.5 w-3.5" />
                   Edit Review
