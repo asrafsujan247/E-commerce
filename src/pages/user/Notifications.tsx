@@ -181,10 +181,10 @@ const Notifications: React.FC = () => {
   if (loading) {
     return (
       <div className="overflow-hidden">
-        <div className="rounded-2xl border border-border bg-card p-5 sm:p-6">
+        <div className="rounded-xl border border-border bg-card p-5 sm:p-6">
           <div className="animate-pulse space-y-5">
             <div className="flex items-center gap-3">
-              <div className="h-11 w-11 rounded-xl bg-muted" />
+              <div className="h-11 w-11 rounded-lg bg-muted" />
               <div className="space-y-2">
                 <div className="h-4 w-40 rounded bg-muted" />
                 <div className="h-3 w-24 rounded bg-muted" />
@@ -192,7 +192,7 @@ const Notifications: React.FC = () => {
             </div>
             <div className="space-y-3">
               {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="h-[72px] rounded-xl bg-muted" />
+                <div key={i} className="h-[72px] rounded-lg bg-muted" />
               ))}
             </div>
           </div>
@@ -206,11 +206,11 @@ const Notifications: React.FC = () => {
   return (
     <div className="overflow-hidden">
       <div className="mx-auto max-w-screen-2xl">
-        <div className="rounded-2xl border border-border bg-card">
+        <div className="rounded-xl border border-border bg-card">
           {/* Header */}
           <div className="flex flex-col gap-4 border-b border-border p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6">
             <div className="flex items-center gap-3">
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
                 <Bell className="h-5 w-5" />
               </div>
               <div>
@@ -249,7 +249,7 @@ const Notifications: React.FC = () => {
           {/* Filter tabs */}
           {notifications.length > 0 && (
             <div className="flex items-center gap-1 border-b border-border px-5 py-3 sm:px-6">
-              <div className="inline-flex items-center gap-1 rounded-lg bg-muted p-1">
+              <div className="inline-flex items-center gap-1 rounded-md bg-muted p-1">
                 {(["all", "unread"] as const).map((key) => (
                   <button
                     key={key}
@@ -315,7 +315,7 @@ const Notifications: React.FC = () => {
                     <div
                       key={notification._id}
                       className={cn(
-                        "group relative flex cursor-pointer items-start gap-4 rounded-xl border p-4 transition-all",
+                        "group relative flex cursor-pointer items-start gap-4 rounded-lg border p-4 transition-all",
                         isUnread
                           ? "border-primary/30 bg-primary/5 hover:bg-primary/10"
                           : "border-border bg-card hover:border-primary/20 hover:bg-muted/50",

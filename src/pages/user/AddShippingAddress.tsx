@@ -145,7 +145,7 @@ const AddShippingAddress: React.FC = () => {
       {/* Header */}
       <div className="mb-6">
         <div className="flex items-center gap-3">
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
             <FiPlus className="h-5 w-5" />
           </div>
           <div>
@@ -161,7 +161,7 @@ const AddShippingAddress: React.FC = () => {
 
       {/* Success Message */}
       {state.success && (
-        <div className="mb-6 flex items-center gap-3 rounded-xl border border-primary/20 bg-primary/5 p-4">
+        <div className="mb-6 flex items-center gap-3 rounded-lg border border-primary/20 bg-primary/5 p-4">
           <FiCheck className="h-5 w-5 shrink-0 text-primary" />
           <p className="text-sm text-primary">{state.message}</p>
         </div>
@@ -169,7 +169,7 @@ const AddShippingAddress: React.FC = () => {
 
       {/* Error Message */}
       {state.error && (
-        <div className="mb-6 flex items-center gap-3 rounded-xl border border-destructive/20 bg-destructive/5 p-4">
+        <div className="mb-6 flex items-center gap-3 rounded-lg border border-destructive/20 bg-destructive/5 p-4">
           <FiAlertCircle className="h-5 w-5 shrink-0 text-destructive" />
           <p className="text-sm text-destructive">{state.error}</p>
         </div>
@@ -179,7 +179,7 @@ const AddShippingAddress: React.FC = () => {
         {/* Hidden user ID field */}
         <input type="hidden" name="userId" value={user?._id ?? ""} />
 
-        <div className="rounded-2xl border border-border bg-card p-6 lg:p-8">
+        <div className="rounded-xl border border-border bg-card p-6 lg:p-8">
           <div className="space-y-5">
             {/* Name & Contact Row */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -196,7 +196,7 @@ const AddShippingAddress: React.FC = () => {
                     type="text"
                     name="name"
                     placeholder="Enter full name"
-                    className="h-12 text-sm pl-11 pr-4 w-full rounded-xl border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none"
+                    className="h-12 text-sm pl-11 pr-4 w-full rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none"
                   />
                 </div>
                 {state.errors.name && (
@@ -220,7 +220,7 @@ const AddShippingAddress: React.FC = () => {
                     type="tel"
                     name="contact"
                     placeholder="Phone/Mobile number"
-                    className="h-12 text-sm pl-11 pr-4 w-full rounded-xl border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none"
+                    className="h-12 text-sm pl-11 pr-4 w-full rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none"
                   />
                 </div>
                 {state.errors.contact && (
@@ -245,7 +245,7 @@ const AddShippingAddress: React.FC = () => {
                   type="text"
                   name="address"
                   placeholder="Street address, building, apartment, etc."
-                  className="h-12 text-sm pl-11 pr-4 w-full rounded-xl border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none"
+                  className="h-12 text-sm pl-11 pr-4 w-full rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none"
                 />
               </div>
               {state.errors.address && (
@@ -271,7 +271,7 @@ const AddShippingAddress: React.FC = () => {
                   onChange={(e) =>
                     handleInputChange("country", e.target.value)
                   }
-                  className="h-12 text-sm pl-11 pr-10 w-full rounded-xl border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none appearance-none cursor-pointer"
+                  className="h-12 text-sm pl-11 pr-10 w-full rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none appearance-none cursor-pointer"
                 >
                   <option value="">Select Country</option>
                   {countries.map((country, index) => (
@@ -308,7 +308,7 @@ const AddShippingAddress: React.FC = () => {
                     value={selectedValue.city}
                     onChange={(e) => handleInputChange("city", e.target.value)}
                     disabled={!selectedValue.country}
-                    className="h-12 text-sm pl-11 pr-10 w-full rounded-xl border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none appearance-none cursor-pointer disabled:bg-muted disabled:cursor-not-allowed"
+                    className="h-12 text-sm pl-11 pr-10 w-full rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none appearance-none cursor-pointer disabled:bg-muted disabled:cursor-not-allowed"
                   >
                     <option value="">Select City</option>
                     {cities.map((city, index) => (
@@ -343,7 +343,7 @@ const AddShippingAddress: React.FC = () => {
                     value={selectedValue.area}
                     onChange={(e) => handleInputChange("area", e.target.value)}
                     disabled={!selectedValue.city}
-                    className="h-12 text-sm pl-11 pr-10 w-full rounded-xl border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none appearance-none cursor-pointer disabled:bg-muted disabled:cursor-not-allowed"
+                    className="h-12 text-sm pl-11 pr-10 w-full rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 outline-none appearance-none cursor-pointer disabled:bg-muted disabled:cursor-not-allowed"
                   >
                     <option value="">Select Area</option>
                     {areas.map((area, index) => (

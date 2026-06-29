@@ -67,7 +67,7 @@ const RecentOrder: React.FC<RecentOrderProps> = ({ data, error, link, title }) =
                   {String(title ?? "")}
                 </h3>
               )}
-              <div className="overflow-hidden rounded-2xl border border-border bg-card">
+              <div className="overflow-hidden rounded-xl border border-border bg-card">
                 <div className="overflow-x-auto">
                   <table className="min-w-full divide-y divide-border text-sm">
                     <thead className="bg-muted/50">

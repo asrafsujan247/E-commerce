@@ -169,7 +169,7 @@ const ChangePasswordPage: React.FC = () => {
       {/* Header */}
       <div className="mb-6">
         <div className="flex items-center gap-3">
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
             <ShieldCheck className="h-5 w-5" />
           </div>
           <div>
@@ -184,7 +184,7 @@ const ChangePasswordPage: React.FC = () => {
       </div>
 
       <form ref={formRef} onSubmit={handleSubmit}>
-        <div className="rounded-2xl border border-border bg-card p-6">
+        <div className="rounded-xl border border-border bg-card p-6">
           <div className="space-y-5">
             {/* Email Field */}
             <div className="form-group">
@@ -200,7 +200,7 @@ const ChangePasswordPage: React.FC = () => {
                   name="email"
                   defaultValue={user?.email ?? ""}
                   readOnly
-                  className="h-12 w-full cursor-not-allowed rounded-xl border border-border bg-muted pl-11 pr-4 text-sm text-muted-foreground"
+                  className="h-12 w-full cursor-not-allowed rounded-lg border border-border bg-muted pl-11 pr-4 text-sm text-muted-foreground"
                 />
               </div>
               {state.errors.email && (
@@ -225,7 +225,7 @@ const ChangePasswordPage: React.FC = () => {
                   name="currentPassword"
                   autoComplete="new-password"
                   placeholder="Enter current password"
-                  className="h-12 w-full rounded-xl border border-border bg-background pl-11 pr-11 text-sm text-foreground placeholder-muted-foreground outline-none transition-all duration-200 focus:border-primary focus:ring-2 focus:ring-primary/20"
+                  className="h-12 w-full rounded-lg border border-border bg-background pl-11 pr-11 text-sm text-foreground placeholder-muted-foreground outline-none transition-all duration-200 focus:border-primary focus:ring-2 focus:ring-primary/20"
                 />
                 <button
                   type="button"
@@ -262,7 +262,7 @@ const ChangePasswordPage: React.FC = () => {
                   autoComplete="new-password"
                   placeholder="Enter new password"
                   onChange={(e) => setNewPassword(e.target.value)}
-                  className="h-12 w-full rounded-xl border border-border bg-background pl-11 pr-11 text-sm text-foreground placeholder-muted-foreground outline-none transition-all duration-200 focus:border-primary focus:ring-2 focus:ring-primary/20"
+                  className="h-12 w-full rounded-lg border border-border bg-background pl-11 pr-11 text-sm text-foreground placeholder-muted-foreground outline-none transition-all duration-200 focus:border-primary focus:ring-2 focus:ring-primary/20"
                 />
                 <button
                   type="button"
@@ -307,7 +307,7 @@ const ChangePasswordPage: React.FC = () => {
             </div>
 
             {/* Password Requirements */}
-            <div className="rounded-xl border border-border bg-muted/50 p-4">
+            <div className="rounded-lg border border-border bg-muted/50 p-4">
               <p className="mb-2 text-sm font-medium text-foreground">
                 Password requirements
               </p>

@@ -85,7 +85,7 @@ const Sidebar: React.FC = () => {
       <div className="lg:hidden">
         <button
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-          className="flex items-center cursor-pointer justify-between w-full p-3 bg-card rounded-xl border border-border transition-all"
+          className="flex items-center cursor-pointer justify-between w-full p-3 bg-card rounded-lg border border-border transition-all"
         >
           <div className="flex flex-row items-center">
             <div className="relative w-10 h-10">
@@ -122,7 +122,7 @@ const Sidebar: React.FC = () => {
         </button>
 
         {isDropdownOpen && (
-          <div className="mt-1 bg-card rounded-xl border border-border overflow-hidden">
+          <div className="mt-1 bg-card rounded-lg border border-border overflow-hidden">
             {userSidebar?.map((item) => (
               <Link
                 key={item.title}
@@ -152,7 +152,7 @@ const Sidebar: React.FC = () => {
       <div className="flex flex-col lg:flex-row w-full">
         {/* Desktop Sidebar - Hidden on mobile */}
         <div className="hidden lg:block shrink-0 w-full">
-          <div className="rounded-2xl sticky top-4 bg-card border border-border p-5">
+          <div className="rounded-xl sticky top-4 bg-card border border-border p-5">
             {/* Avatar Section */}
             <div className="flex flex-row items-center mb-6 pb-5 border-b border-border">
               <div className="relative w-16 h-16">
@@ -193,7 +193,7 @@ const Sidebar: React.FC = () => {
                 <Link
                   to={item.href}
                   key={item.title}
-                  className={`inline-flex items-center rounded-lg hover:bg-muted py-3 px-4 text-sm font-medium w-full mb-1 transition-colors ${
+                  className={`inline-flex items-center rounded-md hover:bg-muted py-3 px-4 text-sm font-medium w-full mb-1 transition-colors ${
                     isActive
                       ? "text-primary bg-primary/10"
                       : "text-muted-foreground hover:text-foreground"
@@ -212,7 +212,7 @@ const Sidebar: React.FC = () => {
             })}
 
             {/* Logout Button */}
-            <span className="p-3 px-4 flex items-center rounded-lg hover:bg-red-50 w-full mt-2 pt-4 border-t border-border cursor-pointer group">
+            <span className="p-3 px-4 flex items-center rounded-md hover:bg-red-50 w-full mt-2 pt-4 border-t border-border cursor-pointer group">
               <ArrowRightStartOnRectangleIcon className="shrink-0 h-4 w-4 text-muted-foreground group-hover:text-red-500" />
               <button
                 onClick={handleLogOut}

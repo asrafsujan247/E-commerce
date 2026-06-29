@@ -13,10 +13,10 @@ interface OrderCardProps {
 const Card: React.FC<OrderCardProps> = ({ title, Icon, quantity, className }) => {
   return (
     <div className="group flex h-full">
-      <div className="flex w-full items-center gap-4 rounded-2xl border border-border bg-card p-5 transition-all hover:border-primary/30 hover:shadow-sm">
+      <div className="flex w-full items-center gap-4 rounded-xl border border-border bg-card p-5 transition-all hover:border-primary/30 hover:shadow-sm">
         <div
           className={cn(
-            "flex h-12 w-12 shrink-0 items-center justify-center rounded-xl text-xl transition-transform group-hover:scale-105",
+            "flex h-12 w-12 shrink-0 items-center justify-center rounded-lg text-xl transition-transform group-hover:scale-105",
             className,
           )}
         >
