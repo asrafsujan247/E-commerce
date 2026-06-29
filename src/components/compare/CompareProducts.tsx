@@ -262,7 +262,7 @@ const CompareProducts = ({
       </div>
 
       {/* Bottom action */}
-      <div className="mt-8 flex justify-center">
+      <div className="mt-8 flex justify-center pb-8">
         <button
           type="button"
           className="rounded-sm bg-[#e4393c] px-8 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#cf2f32]"

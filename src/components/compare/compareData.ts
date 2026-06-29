@@ -44,7 +44,7 @@ export const compareProducts: CompareProduct[] = [
     title:
       "2020 New Model Small Kids Foldable Folding Small Tricycle Trike Bt-15",
     slug: "kids-foldable-tricycle-trike-bt-15",
-    image: "/placeholder.png",
+    image: "/compare/tricycle.svg",
     contactLabel: "Chat with Supplier",
     price: "US $ 10 / Piece",
     minOrder: "50 Pieces",
@@ -74,7 +74,7 @@ export const compareProducts: CompareProduct[] = [
     id: "p2",
     title: "Construction Mini Skid Steer Loader Trencher Accessories",
     slug: "construction-mini-skid-steer-loader-trencher",
-    image: "/placeholder.png",
+    image: "/compare/skid-loader.svg",
     contactLabel: "Leave a message",
     price: "US $ 1900-2300 / unit",
     minOrder: "1 unit",
