@@ -193,11 +193,10 @@ const CompareProducts = ({
                     <ul className="space-y-1">
                       {p.specifications.map((s) => (
                         <li key={s.label} className="leading-snug">
-                          <span className="text-[#9a7b3f]">{s.label}:</span>{" "}
-                          <span className="font-semibold text-gray-800">
+                          <span className="text-gray-600">{s.label}:</span>{" "}
+                          <span className="font-medium text-gray-800">
                             {s.value}
                           </span>
-                          ;
                         </li>
                       ))}
                     </ul>
