@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" fill="none">
+  <rect width="240" height="200" fill="#ffffff"/>
+  <!-- crawler track -->
+  <rect x="40" y="138" width="152" height="36" rx="18" fill="#333333"/>
+  <circle cx="62" cy="156" r="13" fill="#555555"/>
+  <circle cx="170" cy="156" r="13" fill="#555555"/>
+  <circle cx="104" cy="159" r="7" fill="#555555"/>
+  <circle cx="134" cy="159" r="7" fill="#555555"/>
+  <!-- body -->
+  <path d="M70 138 L70 100 q0 -12 12 -12 L150 88 q12 0 16 12 L178 138 Z" fill="#e4393c"/>
+  <!-- cab -->
+  <rect x="84" y="68" width="46" height="42" rx="6" fill="#c92f33"/>
+  <rect x="91" y="75" width="32" height="25" rx="3" fill="#bfe0ef"/>
+  <!-- lift arm -->
+  <path d="M126 102 L198 76" stroke="#2f2f2f" stroke-width="9" stroke-linecap="round"/>
+  <path d="M72 128 L198 90" stroke="#444444" stroke-width="7" stroke-linecap="round"/>
+  <!-- bucket -->
+  <path d="M198 68 L216 68 L216 98 L190 98 q-3 -18 8 -30 z" fill="#444444"/>
+</svg>

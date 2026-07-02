@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" fill="none">
+  <rect width="240" height="200" fill="#ffffff"/>
+  <!-- rear wheels -->
+  <circle cx="180" cy="150" r="20" fill="#2f2f2f"/>
+  <circle cx="180" cy="150" r="8" fill="#cfcfcf"/>
+  <circle cx="160" cy="152" r="18" fill="#2f2f2f"/>
+  <circle cx="160" cy="152" r="7" fill="#cfcfcf"/>
+  <!-- front wheel -->
+  <circle cx="64" cy="150" r="30" fill="#2f2f2f"/>
+  <circle cx="64" cy="150" r="11" fill="#cfcfcf"/>
+  <circle cx="64" cy="150" r="4" fill="#7a7a7a"/>
+  <!-- pedal crank -->
+  <line x1="64" y1="150" x2="84" y2="166" stroke="#444" stroke-width="5" stroke-linecap="round"/>
+  <rect x="83" y="166" width="14" height="6" rx="2" fill="#e4393c"/>
+  <!-- main frame -->
+  <path d="M64 150 L120 96 L172 150" stroke="#e4393c" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- seat post + seat -->
+  <line x1="120" y1="96" x2="120" y2="80" stroke="#c92f33" stroke-width="8" stroke-linecap="round"/>
+  <path d="M104 80 q16 -10 34 0 q-4 8 -17 8 q-13 0 -17 -8 z" fill="#e4393c"/>
+  <!-- steering tube -->
+  <line x1="64" y1="150" x2="78" y2="64" stroke="#e4393c" stroke-width="10" stroke-linecap="round"/>
+  <!-- handlebar -->
+  <path d="M56 60 q22 -9 44 -1" stroke="#333" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <circle cx="54" cy="60" r="5" fill="#e4393c"/>
+  <circle cx="101" cy="59" r="5" fill="#e4393c"/>
+</svg>
