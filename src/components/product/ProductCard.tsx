@@ -10,7 +10,6 @@ import Rating from "@components/common/Rating";
 import useAddToCart from "@hooks/useAddToCart";
 import { useSetting } from "@stores/useSettingStore";
 import Discount from "@components/common/Discount";
-import { handleLogEvent } from "@lib/analytics";
 import ProductModal from "@components/modal/ProductModal";
 import ImageWithFallback from "@components/common/ImageWithFallBack";
 import { useCartStore } from "@stores/useCartStore";
@@ -278,10 +277,6 @@ const ProductCard = ({ product, attributes, viewMode = "grid" }: ProductCardProp
             aria-label="quick view"
             onClick={() => {
               handleModalOpen(!modalOpen);
-              handleLogEvent(
-                "product",
-                `opened ${String(product?.title ?? "")} product modal`,
-              );
             }}
             className="absolute top-2 right-2 w-7 h-7 flex items-center justify-center rounded-full bg-background/90 text-muted-foreground shadow hover:text-primary hover:bg-background transition-colors opacity-0 group-hover:opacity-100"
           >
@@ -327,10 +322,6 @@ const ProductCard = ({ product, attributes, viewMode = "grid" }: ProductCardProp
               aria-label="quick view"
               onClick={() => {
                 handleModalOpen(!modalOpen);
-                handleLogEvent(
-                  "product",
-                  `opened ${String(product?.title ?? "")} product modal`,
-                );
               }}
               className="relative h-auto inline-flex items-center cursor-pointer justify-center rounded-full transition-colors text-xs py-2 px-4 bg-background text-muted-foreground dark:bg-background dark:text-muted-foreground hover:text-primary hover:bg-muted dark:hover:bg-accent shadow-lg focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-primary dark:focus:ring-offset-0"
             >

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 import { notifyError } from "@utils/toast";
 import useAddToCart from "@hooks/useAddToCart";
-import { handleLogEvent } from "@lib/analytics";
 import Discount from "@components/common/Discount";
 import PriceTwo from "@components/common/PriceTwo";
 import Rating from "@components/common/Rating";
@@ -151,12 +150,6 @@ const CampaignProductCard: React.FC<CampaignProductCardProps> = ({
               aria-label="quick view"
               onClick={() => {
                 handleModalOpen(!modalOpen);
-                handleLogEvent(
-                  "product",
-                  `opened ${String(
-                    product?.title as Record<string, string>
-                   ?? '')} product modal`
-                );
               }}
               className="relative h-auto inline-flex items-center cursor-pointer justify-center rounded-full transition-colors text-xs py-2 px-4 bg-background text-muted-foreground dark:bg-background dark:text-muted-foreground hover:text-primary hover:bg-muted dark:hover:bg-accent shadow-lg focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-primary dark:focus:ring-offset-0"
             >
