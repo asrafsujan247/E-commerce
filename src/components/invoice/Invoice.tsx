@@ -1,6 +1,6 @@
 import dayjs from "dayjs";
 import { Link } from "react-router-dom";
-import { Truck, MapPin, Package } from "lucide-react";
+import { Truck, MapPin, Package, ReceiptText, CreditCard } from "lucide-react";
 
 // internal import
 import OrderTable from "@components/order/OrderTable";
@@ -15,85 +15,138 @@ interface InvoiceProps {
 
 const Invoice: React.FC<InvoiceProps> = ({ data, globalSetting }) => {
   const { formatPrice } = useUtilsFunction();
+  const cartItems = (data as unknown as { cart?: unknown[] })?.cart ?? [];
 
   return (
-    <div>
-      <div className="bg-primary/5 p-8 rounded-t-xl">
-        <div className="flex lg:flex-row md:flex-row sm:flex-row flex-col lg:items-center justify-between pb-4 border-b border-border">
-          <div>
-            <h1 className="font-bold text-2xl uppercase">Invoice</h1>
-            <h6 className="text-muted-foreground">
-              Status :{" "}
-              {data?.status === "Delivered" && (
-                <span className="text-primary">{data?.status}</span>
-              )}
-              {data?.status === "POS-Completed" && (
-                <span className="text-primary">{data?.status}</span>
-              )}
-              {data?.status === "Pending" && (
-                <span className="text-orange-500">{data?.status}</span>
-              )}
-              {data?.status === "Cancel" && (
-                <span className="text-red-500">{data?.status}</span>
-              )}
-              {data?.status === "Processing" && (
-                <span className="text-indigo-500">{data?.status}</span>
-              )}
-              {data?.status === "Out-for-delivery" && (
-                <span className="text-teal-500">{data?.status}</span>
-              )}
-              {data?.status === "Deleted" && (
-                <span className="text-red-700">{data?.status}</span>
-              )}
-            </h6>
+    <div className="overflow-hidden rounded-xl border border-border bg-card shadow-sm">
+      {/* Header */}
+      <div className="border-b border-border bg-linear-to-r from-primary/10 to-primary/5 px-6 py-6 sm:px-8">
+        <div className="flex flex-col justify-between gap-4 pb-6 sm:flex-row sm:items-start">
+          {/* Left: icon chip + invoice no + status */}
+          <div className="flex items-start gap-3">
+            <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/15">
+              <ReceiptText className="size-5" />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
+                Invoice
+              </span>
+              <h1 className="m-0 text-xl font-bold leading-tight text-foreground">
+                #{data?.invoice}
+              </h1>
+
+              <div className="mt-1.5 text-sm">
+                {data?.status === "Delivered" && (
+                  <span className="flex items-center gap-x-2 justify-start">
+                    <div className="flex-none rounded-full bg-green-400/10 p-1 text-green-400">
+                      <div className="size-2.5 rounded-full bg-current"></div>
+                    </div>
+                    <span className="block capitalize">{data?.status}</span>
+                  </span>
+                )}
+                {data?.status === "POS-Completed" && (
+                  <span className="flex items-center gap-x-2 justify-start">
+                    <div className="flex-none rounded-full bg-primary/10 p-1 text-primary">
+                      <div className="size-2.5 rounded-full bg-current"></div>
+                    </div>
+                    <span className="block">{data?.status}</span>
+                  </span>
+                )}
+                {data?.status === "Pending" && (
+                  <span className="flex items-center gap-x-2 justify-start">
+                    <div className="flex-none rounded-full bg-orange-400/10 p-1 text-orange-400">
+                      <div className="size-2.5 rounded-full bg-current"></div>
+                    </div>
+                    <span className="block capitalize">{data?.status}</span>
+                  </span>
+                )}
+                {data?.status === "Cancel" && (
+                  <span className="flex items-center gap-x-2 justify-start">
+                    <div className="flex-none rounded-full bg-red-400/10 p-1 text-red-400">
+                      <div className="size-2.5 rounded-full bg-current"></div>
+                    </div>
+                    <span className="block capitalize">{data?.status}</span>
+                  </span>
+                )}
+                {data?.status === "Processing" && (
+                  <span className="flex items-center gap-x-2 justify-start">
+                    <div className="flex-none rounded-full bg-indigo-400/10 p-1 text-indigo-400">
+                      <div className="size-2.5 rounded-full bg-current"></div>
+                    </div>
+                    <span className="block capitalize">{data?.status}</span>
+                  </span>
+                )}
+                {data?.status === "Out-for-delivery" && (
+                  <span className="flex items-center gap-x-2 justify-start">
+                    <div className="flex-none rounded-full bg-teal-400/10 p-1 text-teal-400">
+                      <div className="size-2.5 rounded-full bg-current"></div>
+                    </div>
+                    <span className="block capitalize">
+                      {data?.status.replace(/-/g, " ")}
+                    </span>
+                  </span>
+                )}
+                {data?.status === "Deleted" && (
+                  <span className="flex items-center gap-x-2 justify-start">
+                    <div className="flex-none rounded-full bg-red-700/10 p-1 text-red-700">
+                      <div className="size-2.5 rounded-full bg-current"></div>
+                    </div>
+                    <span className="block capitalize">{data?.status}</span>
+                  </span>
+                )}
+              </div>
+            </div>
           </div>
-          <div className="lg:text-right text-left">
-            <h2 className="text-lg font-semibold mt-4 lg:mt-0 md:mt-0">
-              <Link to="/">
-                <img
-                  width={110}
-                  height={40}
-                  src={getLogoUrl(
-                    (globalSetting?.invoice_logo as string | undefined) ||
-                      (globalSetting?.logo as string | undefined),
-                    "/logo/logo-color.svg",
-                  )}
-                  alt="logo"
-                  className="object-contain w-[110px] h-[40px]"
-                />
-              </Link>
-            </h2>
-            <p className="text-sm text-muted-foreground">
+
+          {/* Right: logo + address */}
+          <div className="text-left sm:text-right">
+            <Link to="/" className="inline-block">
+              <img
+                width={110}
+                height={40}
+                src={getLogoUrl(
+                  (globalSetting?.invoice_logo as string | undefined) ||
+                    (globalSetting?.logo as string | undefined),
+                  "/logo/logo-color.svg",
+                )}
+                alt="logo"
+                className="object-contain w-27.5 h-10"
+              />
+            </Link>
+            <p className="mt-2 text-sm text-muted-foreground">
               {globalSetting?.address ||
                 "Cecilia Chapman, 561-4535 Nulla LA, United States 96522"}
             </p>
           </div>
         </div>
-        <div className="flex lg:flex-row md:flex-row sm:flex-row flex-col justify-between pt-4">
-          <div className="mb-3 md:mb-0 lg:mb-0 flex flex-col">
-            <span className="font-bold text-sm uppercase text-muted-foreground block">
+
+        {/* Meta strip: Date | Invoice No | Invoice To */}
+        <div className="flex flex-col justify-between gap-5 border-t border-border pt-5 sm:flex-row">
+          <div className="flex flex-col">
+            <span className="mb-1 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
               Date
             </span>
-            <span className="text-sm text-muted-foreground block">
+            <span className="text-sm text-foreground">
               {data?.createdAt !== undefined && (
                 <span>{dayjs(data?.createdAt).format("MMMM D, YYYY")}</span>
               )}
             </span>
           </div>
-          <div className="mb-3 md:mb-0 lg:mb-0 flex flex-col">
-            <span className="font-bold text-sm uppercase text-muted-foreground block">
+          <div className="flex flex-col">
+            <span className="mb-1 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
               Invoice No.
             </span>
-            <span className="text-sm text-muted-foreground block">
-              #{data?.invoice}
-            </span>
+            <span className="text-sm text-foreground">#{data?.invoice}</span>
           </div>
-          <div className="flex flex-col lg:text-right text-left">
-            <span className="font-bold text-sm uppercase text-muted-foreground block">
+          <div className="flex flex-col sm:text-right">
+            <span className="mb-1 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
               Invoice To.
             </span>
-            <span className="text-sm text-muted-foreground block">
-              {data?.user_info?.name} <br />
+            <span className="text-sm leading-relaxed text-muted-foreground">
+              <span className="font-medium text-foreground">
+                {data?.user_info?.name}
+              </span>{" "}
+              <br />
               {data?.user_info?.email}{" "}
               <span className="ml-2">{data?.user_info?.contact}</span>
               <br />
@@ -106,150 +159,163 @@ const Invoice: React.FC<InvoiceProps> = ({ data, globalSetting }) => {
           </div>
         </div>
       </div>
-      <div className="overflow-hidden lg:overflow-visible px-8 my-10">
-        <div className="-my-2 overflow-x-auto">
-          <table className="table-auto min-w-full border border-border divide-y divide-border">
-            <thead className="bg-muted">
-              <tr className="text-xs bg-muted">
-                <th
-                  scope="col"
-                  className="font-semibold px-6 py-2 text-muted-foreground uppercase tracking-wider text-left"
-                >
-                  Sr.
-                </th>
-                <th
-                  scope="col"
-                  className="font-semibold px-6 py-2 text-muted-foreground uppercase tracking-wider text-left"
-                >
-                  Product Name
-                </th>
-                <th
-                  scope="col"
-                  className="font-semibold px-6 py-2 text-muted-foreground uppercase tracking-wider text-center"
-                >
-                  Quantity
-                </th>
-                <th
-                  scope="col"
-                  className="font-semibold px-6 py-2 text-muted-foreground uppercase tracking-wider text-center"
-                >
-                  Item Price
-                </th>
-                <th
-                  scope="col"
-                  className="font-semibold px-6 py-2 text-muted-foreground uppercase tracking-wider text-right"
-                >
-                  Amount
-                </th>
-              </tr>
-            </thead>
-            <OrderTable
-              data={
-                data as unknown as {
-                  cart?: {
-                    image?: string;
-                    title?: string;
-                    quantity?: number;
-                    price?: number;
-                    itemTotal?: number;
-                  }[];
-                }
-              }
-            />
-          </table>
-        </div>
-      </div>
 
-      <div className="border-t border-b border-border p-10 bg-accent">
-        <div className="flex lg:flex-row md:flex-row sm:flex-row flex-col justify-between pt-4">
-          <div className="mb-3 md:mb-0 lg:mb-0 flex flex-col sm:flex-wrap">
-            <span className="mb-1 font-bold text-sm uppercase text-muted-foreground block">
-              Payment Method
+      {/* Body */}
+      <div className="px-6 py-6 sm:px-8">
+        {/* Order Items */}
+        <div className="overflow-hidden rounded-xl border border-border bg-card shadow-sm">
+          <div className="flex items-center gap-2 border-b border-border bg-muted/40 px-4 py-3">
+            <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-primary">
+              <Package className="size-4" />
             </span>
-            <span className="text-sm text-muted-foreground font-semibold block">
-              {data?.paymentMethod}
+            <span className="text-sm font-semibold text-foreground">
+              Order Items
             </span>
-          </div>
-          <div className="mb-3 md:mb-0 lg:mb-0 flex flex-col sm:flex-wrap">
-            <span className="mb-1 font-bold text-sm uppercase text-muted-foreground block">
-              Shipping Cost
-            </span>
-            <span className="text-sm text-muted-foreground font-semibold block">
-              {formatPrice(data?.shippingCost)}
+            <span className="ml-auto rounded-full bg-muted px-2 py-0.5 text-xs font-medium text-muted-foreground">
+              {cartItems.length} {cartItems.length === 1 ? "item" : "items"}
             </span>
           </div>
-          <div className="mb-3 md:mb-0 lg:mb-0 flex flex-col sm:flex-wrap">
-            <span className="mb-1 font-bold text-sm uppercase text-muted-foreground block">
-              Discount
-            </span>
-            <span className="text-sm text-muted-foreground font-semibold block">
-              {formatPrice(data?.discount)}
-            </span>
+          <div className="overflow-x-auto">
+            <table className="min-w-full divide-y divide-border">
+              <thead className="bg-card">
+                <tr className="text-xs">
+                  <th
+                    scope="col"
+                    className="px-6 py-2.5 text-left text-[11px] font-semibold uppercase tracking-wider text-muted-foreground"
+                  >
+                    Sr.
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-6 py-2.5 text-left text-[11px] font-semibold uppercase tracking-wider text-muted-foreground"
+                  >
+                    Product Name
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-6 py-2.5 text-center text-[11px] font-semibold uppercase tracking-wider text-muted-foreground"
+                  >
+                    Quantity
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-6 py-2.5 text-center text-[11px] font-semibold uppercase tracking-wider text-muted-foreground"
+                  >
+                    Item Price
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-6 py-2.5 text-right text-[11px] font-semibold uppercase tracking-wider text-muted-foreground"
+                  >
+                    Amount
+                  </th>
+                </tr>
+              </thead>
+              <OrderTable
+                data={
+                  data as unknown as {
+                    cart?: {
+                      image?: string;
+                      title?: string;
+                      quantity?: number;
+                      price?: number;
+                      itemTotal?: number;
+                    }[];
+                  }
+                }
+              />
+            </table>
           </div>
-          <div className="flex flex-col sm:flex-wrap">
-            <span className="mb-1 font-bold text-sm uppercase text-muted-foreground block">
+        </div>
+
+        {/* Payment */}
+        <div className="mt-6 overflow-hidden rounded-xl border border-border bg-card shadow-sm">
+          <div className="flex items-center gap-3 border-b border-border bg-muted/40 px-4 py-3">
+            <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-primary">
+              <CreditCard aria-hidden="true" className="size-4" />
+            </span>
+            <div className="flex flex-1 flex-wrap items-center justify-between gap-2">
+              <h4 className="m-0 text-sm font-semibold text-foreground">
+                Payment
+              </h4>
+              <span className="text-xs text-muted-foreground">
+                Payment Method:{" "}
+                <strong className="text-foreground">
+                  {data?.paymentMethod}
+                </strong>
+              </span>
+            </div>
+          </div>
+          <div className="space-y-2.5 p-4">
+            <div className="flex justify-between text-sm">
+              <span className="text-muted-foreground">Shipping Cost</span>
+              <span className="font-semibold text-foreground">
+                {formatPrice(data?.shippingCost)}
+              </span>
+            </div>
+            <div className="flex justify-between text-sm">
+              <span className="text-muted-foreground">Discount</span>
+              <span className="font-semibold text-foreground">
+                {formatPrice(data?.discount)}
+              </span>
+            </div>
+          </div>
+          <div className="flex items-center justify-between border-t border-border bg-primary/5 px-4 py-3">
+            <span className="text-sm font-semibold text-foreground">
               Total Amount
             </span>
-            <span className="text-2xl font-bold text-red-500 block">
+            <span className="text-xl font-bold text-primary">
               {formatPrice(data?.total)}
             </span>
           </div>
         </div>
-      </div>
 
-      {/* Tracking & Delivery Info */}
-      {data?.trackingId && (
-        <div className="border-t border-border p-8 bg-muted/50">
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <div className="flex items-center gap-4">
-              <div className="flex items-center gap-2">
-                <Package className="h-5 w-5 text-primary" />
-                <div>
-                  <span className="text-xs text-muted-foreground font-medium block">
-                    Tracking ID
-                  </span>
-                  <span className="font-mono font-semibold text-primary text-sm">
-                    {data.trackingId}
-                  </span>
-                </div>
+        {/* Tracking & Delivery Info */}
+        {data?.trackingId && (
+          <div className="mt-6 overflow-hidden rounded-xl border border-border bg-card shadow-sm">
+            <div className="flex items-center gap-3 border-b border-border bg-muted/40 px-4 py-3">
+              <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <Package className="size-4" />
+              </span>
+              <span className="text-sm font-semibold text-foreground">
+                Tracking Info
+              </span>
+            </div>
+            <div className="space-y-2.5 p-4 text-sm">
+              <div className="flex justify-between">
+                <span className="text-muted-foreground">Tracking ID</span>
+                <span className="font-mono font-semibold text-primary">
+                  {data.trackingId}
+                </span>
               </div>
-
               {data?.trackingStatus && (
-                <div>
-                  <span className="text-xs text-muted-foreground font-medium block">
-                    Status
-                  </span>
-                  <span className="text-sm capitalize font-medium bg-primary/10 text-primary px-2 py-0.5 rounded-full">
+                <div className="flex items-center justify-between">
+                  <span className="text-muted-foreground">Tracking Status</span>
+                  <span className="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium capitalize text-primary">
                     {(data.trackingStatus ?? "").replace(/-/g, " ")}
                   </span>
                 </div>
               )}
-
               {data?.deliveryBoyName && (
-                <div className="flex items-center gap-2">
-                  <Truck className="h-4 w-4 text-muted-foreground" />
-                  <div>
-                    <span className="text-xs text-muted-foreground font-medium block">
-                      Delivery Partner
-                    </span>
-                    <span className="text-sm font-medium">
-                      {data.deliveryBoyName ?? ""}
-                    </span>
-                  </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-muted-foreground">Delivery Partner</span>
+                  <span className="flex items-center gap-1.5 font-medium text-foreground">
+                    <Truck className="size-4 text-muted-foreground" />
+                    {data.deliveryBoyName ?? ""}
+                  </span>
                 </div>
               )}
+              <Link
+                to={`/track/${data.trackingId}`}
+                className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-3 py-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+              >
+                <MapPin className="size-4" />
+                Track Order
+              </Link>
             </div>
-
-            <Link
-              to={`/track/${data.trackingId}`}
-              className="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
-            >
-              <MapPin className="h-4 w-4" />
-              Track Order
-            </Link>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };

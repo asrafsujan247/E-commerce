@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import DownloadPrintButton from "@components/invoice/DownloadPrintButton";
+import InvoiceView from "@components/invoice/InvoiceView";
 import { getOrderById } from "@services/OrderServices";
 import { useAuth } from "@stores/useAuthStore";
 
@@ -63,7 +63,7 @@ const Order = () => {
 
   return (
     <div className="max-w-screen-2xl mx-auto py-10 px-3 sm:px-6">
-      <DownloadPrintButton data={data} />
+      <InvoiceView data={data} />
     </div>
   );
 };
