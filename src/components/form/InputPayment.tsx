@@ -17,28 +17,24 @@ function InputPayment<T extends FieldValues>({
   setShowCard,
 }: InputPaymentProps<T>) {
   return (
-    <div className="md:px-3 px-1 py-4 card border border-border bg-background rounded-md">
-      <label className="cursor-pointer label">
-        <div className="flex item-center justify-between">
-          <div className="flex items-center">
-            <span className="text-xl md:mr-3 mr-1 text-muted-foreground">
-              <Icon />
-            </span>
-            <h6 className="font-medium text-sm text-muted-foreground">{value}</h6>
-          </div>
-          <input
-            onClick={() => setShowCard(value === "Card" ? true : false)}
-            {...(register as UseFormRegister<FieldValues>)("paymentMethod", {
-              required: "Payment Method is required!",
-            })}
-            type="radio"
-            value={value}
-            name="paymentMethod"
-            className="form-radio outline-none focus:ring-0 text-primary"
-          />
-        </div>
-      </label>
-    </div>
+    <label className="flex cursor-pointer items-center justify-between gap-3 rounded-lg border border-border bg-card px-4 py-3.5 transition-all hover:border-primary/40 has-checked:border-primary has-checked:bg-primary/5 has-checked:ring-1 has-checked:ring-primary/20">
+      <div className="flex items-center gap-3">
+        <span className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-lg text-primary">
+          <Icon />
+        </span>
+        <h6 className="text-sm font-semibold text-foreground">{value}</h6>
+      </div>
+      <input
+        onClick={() => setShowCard(value === "Card" ? true : false)}
+        {...(register as UseFormRegister<FieldValues>)("paymentMethod", {
+          required: "Payment Method is required!",
+        })}
+        type="radio"
+        value={value}
+        name="paymentMethod"
+        className="size-4 shrink-0 accent-primary outline-none focus:ring-0"
+      />
+    </label>
   );
 }
 
