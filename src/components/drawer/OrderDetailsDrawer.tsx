@@ -3,6 +3,7 @@ import {
   CreditCard,
   MapPin,
   Package,
+  ReceiptText,
   Truck,
   X,
 } from "lucide-react";
@@ -33,17 +34,27 @@ const OrderDetailsDrawer: React.FC<OrderDetailsDrawerProps> = ({ data }) => {
       }
     | undefined;
 
+  const isDelivered = String(data?.status ?? "").toLowerCase() === "delivered";
+  const cartItems = (data as unknown as { cart?: unknown[] })?.cart ?? [];
+
   return (
     <MainDrawer open={drawerOpen} onClose={closeDrawer}>
-      <div className="flex flex-col w-full h-full bg-background rounded">
-        <div className="overflow-y-scroll scrollbar-hide w-full max-h-full">
-          <div className="w-full flex justify-between items-center relative px-5 py-4 border-b bg-primary/5 border-border">
+      <div className="flex flex-col w-full h-full bg-card">
+        {/* Header */}
+        <div className="flex shrink-0 items-start justify-between gap-3 border-b border-border bg-linear-to-r from-primary/10 to-primary/5 px-5 py-4">
+          <div className="flex items-start gap-3">
+            <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/15">
+              <ReceiptText className="size-5" />
+            </div>
             <div className="flex flex-col">
-              <h2 className="font-semibold text-lg m-0 text-foreground flex items-center">
-                Invoice No #{data?.invoice}
+              <span className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
+                Invoice
+              </span>
+              <h2 className="m-0 text-lg font-bold leading-tight text-foreground">
+                #{data?.invoice}
               </h2>
 
-              <div className="text-sm">
+              <div className="mt-1 text-sm">
                 {(data.status === "Delivered" ||
                   data?.status === "delivered") && (
                   <span className="flex items-center gap-x-2 justify-start">
@@ -91,26 +102,41 @@ const OrderDetailsDrawer: React.FC<OrderDetailsDrawerProps> = ({ data }) => {
                 )}
               </div>
             </div>
-
-            <button
-              onClick={closeDrawer}
-              className="inline-flex text-base items-center cursor-pointer justify-center text-muted-foreground p-2 focus:outline-none transition-opacity hover:text-red-400"
-            >
-              <X />
-              <span className="font-sens text-sm text-muted-foreground hover:text-red-400 ml-1">
-                Close
-              </span>
-            </button>
           </div>
-          <div className="overflow-y-scroll flex-grow scrollbar-hide w-full max-h-full px-3 sm:px-6 py-4">
-            <div className="bg-accent rounded-md mb-5 px-4 py-3 hidden">
-              <label>
-                {String(dashboard?.invoice_message_first ?? '')}{" "}
-                <span className="font-bold text-primary">
-                  {data?.user_info?.name},
-                </span>{" "}
-                {String(dashboard?.invoice_message_last ?? '')}
-              </label>
+
+          <button
+            onClick={closeDrawer}
+            className="inline-flex shrink-0 cursor-pointer items-center gap-1 rounded-lg px-2.5 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-red-500/10 hover:text-red-500 focus:outline-none"
+          >
+            <X className="size-4" />
+            <span>Close</span>
+          </button>
+        </div>
+
+        {/* Scrollable body */}
+        <div className="flex-1 overflow-y-auto scrollbar-hide px-3 py-5 sm:px-6">
+          <div className="bg-accent rounded-md mb-5 px-4 py-3 hidden">
+            <label>
+              {String(dashboard?.invoice_message_first ?? '')}{" "}
+              <span className="font-bold text-primary">
+                {data?.user_info?.name},
+              </span>{" "}
+              {String(dashboard?.invoice_message_last ?? '')}
+            </label>
+          </div>
+
+          {/* Items */}
+          <div className="rounded-xl border border-border bg-card px-4 pt-3 pb-2 shadow-sm">
+            <div className="mb-2 flex items-center gap-2 border-b border-border pb-3">
+              <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <Package className="size-4" />
+              </span>
+              <span className="text-sm font-semibold text-foreground">
+                Order Items
+              </span>
+              <span className="ml-auto rounded-full bg-muted px-2 py-0.5 text-xs font-medium text-muted-foreground">
+                {cartItems.length} {cartItems.length === 1 ? "item" : "items"}
+              </span>
             </div>
 
             <OrderItems
@@ -126,118 +152,144 @@ const OrderDetailsDrawer: React.FC<OrderDetailsDrawerProps> = ({ data }) => {
                 }
               }
             />
-            <div className="border border-border mt-4 rounded-md">
-              {(data?.status === "delivered" ||
-                data?.status === "Delivered") && (
-                <div className="flex items-center gap-3 p-4 border-b border-border">
-                  <span>
-                    <Truck
-                      aria-hidden="true"
-                      className="size-4 text-muted-foreground shrink-0"
-                    />
+          </div>
+
+          {/* Customer & Shipping */}
+          <div className="mt-5 overflow-hidden rounded-xl border border-border bg-card shadow-sm">
+            {isDelivered && (
+              <div className="flex items-center gap-3 border-b border-border bg-muted/40 px-4 py-3">
+                <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                  <Truck aria-hidden="true" className="size-4" />
+                </span>
+                <div className="flex flex-1 flex-wrap items-center justify-between gap-2">
+                  <span className="text-sm font-semibold text-foreground">
+                    Delivery
                   </span>
-                  <div className="items-center gap-4 flex justify-between flex-wrap">
-                    <span className="font-semibold text-base">Delivery </span>
-                    <span className="text-muted-foreground text-sm">
-                      Estimated Delivery: <strong>Feb 8, 2025</strong>
-                    </span>
-                  </div>
+                  <span className="text-xs text-muted-foreground">
+                    Estimated Delivery:{" "}
+                    <strong className="text-foreground">Feb 8, 2025</strong>
+                  </span>
                 </div>
-              )}
-              <div className="flex flex-col text-muted-foreground p-4 text-sm">
-                <span>{data?.user_info?.name}</span>
-                <span>{data?.user_info?.email} </span>
+              </div>
+            )}
+            <div className="p-4">
+              <div className="mb-3 flex items-center gap-2">
+                <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                  <MapPin className="size-4" />
+                </span>
+                <span className="text-sm font-semibold text-foreground">
+                  Customer &amp; Shipping
+                </span>
+              </div>
+              <div className="flex flex-col gap-1 pl-10 text-sm text-muted-foreground">
+                <span className="font-medium text-foreground">
+                  {data?.user_info?.name}
+                </span>
+                <span>{data?.user_info?.email}</span>
                 <span>
-                  {data?.user_info?.address} {(data as Record<string, unknown>)?.city as string}{" "}
+                  {data?.user_info?.address}{" "}
+                  {(data as Record<string, unknown>)?.city as string}{" "}
                   {(data as Record<string, unknown>)?.country as string}
                   {(data as Record<string, unknown>)?.zipCode as string}
                 </span>
-                <span className="font-medium">{data?.user_info?.contact}</span>
-              </div>
-            </div>
-            <div className="mt-6 border border-border rounded-md">
-              <div className="flex items-center gap-3 p-4 border-b border-border">
-                <span>
-                  <CreditCard
-                    aria-hidden="true"
-                    className="size-4 text-muted-foreground shrink-0"
-                  />
-                </span>
-                <div className="flex justify-between items-center gap-4 flex-wrap">
-                  <h4 className="font-semibold text-base">Payment</h4>
-                  <p className="text-muted-foreground text-sm">
-                    Payment Method: <strong>{data?.paymentMethod}</strong>
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col text-muted-foreground p-4">
-                <div className="flex justify-between text-sm text-muted-foreground mb-2">
-                  <span>Shipping Cost</span>
-                  <span className="text-foreground font-semibold">
-                    {formatPrice(data.shippingCost)}
-                  </span>
-                </div>
-                <div className="flex justify-between text-sm text-muted-foreground">
-                  <span>Discount</span>
-                  <span className="text-foreground font-semibold">
-                    {formatPrice(data.discount)}
-                  </span>
-                </div>
-              </div>
-              <div className="flex justify-between text-sm text-muted-foreground bg-muted px-4 py-2">
-                <span>Total Amount</span>
-                <span className="text-red-500 font-bold text-base">
-                  {formatPrice(data.total)}
+                <span className="font-medium text-foreground">
+                  {data?.user_info?.contact}
                 </span>
               </div>
             </div>
+          </div>
 
-            {/* Tracking Info */}
-            {data?.trackingId && (
-              <div className="mt-4 border border-border rounded-md p-4">
-                <div className="flex items-center gap-2 mb-3">
-                  <Package className="h-4 w-4 text-primary" />
-                  <span className="font-semibold text-sm">Tracking Info</span>
+          {/* Payment */}
+          <div className="mt-5 overflow-hidden rounded-xl border border-border bg-card shadow-sm">
+            <div className="flex items-center gap-3 border-b border-border bg-muted/40 px-4 py-3">
+              <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <CreditCard aria-hidden="true" className="size-4" />
+              </span>
+              <div className="flex flex-1 flex-wrap items-center justify-between gap-2">
+                <h4 className="m-0 text-sm font-semibold text-foreground">
+                  Payment
+                </h4>
+                <span className="text-xs text-muted-foreground">
+                  Payment Method:{" "}
+                  <strong className="text-foreground">
+                    {data?.paymentMethod}
+                  </strong>
+                </span>
+              </div>
+            </div>
+            <div className="space-y-2.5 p-4">
+              <div className="flex justify-between text-sm">
+                <span className="text-muted-foreground">Shipping Cost</span>
+                <span className="font-semibold text-foreground">
+                  {formatPrice(data.shippingCost)}
+                </span>
+              </div>
+              <div className="flex justify-between text-sm">
+                <span className="text-muted-foreground">Discount</span>
+                <span className="font-semibold text-foreground">
+                  {formatPrice(data.discount)}
+                </span>
+              </div>
+            </div>
+            <div className="flex items-center justify-between border-t border-border bg-primary/5 px-4 py-3">
+              <span className="text-sm font-semibold text-foreground">
+                Total Amount
+              </span>
+              <span className="text-lg font-bold text-primary">
+                {formatPrice(data.total)}
+              </span>
+            </div>
+          </div>
+
+          {/* Tracking Info */}
+          {data?.trackingId && (
+            <div className="mt-5 overflow-hidden rounded-xl border border-border bg-card shadow-sm">
+              <div className="flex items-center gap-3 border-b border-border bg-muted/40 px-4 py-3">
+                <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                  <Package className="size-4" />
+                </span>
+                <span className="text-sm font-semibold text-foreground">
+                  Tracking Info
+                </span>
+              </div>
+              <div className="space-y-2.5 p-4 text-sm">
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Tracking ID</span>
+                  <span className="font-mono font-semibold text-primary">
+                    {data.trackingId}
+                  </span>
                 </div>
-                <div className="space-y-2 text-sm">
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Tracking ID</span>
-                    <span className="font-mono font-semibold text-primary">
-                      {data.trackingId}
+                {data?.trackingStatus && (
+                  <div className="flex items-center justify-between">
+                    <span className="text-muted-foreground">
+                      Tracking Status
+                    </span>
+                    <span className="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium capitalize text-primary">
+                      {data.trackingStatus.replace(/-/g, " ")}
                     </span>
                   </div>
-                  {data?.trackingStatus && (
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">
-                        Tracking Status
-                      </span>
-                      <span className="capitalize font-medium bg-primary/10 text-primary px-2 py-0.5 rounded-full text-xs">
-                        {data.trackingStatus.replace(/-/g, " ")}
-                      </span>
-                    </div>
-                  )}
-                  {data?.deliveryBoyName && (
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">
-                        Delivery Partner
-                      </span>
-                      <span className="font-medium">
-                        {data.deliveryBoyName}
-                      </span>
-                    </div>
-                  )}
-                </div>
+                )}
+                {data?.deliveryBoyName && (
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">
+                      Delivery Partner
+                    </span>
+                    <span className="font-medium text-foreground">
+                      {data.deliveryBoyName}
+                    </span>
+                  </div>
+                )}
                 <Link
                   to={`/track/${data.trackingId}`}
                   onClick={closeDrawer}
-                  className="mt-3 w-full inline-flex items-center justify-center gap-2 rounded-md bg-primary px-3 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+                  className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-3 py-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
                 >
-                  <MapPin className="h-4 w-4" />
+                  <MapPin className="size-4" />
                   Track Order
                 </Link>
               </div>
-            )}
-          </div>
+            </div>
+          )}
         </div>
       </div>
     </MainDrawer>
