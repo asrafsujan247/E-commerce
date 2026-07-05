@@ -21,38 +21,32 @@ function InputShipping<T extends FieldValues>({
   const { formatPrice } = useUtilsFunction();
 
   return (
-    <div>
-      <div className="p-3 card border border-border bg-background rounded-md">
-        <label className="cursor-pointer label">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center">
-              <span className="text-2xl mr-3 text-muted-foreground">
-                <FiTruck />
-              </span>
-              <div>
-                <h6 className="font-medium text-sm text-muted-foreground">{name}</h6>
-                <p className="text-xs text-muted-foreground font-medium">
-                  {description}
-                  <span className="font-medium text-muted-foreground">
-                    {formatPrice(value)}
-                  </span>
-                </p>
-              </div>
-            </div>
-            <input
-              onClick={() => handleShippingCost(value)}
-              {...(register as UseFormRegister<FieldValues>)("shippingOption", {
-                required: "Shipping Option is required!",
-              })}
-              name="shippingOption"
-              type="radio"
-              value={name}
-              className="form-radio outline-none focus:ring-0 text-primary"
-            />
-          </div>
-        </label>
+    <label className="flex cursor-pointer items-center justify-between gap-3 rounded-lg border border-border bg-card p-3.5 transition-all hover:border-primary/40 has-checked:border-primary has-checked:bg-primary/5 has-checked:ring-1 has-checked:ring-primary/20">
+      <div className="flex items-center gap-3">
+        <span className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-lg text-primary">
+          <FiTruck />
+        </span>
+        <div>
+          <h6 className="text-sm font-semibold text-foreground">{name}</h6>
+          <p className="text-xs text-muted-foreground">
+            {description}{" "}
+            <span className="font-semibold text-foreground">
+              {formatPrice(value)}
+            </span>
+          </p>
+        </div>
       </div>
-    </div>
+      <input
+        onClick={() => handleShippingCost(value)}
+        {...(register as UseFormRegister<FieldValues>)("shippingOption", {
+          required: "Shipping Option is required!",
+        })}
+        name="shippingOption"
+        type="radio"
+        value={name}
+        className="size-4 shrink-0 accent-primary outline-none focus:ring-0"
+      />
+    </label>
   );
 }
 

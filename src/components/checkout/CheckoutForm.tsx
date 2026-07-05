@@ -8,7 +8,7 @@ import {
   IoEyeOutline,
   IoEyeOffOutline,
 } from "react-icons/io5";
-import { ImCreditCard } from "react-icons/im";
+import { ShoppingBag, ShieldCheck, Lock, Tag } from "lucide-react";
 
 //internal import
 import Label from "@components/form/Label";
@@ -84,340 +84,401 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({
         currency={orderSuccessData?.currency}
       />
 
-      <div className="py-10 lg:py-12 px-0 2xl:max-w-screen-2xl w-full xl:max-w-screen-xl flex flex-col md:flex-row lg:flex-row gap-0">
+      {/* Page header */}
+      <div className="mb-6 lg:mb-8">
+        <h1 className="text-2xl font-bold tracking-tight text-foreground">
+          Checkout
+        </h1>
+        <p className="mt-1 text-sm text-muted-foreground">
+          Review your details and complete your order securely.
+        </p>
+      </div>
+
+      <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:gap-8">
         {/* checkout form */}
-        <div className="md:w-full lg:w-3/5 flex h-full flex-col order-2 sm:order-1 lg:order-1">
-          <div className="mt-5 md:mt-0 md:col-span-2">
-            <form onSubmit={handleSubmit(submitHandler as (data: unknown) => Promise<void>)}>
-              {isGuest && (
-                <div className="mb-6 p-4 bg-primary/5 border border-primary/20 rounded-lg">
-                  <p className="text-sm text-primary font-medium">
-                    You are checking out as a guest. Only Cash on Delivery is
-                    available for guest orders. An account will be created for
-                    you to track your order.
-                  </p>
-                </div>
-              )}
-              {!isGuest && hasShippingAddress && (
-                <div className="flex justify-end my-2">
-                  <SwitchToggle
-                    id="shipping-address"
-                    title="Use Default Shipping Address"
-                    processOption={useExistingAddress}
-                    handleProcess={handleDefaultShippingAddress}
-                  />
-                </div>
-              )}
-              <div className="form-group">
-                <h2 className="font-semibold text-base text-muted-foreground pb-3">
-                  01. {String(checkout?.personal_details ?? '')}
+        <div className="order-2 w-full lg:order-1 lg:w-3/5">
+          <form
+            onSubmit={handleSubmit(submitHandler as (data: unknown) => Promise<void>)}
+            className="space-y-5"
+          >
+            {isGuest && (
+              <div className="flex items-start gap-3 rounded-xl border border-primary/20 bg-primary/5 p-4">
+                <ShieldCheck className="mt-0.5 size-5 shrink-0 text-primary" />
+                <p className="text-sm text-foreground">
+                  You are checking out as a guest. Only Cash on Delivery is
+                  available for guest orders. An account will be created for you
+                  to track your order.
+                </p>
+              </div>
+            )}
+
+            {!isGuest && hasShippingAddress && (
+              <div className="flex justify-end">
+                <SwitchToggle
+                  id="shipping-address"
+                  title="Use Default Shipping Address"
+                  processOption={useExistingAddress}
+                  handleProcess={handleDefaultShippingAddress}
+                />
+              </div>
+            )}
+
+            {/* 01. Personal Details */}
+            <section className="rounded-xl border border-border bg-card p-5 shadow-sm sm:p-6">
+              <div className="mb-5 flex items-center gap-3">
+                <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-primary-foreground">
+                  1
+                </span>
+                <h2 className="text-base font-semibold text-foreground">
+                  {String(checkout?.personal_details ?? "")}
                 </h2>
-                <div className="grid grid-cols-6 gap-6">
-                  <div className="col-span-6 sm:col-span-3">
-                    <InputArea
-                      register={register}
-                      label={String(checkout?.first_name ?? '')}
-                      name="firstName"
-                      type="text"
-                      placeholder="John"
-                    />
-                    <Error errorMessage={errors.firstName} />
-                  </div>
+              </div>
+              <div className="grid grid-cols-6 gap-5">
+                <div className="col-span-6 sm:col-span-3">
+                  <InputArea
+                    register={register}
+                    label={String(checkout?.first_name ?? "")}
+                    name="firstName"
+                    type="text"
+                    placeholder="John"
+                  />
+                  <Error errorMessage={errors.firstName} />
+                </div>
 
-                  <div className="col-span-6 sm:col-span-3">
-                    <InputArea
-                      register={register}
-                      label={String(checkout?.last_name ?? '')}
-                      name="lastName"
-                      type="text"
-                      placeholder="Doe"
-                    />
-                    <Error errorMessage={errors.lastName} />
-                  </div>
+                <div className="col-span-6 sm:col-span-3">
+                  <InputArea
+                    register={register}
+                    label={String(checkout?.last_name ?? "")}
+                    name="lastName"
+                    type="text"
+                    placeholder="Doe"
+                  />
+                  <Error errorMessage={errors.lastName} />
+                </div>
 
-                  <div className="col-span-6 sm:col-span-3">
-                    <InputArea
-                      register={register}
-                      label={String(checkout?.email_address ?? '')}
-                      name="email"
-                      type="email"
-                      placeholder="youremail@gmail.com"
-                    />
-                    <Error errorMessage={errors.email} />
-                  </div>
+                <div className="col-span-6 sm:col-span-3">
+                  <InputArea
+                    register={register}
+                    label={String(checkout?.email_address ?? "")}
+                    name="email"
+                    type="email"
+                    placeholder="youremail@gmail.com"
+                  />
+                  <Error errorMessage={errors.email} />
+                </div>
 
-                  <div className="col-span-6 sm:col-span-3">
-                    <InputArea
-                      register={register}
-                      label={String(checkout?.checkout_phone ?? '')}
-                      name="contact"
-                      type="tel"
-                      placeholder="+062-6532956"
-                    />
-                    <Error errorMessage={errors.contact} />
-                  </div>
+                <div className="col-span-6 sm:col-span-3">
+                  <InputArea
+                    register={register}
+                    label={String(checkout?.checkout_phone ?? "")}
+                    name="contact"
+                    type="tel"
+                    placeholder="+062-6532956"
+                  />
+                  <Error errorMessage={errors.contact} />
+                </div>
 
-                  {isGuest && (
-                    <div className="col-span-6">
-                      <div className="space-y-2">
-                        <label
-                          htmlFor="password"
-                          className="block text-sm font-medium text-muted-foreground"
+                {isGuest && (
+                  <div className="col-span-6">
+                    <div className="space-y-2">
+                      <label
+                        htmlFor="password"
+                        className="block text-sm font-medium text-muted-foreground"
+                      >
+                        Password (for your new account)
+                      </label>
+                      <div className="relative">
+                        <Input
+                          {...register("password")}
+                          id="password"
+                          type={showPassword ? "text" : "password"}
+                          name="password"
+                          placeholder="Min. 8 characters with letters & numbers"
+                        />
+                        <button
+                          type="button"
+                          onClick={() => setShowPassword(!showPassword)}
+                          className="absolute inset-y-0 right-0 flex items-center pr-3 text-muted-foreground transition-colors hover:text-foreground"
+                          aria-label={
+                            showPassword ? "Hide password" : "Show password"
+                          }
                         >
-                          Password (for your new account)
-                        </label>
-                        <div className="relative">
-                          <Input
-                            {...register("password")}
-                            id="password"
-                            type={showPassword ? "text" : "password"}
-                            name="password"
-                            placeholder="Min. 8 characters with letters & numbers"
-                          />
-                          <button
-                            type="button"
-                            onClick={() => setShowPassword(!showPassword)}
-                            className="absolute inset-y-0 right-0 pr-3 flex items-center text-muted-foreground hover:text-foreground transition-colors"
-                            aria-label={
-                              showPassword ? "Hide password" : "Show password"
-                            }
-                          >
-                            {showPassword ? (
-                              <IoEyeOffOutline className="h-5 w-5" />
-                            ) : (
-                              <IoEyeOutline className="h-5 w-5" />
-                            )}
-                          </button>
-                        </div>
+                          {showPassword ? (
+                            <IoEyeOffOutline className="h-5 w-5" />
+                          ) : (
+                            <IoEyeOutline className="h-5 w-5" />
+                          )}
+                        </button>
                       </div>
-                      <Error errorMessage={errors.password} />
-                      <p className="text-xs text-muted-foreground mt-1">
-                        An account will be created with this email and password
-                        so you can track your order and manage future purchases.
-                      </p>
                     </div>
-                  )}
+                    <Error errorMessage={errors.password} />
+                    <p className="mt-1 text-xs text-muted-foreground">
+                      An account will be created with this email and password so
+                      you can track your order and manage future purchases.
+                    </p>
+                  </div>
+                )}
+              </div>
+            </section>
+
+            {/* 02. Shipping Details */}
+            <section className="rounded-xl border border-border bg-card p-5 shadow-sm sm:p-6">
+              <div className="mb-5 flex items-center gap-3">
+                <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-primary-foreground">
+                  2
+                </span>
+                <h2 className="text-base font-semibold text-foreground">
+                  {String(checkout?.shipping_details ?? "")}
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-6 gap-5">
+                <div className="col-span-6">
+                  <InputArea
+                    register={register}
+                    label={String(checkout?.street_address ?? "")}
+                    name="address"
+                    type="text"
+                    placeholder="123 Boulevard Rd, Beverley Hills"
+                  />
+                  <Error errorMessage={errors.address} />
+                </div>
+
+                <div className="col-span-6 sm:col-span-6 lg:col-span-2">
+                  <InputArea
+                    register={register}
+                    label={String(checkout?.city ?? "")}
+                    name="city"
+                    type="text"
+                    placeholder="Los Angeles"
+                  />
+                  <Error errorMessage={errors.city} />
+                </div>
+
+                <div className="col-span-6 sm:col-span-3 lg:col-span-2">
+                  <InputArea
+                    register={register}
+                    label={String(checkout?.country ?? "")}
+                    name="country"
+                    type="text"
+                    placeholder="United States"
+                  />
+                  <Error errorMessage={errors.country} />
+                </div>
+
+                <div className="col-span-6 sm:col-span-3 lg:col-span-2">
+                  <InputArea
+                    register={register}
+                    label={String(checkout?.zip_code ?? "")}
+                    name="zipCode"
+                    type="text"
+                    placeholder="2345"
+                  />
+                  <Error errorMessage={errors.zipCode} />
                 </div>
               </div>
 
-              <div className="form-group mt-12">
-                <h2 className="font-semibold text-base text-muted-foreground pb-3">
-                  02. {String(checkout?.shipping_details ?? '')}
-                </h2>
-
-                <div className="grid grid-cols-6 gap-6 mb-8">
-                  <div className="col-span-6">
-                    <InputArea
-                      register={register}
-                      label={String(checkout?.street_address ?? '')}
-                      name="address"
-                      type="text"
-                      placeholder="123 Boulevard Rd, Beverley Hills"
-                    />
-                    <Error errorMessage={errors.address} />
-                  </div>
-
-                  <div className="col-span-6 sm:col-span-6 lg:col-span-2">
-                    <InputArea
-                      register={register}
-                      label={String(checkout?.city ?? '')}
-                      name="city"
-                      type="text"
-                      placeholder="Los Angeles"
-                    />
-                    <Error errorMessage={errors.city} />
-                  </div>
-
-                  <div className="col-span-6 sm:col-span-3 lg:col-span-2">
-                    <InputArea
-                      register={register}
-                      label={String(checkout?.country ?? '')}
-                      name="country"
-                      type="text"
-                      placeholder="United States"
-                    />
-                    <Error errorMessage={errors.country} />
-                  </div>
-
-                  <div className="col-span-6 sm:col-span-3 lg:col-span-2">
-                    <InputArea
-                      register={register}
-                      label={String(checkout?.zip_code ?? '')}
-                      name="zipCode"
-                      type="text"
-                      placeholder="2345"
-                    />
-                    <Error errorMessage={errors.zipCode} />
-                  </div>
-                </div>
-
-                <Label label={String(checkout?.shipping_cost ?? '')} />
-                <div className="grid grid-cols-6 gap-6">
-                  <div className="col-span-6 sm:col-span-3">
+              <div className="mt-6">
+                <Label label={String(checkout?.shipping_cost ?? "")} />
+                <div className="mt-3 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  <div>
                     <InputShipping
                       register={register}
                       handleShippingCost={handleShippingCost}
-                      name={String(checkout?.shipping_name_two ?? '') ?? ""}
-                      description={String(
-                        checkout?.shipping_one_desc
-                       ?? '')}
+                      name={String(checkout?.shipping_name_two ?? "") ?? ""}
+                      description={String(checkout?.shipping_one_desc ?? "")}
                       value={Number(checkout?.shipping_one_cost) || 60}
                     />
                     <Error errorMessage={errors.shippingOption} />
                   </div>
 
-                  <div className="col-span-6 sm:col-span-3">
+                  <div>
                     <InputShipping
                       register={register}
                       handleShippingCost={handleShippingCost}
-                      name={String(checkout?.shipping_name_two ?? '') ?? ""}
-                      description={String(
-                        checkout?.shipping_two_desc
-                       ?? '')}
+                      name={String(checkout?.shipping_name_two ?? "") ?? ""}
+                      description={String(checkout?.shipping_two_desc ?? "")}
                       value={Number(checkout?.shipping_two_cost) || 20}
                     />
                     <Error errorMessage={errors.shippingOption} />
                   </div>
                 </div>
               </div>
+            </section>
 
-              <div className="form-group mt-12">
-                <h2 className="font-semibold text-base text-muted-foreground pb-3">
-                  03. {String(checkout?.payment_method ?? '')}
+            {/* 03. Payment Method */}
+            <section className="rounded-xl border border-border bg-card p-5 shadow-sm sm:p-6">
+              <div className="mb-5 flex items-center gap-3">
+                <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-primary-foreground">
+                  3
+                </span>
+                <h2 className="text-base font-semibold text-foreground">
+                  {String(checkout?.payment_method ?? "")}
                 </h2>
-                <div className="grid sm:grid-cols-3 grid-cols-1 gap-4">
-                  {!!storeSetting?.cod_status && (
-                    <div>
-                      <InputPayment
-                        setShowCard={setShowCard}
-                        register={register}
-                        name="Cash on Delivery"
-                        value="Cash"
-                        Icon={IoWalletSharp}
-                      />
-                      <Error errorMessage={errors.paymentMethod} />
-                    </div>
-                  )}
-
-                </div>
               </div>
-
-              <div className="grid grid-cols-6 gap-4 lg:gap-6 mt-10">
-                <div className="col-span-6 sm:col-span-3">
-                  <Button className="w-full h-10 rounded-sm" variant="outline">
-                    <Link
-                      to="/"
-                      className="flex justify-center text-center"
-                    >
-                      <span className="text-xl mr-2">
-                        <IoReturnUpBackOutline />
-                      </span>
-                      {String(checkout?.continue_button ?? '')}
-                    </Link>
-                  </Button>
-                </div>
-                <div className="col-span-6 sm:col-span-3">
-                  <Button
-                    type="submit"
-                    variant="create"
-                    disabled={isEmpty || isCheckoutSubmit}
-                    isLoading={isCheckoutSubmit}
-                    className="w-full h-10 rounded-sm"
-                  >
-                    {isCheckoutSubmit ? (
-                      "Processing"
-                    ) : (
-                      <span className="flex justify-center text-center">
-                        {String(checkout?.confirm_button ?? '')}
-                        <span className="text-xl ml-2">
-                          <IoArrowForward />
-                        </span>
-                      </span>
-                    )}
-                  </Button>
-                </div>
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                {!!storeSetting?.cod_status && (
+                  <div>
+                    <InputPayment
+                      setShowCard={setShowCard}
+                      register={register}
+                      name="Cash on Delivery"
+                      value="Cash"
+                      Icon={IoWalletSharp}
+                    />
+                    <Error errorMessage={errors.paymentMethod} />
+                  </div>
+                )}
               </div>
-            </form>
-          </div>
+            </section>
+
+            {/* Actions */}
+            <div className="flex flex-col-reverse gap-3 pt-1 sm:flex-row sm:items-center sm:justify-between">
+              <Button
+                variant="outline"
+                className="h-11 w-full rounded-lg sm:w-auto sm:px-6"
+              >
+                <Link
+                  to="/"
+                  className="flex w-full items-center justify-center"
+                >
+                  <IoReturnUpBackOutline className="mr-2 text-xl" />
+                  {String(checkout?.continue_button ?? "")}
+                </Link>
+              </Button>
+
+              <Button
+                type="submit"
+                variant="create"
+                disabled={isEmpty || isCheckoutSubmit}
+                isLoading={isCheckoutSubmit}
+                className="h-11 w-full rounded-lg sm:w-auto sm:px-8"
+              >
+                {isCheckoutSubmit ? (
+                  "Processing"
+                ) : (
+                  <span className="flex items-center justify-center">
+                    {String(checkout?.confirm_button ?? "")}
+                    <IoArrowForward className="ml-2 text-xl" />
+                  </span>
+                )}
+              </Button>
+            </div>
+          </form>
         </div>
 
-        {/* cart section */}
-        <div className="md:w-full lg:w-2/5 lg:ml-10 xl:ml-14 md:ml-6 flex flex-col h-full md:sticky lg:sticky top-44 md:order-2 lg:order-2">
-          <div className="border p-5 lg:px-8 lg:py-8 rounded-xl bg-card border-border shadow-sm order-1 sm:order-2">
-            <h2 className="font-semibold text-lg pb-4">
-              {String(checkout?.order_summary ?? '')}
-            </h2>
+        {/* order summary */}
+        <div className="order-1 w-full lg:sticky lg:top-24 lg:order-2 lg:w-2/5">
+          <div className="overflow-hidden rounded-xl border border-border bg-card shadow-sm">
+            {/* header */}
+            <div className="flex items-center gap-2 border-b border-border px-5 py-4">
+              <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <ShoppingBag className="size-4" />
+              </span>
+              <h2 className="text-base font-semibold text-foreground">
+                {String(checkout?.order_summary ?? "")}
+              </h2>
+              {!isEmpty && (
+                <span className="ml-auto rounded-full bg-muted px-2 py-0.5 text-xs font-medium text-muted-foreground">
+                  {items.length} {items.length === 1 ? "item" : "items"}
+                </span>
+              )}
+            </div>
 
-            <div className="overflow-y-scroll flex-grow scrollbar-hide w-full max-h-64 bg-muted/30 rounded-lg block">
+            {/* items */}
+            <div className="max-h-72 divide-y divide-border overflow-y-auto scrollbar-hide px-2">
               {items.map((item) => (
-                <CartItem key={item.id} item={item as unknown as Parameters<typeof CartItem>[0]["item"]} />
+                <CartItem
+                  key={item.id}
+                  item={item as unknown as Parameters<typeof CartItem>[0]["item"]}
+                />
               ))}
 
               {isEmpty && (
-                <div className="text-center py-10">
-                  <span className="flex justify-center my-auto text-muted-foreground font-semibold text-4xl">
+                <div className="px-3 py-12 text-center">
+                  <span className="mx-auto flex justify-center text-4xl text-muted-foreground">
                     <IoBagHandle />
                   </span>
-                  <h2 className="font-medium text-sm pt-2 text-muted-foreground">
+                  <h2 className="pt-2 text-sm font-medium text-muted-foreground">
                     No Item Added Yet!
                   </h2>
                 </div>
               )}
             </div>
 
-            <div className="flex items-center mt-4 py-4 lg:py-4 text-sm w-full font-semibold text-foreground last:border-b-0 last:text-base last:pb-0">
-              <form className="w-full">
-                {couponInfo.couponCode ? (
-                  <span className="bg-accent px-4 py-3 leading-tight w-full rounded-md flex justify-between">
-                    <p className="text-primary">Coupon Applied </p>
-                    <span className="text-primary font-bold text-right">
-                      {couponInfo.couponCode}
-                    </span>
+            {/* coupon */}
+            <div className="border-t border-border px-5 py-4">
+              {couponInfo.couponCode ? (
+                <div className="flex items-center justify-between rounded-lg border border-primary/20 bg-primary/5 px-4 py-3">
+                  <span className="flex items-center gap-2 text-sm font-medium text-primary">
+                    <Tag className="size-4" /> Coupon Applied
                   </span>
-                ) : (
-                  <div className="flex flex-row items-start justify-end">
-                    <Input
-                      ref={couponRef}
-                      type="text"
-                      placeholder="Coupon Code"
-                      className="px-4 py-2 h-10 mr-1 border border-border rounded-md focus:outline-none"
-                    />
-                    <Button
-                      onClick={handleCouponCode}
-                      className="h-10 rounded-sm"
-                      variant="create"
-                    >
-                      {String(checkout?.apply_button ?? '')}
-                    </Button>
-                  </div>
-                )}
-              </form>
+                  <span className="text-sm font-bold text-primary">
+                    {couponInfo.couponCode}
+                  </span>
+                </div>
+              ) : (
+                <div className="flex items-stretch gap-2">
+                  <Input
+                    ref={couponRef}
+                    type="text"
+                    placeholder="Coupon Code"
+                    className="h-10"
+                  />
+                  <Button
+                    type="button"
+                    onClick={handleCouponCode}
+                    variant="create"
+                    className="h-10 shrink-0 rounded-lg px-5"
+                  >
+                    {String(checkout?.apply_button ?? "")}
+                  </Button>
+                </div>
+              )}
             </div>
-            <div className="flex items-center py-2 text-sm w-full font-semibold text-muted-foreground last:border-b-0 last:text-base last:pb-0">
-              {String(checkout?.sub_total ?? '')}
-              <span className="ml-auto flex-shrink-0 text-foreground font-bold">
-                {formatPrice(cartTotal)}
-              </span>
-            </div>
-            <div className="flex items-center py-2 text-sm w-full font-semibold text-muted-foreground last:border-b-0 last:text-base last:pb-0">
-              {String(checkout?.shipping_cost ?? '')}
-              <span className="ml-auto flex-shrink-0 text-foreground font-bold">
-                {formatPrice(shippingCost)}
-              </span>
-            </div>
-            <div className="flex items-center py-2 text-sm w-full font-semibold text-muted-foreground last:border-b-0 last:text-base last:pb-0">
-              {String(checkout?.discount ?? '')}
-              <span className="ml-auto flex-shrink-0 font-bold text-orange-400">
-                {formatPrice(discountAmount)}
-              </span>
-            </div>
-            <div className="border-t mt-4">
-              <div className="flex items-center font-bold justify-between pt-5 text-sm uppercase">
-                {String(checkout?.total_cost ?? '')}
-                <span className="font-extrabold text-lg">
-                  {formatPrice(Number(total))}
+
+            {/* totals */}
+            <div className="space-y-2.5 border-t border-border px-5 py-4 text-sm">
+              <div className="flex items-center justify-between">
+                <span className="text-muted-foreground">
+                  {String(checkout?.sub_total ?? "")}
+                </span>
+                <span className="font-semibold text-foreground">
+                  {formatPrice(cartTotal)}
                 </span>
               </div>
+              <div className="flex items-center justify-between">
+                <span className="text-muted-foreground">
+                  {String(checkout?.shipping_cost ?? "")}
+                </span>
+                <span className="font-semibold text-foreground">
+                  {formatPrice(shippingCost)}
+                </span>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-muted-foreground">
+                  {String(checkout?.discount ?? "")}
+                </span>
+                <span className="font-semibold text-orange-500">
+                  {formatPrice(discountAmount)}
+                </span>
+              </div>
+            </div>
+
+            {/* total */}
+            <div className="flex items-center justify-between border-t border-border bg-primary/5 px-5 py-4">
+              <span className="text-sm font-semibold uppercase tracking-wide text-foreground">
+                {String(checkout?.total_cost ?? "")}
+              </span>
+              <span className="text-xl font-bold text-primary">
+                {formatPrice(Number(total))}
+              </span>
+            </div>
+
+            {/* secure note */}
+            <div className="flex items-center justify-center gap-1.5 border-t border-border px-5 py-3 text-xs text-muted-foreground">
+              <Lock className="size-3.5" />
+              <span>Secure &amp; encrypted checkout</span>
             </div>
           </div>
         </div>
