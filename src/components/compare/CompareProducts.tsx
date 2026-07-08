@@ -42,13 +42,6 @@ const CompareProducts = ({
   const labelCell = `${cell} bg-white text-gray-600 font-normal text-left`;
   const valueCell = `${cell} text-gray-700`;
 
-  // The product header row sticks to the top of the viewport as the page
-  // scrolls. The offset sits it just below the app's sticky navbar, whose
-  // height differs per breakpoint (mobile ≈108px, md ≈64px, lg+ ≈124px with
-  // the promo bar). z-30 keeps it under the navbar (z-40) but above the rows.
-  const stickyHead =
-    "sticky top-27 md:top-16 lg:top-31 z-30 shadow-[inset_0_-1px_0_#e5e7eb]";
-
   /** A simple text row: label on the left, one value per product. */
   const TextRow = ({
     label,
@@ -83,14 +76,6 @@ const CompareProducts = ({
 
   return (
     <div className="w-full">
-      {/*
-        No inner scroll container: the table flows in the page so the product
-        header row can pin to the viewport with `position: sticky` on normal
-        page scroll. (An overflow-x wrapper would capture the scroll and break
-        vertical stickiness.) The table is fluid + table-fixed so columns share
-        the available width on any device instead of forcing a horizontal
-        scrollbar; long values wrap via `break-words`.
-      */}
       <table className="w-full table-fixed border-collapse text-sm">
         <colgroup>
           <col className="w-24 sm:w-40 lg:w-48" />
@@ -100,15 +85,13 @@ const CompareProducts = ({
         </colgroup>
 
         <tbody>
-          {/* ── Product header cards (sticky at the top on scroll) ─── */}
+          {/* ── Product header cards ─────────────────────────────── */}
           <tr>
-            <td
-              className={`${stickyHead} border border-gray-200 bg-gray-50`}
-            />
+            <td className="border border-gray-200 bg-gray-50" />
             {products.map((p) => (
               <td
                 key={p.id}
-                className={`${stickyHead} border border-gray-200 bg-white px-2 py-3 sm:px-4 sm:py-5 text-center align-top`}
+                className="border border-gray-200 bg-white px-2 py-3 sm:px-4 sm:py-5 text-center align-top"
               >
                 <div className="flex flex-col items-center">
                   <div className="h-16 w-16 sm:h-24 sm:w-24 lg:h-28 lg:w-28 overflow-hidden">
